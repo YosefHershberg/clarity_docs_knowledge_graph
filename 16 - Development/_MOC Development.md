@@ -35,7 +35,16 @@ aliases:
 - [[Schema and XML]] — XOG schema and XML files
 - [[Object API]] — XOG Object API
 - [[Object Reference]] — XOG object reference
-- [[GEL Scripting]] — GEL scripting
+- [[Object Reference Details]] — Comprehensive schema and attribute reference for all ~40 XOG objects
+- [[InvokeAction API]] — XOG InvokeAction API (process invocation)
+- [[Query API]] — XOG Query API (NSQL-based queries)
+- [[Governor Node Limit]] — XOG Governor Node Limit (pagination, memory limits)
+- [[GEL Scripting]] — GEL scripting overview
+- [[GEL Basics]] — GEL script structure, variables, conditionals, SSL
+- [[GEL Database Operations]] — GEL JDBC database operations
+- [[GEL File Operations]] — GEL file and FTP operations
+- [[GEL Integration Processes]] — GEL integration process automation
+- [[GEL Tag Library]] — XOG GEL tag library reference (all tags)
 - [[WSDL]] — XOG WSDL reference
 
 ### Custom Objects

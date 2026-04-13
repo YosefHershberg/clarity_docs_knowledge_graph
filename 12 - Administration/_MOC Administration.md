@@ -77,6 +77,22 @@ aliases:
 - [[Earned Value Management]] — EVM configuration
 - [[General System Settings]] — General settings
 
+### CSA: Classic PPM System Administration (On-Premise Only)
+
+> [!note] On-Premise Only
+> CSA is the web-based administration tool for on-premise Clarity installations. Access at `http://<hostname>:8090/niku/app`.
+
+- [[CSA/CSA Overview|CSA Overview]] — Introduction to Classic PPM System Administration, the Beacon service, URL contexts, and all server property groups
+- [[CSA/Microservice Broker|Microservice Broker]] — PPMBroker microservice for offloading real-time processing (staffing, ETC/actuals curves)
+- [[CSA/Report Service|Report Service]] — Dedicated report execution service separate from the main BG service (new in 16.3.2)
+- [[CSA/Maintain and Monitor|Maintain and Monitor]] — Start/stop services, open ports, IGMP snooping, log files, backup/restore, GEL tag restrictions
+- [[CSA/Document Index and Storage|Document Index and Storage]] — Document indexing methods, search index, filestore migration, file scanning
+- [[CSA/Security and Authentication|Security and Authentication]] — Passwords, SSL, LDAP, SSO, XSS, FIPS 140-2 configuration
+- [[CSA/Application Servers and Clusters|Application Servers and Clusters]] — Scaling, multicast messaging, load balancers, sticky sessions, JVM tuning
+- [[CSA/JDBC Ping Configuration|JDBC Ping Configuration]] — JDBC-based alternative to multicast for cluster discovery (cloud-friendly)
+- [[CSA/CLI Utilities|CLI Utilities]] — `service` and `admin` command-line utilities for scripted administration
+- [[CSA/Memory and Performance|Memory and Performance]] — Performance tracking sessions, memory allocation, database optimization
+
 ## Related
 - [[_MOC Install Upgrade]]
 - [[_MOC Development]]

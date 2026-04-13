@@ -14,14 +14,19 @@ aliases:
 - [[Studio Reports]] — Create Jaspersoft Studio reports
 - [[Export Import Content]] — Export and import content
 
+### PMO Accelerator Setup and Access
+- [[PMO Accelerator Setup]] — Setup guide: jobs, time slices, data sources, calendar, language/locale
+- [[Roles and Permissions]] — Jaspersoft roles (CSK_ and ROLE_), permissions model, access groups
+
 ### PMO Accelerator Reports
-- [[Project Reports]] — Project management reports
-- [[Investment Reports]] — Investment management reports
-- [[Resource Reports]] — Resource management reports
-- [[Time Reports]] — Time management reports
-- [[Financial Reports]] — Financial management reports
-- [[Program Reports]] — Program management reports
-- [[Portfolio Reports]] — Portfolio management reports
+- [[Project Reports]] — 19 project management reports (KPIs, schedule, cost/effort, earned value, status, risks, roadmap)
+- [[Investment Reports]] — 10 investment management reports (allocations, roadmap, timeline, risks, issues)
+- [[Resource Reports]] — 15 resource management reports (capacity, allocation, skills, utilization, availability)
+- [[Time Reports]] — 6 time management reports (compliance, missing time, timesheet review)
+- [[Financial Reports]] — 7 financial management reports (capitalization, forecast, budget vs. forecast, transactions)
+- [[Program Reports]] — 4 program management reports (status detail, budget vs. forecast, milestone dependencies)
+- [[Portfolio Reports]] — 3 portfolio management reports (plan comparison, plan changes, waterline/rank)
+- [[PMO Admin Reports]] — 8 administration reports (DWH schema, Clarity schema, user license, access rights, DB check, customizations)
 
 ### Data Warehouse
 - [[Data Warehouse Trends]] — Trend reporting

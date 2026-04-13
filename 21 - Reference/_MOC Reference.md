@@ -11,12 +11,25 @@ aliases:
 ## Notes in This Section
 
 ### Access Rights
-- [[Overview]] — Clarity access rights overview
-- [[Administration Rights]] — Administration access rights
-- [[Financial Rights]] — Financial management access rights
-- [[Project Portfolio Rights]] — Project and portfolio access rights
-- [[Resource Rights]] — Resource management access rights
-- [[Other Access Rights]] — Other access right categories
+- [[Overview]] — Clarity access rights overview (all categories)
+- [[Administration Rights]] — Administration, API, Jobs, Pages, Portlets, Processes, Scenarios
+- [[Financial Rights]] — Financial administration, planning, departments, locations
+- [[Project Portfolio Rights]] — Projects, programs, portfolios, tasks
+- [[Resource Rights]] — Resources, staffing, requisitions, capacity planning
+- [[Other Access Rights]] — Timesheets, roadmaps, ideas, dashboards, hierarchies, to-dos, blueprints
+
+#### Module-Specific Access Rights
+- [[Advanced Reporting Rights]] — Jaspersoft/Advanced Reporting roles and permissions
+- [[Demand Management Rights]] — Ideas (detailed) and Incidents
+- [[Earned Value Manager Rights]] — EVM Add-In: Agencies, Contracts, Control Accounts
+- [[IT Service Management Rights]] — Services and ITSM role-based access
+- [[NPD Accelerator Rights]] — New Product Development Accelerator user groups
+- [[PMBOK Accelerator Rights]] — PMBOK Guide Accelerator access groups (4 groups)
+- [[PMO Accelerator Rights]] — PMO Accelerator access groups (23 groups)
+- [[PRINCE2 Accelerator Rights]] — PRINCE2 Accelerator access groups (5 groups)
+- [[Requirements Planning Rights]] — Releases, Release Plans, Requirements
+- [[Studio Rights]] — Classic PPM Studio: objects, portlets, pages, menus, partitions
+- [[XOG Rights]] — XML Open Gateway client and object-level XOG access
 
 ### Reference Data
 - [[Jobs Reference]] — Clarity jobs reference
