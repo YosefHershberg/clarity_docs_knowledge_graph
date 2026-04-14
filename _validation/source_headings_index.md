@@ -1,0 +1,3291 @@
+# Source Documentation Headings Index
+
+Generated: 2026-04-14  
+Status: Baseline reference (unchanged — this is the extraction of all H2/H3 headings from 57 source docs)
+
+> [!info] Usage
+> This index was used as the checklist for validating curated note coverage. See [[coverage_matrix]] and [[gap_report]] for results.
+
+---
+## Add-Ins and Integrations.md
+
+- 48:## Install an Add-in
+- 53:### Review the Prerequisites
+- 62:### Stop the Services
+- 76:### Install the Add-in
+- 94:### Start the Services
+- 115:### Apply the Add-in Content Items (Upgrades Only)
+- 142:## Add-in: CA Application Portfolio Management (APM)
+- 168:### APM Add-in Release Notes
+- 210:### Install the APM Add-In
+- 294:### APM Add-In Attributes and the Data Warehouse
+- 384:### APM Application Lifecycle
+- 425:### APM Application List View and Properties
+- 487:### APM Application Assessments
+- 506:### APM Application Certifications
+- 517:### APM Application Dashboard
+- 595:### APM Assessment Review Page and Portlets
+- 633:### APM Application Reports
+
+---
+## Administration.md
+
+- 94:## CSA: Classic PPM System Administration (On-Premise Only)
+- 120:### Clarity Server/URL Contexts
+- 128:### Classic PPM System Administration Server Properties
+- 153:### System Properties
+- 213:### Database Server Properties
+- 258:### Application Server Properties
+- 353:### Documents and Search Properties
+- 379:## Server Reporting Properties
+- 397:## Data Warehouse Server Properties
+- 406:### Oracle Only
+- 416:### Connection Details
+- 434:### Data Warehouse Governor Limits
+- 442:## Server Security Properties
+- 446:### Encryption Section
+- 457:### LDAP Server Section
+- 474:### LDAP Attribute Mapping Section
+- 491:### Single Sign-On Section
+- 504:## Background Properties
+- 526:## Microservice Broker Properties
+- 555:## Getting Started with the Microservice Broker
+- 564:### Introduction to Microservice Broker
+- 576:### Deploy the PPMBroker Service
+- 601:### Redeploy the Application
+- 620:### Validate Deployment of the PPMBroker Service
+- 632:### Example: Enhancing Real-Time Updates in Staffing with the Microservice Broker
+- 651:## Getting Started with the Report Service
+- 658:### Key Benefits
+- 663:### Configuration Overview
+- 688:### Deployment Methods
+- 715:### Recommended Hardware Configuration
+- 723:### Logs and Monitoring
+- 731:### Functional Behavior
+- 736:### Example Configuration Scenarios
+- 743:### Recommendations and Limitations
+- 749:## CSA: Maintain and Monitor Classic PPM (On-Premise Only)
+- 763:### Start and Stop Services
+- 773:### Open Server Ports
+- 793:### IGMP Snooping
+- 799:### Run Health Reports
+- 803:### Check Log Files
+- 855:### Edit the Logger Configuration
+- 924:### User-Specific Logging
+- 932:### Action Tracing
+- 939:### Back up an Installation
+- 966:### Restore a Classic PPM Installation
+- 996:### Compile and Analyze Existing Oracle Database Objects
+- 1015:### Set File Directory Size
+- 1027:### Set GEL Tag Restrictions
+- 1070:## CSA: Document Index, Search, Storage, and File Scanning (On-Premise Only)
+- 1078:### Select the Method to Index Documents
+- 1102:### Recreate the Search Index
+- 1115:### Migrate the Filestore to the Database
+- 1137:### Set Up File Scanning
+- 1186:## CSA: Security, Passwords, LDAP, SSL, SSO, XSS, and FIPS (On-Premise Only)
+- 1201:### Manage Database Server Passwords
+- 1211:### Encrypt Server Passwords
+- 1234:### Change Database Server Passwords
+- 1257:### Configure Secure Sockets Layer (SSL) on Apache Tomcat
+- 1367:## SSL Keystore Distribution
+- 1385:### Set the Keystore File Location and Password
+- 1403:### Enable SSL on Each Server
+- 1441:### Enable SSL for Password-Protected Pages
+- 1471:### Enable a Secure JDBC Connection Between the Application and Database Servers on Separate Hosts with SSL
+- 1506:### Configure to Work with SSL Off-Loaders
+- 1528:### Configure to Use HTTPS
+- 1614:## Integrate with Lightweight Directory Access Protocol (LDAP)
+- 1651:### Define the LDAP Server Properties
+- 1684:### LDAP Synchronization
+- 1706:### Troubleshoot LDAP
+- 1721:### Troubleshoot LDAP Sync Jobs
+- 1766:### Configure LDAP and SSL
+- 1781:## Configure Single Sign-On (SSO) for Classic PPM
+- 1843:### Configure Single Sign-On (SSO) for Clarity
+- 1890:### Use LDAP with SSO
+- 1898:### Use LDAP without SSO
+- 1902:## Set Options for Cross-Site Scripting (XSS) Vulnerabilities
+- 1912:### XSS: User Input Validation
+- 1921:### XSS: User Input Restrictions
+- 2036:### External URLs
+- 2220:## Enable FIPS in Clarity
+- 2224:### Creating Keystore using HTTPS
+- 2241:### Steps for Using Bouncy Castle as FIPS Provider
+- 2295:### Steps to Enable FIPS in CSA
+- 2317:## CSA: Application Servers, Clusters, Multicast Messaging, and Load Balancers (On-Premise Only)
+- 2330:### Scale Classic PPM
+- 2338:### Multicast Messaging
+- 2359:### Load Balancers and Session Persistence (Sticky Sessions)
+- 2372:### Share Disks
+- 2376:### Distribute Files to Servers in a Cluster
+- 2386:### Multiple Application or Background Service Instances
+- 2400:### Configure a Dedicated External Data Source
+- 2429:### Oracle Database Clustering
+- 2473:### Tune OpenJDK HotSpot JVMs
+- 2487:## CSA: Configure JDBC Ping As An Alternative to Multicast (On-Premise Only)
+- 2507:### JDBC Ping: Prerequisites
+- 2518:### JDBC Ping: Configuration
+- 2560:### JDBC Ping: Verify JDBC Ping Messaging is Enabled
+- 2588:### Clarity Hybrid Cloud Migrations
+- 2598:### Configure Replicated Caching for JasperReports Server with JMS
+- 2660:### Configure ActiveMQ for JasperReports on Windows Server
+- 2673:### Configure JasperReports Server with ActiveMQ
+- 2685:### Monitor the ActiveMQ Console
+- 2692:### Change the Default ActiveMQ 'admin' Password
+- 2698:## CSA: Service and Admin Command-Line Utilities (On-Premise Only)
+- 2705:### Service Command
+- 2742:### Admin Command
+- 2850:### Enable the System-Option Commands for CORS
+- 2868:## CSA: Memory and Performance Tracking (On-Premise Only)
+- 2875:### Monitor System Performance
+- 2956:### Manage Memory
+- 3040:### Optimize Database Performance
+- 3131:## CA On Demand Portal Administration (On-Demand Only)
+- 3136:## Health Report, Job Monitor, Governor Settings, and Data Warehouse Audit Dashboard
+- 3146:### Required Access Rights
+- 3151:### View or Download a Clarity System Health Report
+- 3180:### Command Line Health Report
+- 3188:### Health Report Exclusions
+- 3195:### Governor Settings (Maximum Data Limits)
+- 3237:### Clarity 15.6.1 Governor Limits Stored in the Database
+- 3277:### Download a Customization Discovery Analysis Report
+- 3291:### View System Statistics and Log Data
+- 3317:### Jobs Monitor
+- 3333:### View the Data Warehouse Audit Dashboard
+- 3357:## Configure the Data Warehouse and Advanced Reporting
+- 3368:### Configure the Data Warehouse
+- 3551:### Instantaneous Sync of Data Between Clarity and Data Warehouse
+- 3697:## Configure the Advanced Reporting
+- 3708:### Advanced Reporting Data Components
+- 3712:### Manage Security for Advanced Reporting
+- 3872:### Advanced Reporting Domains
+- 4101:### Manage User Interface (UI) Themes
+- 4201:### Advanced Reporting and Database Link
+- 4226:### Improve Reporting Performance with Jaspersoft Governor Settings
+- 4232:### Advanced Reporting User Parameters
+- 4253:## Data Warehouse Table Naming Conventions
+- 4273:### Data Warehouse Static Lookup Standards
+- 4290:### Data Warehouse Dynamic Lookup Standards
+- 4306:### Data Warehouse Fact Tables
+- 4351:### Data Warehouse Query Example
+- 4375:### Referential Integrity
+- 4385:## Configure OData Access to the Data Warehouse (SaaS Only)
+- 4404:### Provide Access to the Data Warehouse OData Service
+- 4421:### Access OData Endpoints Using Clarity Credentials
+- 4439:### Support for Clarity API Keys to Access OData
+- 4460:### Enable Custom Content for the Data Warehouse
+- 4464:### Refresh the OData Endpoints
+- 4475:### Verify the OData Connection
+- 4485:### Connect Your BI Tool to the Data Warehouse OData Service
+- 4496:### Using OData with Custom Scripts
+- 4509:### Connect to OData Using Microsoft Power BI Desktop
+- 4522:### Connect to OData Using Microsoft Excel
+- 4530:### Connect to OData Using Tableau Desktop
+- 4543:### Implement Row Level Security for BI Reports
+- 4581:### Supported Clarity Data Warehouse Functions
+- 4628:## Configure Secure Authentication, User Accounts, and Passwords
+- 4634:### Session Options
+- 4638:### User Account Status Options
+- 4642:### Password Options
+- 4660:### Review the Prerequisites for Managing Authentication
+- 4678:### Configure General Session Limits
+- 4691:### Configure General Password Options
+- 4717:### Set the Status of a User Account
+- 4748:### Reset a User Password
+- 4764:### Force a User to Reset Their Password
+- 4778:### Force All Users to Reset Their Passwords
+- 4788:## Configure User Accounts, Skills, and Access Rights
+- 4804:### Create a New User (Resource)
+- 4851:### (SaaS only) Change the Email Address for an On Demand Portal User
+- 4875:### Change the Status of a Resource
+- 4891:### Add Skills for a Resource
+- 4906:### Video: Build a Skills Hierarchy
+- 4913:### Scope of Access Rights
+- 4926:### Enable and Disable OBS Access Rights
+- 4939:### Grant User Access Rights by OBS Unit
+- 4962:### Grant User Access Rights to Object Instances in OBS Units
+- 4983:### Grant Instance-Level Access Rights to a User
+- 5001:## View User Counts by License Type
+- 5024:### License Types
+- 5034:### View License Information
+- 5049:### View User Count by License Type
+- 5060:### View Access Rights by License Type
+- 5070:### View User List by License Type
+- 5129:### View Agile Capitalization Teams
+- 5157:### View Telemetry Data
+- 5189:### Core Product License Functionality
+- 5220:### User Status
+- 5249:### Functionality by User License Type
+- 5567:## Product Functionality by License Type (Continued)
+- 5569:### Product Functionality Matrix
+- 5586:### Burdening Matrix
+- 5595:### Configuration Using Classic PPM Studio
+- 5610:### Integration with Desktop Scheduling Tools
+- 5617:### Collaboration
+- 5633:### Advanced Reporting with Jaspersoft
+- 5646:### Best Practice Accelerators
+- 5662:### Creating and Running Integrations
+- 5669:### System Administration
+- 5683:## Configure an Organizational Breakdown Structure
+- 5703:### OBS Example
+- 5711:### Set Up a Financial OBS
+- 5724:### Set Up a Non-Financial OBS
+- 5736:## Set Up a Financial OBS
+- 5738:### Review the Prerequisites for Creating a Financial OBS
+- 5749:### Video: Why Are Attributes Deleted When Creating a Financial OBS?
+- 5754:### Create Department and Location OBS
+- 5772:### Associate Objects with OBS
+- 5818:### Create the OBS Units
+- 5833:### Create an Entity
+- 5880:### Associate the Departments and the Locations
+- 5894:### Associate the Locations with the Departments
+- 5907:### (Optional) Configure the OBS Attribute
+- 5939:## Set Up a Non-Financial OBS
+- 5941:### Review the Prerequisites for Creating a Non-Financial OBS
+- 5948:### Create an OBS
+- 5962:### Associate Objects with the OBS
+- 6002:### Create the OBS Units
+- 6017:### Configure the OBS Attribute
+- 6039:## Upgrade Impacts on OBS Properties
+- 6049:## Constraints on the Audit Trail-Enabled OBS Attributes
+- 6059:## Configure the OBS Section
+- 6078:### XOG Impact
+- 6104:### Delete OBS Types
+- 6116:## GDPR: Protect Personally Identifiable Information
+- 6125:### GDPR: Feature Highlights
+- 6141:### Install the PII Content Items
+- 6160:### Create Custom Attributes for Personally Identifiable Information
+- 6176:### Add Personally Identifiable Information Fields to a Page Layout
+- 6193:### Select the Protected Resources
+- 6207:### Run the Job to Scramble the Data
+- 6218:### Attachments for Anonymized Resources
+- 6225:### Database and Data Warehouse Fields With Personal Data
+- 6356:## Configure Earned Value Management
+- 6366:### Create Earned Value Reporting Periods
+- 6395:### View a List of Earned Value Reporting Periods
+- 6401:## Configure General System Settings
+- 6405:### Enable Clarity
+- 6461:### Hide Availability and Remaining Availability for Roles
+- 6468:### Delete Unsaved Views
+- 6479:### Activate Vaia (Beta)
+- 6493:### Set Document Management Options
+- 6514:### Set Other System Options
+- 6527:### Enable SAML Authentication
+- 6535:### How To Report Data Usage Automatically
+- 6589:### Identify Your Site ID Using the Broadcom Support Website
+- 6599:### Import SSL Certificate into the Java TrustStore (On-Premise only)
+- 6629:### Troubleshoot Telemetry Issues
+- 6635:### Data Transmitted by Telemetry
+- 6656:### View and Configure Advanced Reporting Options
+- 6677:### Create Custom Chart Colors
+- 6697:### Select Consistent Chart Colors
+- 6710:### Change a Company Name
+- 6721:### Enable the TSV Links (Export to Microsoft Excel)
+- 6728:### Add Site Links
+- 6743:### Mail Service
+- 6794:### Configuring StartTLS for Email in Clarity
+- 6838:### Setting Up Microsoft Azure OAuth for Classic PPM Mail Service
+- 6872:### Setting Up Google OAuth 2 Authentication for Classic PPM Mail Service
+- 6898:### Email Sent to all Assignees
+- 6907:### Email Response from Assignee
+- 6922:### Localize to Support Languages No Longer Supported by Broadcom
+- 6969:### Manage Field Text Translation
+- 6985:## Configure Third-Party Product Integrations
+- 6989:### Integration Setup
+- 7020:### Create an Integration
+- 7030:### Integration Architecture
+- 7038:## Configure Lookups
+- 7044:### Partitions and Lookups
+- 7052:### Lookup Types
+- 7070:### Create Static List Lookups
+- 7089:### Create Static List Lookup Values
+- 7111:### Manually Reorder Static List Lookup Values
+- 7121:### Static Dependent List Lookups
+- 7164:### Dynamic Query Lookups
+- 7213:### Create Dynamic Lookups and Export Configurations
+- 7234:### Include Dynamic Query Lookup Attributes in the Data Warehouse
+- 7281:### Define Queries
+- 7322:### Define Browse Window Characteristics for Dynamic Query Lookups
+- 7342:### Define Lookup Filters for Dynamic Query Lookups
+- 7352:### Set Filter Options for Browse Lookups
+- 7362:### Create Parameterized Lookups
+- 7391:### Define Parent Window Characteristics for Lookups
+- 7402:### Configure Auto-Suggest Settings for Lookups
+- 7429:### Create Dynamic Lookups Directly Against the Data Warehouse
+- 7498:## Rules for Changing Lookups
+- 7500:### General Lookup Rules
+- 7508:### Static List Lookups
+- 7524:### Static Dependent List Lookups
+- 7540:### Dynamic Niku Query Lookups
+- 7554:### Resource Lookups for Action Items
+- 7571:### Activate and Deactivate Lookups
+- 7581:### Activate and Deactivate Lookup Values
+- 7592:### Apply Filters to Find Lookups
+- 7612:### Limit the OBS Types That Appear in OBS Browse Lists
+- 7650:## Configure Reports and Jobs
+- 7662:### Video: Data Extraction
+- 7669:### Create a Job Definition
+- 7694:### Define the Report or Job Parameters
+- 7720:### Use the UNIX Crontab to Schedule Jobs
+- 7746:### Reorder Report or Job Definition Parameters
+- 7758:### Identify Incompatible Report or Job Definitions
+- 7769:### Associate Report or Job Definitions with Categories
+
+---
+## Advanced Reporting with Jaspersoft.md
+
+- 87:## New! Getting Started with Jaspersoft 9.0
+- 116:### Additional Resources
+- 123:### What's New in Jaspersoft Version 9.0
+- 138:## Getting Started with Advanced Reporting
+- 154:## Advanced Reporting Components
+- 160:### Clarity Data Warehouse
+- 172:### Ad Hoc Views and Reports
+- 184:## Create an Ad Hoc View and Report
+- 213:## Run or Schedule an Advanced Report
+- 248:## Task Data in the Data Warehouse
+- 257:## Roadmap Data in the Data Warehouse
+- 282:## Resource Team Data in the Data Warehouse
+- 353:## Advanced Reporting Domains
+- 373:### Domain Terminology
+- 381:### Common Characteristics of Advanced Reporting Domains
+- 400:### Investment Management Domain
+- 419:### Application Management Domain
+- 436:### Idea Management Domain
+- 452:### Project Management Domain
+- 474:### Resource Management Domain
+- 482:### Time Management Domain
+- 493:### Financial Management Domain
+- 509:### Custom Master Objects Domain
+- 524:### Data Warehouse Database Schema
+- 533:## Recommended Jaspersoft Training
+- 729:## Ad Hoc Views and Custom Report Development
+- 739:### Best Practices for Ad Hoc Views
+- 757:### Show the View SQL Query Button
+- 775:### Migrate Custom Domains
+- 790:### Best Practices for Custom Report Development
+- 833:## Create and Publish Jaspersoft Studio Reports
+- 847:### Create an Advanced Reporting Developer User
+- 867:### Set Up the JasperReports Server Connection
+- 885:### Create a Simple Report
+- 901:### Video: Create a Report in Jaspersoft Studio
+- 903:### Create a Report Unit
+- 944:### Create a Parent Report with Child Subreports
+- 1062:## Install Jaspersoft Studio Professional and CA JDBC Adapter
+- 1136:## Export, Import, or Migrate Advanced Reporting Content
+- 1222:## Jaspersoft Commands for Classic PPM Administrators (On-Premise Only)
+- 1317:## PMO Accelerator Advanced Reporting Content
+- 2006:## Advanced Reporting Roles and Permissions
+- 2055:## Project Management Reports
+- 5394:## Investment Management Reports
+
+---
+## Analyze Resource Allocation and Staffing.md
+
+- 92:### Hide Attributes in the Staffing Workspace
+- 105:### Support for Business Rules in the Staffing Workspace
+- 119:## Leveraging the Staffing Grid
+- 147:### Managing Records By Using the Grid Layout
+- 179:### Conversations About Staffing
+- 202:### Setup View Options
+- 291:### Enable 'Resource Summary Mode' to View Histograms
+- 316:### Setting Up the Investment to Resource View
+- 334:### Setting Up the Resource to Investment View
+- 352:### Setting Up the Role to Resource View
+- 370:### Allocate Resources to Investments on the Staffing Page
+- 380:### Reallocating Resources or Roles (Partial or Complete)
+- 398:### Replacing Roles/Resources in Investments (Partial or Complete)
+- 407:### Additional Features on the Staffing Page
+- 417:### Working with Widgets
+- 442:### Configure the Target Widgets in the Staffing Workspace
+- 470:## Analyze Staffing by Using Allocations
+- 494:### Introducing the Allocations Tabs
+- 508:### Prerequisites for Using the Staffing Workspace
+- 518:### Exploring a Typical Use Case
+- 529:### Setup View Options
+- 549:### Configure Over and Under Threshold Configuration
+- 567:### Leverage Common Grid Capabilities
+- 581:### Working with the Allocations by Investment Tab
+- 598:### Working with the Allocations by Resource Tab
+- 613:### Working with the Resource Availability View
+- 623:### Working with the Resources by Role View
+- 642:### Editing Staffing Details
+- 666:### Viewing or Hiding Empty Rows
+- 670:### Editing Individual Allocations
+- 684:### Working with Hard Allocations
+- 700:### Reallocating Resources or Roles (Partial or Complete)
+- 717:### Adding Staff to Investments
+- 742:### Replacing Roles/Resources in Investments (Partial or Complete)
+- 752:### Create Staffing Projections Using Scenarios
+- 758:### Conversations About Staffing
+- 836:## Analyze Staffing by Using Assignments
+- 862:### Introducing the Assignments Tabs
+- 876:### Prerequisites for Using the Staffing Workspace
+- 886:### Exploring a Typical Use Case
+- 899:### Setup View Options
+- 920:### Configure Over and Under Threshold Configuration
+- 933:### Leverage Common Grid Capabilities
+- 947:### Working with the Assignments by Investment Tab
+- 959:### Working with the Assignments by Resource Tab
+- 968:### Working with the Resource Availability View
+- 978:### Working with the Resources by Role View
+- 999:### Editing Staffing Details
+- 1029:### Viewing or Hiding Empty Rows
+- 1065:### Adding Staff to Investments
+- 1111:### Create Staffing Projections Using Scenarios
+- 1115:### Conversations About Staffing
+- 1147:### Working with Widgets
+- 1172:### Configure the Target Widgets in the Staffing Workspace
+- 1198:## Create Staffing Projections Using Scenarios
+- 1210:### Setting Up Scenarios
+- 1217:### Creating a New Scenario
+- 1348:### Sharing Scenarios
+- 1365:### Viewing Scenarios Shared by Others
+- 1382:### Comparing Scenarios
+- 1406:### Publish Investment Scenarios in Staffing Workspace
+- 1432:### Understanding Personas and Access Rights
+- 1445:## Analyze Investments in the Staffing Workspace
+- 1452:### Create, Edit, and Delete Agreements in the Investments Tab
+- 1465:### Analyze Active Investments by using the Timeline Layout
+- 1659:### Analyze Active Investments by using the Grid Layout
+
+---
+## Capture Develop and Approve New Ideas.md
+
+- 83:## Executing Processes from Clarity
+- 112:## The Ideas Workspace
+- 124:### Prerequisites
+- 136:### Key Points to Remember
+- 148:## Getting Started with Ideas
+- 159:### Create from Template Access Right
+- 173:### Create an Idea from a Template
+- 205:### Mark an Idea as a Template
+- 218:### Working with the AI Chat Panel
+- 252:### Setup View Options (Ideas Workspace)
+- 321:### Setup Hierarchical Nested Grids
+- 361:## Convert Ideas to Project/Custom Investment Type Using Templates
+- 365:### Prerequisites
+- 383:### Steps to Convert
+- 409:### Conversion Impact Table
+- 425:## Enable 'Allow Time Entry for Unstaffed Resources'
+- 429:### Impact of Enabling Allow Time Entry for Unstaffed Resources
+- 447:## Navigating Ideas in Various Layouts
+- 460:### Managing Records By Using the Grid Layout
+- 488:### Managing Records By Using the Board Layout
+- 501:## Working with Cost Plans
+- 505:### Create a Cost Plan
+- 528:### Edit Grouping Attributes
+- 544:### About Source Field
+- 560:### Include Actuals from Children in Cost Plan/Budget
+- 578:### Rollup Actuals by Team if Available in Cost Plan
+- 595:### Edit Cost Plan Detail
+- 607:### Add Multiple Lines for the Same Grouping Attribute Values
+- 629:### Set the Plan of Record
+- 639:### Copy a Cost Plan
+- 655:### Delete a Cost Plan
+- 659:### Grouping Attributes
+- 680:### View Actuals Posted
+- 725:### Compare Budget to Cost, Actuals and Forecast in Cost Plan Details
+- 749:### Compare Plans (Cost Plans)
+- 792:## Working with Budget Plans
+- 810:### Submit Cost Plans as Budget Plans
+- 836:### Approve or Reject Submitted Budget Plans
+- 851:### Budget Plan Changes
+- 855:### Create a Budget Revision
+- 895:### Compare Plans (Budget Plans)
+- 938:## Working with Forecasts
+- 949:### Forecast Cutover
+- 957:### Example
+- 997:### Other Forecast Definitions
+- 1007:## Working with Benefit Plans and Actual Transactions
+- 1018:### Create a Benefit Plan
+- 1032:### Edit Benefit Plans Details
+- 1048:### Associate Benefit Plans with Cost Plans
+- 1055:### Associate Benefit Plans with Submitted Budgets
+- 1064:### Actual Transactions
+- 1096:### View Multicurrency Transactions
+- 1115:## Staff an Idea
+- 1121:### Overview of the Staff Grid
+- 1140:### Set Units of Measure
+- 1152:### Support for Business Rules in the Staffing Workspace
+- 1158:### View Investments Associated with Resources
+- 1177:### Key Points to Consider
+- 1185:## Adding Resources to Ideas
+- 1187:### Add One or More Roles to the Staff Grid
+- 1201:### Identify and Add Resources
+- 1211:### Add Staff Members to an Investment
+- 1253:## Replace Staff Members in Ideas
+- 1255:### Reallocating Staff Members (Partial or Complete)
+- 1278:### Replace Staff Members In an Investment (Partial or Complete)
+- 1295:### Replace a Role with Another Staff Member
+- 1303:### Replace a Resource with Another Staff Member
+- 1328:## Delete Staff Members in Ideas
+- 1349:## Working with Mixed Bookings
+- 1351:### Leverage Mixed Bookings in the Staff Grid
+- 1363:### Typical Booking Process
+- 1367:### Enable Mixed Booking in Classic PPM
+- 1376:### Configure the Staff Grid for Mixed Bookings
+- 1382:### Edit Allocations When Mixed Booking is Enabled
+- 1396:## Working with Allocation Values
+- 1398:### Allocation Values
+- 1413:### Update Cell Values in the Totals Column and Per-Period Columns
+- 1425:## Rules Applicable in Staff Grid
+- 1427:### Business Rules for Labor Resources
+- 1433:### Business Rules While Using the Staff Grid
+- 1443:### Business Rules for Non-Labor Resources
+- 1452:## Access Rights to Staff Ideas
+- 1454:### Access Rights for Using the Staff Grid
+- 1539:## Creating To Dos for Ideas
+- 1548:### Pre-Requisites for Using the To Dos Module
+- 1559:### Creating To Dos for Investments
+- 1584:### Managing Attachments for a To Do
+- 1614:## Creating and Managing Idea Checklists
+- 1616:### Overview of Checklists
+- 1637:### Pre-requisites for Using the Checklists Module
+- 1654:### Managing Checklists
+- 1749:### Managing To Dos in Checklists
+- 1802:### Working with Collaborators
+- 1863:## Hierarchy Module for Ideas
+- 1873:## Agreements For Ideas
+- 1884:### Create Agreements
+- 1907:### Create Agreements from a Template
+- 1919:### View Business Agreements for Investments in Clarity
+- 1930:## Manage Risks, Issues, and Changes for Ideas
+- 1936:### Verify Prerequisites
+- 1942:### Upload Documents
+- 1965:### Create Custom SubObjects for Investments
+- 1969:### View Action Items in Investments
+- 1986:### Copy an Existing Risk, Issue, or Change Request
+- 2003:### Create Risks, Issues, or Changes from Existing RICs
+- 2036:### Create To Dos for Risks, Issues, and Changes
+- 2057:## Manage Status Reports for Ideas
+- 2059:### Overview
+- 2070:### General Flow to Generate the Status Report
+- 2074:### Field Level Security in Status Reports
+- 2080:## Working With Idea Canvas (Status)
+- 2093:### Use the Default Investment Status
+- 2119:### Customize the Investment Status
+- 2123:### Add or Remove Widgets from the Investment Status
+- 2139:### Configure the Columns in the Table Widget
+- 2158:### Arrange Widgets in the Canvas View
+- 2167:### Include Risks, Issues, Changes, and Tasks in the Investment Status
+- 2177:### Add or Remove Chart Widget in the Canvas
+- 2206:### Setup Layout in the Canvas
+- 2217:### Widget Governance
+- 2222:### Export to PDF
+- 2235:### Add Custom Attributes to the Investment Status
+- 2241:### Edit the Investment Status Values
+- 2245:### Analyze Investment Trends
+- 2257:### Publish Investment Status Reports
+- 2291:## Working With the Reports Grid
+- 2293:### View the Status Report
+- 2305:### Create a Status Report
+- 2312:### Edit the Status Report
+- 2320:### Publish the Status Report (from Reports Grid)
+- 2337:### Indicate the Most Recent Record
+- 2346:## Create a Sub-Object Instance for Ideas
+- 2352:## Update Idea Status in the Status Report Module
+- 2373:## Start a Conversation or Post a Reply
+- 2377:### Pre-requisites for Using the Conversations Module
+- 2385:### Conversations About Investments
+- 2393:### Mention a User Using the @Sign
+- 2408:### Conversations and Replies
+- 2420:### Attach Files in Conversations
+- 2436:### Conversation Notifications
+- 2450:### Access Rights for Conversation-specific Actions In Notifications
+- 2461:## Configure Canvas to Manage the Idea Dashboard
+- 2467:### Available Charts
+- 2473:### Available Objects and Sub-objects for Widgets
+- 2479:### Prerequisites
+- 2483:### Setup Canvas to Create a Dashboard
+- 2491:### Add or Remove Chart Widget in the Canvas (Dashboard)
+- 2508:### Add a Table Widget to Canvas (Dashboard)
+- 2518:### Setup Layout in the Canvas (Dashboard)
+- 2522:### Export to PDF (Dashboard)
+- 2528:### Widget Governance (Dashboard)
+- 2532:### Save Your Views
+- 2544:## Audit Module for Ideas
+- 2552:### Audit Grid Column Names
+- 2571:### Verify Prerequisites
+- 2582:### View Audit Details
+
+---
+## Clarity Studio Development.md
+
+- 30:## Clarity Studio Development
+- 50:## Studio Access Rights
+- 98:## Install or Update Content Add-ins
+- 129:## Attribute Value Protection (AVP) Performance Tip
+- 145:## Clarity Studio Objects and Attributes
+- 190:### Prerequisites for Custom Object Development
+- 212:### Create an Object
+- 252:### Create Attributes
+
+---
+## Collaborative Workflow Management.md
+
+- 92:## Introduction
+- 104:## Overview of My Workspace
+- 108:### Checklists
+- 127:### Smartlists
+- 150:## Pre-requisites
+- 162:## Access Rights to Work with My Workspace
+- 174:## Managing Checklists
+- 189:### Creating a Checklist
+- 201:### Setting Due Date for a Checklist
+- 210:### Copying a Checklist
+- 233:### Renaming a Checklist
+- 242:### Changing the Status of a Checklist
+- 255:### Moving a Checklist to an Investment/Agreement
+- 275:### Removing a Checklist from an Investment/Agreement
+- 285:### Deleting a Checklist
+- 298:### Transferring Checklist Ownership
+- 305:## Managing Sections
+- 316:### Creating a Section
+- 325:### Creating a To Do from Section
+- 337:### Renaming the Section
+- 344:### Reordering the Section
+- 360:### Delete the Section
+- 374:## Managing To Dos
+- 389:### Creating a To Do
+- 398:### Assigning a Resource for a To Do
+- 407:### Setting a Due Date for a To Do
+- 419:### Managing Notes in To Dos
+- 458:### Adding/Editing a Link for a To Do
+- 474:### Managing Attachments for a To Do
+- 506:### Blocking a To Do
+- 519:### Marking a To Do as Completed
+- 528:### Rearranging To Dos
+- 532:## Working with Collaborators
+- 545:### Sharing a Checklist
+- 561:### Modifying Checklist Sharing Group
+- 593:### Removing a Collaborator
+- 602:### Roles in Checklists
+- 618:## Managing Smartlists
+- 634:### Creating a Smartlist
+- 644:### Editing the Smartlist
+- 654:### Deleting the Smartlist
+- 662:### Sorting To Dos
+- 677:### Understanding Icons Next to To Dos
+- 694:### Working with To Dos in the List Layout
+- 704:### Working with To Dos in the Board Layout
+- 738:### Working with To Dos in the Calendar Layout
+- 765:## Common Search Component
+- 771:### Attachments Attribute for To Dos
+- 777:## Action Items in My Workspace
+- 783:### View and Respond to Action Items
+- 821:### Action Item Comments Enhancement
+- 829:## Conversations in My Workspace
+- 847:### Pre-requisites
+- 852:### Panels in Conversations
+- 880:### View Conversations in My Workspace
+- 897:### Mention a User Using the @Sign
+- 913:### Conversations and Replies
+- 930:### Attach Files in Conversations
+- 950:### Conversation Notifications
+- 970:### Difference between Conversations in My Workspace and Notifications
+
+---
+## Configure Resources Roles and Team Resources.md
+
+- 66:## View License Type and Last Login Details
+- 73:### Update the Attributes in the Grid
+- 100:## Secure Attributes Associated with the Resource Object
+- 104:## API Enable Second and Third-Level Custom Sub-Objects
+- 110:### Calendar Module for Resources
+- 121:## Edit Resources and Roles
+- 133:### Setup View Options
+- 206:### Managing Records By Using the Grid Layout
+- 234:### View Investments Associated with Resources
+- 253:### Editing the Resource Property Fields
+- 272:### Working with Widgets
+- 291:## Manage Resource Availability Calendars
+- 301:### Overview of Base Calendar
+- 309:### Overview of the Calendar Module
+- 321:### Setting up the Calendar Layout
+- 333:### Terminology of the Resource Calendar Module
+- 343:### Update a Single Day Using the Details Panel
+- 360:### Update Multiple Days By Using the Right-Click Action Menu
+- 374:### Update Working Day Shifts Using the Actions Menu
+- 397:### Update Working Day to Non-Working Day
+- 418:### Update Non-Working Day to Working Day
+- 440:### Reset to Base Calendar
+- 460:### Overview of Access Rights
+- 481:## View Team Resources
+- 493:### Prerequisites
+- 497:### View the List of Team Resources
+- 507:### Edit a Team Resource
+- 518:### Setup View Options
+
+---
+## Create Edit and Delete Menu Links.md
+
+- 35:## Prerequisites
+- 44:## Create and Update Menu Links
+- 58:## Create a Dynamic Menu Link
+
+---
+## Create and Edit Hierarchies.md
+
+- 82:## Checklist Sharing and Roles
+- 84:### Removing Access Rights
+- 91:### Removing a Collaborator
+- 100:### Roles in Checklists
+- 122:## Create and Edit Hierarchies
+- 165:### Pre-Requisites
+- 185:### Create an Investment Hierarchy
+- 201:### Adding Investments to the Hierarchy Workspace
+- 240:### Linking Cards in the Hierarchy Workspace
+- 264:### Navigating Across Cards of a Tree
+- 289:### Configure Cards Associated with Hierarchy Trees
+- 351:### Selecting Hierarchy Layouts
+- 363:### Create and Manage Custom Metrics
+- 454:### Viewing Sub-Objects as Modules in Hierarchies
+- 537:### Field Level Security in Hierarchies
+- 551:### Working with Widgets (Investment Hierarchies)
+- 578:### Export Hierarchies as a PDF File
+- 594:### Introducing Vaia (Beta) - Leveraging AI
+- 625:### Key Points to Remember (Investment Hierarchies)
+- 639:## Create Objectives Hierarchy
+- 645:### Pre-Requisites
+- 663:### Create an Objective Hierarchy
+- 677:### Adding Objectives and Key Results to the Hierarchy Workspace
+- 697:### Linking Cards (Objectives)
+- 715:### Navigating Across Cards of a Tree (Objectives)
+- 738:### Configure Cards (Objectives)
+- 784:### Selecting Hierarchy Layouts (Objectives)
+- 794:### Custom Metrics (Objectives)
+- 848:### View Key Results for Objectives
+- 863:### Export Hierarchies as a PDF File (Objectives)
+- 875:## Analyze Investments in Hierarchies by Using the Cross-Object Investment Grid
+- 890:### Analyze Investments by Using the Cross-Object Investment Grid
+- 898:### Setup View Options (Cross-Object Grid)
+- 966:### Edit Investment Details in the Cross-Object Grid
+- 985:### Custom Metrics (Cross-Object Grid)
+- 1050:### Create Agreements (Cross-Object Grid)
+- 1073:### Adding Investments (Cross-Object Grid)
+- 1104:### Managing Records By Using the Grid Layout
+- 1127:### Limitations of Using the Cross-Object Investment Grid
+- 1140:## View Tasks in the Hierarchy
+- 1159:### Standard Features Across the Grid, Board, and Calendar Layouts
+- 1228:### Setup View Options for the Board Layout (Tasks)
+- 1244:### Using the Calendar Layout on the Tasks Page
+- 1294:### Using the Associated Objects Grid on the Tasks Page
+- 1306:### Managing Records Using the Timeline Layout (Tasks)
+- 1328:### Editing Tasks
+- 1337:### Create To-Do's from Within Hierarchies (Tasks)
+- 1349:## View Financial Plans in Hierarchy
+- 1364:### Prerequisites (Financial Plans)
+- 1371:### View Financial Plans
+- 1388:### Edit Financial Plans
+- 1399:### Delete Financial Plans
+- 1408:### Setup View Options (Financial Plans)
+- 1468:### Actual Transactions in Hierarchy
+- 1487:### Financial Plans Column Panel Attributes
+- 1495:### Field Level Security in Financial Plans
+- 1507:## Manage Risks, Issues, and Changes for Hierarchies
+- 1520:### Verify Prerequisites (Risks, Issues, Changes)
+- 1526:### Working with Risks, Issues, and Changes
+- 1547:### Create To-Do's from Within Hierarchies (RIC)
+- 1559:## Manage Status Reports for Hierarchies
+- 1577:### Verify Prerequisites (Status Reports)
+- 1586:### View and Edit the Status Reports
+- 1601:### Right-Click Context Menu (Status Reports)
+- 1618:### Key Points to Remember (Status Reports)
+- 1630:## Viewing Agreements in Hierarchies
+- 1650:## Start a Conversation or Post a Reply in Hierarchies
+- 1661:### Pre-requisites for Using the Conversations Module
+- 1671:### Conversations About Hierarchies
+- 1685:### Mention a User Using the @Sign
+- 1699:### Conversations and Replies
+- 1716:### Attach Files in Conversations
+- 1734:### Conversation Notifications
+- 1753:### Access Rights for Conversation-specific Actions In Notifications
+- 1765:## Review Investments By Using the Timeline Layout
+- 1785:### Personalize the Timeline Layout
+- 1799:### Display Key Milestones for Hierarchies
+- 1814:### Export to PDF (Timeline)
+- 1825:### Custom Metrics (Timeline)
+- 1905:### Adding Investments to the Hierarchy Workspace (Timeline)
+- 1936:### Create Agreements (Timeline)
+- 1961:### Use Filters to Analyze Investments
+- 1965:### Save Views to Personalize Your Experience
+- 1969:### View Investment Details
+- 1975:## Analyze Staff Associated with Investments in Hierarchies
+- 1996:### Setup View Options (Staffing)
+- 2063:### Replace Staff Members In an Investment Item
+- 2110:### Remove Staff Members from an Investment Item
+- 2128:### Enable Resource Summary Mode to View Histograms
+- 2162:## Audit Module for Hierarchies
+- 2174:### Audit Grid Column Names
+- 2191:### Verify Prerequisites (Audit)
+- 2202:### View Audit Details
+- 2244:## Configure Canvas in Hierarchy
+- 2246:### Introduction
+- 2283:### Pre-requisite (Canvas)
+- 2289:### Setup Canvas to Create a Dashboard
+- 2300:### Setup View Options (Canvas)
+- 2336:### Add or Remove Chart Widget in the Canvas
+- 2380:### Edit the Chart Widget in the Canvas
+- 2397:### Add a Table Widget to Canvas
+- 2411:### Remove Table Widget in the Canvas
+- 2418:### Configure the Columns in the Table Widget
+- 2443:### Search in Table Widget
+- 2452:### Arrange Widgets in the Canvas View
+- 2465:### Search in Canvas
+- 2469:### Setup Layout in the Canvas
+- 2489:### Export to PDF (Canvas)
+- 2505:### Expand the Widget
+- 2520:### Widget Governance
+- 2527:### Save Your Views (Canvas)
+- 2541:## Executing Processes Using Actions
+
+---
+## Creating and Managing Business Agreements.md
+
+- 55:## Introducing the Agreement Object
+- 76:## Configuring the Agreement Blueprint
+- 82:## Associate Blueprint with Agreement
+- 88:## Creating an Agreement
+- 109:## Setup View Options
+- 134:## Using the Canvas to Manage Agreements
+- 160:## Setup Layout in the Canvas
+- 200:## Working with Widgets
+- 227:## Additional Capabilities for the Agreement Object
+- 229:### Create Processes for the Business Agreement Object
+- 233:### Create Custom Sub-Objects for the Agreement Object
+- 237:### Create Business Rules for the Agreements Object
+- 241:### Create Notifications for the Agreement Object
+- 245:### Create Action Items for the Agreement Object
+
+---
+## Demand Management.md
+
+- 77:## Demand Management Prerequisites
+- 108:## Configure Incident Categories
+- 153:## Demand Management Troubleshooting
+- 155:### Incident Management: Check for Processing Errors
+- 165:### Error ITL-0514: Incident Category Must Be Created Before Instance Can Be Created
+- 173:### Idea Management: Match Scores Can Be Inaccurate
+- 204:## Manage Incidents
+- 223:### Create an Incident or Service Request
+- 260:### View a List of Incidents
+- 280:### View a List of Notifications About Incidents
+- 293:### Update the Status of an Incident
+- 313:### Assign Resources to Incidents
+- 334:### Add Notes to Incidents
+- 351:### Enter the Time Spent Resolving Incidents
+- 381:### Convert Unplanned Incidents to Planned Projects or Tasks
+- 454:### Automate Incident Processes
+- 496:### Delete Time Entries for Incidents Associated With Deleted Investments
+- 527:## Manage Ideas
+- 545:### The Idea Approval Process
+- 570:### Create an Idea
+- 602:### Update Idea Properties
+- 619:### Define Scheduling Information
+- 644:### Define Budget Information
+- 687:### Create a Cost Plan for an Idea
+- 713:### Create a Benefit Plan for an Idea
+- 737:### Create a Budget Plan for an Idea
+- 761:### Submit an Idea for Approval
+- 775:### Approve an Idea
+- 788:### Request More Information About an Idea
+- 806:### Reject an Idea
+- 821:### Deactivate an Idea
+- 834:### Delete an Idea
+- 849:### Staff a Team to Work on an Idea
+- 902:### Evaluate and Change Resource Allocations for an Idea
+- 932:### Change Team Staff Roles
+- 946:### Reset Staff Allocations
+- 988:### Replace Team Staff Resources
+- 1012:### Remove Team Staff Resources
+- 1032:### Capacity Planning Scenarios for Ideas
+- 1043:### View Role Capacity on Ideas
+- 1056:### Associate Ideas with Parent Investments
+- 1079:### Convert an Idea into an Investment
+
+---
+## Enter Hours and Submit a Timesheet.md
+
+- 85:## Update Task Status
+- 103:## Open an Unsubmitted Timesheet
+- 116:## Create a Timesheet
+- 123:### Create a Timesheet with Previous Timesheet Tasks or Current Assignments
+- 156:### Create Timesheet by Executing the Populate Timesheets Job
+- 166:### Allow Submission of Timesheets with No Tasks
+- 178:## Impact on My Timesheet Options due to Assignment's "Open for Time Entry" (OTE) Field
+- 188:### Timesheet Options and Assignment's OTE
+- 201:## Identify Manual and Automated Time Entries
+- 205:### Entry Method
+- 213:### Job Type Code
+- 228:### Scenarios
+- 244:## Create a Timesheet by Adding Work Items from Active Investments
+- 285:## Enter Hours on a Timesheet
+- 294:### Timesheets and Non-Working Days
+- 298:### Non-Project Work Time (Holidays, Personal Leave, Vacation Time)
+- 305:### Timesheets and Estimate-to-Complete (ETC)
+- 319:## Tracked Time and Percent of Project Time
+- 327:## Timesheet Option to Spread a Total Across Multiple Days
+- 336:## Timesheet Attestation Option
+- 342:## Manage Timesheet Notes
+- 363:## Notify Manager to Open a Task for Time Entry
+- 374:## Enable Timesheets Notifications in Settings
+- 381:### Available Notifications for Timesheets
+- 397:## Enter Time for Others
+- 420:## Enter Time for a Team
+- 440:## Submitting a Timesheet
+- 446:## Use Input Type and Charge Codes on a Timesheet for Payroll
+- 456:## Return a Previously Submitted Timesheet
+- 462:## Correct a Returned Timesheet
+- 475:## Adjust an Approved and Posted Timesheet
+- 489:## View Timesheets in a Closed Time Reporting Period
+- 495:## Field Level Security in Timesheets
+- 506:## Frictionless Time: Create Timesheets without Staff or Assignments on Investments
+- 534:## Frictionless Time: Create Timesheets from Rally for a Specific Time Period
+- 536:### Prerequisites
+- 543:### Steps
+- 583:## How Rally Calculates Hours for Financial Work Types
+- 593:## Frictionless Time: Auto-submit Timesheets
+- 612:## Frictionless Time: Auto-approve Timesheets
+- 625:## Review and Approve Timesheets
+- 633:### Send Timesheet Reminders
+- 640:### Add Notes to Timesheets
+- 644:### Add Notes to Timesheet Entries
+- 648:### Review, Approve and Return Submitted Timesheets
+- 668:### Adjust Posted Timesheets
+- 675:### Search or Filter Timesheets
+- 682:### Access Timesheets from Rally
+- 691:## View and Manage Timesheets From Grid Layout
+- 695:### Prerequisites
+- 701:### Show or Hide the Column Panel for MY TIMESHEET
+- 707:### Specify Columns from Column Panel
+- 711:### Specify Columns from Classic PPM
+- 715:### Display Effort Gauge and Project Time Gauge
+- 719:### View Timesheets in Grid Layout
+- 730:### View All Timesheets of All Statuses
+- 734:### Resource OBS Filter for Timesheet
+- 741:### Employment Type Lookup Attribute in Timesheet Grid
+- 745:### View Timesheets for Closed Time Periods
+- 754:### View and Filter Error Timesheets using 'Has Errors'
+
+---
+## Financial Management Reports.md
+
+- 70:## Report Fields and Calculations
+- 77:## Report Security
+- 81:## Financial Management Reports
+- 93:## Financial Capitalization by Investment
+- 104:### Report Prerequisites
+- 117:### Report Properties
+- 127:### Report Parameter Options
+- 318:### Parameter Lookup Values
+- 325:### Parameter Explanations
+- 351:### Report Fields and Calculations
+- 383:### Report Security
+- 387:## Financial Capitalization Detail
+- 391:### Report Prerequisites
+- 405:### Report Properties
+- 415:### Report Parameter Options
+- 487:### Parameter Lookup Values
+- 493:### Parameter Explanations
+- 509:### Report Fields and Calculations
+- 517:### Report Security
+- 521:## Financial Forecast Review by Investment
+- 526:### Report Prerequisites
+- 735:### Parameter Lookup Values
+- 742:### Parameter Explanations
+- 769:### Report Fields and Calculations
+- 802:### Report Security
+- 806:## Financial Forecast Review by Plan Grouping
+- 810:### Report Prerequisites
+- 823:### Report Properties
+- 833:### Report Parameter Options
+- 908:### Parameter Lookup Values
+- 915:### Parameter Explanations
+- 945:### Report Fields and Calculations
+- 977:### Report Security
+- 981:## Financial Budget vs. Forecast by Period
+- 1059:### Parameter Explanations
+- 1116:## Financial Budget vs. Forecast by Period Detail
+- 1120:### Report Prerequisites
+- 1205:### Parameter Lookup Values
+- 1213:### Parameter Explanations
+- 1248:### Report Fields and Calculations
+- 1261:## Investment Transaction Inquiry
+- 1265:### Report Prerequisites
+- 1284:### Report Properties
+- 1294:### Report Parameter Options
+- 1408:### Parameter Lookup Values
+
+---
+## Financial Management.md
+
+- 79:## Idea-to-Project Staffing Example
+- 99:## Overview
+- 112:## Set Up Financial Management
+- 128:## Financial Management Jobs
+- 146:## Automate Financial Management Tasks
+- 156:## Standardize Financial Management Functionality and Business Logic
+- 177:## Create Financial Summaries
+- 191:### Determine the Financial Metrics for Planning
+- 275:### Set Financial Planning Options
+- 290:### Set Capital Cost and Reinvestment Rate for the System
+- 305:### Set Capital Cost and Reinvestment Rate for the Investment
+- 321:### Manage Planned Cost and Benefit
+- 348:### Manage Budgeted Cost and Benefits for Investments
+- 376:## Create Detailed Financial Plans
+- 386:### Prerequisites for Creating Detailed Financial Plans
+- 393:### Select a Financial Plan View
+- 416:### Create Cost Plans
+- 666:### Create Benefit Plans
+- 723:### Create Budget Plans
+- 983:### Copy Financial Plans
+- 1065:## Display Capital and Operating Costs
+- 1071:### Financial Summary Page
+- 1075:### Detailed Financial Plan
+- 1092:### Review the Prerequisites
+- 1097:### Manually Update the Financial Summary Page to Display Capital and Operating Costs
+- 1128:### Select the Method for Collecting Cost Information and Create the Plan
+- 1148:### Set the Cost Type for Specific Investment Tasks
+- 1167:### Set the Capitalization Percentage for Investment Team Allocations
+- 1184:### Verify Your Capital and Operating Costs
+- 1205:## Enable Cost Plus Codes
+- 1211:### Create Cost Plus Codes
+- 1226:### Create Cost Plus Rules and Add to Cost Plus Codes
+- 1252:## Enable Investments, Resources, and Roles for Financial Processing
+- 1260:### Enable Investments for Financials
+- 1297:### Enable Resources and Roles for Financials
+- 1319:## Set Up a Financial Cost and Rate Matrix
+- 1334:### Example: Set Up a Cost/Rate Matrix Based on Resource Class
+- 1350:### Verify the Prerequisites
+- 1369:### Create a Cost and Rate Matrix
+- 1394:### Assign Columns to the Matrix
+- 1408:### Add Rows to the Matrix
+- 1440:### Edit the Current Rate
+- 1453:### Copy the Current Rate
+- 1466:### Increase the Rate for Cost/Rate Matrices
+- 1503:### Unlock Matrices
+- 1514:## Set Up a Financial Entity
+- 1526:### Example: Set Up an Entity for Financial Planning
+- 1537:### Complete the Prerequisites
+- 1559:### Create Financial Classes
+- 1581:### Create Fiscal Time Periods
+- 1608:### Activate Fiscal Time Periods
+- 1627:### Create Plan Defaults
+- 1651:## Set Up Currencies and Foreign Exchange Rates
+- 1663:### Activate Currencies
+- 1676:### Set Up Conversion Rates
+- 1700:### Disable Currency Conversion
+- 1723:## Set Up Financial Classes
+- 1733:### Resource Classes
+- 1745:### Company Classes
+- 1754:### Investment Classes
+- 1758:### Work in Process Classes
+- 1765:### Transaction Classes
+- 1788:### Deactivate the Financial Attributes
+- 1799:## Set Up Financial Defaults, Charge Codes, Vendors, and WIP Settings
+- 1811:### Example: Create Financial Data to Process Financial Transactions and Plan Investment Costs
+- 1820:### Verify the Prerequisites
+- 1831:### Add Vendors
+- 1843:### Create Company Profiles
+- 1873:### Create Input Type Codes
+- 1885:### Create Charge Codes
+- 1900:### Set System Defaults
+- 1929:### Specify WIP Settings
+- 1954:## Set Up Financial Departments
+- 1966:### Create Departments
+- 1996:### Define the Department Budget
+- 2021:### Manage Department Locations
+- 2025:### Manage Department Resources
+- 2047:### Manage Department Investments
+- 2056:## Set Up Financial Locations
+- 2060:### Create Locations and Associate the Locations to an Entity
+- 2074:### Associate Departments with Locations
+- 2083:### Remove Department Associations From Locations
+- 2090:## Set Up General Ledger Accounts and Process Chargebacks
+- 2102:### Set Up General Ledger Accounts
+- 2122:### Set Up Chargeback Rules
+- 2130:### Create Overhead Rules
+- 2143:### Set Investment Chargeback Options
+- 2154:### Reverse Charges on Transactions
+- 2168:### View Department Recovery Statements
+- 2180:### Submit and Approve Department Invoices
+- 2244:## Set Up Financial Transactions, Voucher Headers, and WIP Adjustments
+- 2254:### Transaction Entries
+- 2267:### Make Voucher and Resource Types Available for Processing
+- 2273:### Create Voucher Headers
+- 2287:### Create Transaction Entries
+- 2309:### Delete Transactions
+- 2326:### Manage Work-in-Progress (WIP) Transactions
+
+---
+## Getting Started with Clarity Administration.md
+---
+## Getting Started with Clarity.md
+
+- 37:## Clarity: Overview
+- 74:## Objectives
+- 82:## Hierarchies
+- 90:## Roadmaps
+- 96:## Projects, Ideas, Custom Investments, and Teams
+- 104:## Financials Module
+- 110:## Tasks Module
+- 116:## Status Module
+- 122:## Risks, Issues and Changes Modules
+- 128:## Checklists Module
+- 134:## Agreements Module
+- 140:## Staffing
+- 146:## Timesheets
+- 152:## Plans
+- 159:## Reporting
+- 165:## Clarity Administration
+- 178:## Common Components of Clarity
+- 184:## Additional Information
+
+---
+## IT Service Management.md
+
+- 57:## Prerequisites for IT Service Management
+- 76:## Manage IT Services
+- 90:### View a List of Services
+- 100:### Create or Edit a Service
+- 134:### Schedule a Service
+- 155:### Define a Budget for a Service
+- 209:### Enable Financial Transactions for a Service
+- 237:### Manage Incidents for a Service
+- 256:### Define Dependencies for a Service
+- 272:### Create and Update Baselines to Measure Progress
+- 306:### Manage Subscriptions and Department Chargebacks
+- 336:### Evaluate Capacity Planning Scenarios for a Service
+- 347:## Build a Service Hierarchy
+- 356:### Service Hierarchies
+- 368:### Define Parent Investments and Allocations
+- 381:### Define Child Investments and Allocations
+- 398:### Examine the Effort Rollup for a Service
+- 415:### Examine the Financial Rollup for a Service
+- 441:## Staff a Service Team
+- 464:### Add Resources or Roles to a Service Team
+- 515:### Define Staff Requirements for a Service
+- 541:### Examine Role Capacity for a Service
+- 554:### Define Resource Allocations for a Service
+- 574:### Adjust Resource Allocations for a Service
+- 601:### Shift, Commit, or Accept Resource Allocations
+- 627:### Set Allocations for Multiple Team Members
+- 645:### Edit Planned and Committed Allocations for a Service
+- 665:### Replace Resources on a Service Team
+- 680:## Review Processed Transactions
+
+---
+## Install Clarity OData Service on Linux.md
+
+- 53:## Prerequisites
+- 78:## Download and Extract
+- 93:## Create OS User and Group
+- 106:## Create AES Key and Secrets
+- 144:## Configure install.properties
+- 170:## Configure Tenants
+- 174:## Run the Installation Script
+- 196:## Verify Installation
+- 224:## Post-Installation
+- 229:## Troubleshooting
+- 234:## Notes
+- 255:## Prerequisites
+- 268:## Configure Tenants During Installation
+- 314:## Configure Tenants After Installation
+- 338:## Delete Tenant Configuration
+- 358:## Configure Clarity for OData
+- 406:## Verify the Tenant Integration
+
+---
+## Install Clarity OData Service on Windows.md
+
+- 52:## Prerequisites
+- 76:## Download and Extract
+- 96:## Create AES Key and Secrets
+- 134:## Configure install.properties
+- 152:## Configure Tenants
+- 156:## Run the Installation Script
+- 170:## Verify Installation
+- 194:## Post-Installation
+- 199:## Troubleshooting
+- 204:## Notes
+- 213:## OData Tenant Configuration on Windows (On-Premise Only)
+- 225:### Prerequisites
+- 237:### Configure Tenants During Installation
+- 286:### Configure Tenants After Installation
+- 310:### Delete Tenant Configuration
+- 330:### Configure Clarity for OData
+- 378:### Verify the Tenant Integration
+
+---
+## Install Clarity.md
+
+- 51:## Install Clarity With Oracle
+- 77:### Clarity Pre Installation
+- 117:### Configure a Database with Oracle
+- 290:### Configure the Tomcat Application Server and Java
+- 310:### Configure Java Environment Variables on the Application Server
+- 327:### Run the Installation Checker (checkinstall)
+- 373:### Run the Installation Script
+- 412:### Post-Install: Additional Setup Configuration
+- 429:### Post-Install: Complete the Installation
+- 437:### Post-Install: Verify the Installation
+- 447:### Install the Data Warehouse
+- 639:## Install Clarity With Microsoft SQL
+- 658:### Clarity Pre Installation
+- 700:### Configure a Clarity Database with Microsoft SQL Server
+- 711:### Review the Imported SQL Server Database Options
+- 734:### Configure the Tomcat Application Server and Java
+- 760:### Implement Microsoft SQL Advanced Security Encryption
+- 771:### Run the Installation Checker (checkinstall)
+- 817:### Run the Installation Script
+- 858:### Post-Install: Complete the Installation
+- 866:### Post-Install: Verify the Installation
+- 877:### Install the Data Warehouse
+- 981:## Install Clarity With PostgreSQL
+- 996:### Clarity Pre Installation
+- 1038:### Configure a Database with PostgreSQL
+- 1183:### Configure the Tomcat Application Server and Java
+- 1203:### Configure Java Environment Variables on the Application Server
+- 1220:### Run the Installation Checker (checkinstall)
+- 1266:### Run the Installation Script
+- 1305:### Post-Install: Complete the Installation
+- 1314:### Post-Install: Verify the Installation
+
+---
+## Install Jaspersoft.md
+
+- 132:## Advanced Reporting Architecture and Components
+- 144:### High-Performance Specifications
+- 157:## Review the Prerequisites
+- 198:## Create the JasperReports Server Schema and Set Permissions
+- 202:### Oracle
+- 222:### SQL Server
+- 273:### PostgreSQL
+- 338:## Install the JasperReports Server Software
+- 367:### Installation Options
+- 388:### Database Details
+- 471:## Configure Clustering
+- 477:### RMI Based Cache Replication
+- 488:### JMS Based Cache Replication
+- 492:### Multicasting and Cache Distributing over RMI
+- 508:### Configure Multicasting (Linux)
+- 548:### Configure Multicasting (Windows)
+- 555:### Configure Cache Distribution over RMI on JasperReport Servers
+- 571:### Configure Cache Distribution with JMS on JasperReport Servers
+- 607:## Verify the JasperReports Server Installation
+- 632:## JasperReports Server Post-Installation Recommendations
+- 665:## JasperReports Server Post-Installation Configuration
+- 669:### Configure the JasperReports Server Properties
+- 699:### Generate the Integration Key Store File
+- 731:### Execute the Installation Commands
+- 771:### Configure Users for Advanced Reporting
+- 781:### Restart the Classic PPM Services
+- 788:### Run the Data Warehouse Jobs
+- 812:## Configure Jaspersoft as a Windows Service
+- 847:## Restart the JasperReports Server Tomcat Services
+- 861:## Uninstall JasperReports Server
+- 877:## Decoupling Jaspersoft and DWH
+- 886:### Identify Advanced Reporting Access Rights
+- 890:### Remove Jaspersoft Configuration
+- 910:### Remove Access Rights
+- 914:### Update the Clarity Application Menu
+- 924:## Jaspersoft Reports Server Troubleshooting Tips (On-Premise Only)
+- 928:### Clarity, Jaspersoft, and ODATA Vulnerability Mitigations
+- 932:### Clarity and Apache Log4j 2 Vulnerability
+- 936:### Configure Scheduler and Non-Scheduler Instances for Jaspersoft
+- 949:### Page Limits
+- 953:### Set JVM Options for Jaspersoft
+- 978:### Restrict Advanced Reporting Notifications to Trusted Email Domains
+- 1007:### Check the Installer Version
+- 1016:### HTTPS Enabled Jaspersoft
+- 1036:### Jaspersoft Sender Email Address
+- 1050:### Failed to Update Properties on the Jaspersoft Server
+- 1063:### java.nio.BufferUnderflowException
+- 1067:### User Not Registered Error on the Advanced Reporting Page
+- 1077:### Internal Server Error on Advanced Reporting Page
+- 1088:### Memory Leak Errors in Tomcat Logs
+- 1098:### Please Wait Message on the Advanced Reporting Page
+- 1105:### Project Storyboard Report Error
+- 1120:### Custom Attributes Enabled for the Data Warehouse Do Not Appear in Jaspersoft Domains
+- 1135:## Jaspersoft Server Ehcache Replication with JMS - Active MQ Cluster
+- 1139:### Jaspersoft Server Ehcache Replication with JMS - Active MQ Cluster on Failover Protocol
+- 1149:### Active MQ Cluster
+- 1188:### ActiveMQ Master-Slave Configuration
+- 1243:### Configure Jaspersoft Ehcache Replication with ActiveMQ Cluster on Failover Protocol
+
+---
+## Integrate Clarity with Rally.md
+
+- 80:## Integrate Clarity with Rally
+- 82:### Integration Scenario
+- 98:## Plan for the Integration
+- 121:## Prepare for the Integration
+- 136:### Create a Rally API Key
+- 142:### Get the Rally Workspace ID
+- 153:### Get the Project ID and Owner ID
+- 170:### Get the Portfolio Item Type Ordinals
+- 183:## Configure the Integration
+- 187:### Verify Prerequisites
+- 194:### Configure Integration Attributes
+- 214:### Define the Portfolio Item Hierarchy (Investment-Level Integrations Only)
+- 224:### Define the Integration Policy (For Portfolio Item Integrations Only)
+- 236:### Import the Signed Certificate (On-Premise Only)
+- 246:### Define the Agile Integration Owner
+- 258:### Schedule Background Jobs
+- 264:## Associate Clarity Projects with Rally and Synchronize Data
+- 268:### Associate a Clarity Project with Rally Investments
+- 279:### Associate a Clarity Project with Rally Portfolio Items
+- 293:### View Synchronized Data in Clarity
+- 299:### Synchronize Tasks in Portfolio Item Integrations
+- 306:### Synchronize Rally User Stories to Clarity Tasks
+- 310:### Synchronize Teams in Portfolio Item Integrations
+- 319:### Link a Clarity Project to an Existing Rally Portfolio Item
+- 327:### Troubleshooting Common Agile Integration Issues
+- 341:## Configure Integration Views
+- 849:## Configure the Agile Time Tracking Project Template
+- 895:## Rally Dashboards and Portlets
+- 979:## Clarity and Rally Attribute Mapping
+- 1081:## Clarity and Rally Integration Examples
+- 1166:## Integrate Clarity Timesheets in Rally
+- 1204:## Integrate Clarity with CA Single Sign-On (SSO)
+- 1319:## Integrate Clarity with Microsoft Project (MSP) or Open Workbench (OWB)
+- 1504:## Introducing Clarity Cookbooks
+- 1509:## Clarity Cookbook: Roadmaps that Tell a Story
+- 1910:## Clarity Cookbook: Objectives and Key Results (OKRs)
+- 3497:## Clarity Cookbook: Program Management Made Easy
+- 4349:## Clarity Education and Training
+- 4427:## Clarity Support and Services
+- 4455:## Usage Data (Telemetry)
+- 4622:## Documentation Legal Notice
+
+---
+## Manage Status Reports.md
+
+- 27:## Audit Module
+- 53:## Overview
+- 76:## Verify Prerequisites
+- 82:## View and Edit the Status Reports
+- 106:## Setup View Options
+- 129:## Right-click Context Menu
+- 140:## Latest Attribute in the Report Grid
+- 147:## Managing Records By Using the Grid Layout
+- 175:## Bulk Export of Status Reports
+- 209:## Working with Widgets
+
+---
+## Manage Vouchers and Transactions.md
+
+- 56:## Verify Prerequisites
+- 62:## Setup View Options
+- 85:## Working with Vouchers
+- 96:### Create a Voucher
+- 105:### Edit a Voucher
+- 125:### Delete a Voucher
+- 140:## Working with Transactions Entry
+- 147:### Create a Transactions Entry
+- 161:### Edit a Transactions Entry
+- 180:### Delete a Transactions Entry
+- 195:## Managing Records By Using the Grid Layout
+- 223:## Manage Unposted Transactions
+- 225:### Introduction
+- 243:### Create an Unposted Transaction
+- 260:### Copy an Unposted Transaction
+- 268:### Edit an Unposted Transaction
+- 286:### Delete an Unposted Transaction
+- 303:### View Multicurrency Transactions
+- 345:## View Posted Financial Transactions Across Investments
+- 349:### Scenario: Comprehensive Investment Portfolio
+- 368:### Verify Prerequisites
+- 381:### Grid Capabilities
+
+---
+## Managing Projects.md
+---
+## PMO Accelerator.md
+
+- 79:## Parameter Explanations
+- 86:## Report Fields and Calculations
+- 108:### Database View and Column
+- 114:### Report Security
+- 120:## Add-in: PMO Accelerator
+- 140:### What's New in Release 15.7.1
+- 144:### What's New in Release 15.7
+- 149:### What's New in Release 15.6.1
+- 153:### What's New in Release 15.5.1
+- 161:### What's New in Release 15.5
+- 169:### What's New in Release 15.4.1
+- 200:### What's New in Release 15.4.0
+- 214:### What's New in Release 15.3
+- 231:### What's New in Release 15.2
+- 242:### What's New in Release 15.1
+- 249:## Attribute Overwrite and Data Warehouse
+- 253:## View Protection
+- 259:## PMO Accelerator Certified and Supported Versions
+- 263:## PMO Accelerator Add-In Items Automatically Installed
+- 273:### Overwritten Items by Object Type
+- 292:### Overwritten Items by Query Type
+- 346:## Install the PMO Accelerator Add-In and PMO Sample Data
+- 359:### (On-Premise only) Install the PMO Accelerator Add-in
+- 381:### (On-Premise only) Import the Jaspersoft Advanced Reporting Content for the PMO Accelerator
+- 414:### Upgrade the PMO Accelerator Content
+- 442:### PMO Accelerator Content Items by Release
+- 636:### (On-Premise only) (Optional) Install PMO Accelerator Sample Data
+- 675:## PMO Accelerator Sample Data
+- 679:### PMO Sample Data: Organizational Breakdown Structures (OBS)
+- 763:### PMO Sample Data: Access Groups
+- 775:### PMO Sample Data: Resources
+- 802:### PMO Sample Data: Services
+- 819:### PMO Sample Data: Assets
+- 856:### PMO Sample Data: Applications
+- 875:### PMO Sample Data: Ideas
+- 905:### PMO Sample Data: Other Work
+- 915:### PMO Sample Data: Project Templates
+- 924:### PMO Sample Data: Projects
+- 978:### PMO Sample Data: Programs
+- 986:### PMO Sample Data: Portfolios
+- 1009:## PMO Accelerator Object Views
+- 1020:### Assignment
+- 1049:### Baseline
+- 1083:### Change Request
+- 1118:### Cost and Benefit Plan
+- 1195:### GL Allocation and Resource Credit
+- 1240:### Investments
+- 1297:### Issue
+- 1317:### Project
+- 1353:### Resource
+- 1376:### Risk
+- 1395:### Task
+- 1421:### Team
+- 1448:## PMO Project Lifecycle and Processes
+- 1459:### Project Lifecycle Processes
+- 1470:### Project Templates
+- 1483:### Idea Type and Idea Category Lookup Mapping
+- 1509:### Add-In Lookup Mapping
+- 1531:## PMO Idea Review Process
+- 1546:### Create an Idea
+- 1576:## PMO Create Major Project Process
+- 1585:### Process Steps
+- 1601:## PMO Document Review Process
+- 1610:### Upload and Submit Documents for Review
+- 1633:## PMO Create Project from a Project Template
+- 1661:## PMO Issue Review and Escalation Process
+- 1674:### Create a Detailed Issue
+- 1691:## PMO Business Alignment, Portfolio Categories, and Status Reports
+- 1698:### Business Alignment
+- 1722:### Portfolio Categorization
+- 1729:### PMO Status Reports
+- 1763:## PMO General Pages and Portlets
+- 1772:### Sponsor
+- 1805:### Program Dashboard
+- 1840:### PM Alerts
+- 1870:### Project Dashboard
+- 1903:### Risks, Issues, and Changes
+- 1926:## PMO-Program Status Page Layout
+- 1930:### Resource Utilization Portlet
+- 1939:## PMO-Project Status Page Layout
+- 1943:### Project Indicators Portlet
+- 1955:### Upcoming Milestones Portlet
+- 1959:### Project Baselines Portlet
+- 1963:### Status Report Indicators Portlet
+- 1970:### Actuals by Transaction Type Portlet
+- 1974:### Team Utilization Portlet
+- 1980:## PMO-Project Storyboard Page Layout
+- 1984:### Team Capacity Portlet
+- 1988:### Issues by Priority Portlet
+- 1992:### Earned Value Analysis by Phase Portlet
+- 1998:## PMO Status Report Review
+- 2004:### Status Report Listing
+- 2013:### Late and Missing Status Reports
+- 2028:## PMO Resource Management Timesheet Overview and Pending Estimates Review
+- 2030:### Timesheet Overview
+- 2078:## PMO Financial Management Posted Transaction Review Portlet
+- 2080:### Posted Transaction Review Portlet
+- 2093:### Posted Transaction Review Portlet (Investment Level)
+- 2104:## Additional PMO Portlets
+- 2111:### Late Tasks and Milestones Portlet
+- 2115:### My Timesheets Portlet
+- 2122:### Process Bottlenecks Portlet
+- 2129:### Project Analysis Portlet
+- 2133:### Project Cycle Time Analysis Portlet
+- 2137:### Project Document Review Portlet
+- 2141:### Project Lifecycle Review Portlet
+- 2145:### Resource Utilization Percentage by Month Portlet
+- 2149:### Team Member Task Summary Portlet
+
+---
+## People-Centric Planning.md
+
+- 39:## Interactive Filtering on Widgets
+- 46:## Persistent Filter Panel State
+- 50:## Add Multiple Instances of the Same Attribute in Filters
+- 54:## Working with To Dos
+- 64:## People-Centric Planning
+- 70:### Resource Directory
+- 74:### Relationship Explorer
+- 78:## Use Case: Optimizing Project Management with Resource Directory and Relationship Explorer
+- 96:### Manager Type Enhancement (16.2.3)
+- 100:### Configure Card Enhancement (16.2.3)
+- 104:## Resource Directory
+- 113:### Resource Directory: Visualizing Organizational Dynamics through Resource Hierarchy Mapping
+- 129:### Pre-Requisites
+- 139:### Working with Resource Directory
+- 153:### Setup View Options for Resource Directory
+- 177:### Working with Card Configurator
+- 199:### Selecting Hierarchy Layouts
+- 218:## Relationship Explorer
+- 225:### Relationship Explorer (Beta): Exploring Interconnections between Investment Managers and Resources
+- 237:### Working with Relationship Explorer
+- 318:### Setup View Options for Relationship Explorer
+
+---
+## Portfolio Management Reports.md
+
+- 70:## Program Dependency Reports
+- 91:## Portfolio Management Reports
+- 100:## Portfolio Plan Comparison
+- 107:### Report Prerequisites
+- 127:### Report Properties
+- 138:### Report Parameter Options
+- 156:### Parameter Lookup Values
+- 159:### Parameter Explanations
+- 168:### Report Fields and Calculations
+- 222:### Report Security and Technical Details
+- 228:## Portfolio Plan Changes
+- 235:### Report Prerequisites
+- 253:### Report Properties
+- 264:### Report Parameter Options
+- 285:### Parameter Lookup Values
+- 289:### Parameter Explanations
+- 302:### Report Fields and Calculations
+- 314:### Report Security and Technical Details
+- 320:## Portfolio Plan Changes - Waterline and Rank
+- 324:### Report Prerequisites
+- 334:### Report Properties
+- 345:### Report Parameter Options
+- 363:### Parameter Lookup Values
+- 367:### Parameter Explanations
+- 373:### Report Fields and Calculations
+- 381:### Report Security
+- 387:## PMO Reports: Administration Reports
+- 403:### PMO Reports: Data Warehouse Schema
+- 449:### PMO Reports: Clarity Schema
+- 494:### PMO Reports: User License and Activity
+- 584:### PMO Reports: User License and Activity Detail
+- 662:### PMO Reports: User Access Rights
+- 748:### PMO Reports: User Access Rights Detail
+- 806:### PMO Reports: Database Connection Check to Clarity and DWH
+- 906:### PMO Reports: Customizations Overview
+- 982:## Data Warehouse Trend Reporting
+- 988:### Trending Snapshots
+- 1012:### Trending Structural Tables
+- 1022:### Trending Jobs
+- 1032:### Trending Data Tables
+- 1065:### Trending Views
+- 1074:### Enable a Custom Attribute for Trending
+- 1095:### Trend Reporting Examples
+- 1118:### XOG Support for Trending
+- 1128:### Troubleshooting SQL Errors in Trending Jobs
+
+---
+## Portfolio Management.md
+
+- 60:## Replace a Staff Member on a Service
+- 81:## Change Staff Member Roles on a Service
+- 93:## Portfolio Management Overview
+- 103:### Video: Portfolio Management
+- 110:### Example: IT Portfolio for Current Projects
+- 124:## Evaluate Your Portfolio Requirements
+- 132:### Monitor the Investments
+- 149:### Prioritize the Investments
+- 175:### Plan and Manage Investments Using Constraints
+- 197:### Explore the Alternatives for Investments
+- 220:## Prepare to Use Portfolios
+- 224:### Set Up Monitoring Criteria for Investments
+- 243:### Configure Views, Reports, and Workflows
+- 261:### Set Up Investment and Resource Data
+- 275:## Create a Portfolio of Investments
+- 282:### Example: Creating IT Portfolios for Annual Planning
+- 300:### Verify the Prerequisites
+- 334:### Define the Portfolio General Properties
+- 369:### Define the Portfolio Page Layout
+- 382:### Define the Portfolio Sync Properties
+- 404:### Build the Portfolio Content
+- 449:### Define Detailed Planning Targets
+- 487:### Define Role Targets
+- 520:### Review the Waterline View for Investments
+- 550:### Define Overall Portfolio Health
+- 568:## Rationalize a Portfolio of Investments
+- 586:### Example: Portfolio Planning
+- 609:### Prioritize the Portfolio
+- 660:### Evaluate the Portfolio
+- 702:### Rationalize the Portfolio
+- 764:## Explore Alternate Portfolio Plans
+- 770:### Example: Portfolio Planning Process
+- 776:### Verify the Prerequisites
+- 785:### Create a Plan within a Portfolio
+- 810:### Generate Versions of the Plan or Scenarios
+- 862:### Designate the Plan of Record
+- 883:## Configure the Waterlines View for Portfolios
+- 903:### Review the Prerequisites
+- 911:### Configure the Constraint Columns for the Waterline View
+- 937:### Define and Apply the Ranking Rules
+- 968:### Balance Portfolio Cost and Resource Constraints
+- 981:### Verify Your Waterline View Selections
+- 983:### Save or Discard Your Pending Edits
+
+---
+## Program Management Reports.md
+
+- 55:## Overview
+- 77:## Program Status Detail
+- 84:### Report Prerequisites
+- 98:### Report Properties
+- 109:### Report Parameter Options
+- 138:### Parameter Lookup Values
+- 151:### Parameter Explanations
+- 174:### Report Fields and Calculations
+- 217:### Calculations
+- 305:## Program Budget vs. Forecast by Period
+- 320:### Report Prerequisites
+- 328:### Report Properties
+- 339:### Report Parameter Options
+- 363:### Parameter Lookup Values
+- 370:### Parameter Explanations
+- 387:### Report Fields and Calculations
+- 410:## Program Budget vs. Forecast by Period Detail
+- 417:### Report Prerequisites
+- 421:### Report Properties
+- 432:### Report Parameter Options
+- 459:### Parameter Lookup Values
+- 463:### Parameter Explanations
+- 467:### Report Fields and Calculations
+- 475:## Program Milestone Dependencies
+- 481:### Report Prerequisites
+- 485:### Report Properties
+- 496:### Report Parameter Options
+- 517:### Parameter Lookup Values
+- 522:### Parameter Explanations
+- 532:### Report Fields and Calculations
+
+---
+## Project Management.md
+
+- 82:## Portfolio Waterlines
+- 97:### Verify Your Waterline View Selections
+- 108:### Save or Discard Your Pending Edits
+- 120:## Project Management Overview
+- 131:### Prepare to Set Up a Project
+- 140:### Project Jobs
+- 159:### My Projects Portlet
+- 178:## Define Default Project Settings
+- 184:### Set System-Level Default Project Management Settings
+- 263:### Set Default Staff OBS Unit
+- 282:### Set the Default Earned Value Calculation Method
+- 302:### Set Up Base Calendars
+- 313:### Modify a Resource Calendar
+- 325:### Add Risk Categories
+- 337:### Set the Risk Threshold
+- 350:### Round the Calculations of Impact and Probability
+- 354:### Set Up Earned Value Reporting Periods
+- 375:### Generate Earned Value Periods
+- 389:## Create Projects, Teams, and Tasks
+- 399:### Create a Project
+- 472:### Define the Project Properties
+- 574:### Create the Project Team
+- 603:### Create Project Tasks
+- 661:### Manage Resource Utilization
+- 681:### Assign Resources
+- 710:### Control Access to Projects and Subprojects
+- 714:### Lock Subprojects During Autoscheduling
+- 728:## Create Projects from Project Templates
+- 732:### Using Project Templates with Processes
+- 738:### Designate Projects as Templates
+- 751:### Populate Projects from a Template
+- 764:### Rules for Copying Financial Plans from Project Templates
+- 771:### Project Fields Used for Copying Financial Plans
+- 777:### Example: How Start Dates in Financial Plans Are Copied from a Template
+- 793:### Copy Financial Plans from Project Templates
+- 805:## Financially Enable Projects
+- 809:### Verify the Prerequisites for Financially Enabling a Project
+- 817:### Define the Financial Properties of a Project
+- 823:## Define Project Estimates (ETC)
+- 835:### ETC Calculation
+- 859:### Modify ETC (Investments)
+- 869:### Apply New ETC Across Tasks
+- 878:### Apply Top-Down Estimating
+- 894:## Define Subprojects
+- 898:### Add Subprojects to Master Projects
+- 917:### Create Subprojects from Project Templates
+- 928:### Create Subprojects from Project Work Breakdown Structure (WBS)
+- 939:### View Combined Subproject Actuals and Estimates
+- 955:## Create Project Baselines
+- 975:### Edit, Update, and Delete Project Baselines
+- 988:### Update Task Baselines
+- 1000:### How Master Project and Subproject Baselines Work
+- 1007:### Update and Display of Master Project Baselines
+- 1012:### Create an Initial Baseline With Costs
+- 1024:## Calculate Earned Value, EAC, ETC, and Other Metrics
+- 1028:### Default Earned Value Options
+- 1032:### Update Project Task Cost Totals
+- 1046:### Earned Value Metrics
+- 1065:### Earned Value Calculation Methods
+- 1076:### How Earned Value Calculation Methods are Applied
+- 1085:## Close, Deactivate, and Delete Projects and Investments
+- 1089:### Mark Investments for Deletion
+- 1100:### Financially Close a Project
+- 1113:### Deactivate a Project
+- 1123:### Mark a Project for Deletion
+- 1137:### Cancel Project Deletion
+- 1149:### Delete a Project or Investment
+- 1177:### Delete Investment-Specific Charge Codes
+- 1186:## Manage Project Teams
+- 1188:### Add Resources to Projects by OBS Unit
+- 1207:### Specify Staffing Requirements
+- 1227:## Manage Requisitions
+- 1231:### Fulfill Project Staffing Requirements Through Requisitions
+- 1239:### Create Requisitions
+- 1253:### Edit Unopened Requisition Requests
+- 1269:### Review and Book Proposed Allocations
+- 1297:### Unbook Hard-Booked Resources Using Requisitions
+- 1307:### Replace Unbooked Resource Requisitions
+- 1316:### Request Additional Bookings
+- 1320:### Book Already-Booked Resources
+- 1326:## View and Edit Resource Roles and Role Capacity
+- 1337:### Edit Resource Roles
+- 1345:## Manage Resource Allocation
+- 1349:### Change Resource Default Allocation
+- 1360:### Planned and Hard Allocation
+- 1364:### Shift and Scale Resource Allocations
+- 1377:### Edit Team Allocations
+- 1383:### Managing Resource Allocation
+- 1399:## Manage Team Staff Members
+- 1401:### Define Team Staff Member Properties
+- 1413:### Configure Capitalization % of Cost for Team Staff Members
+- 1422:### Open and Close Projects for Time Tracking
+- 1434:### Remove Team Staff Members
+- 1442:### Replace Staff Members on Task Assignments
+- 1454:### Replace Team Staff Members
+- 1464:## Manage Resource Assignments
+- 1466:### Modify the Resource Assignment Properties
+- 1481:### Remove Resource Assignments from Tasks
+- 1488:### Replace Resources Assigned to Tasks
+- 1497:## Enter Time-Varying ETC Segments
+- 1501:### Enter Time-Varying ETC Segments for Task Assignments
+- 1513:### Enter Time-Varying ETC Segments for Resource Assignments
+- 1526:### Update Total ETC from Time-Varying ETC
+- 1530:### Evenly Distribute ETC Over Segments
+- 1534:### ETC Distribution and Autoschedule
+- 1538:### Run Autoschedule After Adjusting ETC
+- 1546:## Manage Project Participants
+- 1550:### Configure Project Staffing Settings for Team Participants
+- 1556:### Add Participants
+- 1564:### Add Participants in System Groups
+- 1571:### Create Participant Groups
+- 1582:## Manage Time Recording for Team Members
+- 1586:### Update Timesheet Permissions
+- 1617:### Notify Resources About Overdue Timesheets
+- 1622:### Process Submitted Timesheets
+- 1637:### Restore Timesheet Defaults
+- 1646:## Project Schedules in the Gantt View
+- 1650:### Working in the Gantt View
+- 1660:### The Gantt View Toolbar
+- 1692:### Pending Edits in the Gantt View
+- 1696:### Locking Projects When Editing in the Gantt View
+- 1702:### Using the Gantt View in a Separate Window
+- 1713:### Gantt Chart Legend
+- 1729:### Change Gantt Chart Timescale
+- 1735:### Printable Gantt View
+- 1739:### Task Cost Metrics
+- 1748:## Project Tasks in the Work Breakdown Structure (WBS)
+- 1755:### Effort Task
+- 1762:### Summary Task
+- 1766:### Organize, Move, Expand and Collapse the WBS
+- 1772:## Edit Project Tasks
+- 1774:### Edit Tasks in the Work Breakdown Structure
+- 1787:### Edit Tasks in the Gantt Chart
+- 1791:### Edit Task Properties
+- 1805:### Edit Task Duration in the Gantt Chart
+- 1817:### Set the Default Earned Value Options for Tasks
+- 1830:### Set Time Tracking at the Task Level
+- 1838:## Manage Project Task Dependencies and Relationships
+- 1849:### Create Task Dependencies
+- 1863:### Edit Task Dependencies
+- 1878:### Dependency Chains
+- 1882:### Create External Task Dependencies
+- 1896:### Externally Dependent Tasks
+- 1902:## Resource Utilization and Total Effort
+- 1909:### Resource Utilization Color Coding
+- 1915:### Edit Resource Utilization
+- 1924:## Task Estimate to Complete (ETC)
+- 1926:### Set Up Tasks for Top-Down Estimating
+- 1942:### Apply Top-Down Estimates Using Estimating Rules
+- 1952:### Task Estimating Rules
+- 1956:### Create a Task Estimating Rule
+- 1969:### Create Execution Conditions
+- 1987:### Compare Generated ETC with Current ETC
+- 1994:### Apply ETC from Task Estimating Rules
+- 2003:### Edit Task Estimating Rules or Conditions
+- 2014:## Automatically Create Project Schedules with Autoschedule
+- 2029:### Autoschedule and Publish
+- 2037:### Schedule Subnets
+- 2048:### Lock Tasks
+- 2058:### Tentative Schedules
+- 2062:### Create a Tentative Schedule
+- 2081:### Publish a Tentative Schedule
+- 2087:### Unlock Projects in Tentative Schedule Mode
+- 2097:## Manage Project Hierarchies
+- 2101:### Project Investment Hierarchy
+- 2105:### View the Project Financial Rollup
+- 2133:### Add and Remove Child Investments and Services
+- 2145:### Add an Investment from Another Entity
+- 2153:### Define Child Investment and Service Allocations
+- 2167:### View a Project's Total Cost of Ownership (TCO)
+- 2171:### View a Project's Effort Rollup
+- 2177:### Add and Remove Project Parent Investment Associations
+- 2184:### Share Projects Across Investments or Services
+- 2188:## Task Estimating Rules (Continued)
+- 2190:### Execution Conditions
+- 2210:### Compare Generated ETC with Current ETC
+- 2223:### Apply ETC from Task Estimating Rules
+- 2243:### Edit Task Estimating Rules or Conditions
+- 2266:## Automatically Create Project Schedules with Autoschedule
+- 2272:### Working with Autoschedule
+- 2294:### Autoschedule and Publish
+- 2306:### Schedule Subnets
+- 2324:### Lock Tasks
+- 2339:### Tentative Schedules
+- 2421:## Manage Project Hierarchies
+- 2427:### Project Investment Hierarchy
+- 2437:### View the Project Financial Rollup
+- 2480:### Add and Remove Child Investments and Services from the Financial Rollup
+- 2504:### Add an Investment from Another Entity
+- 2517:### Define Child Investment and Service Allocations
+- 2537:### View a Project's Total Cost of Ownership (TCO)
+- 2541:### View a Project's Effort Rollup
+- 2556:### Add and Remove Project Parent Investment Associations
+- 2580:### Share Projects Across Investments or Services
+- 2588:## Group Projects and Investments Under a Parent Program
+- 2592:### Difference Between Master Projects and Programs
+- 2618:### Create a Program
+- 2660:### Program Dashboard Layout Examples
+- 2664:### Convert a Project into a Program
+- 2680:### Define Program Start and Finish Dates
+- 2703:### Define Default Staffing Options
+- 2716:### Open and Close Projects for Time Tracking
+- 2736:### Create a Program Budget
+- 2763:### Add Projects to Programs
+- 2776:### View Combined Subproject Actuals and Estimates
+- 2788:### Create Program Dependencies
+- 2805:### Monitor Program Performance
+- 2816:### Open a Release Associated with a Project or Program
+- 2830:### Cancel Programs Marked for Deletion
+- 2849:## Monitor Project Performance on the Project Dashboard
+- 2857:### General Portlet
+- 2876:### Labor Effort Portlet
+- 2887:### Project Status Portlet (Interactive)
+- 2918:### Team Utilization Portlet
+- 2932:## Project Risks, Issues, Change Requests, and Action Items
+- 2938:### Example: Risk Management Process
+- 2951:### Review the Prerequisites
+- 2961:### Create a Risk
+- 3083:### Assign Risk Ratings
+- 3162:### Add Notes for Risks, Issues, or Change Requests
+- 3174:### Associate Key Tasks with a Risk
+- 3207:### Manage the List of Values for the Risk Categories Lookup
+- 3233:### Automate Risk Management
+- 3251:### Create an Issue and Close a Risk
+- 3270:### Create an Issue
+- 3321:### Close a Change Request and Track It as an Issue
+- 3339:### Associate Existing Tasks with Issues
+- 3352:### Create a Change Request
+- 3394:### View an Audit Trail for a Risk, Issue, or Change Request
+- 3405:### Assign an Action Item to Yourself or Other Users
+- 3425:## MSP: Manage Projects with Microsoft Project
+- 3431:### Benefits of Integrating with Microsoft Project
+- 3450:### Deciding Between the Legacy and New Microsoft Project Driver
+- 3467:### Working Copies of Projects in Microsoft Project
+- 3471:### Do Not Use Open Workbench and Microsoft Project for the Same Project
+- 3480:## MSP: Install and Configure the Microsoft Project Interface
+- 3487:### Install the Required Software
+- 3497:### Configure the Microsoft Project Interface
+- 3556:### Install the Microsoft Project Interface with Schedule Connect
+- 3588:### Configure Windows Regional Settings
+- 3603:### Set Up the Server Connection
+- 3626:### Configure Microsoft Project Options
+- 3638:### Configure Default Settings in Microsoft Project
+- 3685:### Configure Project Properties in Microsoft Project
+- 3707:### Configure Resource Leveling in Microsoft Project
+- 3717:## MSP: Upgrades from the Legacy Interface to the New XML Driver
+- 3721:### New Microsoft Project Task Type Attribute
+- 3730:### Support for Fixed Work Task Types
+- 3746:### MSP Support for the New Task Lookup Attribute
+- 3758:## MSP: Synchronize Microsoft Project with Classic PPM
+- 3771:### Ownership
+- 3782:### Open a Project in Classic PPM
+- 3788:### Open a Project in Microsoft Project
+- 3798:### Update a Microsoft Project Plan Offline
+- 3807:### Lock and Unlock Projects
+- 3826:### Set One Way Import From MSP to Clarity (BETA)
+- 3840:### Lightweight Integration (BETA)
+- 3857:### Copy and Paste Project Tasks in MSP
+- 3864:### Set the Default Load Pattern Field
+- 3876:### Set the Default Mapping to Assignment Units
+- 3888:### Prepare Legacy Microsoft Project Plans for Import
+- 3905:### Save Mapped Fields Between Classic PPM and Microsoft Project
+- 3914:### Default Field Mapping
+- 4020:### Roles Field and Mapping Considerations
+- 4042:## MSP: Project Integration with Classic PPM
+- 4046:### Save a Project to Classic PPM
+- 4057:### Open a Project Plan Offline
+- 4070:### Manage Aggregated Projects
+- 4094:## Programs, Master Projects, and Regular Projects Comparison
+- 4118:## Manage Master Projects Using Classic PPM
+- 4131:## Microsoft Project Shared Resource Pool Project
+- 4142:### Resource Sharing
+- 4150:## Export a Baseline
+- 4178:### Save Master Project Baselines in Microsoft Project
+- 4185:### Open Subprojects in Microsoft Project
+- 4199:### Save Subprojects in Microsoft Project
+- 4208:### Access Rights and Subproject Locks in Microsoft Project
+- 4219:## MSP: Resource Integration with Classic PPM
+- 4234:### Resource, Assignment, and Allocation Field Mappings
+- 4269:### Assign a Resource to a Microsoft Project Team
+- 4298:### Assign a Resource to a Microsoft Project Task
+- 4338:### Delete Tasks in Master Projects
+- 4353:## MSP: Task Integration with Classic PPM
+- 4373:### Task Terms and Reserved Fields
+- 4409:### Work, Units, and Duration (WUD)
+- 4435:### An Update to Task Status Also Updates Resource Status
+- 4454:### New Microsoft Project Task Type Attribute
+- 4529:### Turn Off Time Tracking at the Task Level
+- 4545:### Update a Task to Complete
+- 4574:### Loading Patterns and Contours
+- 4608:### Configure a Microsoft Project Milestone
+- 4657:### Copy and Paste Tasks
+- 4663:### Manage Actual Hours for Time Tracking
+- 4683:### Actual Hours Considerations
+- 4705:### Add Actual Hours Directly into Microsoft Project
+- 4720:### Task, Summary Task, and Milestone Configurations
+- 4728:### Resource Task Assignments and Start and Finish Dates
+- 4736:## MSP: Microsoft Project Manual Calculation Mode
+- 4744:### Configure Manual Calculation
+- 4783:### Microsoft Project Manual Calculation Exceptions
+- 4825:## MSP: Data Exchange with Classic PPM
+- 4842:### Open Projects in Microsoft Project
+- 4866:### Open Classic PPM Projects in Microsoft Project
+- 4882:### Microsoft Project Save and Save As
+- 4946:### Data Retrieval from Microsoft Project
+- 4958:### Concurrent Timesheet and Transaction Changes
+- 4969:### Posted Timesheets and Actuals
+- 4988:### Elapsed Durations in Microsoft Project
+- 5018:### Microsoft Project External Dependencies
+- 5024:## MSP: Field Mappings Between MSP and Classic PPM
+- 5075:### Project Information Field Mapping
+- 5111:### Resource Information Field Mapping
+- 5145:### Task Information Field Mapping
+- 5172:### Resource Assignment Information Field Mapping
+- 5191:### Notes Field Mapping
+- 5201:### Private Field Mapping
+- 5211:## OWB: Manage Projects with Open Workbench
+- 5217:### Open Workbench Release Notes
+- 5254:### Open Workbench Glossary
+- 5293:## OWB: Install and Configure Open Workbench
+- 5297:### Minimum System Requirements
+- 5308:### Uninstall Open Workbench and Schedule Connect
+- 5322:### Install Open Workbench and Classic PPM Schedule Connect
+- 5340:### Grant User Access Rights
+- 5346:### Start Open Workbench
+- 5355:### Configure Open Workbench
+- 5484:## OWB: Getting Started with Open Workbench
+- 5488:### Open Workbench File Menu
+- 5506:### Open Workbench Ribbon Bar
+- 5537:### Open Workbench View Library
+- 5548:### Open Workbench Calendars
+- 5579:### Open Workbench Grid Columns and Rows
+- 5583:### Cut, Copy, and Paste Open Workbench Project Data
+- 5587:### Monitor Open Workbench Process Progress
+- 5591:## Filter, Search, and Sort in Open Workbench
+- 5593:### Filter Data in Open Workbench
+- 5604:### Search Data in Open Workbench
+- 5615:### Sort Data in Open Workbench
+- 5625:## Open Workbench Highlights, Colors, and Fonts
+- 5629:### Define the Colors of Open Workbench Views
+- 5637:### Create Highlights
+- 5644:### Define the Gantt Symbol and Color Settings
+- 5652:### Remove Highlights
+- 5658:## Print Project Data in Open Workbench
+- 5660:### Select Printer and Print Layout Options
+- 5664:### Prepare Pages for Printing
+- 5670:### Print Projects from Views
+- 5674:## OWB: Create, Open, and Save Projects in Open Workbench
+- 5676:### Create Projects in Open Workbench
+- 5693:### Open Projects in Open Workbench
+- 5714:### Save Projects in Open Workbench
+- 5731:### Project Locks in Open Workbench
+- 5746:### Refresh Project Data in Open Workbench
+- 5753:## Manage Multiple Projects and Subnets in Open Workbench
+- 5755:### Manage Multiple Projects
+- 5761:### Master Projects and Subprojects
+- 5912:## Update Project Data in Open Workbench
+- 5929:### Define the Project Administrative Details
+- 5941:### Define the Scheduling Properties
+- 5945:### Define the Resources Properties
+- 5968:### View the List of Resources Staffed on Projects
+- 5987:### View Tasks Marked as Key Tasks
+- 6010:### Revert Key Tasks to Standard Tasks
+- 6024:### Define the Project Advanced Management Information
+- 6045:### Add Project-Specific Notes
+- 6065:### Define Note Categories
+- 6075:### Associate Notes with Note Categories
+- 6093:## Track and Analyze Projects in Open Workbench
+- 6102:### Efficient Project Monitoring
+- 6116:### Track Projects
+- 6145:### Analyze Projects
+- 6152:### Determine When and What to Analyze
+- 6163:### Validate Project Plan Data
+- 6186:### Analyze Projects with Earned Value Variances
+- 6251:## Display Project Plan Data in Open Workbench Views
+- 6261:### Open Workbench Spreadsheet Views
+- 6272:### Open Workbench CPM Network Views
+- 6294:### Create a View in Open Workbench
+- 6328:### Edit a View in Open Workbench
+- 6335:### Set Up Sorts for Open Workbench Views
+- 6354:### Set Up Filters for Open Workbench Views
+- 6375:### Apply Filters to Open Workbench Views
+- 6387:### Add Fields to Open Workbench Views
+- 6409:### Save Open Workbench Views
+- 6428:### Insert and Delete Rows in Open Workbench Views
+- 6437:### Apply Formats to Cells in Open Workbench Views
+- 6473:### Apply Open Workbench Views to Projects
+- 6479:### Remove Field Names and Columns from Open Workbench Views
+- 6493:### Configure a Gantt View in Open Workbench
+- 6528:### Open Workbench Library Groups
+
+---
+## REST API Reference.md
+
+- 69:## Load Test Scenarios
+- 98:### Detailed Load Test Results
+- 104:## REST API Overview
+- 117:## Getting Started with Clarity APIs
+- 121:### URI Structure
+- 138:### Authenticate and Authorize
+- 150:### Make Your First API Call
+- 210:## REST API Authentication
+- 223:### Authorization - Access Rights Required to Consume APIs
+- 229:### Token-Based Authentication with Login and Logout API End Points
+- 272:### Basic Authentication
+- 276:### Key-Based Authentication
+- 451:### Using REST API Key in SSO Environments (On-Premise only)
+- 460:## Using Clarity REST APIs
+- 483:### Discover REST APIs
+- 534:### Standard REST API Methods
+- 585:### REST API Operations
+- 650:### Request Headers for REST APIs
+- 659:### Query Parameters for REST APIs
+- 677:### Using OBS Attribute Filtering in REST APIs
+- 714:### Using Static Dependent Lookups in REST APIs
+- 724:### Using Parameterized Dynamic Lookups
+- 768:### Using REST APIs for TSV Attributes
+- 791:### Using REST APIs for Financials Associated with Investments
+- 827:### API Enable Custom Objects and Custom Investments
+- 844:### API Enable Custom Attributes
+- 872:### Retrieve User Profile Information using API
+- 900:### Sample API Requests for Multiple Instances
+- 1095:## REST API Enhancements
+- 1109:### Enhancements Introduced in 16.4.0
+- 1143:### Enhancements Introduced in 16.3.3
+- 1194:### Enhancements Introduced in 16.3.2
+- 1242:### Enhancements Introduced in 16.2.2
+- 1401:### Enhancements Introduced in 16.1.3
+- 1477:### Enhancements Introduced in 16.1.1
+- 1541:### Enhancements Introduced in 16.1.0
+- 1553:### Enhancements Introduced in 16.0.3
+- 1614:### Enhancements Introduced in 16.0.2
+- 1632:### Enhancements Introduced in 15.9.3
+- 1678:## REST API: Cross-Origin Resource Sharing (CORS)
+- 1684:### Introduction
+- 1696:### Origins
+- 1709:### CORS Support in the REST API
+- 1718:### CORS In Action: Clarity and CA Agile Central
+- 1737:### Configure CORS in On-Premise Environments
+- 1775:### Edit a Configuration
+- 1793:### On-Premise Non-Production Development and Testing
+- 1801:### Test App
+- 1814:### Troubleshooting REST API Errors
+
+---
+## Reference.md
+
+- 90:## Clarity Access Rights Reference
+- 104:### Assign Instance-Level Access Rights to a Resource
+- 118:### Assign Instance-Level Access Rights to a User Group
+- 145:### Assign Global-Level Access Rights to a User Group
+- 161:### Filter for Specific Access Rights
+- 177:### Auto-Access Rights
+- 211:### Basic User Group Access Rights
+- 217:### Basics User Access Rights
+- 296:### Clarity Access Rights
+- 530:## Administration Access Rights
+- 546:### Clarity Administration Access Rights
+- 572:### Administration Access Rights
+- 583:### API Access Rights
+- 589:### Audit Trail Access Rights
+- 595:### Jobs Access Rights
+- 610:### License Information Access Group Rights
+- 616:### Page Access Rights
+- 630:### Portlet Access Rights
+- 641:### Portfolio Access Rights
+- 656:### Process Access Rights
+- 679:### Scenario Access Rights (Capacity Planning)
+- 694:### Software Download Access Rights
+- 700:### Advanced Reporting Access Rights
+- 711:## Demand Management Access Rights
+- 721:### Idea Access Rights
+- 744:### Resource Roles (Idea)
+- 750:### Resource Access Rights (Idea)
+- 762:### Financial Access Rights for Ideas
+- 776:### Incident Access Rights
+- 791:### Resource Roles (Incident)
+- 802:## Earned Value Manager (EVM) Add-In Access Rights
+- 808:### Earned Value Manager (EVM) Create, Edit, View, and Delete Access Rights
+- 849:### Earned Value Manager (EVM) Job Access Rights
+- 863:## Financial Management Access Rights
+- 872:### Financial Administration
+- 878:### Financial Management
+- 885:### Financial Planning
+- 906:### Financial Departments
+- 918:### Financial Locations
+- 928:## IT Service Management Access Rights
+- 930:### Service Access Rights
+- 954:### Customer Department Manager Access Rights
+- 968:### IT Manager Access Rights
+- 984:### Service Manager Access Rights
+- 996:### Provider Department Manager Access Rights
+- 1008:## New Product Development (NPD) Accelerator Access Rights
+- 1018:### Executive User Group Access Rights
+- 1057:### Marketing Manager User Group Access Rights
+- 1081:### Non-Clarity User Group Access Rights
+- 1098:### Product Portfolio Manager User Group Access Rights
+- 1132:### Project Portfolio Manager User Group Access Rights
+- 1168:### Team Member User Group Access Rights
+- 1187:## PMBOK Guide Accelerator Access Rights
+- 1195:### PBK Administrator Group
+- 1330:### PBK Executive Group
+- 1357:### PBK Project Manager Group
+- 1363:### PBK Team Member Group
+- 1367:## PMO Accelerator Access Rights
+- 1371:### PMO Financial Administrator
+- 1375:### PMO Portfolio Manager
+- 1379:### PMO Project Creator
+- 1383:### PMO Project Editor
+- 1387:### PMO Project Viewer
+- 1391:### PMO Resource Administrator
+- 1395:### PMO Resource Manager
+- 1399:### PMO Resource Manager Extended
+- 1403:### PMO System Administrator
+- 1407:### PMO Team Member
+- 1411:### PMO Timesheet Administrator
+- 1415:### PMO Vendor Management
+- 1419:### PMO Roadmap Creator
+- 1423:### PMO Roadmap Viewer
+- 1427:### PMO Roadmap Editor
+- 2921:## Time Slicing Sync
+- 2947:## Tomcat Access Log Import/Analyze Job
+- 2960:### Log Analysis Data Carried Forward After Data Movement
+- 2978:## Update % Complete Job
+- 3008:## Update Aggregated Data Job
+- 3026:## Update Allocation from Estimates Job
+- 3044:### Error Handling
+- 3060:## Update Data Warehouse Trend Job
+- 3071:## Update Report Tables Job
+- 3088:## Update Earned Value History Job
+- 3120:## Update Earned Value and Cost Totals Job
+- 3142:## Update Estimates from Allocations Job
+- 3160:### Error Handling
+- 3177:## Post WIP Actuals to Financial Plans Job
+- 3201:## Validate Process Definitions Job
+- 3221:## SaaS User Sync Job
+- 3253:## Clarity Portlets Reference
+- 3259:### Portlets by Role
+- 3474:### Portlets by Name
+- 3531:### Action Items Portlet
+- 3546:### Actuals by Transaction Type Portlet
+- 3568:### Allocation Discrepancy Portlet
+- 3585:### Balance Portlet
+- 3603:### Booking Status Portlet
+- 3625:### Capacity Overview Portlet
+- 3645:### Capacity Overview Portlet Investment Demand View
+- 3668:### Capacity Overview Portlet Staff Allocation View
+- 3693:### Capacity Overview Portlet Unfilled Roles View
+- 3715:### Capital and Operating Budget vs. Forecast Portlet
+- 3733:### Capital and Operating Cost Summary Portlet
+- 3751:### Change Request Management Portlet
+- 3771:### Cost and Schedule Overview Portlet
+- 3788:### Current Issues Portlet
+- 3805:### Current Issues Listing Portlet
+- 3823:### Currently Running Jobs Portlet
+- 3838:### Data Warehouse Audit Portlet
+- 3862:### Data Warehouse Error Portlet
+- 3883:### Discussion Messages Portlet
+- 3901:### Earned Value Analysis by Phase Portlet
+- 3923:### Earned Value Reporting Periods Portlet
+- 3938:### Favorite Links Portlet
+- 3953:### Favorite Photo Portlet
+- 3971:### General Portlet
+- 3993:### Idea List Portlet
+- 4008:### Idea Processes Portlet
+- 4025:### Investment Cost and Role Demand Portlet
+- 4043:### Investment Cost by Period Portlet
+- 4061:### Investment Financial Summary Portlet
+- 4079:### Investment Planning by Period Portlet
+- 4097:### Investment Schedule Portlet
+- 4115:### Investment Timesheet Review Portlet
+- 4134:### Investment Timesheet Summary Portlet
+- 4149:### Issue Management Portlet
+- 4166:### Issues by Priority Portlet
+- 4188:### Issues Listing Portlet
+- 4205:### Labor Effort Portlet
+- 4227:### Late Status Reports Portlet
+- 4244:### Late Tasks and Milestones Portlet
+- 4260:### Locked Users (90 Days Inactivity) Portlet
+- 4287:### Milestones Portlet
+- 4304:### Missing Status Reports Portlet
+- 4321:### My Projects Portlet
+- 4351:### My Reports Portlet
+- 4366:### My Timesheets Portlet
+- 4381:### Notifications Portlet
+- 4396:### OBS Investment Aggregation Portlet
+- 4414:### OBS Resource Aggregation Portlet
+- 4435:### Pending Estimates Review Portlet
+- 4450:### Planned Cost by Goal Portlet
+- 4470:### Planned Benefit by Goal Portlet
+- 4488:### Planned Cost by Project Type Portlet
+- 4505:### Planned Cost by Waterline Portlet
+- 4523:### Portfolio Capital and Operating Cost Analysis Portlet
+- 4540:### Portfolio Capital and Operating Costs Portlet
+- 4557:### Portfolio Cost and Benefit Analysis Portlet
+- 4575:### Portfolio Cost by Overall Health Portlet
+- 4595:### Portfolio Costs Portlet
+- 4613:### Portfolio Investment Count by Approval Portlet
+- 4630:### Portfolio Investment Count by Goal Portlet
+- 4647:### Portfolio Investment Count by Type Portlet
+- 4664:### Portfolio Investment Count by Waterline Portlet
+- 4681:### Portfolio Investment Count by Work Status Portlet
+- 4698:### Portfolio Planned Cost by Goal Portlet
+- 4715:### Portfolio Planned NPV by Goal Portlet
+- 4732:### Portfolio Role Analysis Portlet
+- 4752:### Portfolio Role Demand by Goal Portlet
+- 4769:### Portfolio Roles Portlet
+- 4786:### Posted Transaction Review Portlet
+- 4801:### Posted Transaction Review Investment Level Portlet
+- 4822:### Process Bottlenecks Portlet
+- 4838:### Program Manager Cost Dashboard Portlet
+- 4855:### Program Manager Schedule Dashboard Portlet
+- 4872:### Project Analysis Portlet
+- 4888:### Project Baselines Portlet
+- 4910:### Project Costs By Phase Portlet
+- 4928:### Project Costs By Resource Portlet
+- 4946:### Project Costs by Task Portlet
+- 4964:### Project Cycle Time Analysis Portlet
+- 4980:### Project Document Review Portlet
+- 4996:### Project Indicators Portlet
+- 5018:### Project KPIs by OBS Portlet
+- 5035:### Project Lifecycle Review Portlet
+- 5051:### Project Manager Cost and Effort Dashboard Portlet
+- 5068:### Project Manager Schedule Dashboard Portlet
+- 5085:### Project Schedule Portlet
+- 5102:### Resource Utilization Portlet
+- 5119:### Resource Utilization Percentage by Month Portlet
+- 5135:### Resource Workloads Portlet
+- 5155:### Rights by License Type Portlet
+- 5170:### Risk Management Portlet
+- 5187:### Role Capacity Portlet
+- 5205:### Role Capacity and Demand Portlet
+- 5223:### Role Capacity and Demand Histogram Portlet
+- 5243:### Role Capacity Histogram Portlet
+- 5260:### Role Demand by Goal Portlet
+- 5278:### Role Demand by Waterline Portlet
+- 5296:### Schedule and Progress Portlet
+- 5313:### Schedule Performance Portlet
+- 5330:### Schedule Performance Details Portlet
+- 5348:### Site Links Portlet
+- 5365:### Staffing Portlet
+- 5382:### Staffing Details Portlet
+- 5399:### Status Report Indicators Portlet
+- 5421:### Status Report Listing Portlet
+- 5438:### Subprojects Portlet
+- 5454:### Team Capacity Portlet
+- 5476:### Team Member Task Summary Portlet
+- 5492:### Team Utilization Portlet
+- 5514:### Timesheet Notes Portlet
+- 5532:### Timesheet Review Investment Level Portlet
+- 5553:### Timesheets to Approve Portlet
+- 5573:### Top Down Planning by Investment Portlet
+- 5590:### Unfilled Requirements Portlet
+- 5607:### Upcoming Milestones Portlet
+- 5624:### User Count by License Type Portlet
+- 5639:### Weekly Detail Portlet
+- 5667:## Clarity Authentication Methods
+- 5693:### Authentication Options Table
+- 5703:### Authentication Methods
+- 5760:## Clarity SaaS Authentication in the Google Cloud Platform
+- 5766:### Broadcom's Okta User Groups
+- 5780:### User Management
+- 5806:### Syncing Users Between Clarity and Okta
+- 5815:### Revoking User Access to Clarity
+- 5831:### Accessing Clarity via XOG
+- 5838:### Common Questions
+- 5853:## Federated SSO With Clarity SAAS
+- 5855:### Introduction
+- 5873:### Federated SSO Implementation
+- 5952:### Authorization Flows
+- 5980:### Create a Clarity User Based on SAML Request
+- 6025:## Migrating to the VIP Auth Hub
+- 6029:### VIP AuthHub Migration Timeline Overview
+- 6051:### Guidelines for Customers Using Azure
+- 6062:### Guidelines for Customers Using Okta
+- 6070:### FAQ
+- 6108:## Non-Federated Access in VIP AuthHub
+- 6112:### Provisioning Non-Federated Users
+- 6131:### Accessing Clarity by Non-Federated Users
+- 6145:### Non-Federated User Access with Multi-Factor Authentication (MFA) Enabled
+- 6160:### Migrating Existing Non-Federated Users from OKTA to VIP
+- 6172:### List of URLs Across Various Regions for Non-Federated Access
+- 6192:### Summary
+- 6197:## On-Premise SAML Configuration
+- 6215:### Setting Up SAML Metadata in Clarity
+- 6334:### Configuring Clarity to Support SAML 2.0
+- 6382:### Reviewing IdP Configuration Examples
+- 6475:### Create a Clarity User Based on SAML Request
+- 6571:### Update a Clarity User Based on SAML Request
+- 6579:## Oracle and SQL Server Connectivity Diagrams
+- 6581:### Oracle Connectivity
+- 6588:### Microsoft SQL Server Connectivity
+- 6595:## Database Schema Changes
+- 6618:### Clarity Advanced Reporting and Database Schema Index
+- 6640:## Database Performance Whitepapers
+- 6662:### Executive Summary
+- 6676:### Performance Test Methodology
+- 6685:### Performance Test Results
+- 6701:### Performance Test Conclusion
+- 6729:### Database Performance Comparison by Release
+- 6766:### Database Performance Test Environment
+- 6824:### Database Size Details
+- 6860:### Database and App Server Performance Graphs
+- 6880:## Database Performance Use Cases
+- 6945:### Use Cases: Detailed Steps
+
+---
+## Release Information.md
+---
+## Resource Management Reports.md
+
+- 106:## Resource Baseline vs. Plan by Employment Type
+- 110:### Report Prerequisites
+- 123:### Report Properties
+- 131:### Report Parameter Options
+- 153:### Parameter Lookup Values
+- 157:### Parameter Explanations
+- 164:### Report Fields and Calculations
+- 177:### Report Security
+- 183:## Capacity vs. Allocation by OBS
+- 187:### Report Prerequisites
+- 196:### Report Properties
+- 204:### Report Parameter Options
+- 232:### Parameter Lookup Values
+- 238:### Parameter Explanations
+- 254:### Report Fields and Calculations
+- 262:### Report Security
+- 268:## Capacity vs. Booking Status by OBS
+- 272:### Report Prerequisites
+- 284:### Report Properties
+- 292:### Report Parameter Options
+- 320:### Parameter Lookup Values
+- 326:### Parameter Explanations
+- 339:### Report Fields and Calculations
+- 349:### Report Security
+- 355:## Capacity vs. Demand by Role
+- 359:### Report Prerequisites
+- 369:### Report Properties
+- 377:### Report Parameter Options
+- 404:### Parameter Lookup Values
+- 411:### Parameter Explanations
+- 423:### Report Fields and Calculations
+- 431:### Report Security
+- 437:## Capacity vs. Demand by Resource
+- 441:### Report Prerequisites
+- 451:### Report Properties
+- 459:### Report Parameter Options
+- 486:### Parameter Lookup Values
+- 493:### Parameter Explanations
+- 504:### Report Fields and Calculations
+- 510:### Report Security
+- 516:## Over/Under Allocation by Role
+- 522:### Report Prerequisites
+- 531:### Report Properties
+- 539:### Report Parameter Options
+- 566:### Parameter Lookup Values
+- 573:### Parameter Explanations
+- 586:### Report Fields and Calculations
+- 592:### Report Security
+- 598:## Over/Under Allocation by Resource
+- 604:### Report Prerequisites
+- 613:### Report Properties
+- 621:### Report Parameter Options
+- 648:### Parameter Lookup Values
+- 656:### Parameter Explanations
+- 664:### Report Fields and Calculations
+- 670:### Report Security
+- 676:## Resource Skills Report
+- 680:### Report Prerequisites
+- 686:### Report Properties
+- 694:### Report Parameter Options
+- 716:### Parameter Lookup Values
+- 722:### Parameter Explanations
+- 729:### Report Fields and Calculations
+- 735:### Report Security
+- 741:## Resource Skills and Remaining Capacity
+- 747:### Report Prerequisites
+- 758:### Report Properties
+- 766:### Report Parameter Options
+- 796:### Parameter Lookup Values
+- 804:### Parameter Explanations
+- 813:### Report Fields and Calculations
+- 819:### Report Security
+- 825:## Resource Skills and Remaining Capacity Detail
+- 829:### Report Prerequisites
+- 839:### Report Properties
+- 847:### Report Parameter Options
+- 872:### Parameter Lookup Values
+- 878:### Parameter Explanations
+- 884:### Report Fields and Calculations
+- 890:### Report Security
+- 896:## Resource Forecasted Utilization
+- 902:### Report Prerequisites
+- 916:### Report Properties
+- 924:### Report Parameter Options
+- 950:### Parameter Lookup Values
+- 956:### Parameter Explanations
+- 962:### Report Fields and Calculations
+- 972:### Report Security
+- 978:## Resource Forecasted Utilization Detail
+- 982:### Report Prerequisites
+- 991:### Report Properties
+- 999:### Report Parameter Options
+- 1025:### Parameter Lookup Values
+- 1031:### Parameter Explanations
+- 1037:### Report Fields and Calculations
+- 1047:### Report Security
+- 1053:## Resource Allocations and Assignments
+- 1057:### Report Prerequisites
+- 1066:### Report Properties
+- 1074:### Report Parameter Options
+- 1103:### Parameter Lookup Values
+- 1111:### Parameter Explanations
+- 1121:### Report Fields and Calculations
+- 1128:### Report Security
+- 1134:## Resource Assignments by Task
+- 1138:### Report Prerequisites
+- 1147:### Report Properties
+- 1155:### Report Parameter Options
+- 1181:### Parameter Lookup Values
+- 1186:### Parameter Explanations
+- 1191:### Report Fields and Calculations
+- 1198:### Report Security
+- 1204:## Resource Availability
+- 1208:### Report Prerequisites
+- 1215:### Report Properties
+- 1223:### Report Parameter Options
+- 1244:### Parameter Lookup Values
+
+---
+## Resource Management.md
+
+- 78:## Overview
+- 105:## Prerequisites for Resource Management
+- 168:## Resource Planning Portlets by Page
+- 187:## Create Resources and Roles
+- 205:### Review the Prerequisites
+- 211:### Create a Labor Resource or Role
+- 255:### Create a Nonlabor Resource or Role
+- 282:### Assign Skills to Labor Resources
+- 305:### Financially Enable a Resource or Role
+- 331:### Configure Booking Managers by OBS for a Role
+- 348:### Configure Teams
+- 379:## Configure Base Calendars, Shifts, and Work Days
+- 383:### Create a Base Calendar
+- 402:### Define Work Shifts in a Calendar
+- 425:### Define Work Days in a Calendar
+- 447:### Edit Resource Availability in a Calendar
+- 461:### Change or Delete a Base Calendar
+- 473:### Reset Base Calendar Shifts
+- 484:## Find, Book, and Allocate Resources
+- 488:### Resource Allocations
+- 503:### Find and Book a Labor Resource
+- 536:### Change the Default Resource Allocation
+- 564:### Add Investments to Resource Workloads
+- 578:### Edit Investment Allocations
+- 592:### Shift a Resource Allocation
+- 613:### Remove Investments from Resource Workloads
+- 627:### Replace a Role with a Named Resource
+- 649:### Replace Resources on Investments
+- 674:### Deactivate a Resource or Role Profile
+- 686:## Resource Availability Examples
+- 690:### Example: Calendars with Irregular Shifts
+- 724:### Example: Monthly Resource Availability
+- 734:### Example: Resource Allocations
+- 763:## Fill Resource Requisitions
+- 779:### Resource Requisitions
+- 790:### Requisition Routing and Notification
+- 820:### Find Resources to Fill Role Requests
+- 836:### Review Resource Requisitions
+- 856:### Propose Allocations to Fill a Resource Requisition
+- 877:### Reduce Resource Allocations
+- 894:### Participate in Requisition Discussions
+- 920:### Types of Requisition Status
+- 929:### Set a Default Booking Manager for Resources
+- 944:### Decline an Open Resource Requisition
+- 955:### Unbook a Requisition
+- 1002:### Modify and Resubmit Proposals
+- 1013:### Manage an Automated Requisition Process
+- 1031:### Audit Requisitions
+- 1043:## Manage Resource Capacity Planning Scenarios
+- 1061:### Configure Settings for Resource Planning
+- 1090:### View High-Level Capacity Planning Information
+- 1113:### View Detailed Capacity Planning Information
+- 1131:### View Other Resource Planning Portlets
+- 1152:### Include Resources To-Be-Hired in Capacity Planning Portlets
+- 1165:### View Allocation Discrepancies
+- 1187:### Capacity Planning Scenarios
+- 1267:## Requirements and Release Planning
+- 1279:### Requirements Planning Workflow
+- 1295:## Requirements
+- 1314:### Create Requirements
+- 1352:### Set the Requirement Business Priorities
+- 1366:### Link Requirements to Project Tasks
+- 1383:### Requirement Hierarchy
+- 1431:### Requirement Dependencies
+- 1453:### Delete a Requirement
+- 1467:## Releases
+- 1480:### Create a Release
+- 1508:### Link a Release to a Project or Program
+- 1520:### Define the Release Schedule
+- 1536:### Add Requirements to a Release
+- 1551:### Monitor Requirement Business Priorities
+- 1560:### Monitor Release Performance
+- 1576:### Delete a Release
+- 1588:## Release Plans
+- 1607:### Create a Release Plan
+- 1624:### Add an Investment to a Release Plan
+- 1637:### Update the Release Planner
+- 1659:### Add a Release to a Release Plan
+- 1669:### Approve a Release in a Release Plan
+- 1681:### Remove a Release from a Release Plan
+- 1690:### Add a Requirement to a Release Plan
+- 1700:### View a Requirement Hierarchy for a Release Plan
+- 1704:### View a Requirement Dependency in a Release Plan
+- 1713:### Remove a Requirement from a Release Plan
+- 1722:### View the Release Plan Roadmap
+
+---
+## Review Archived Documentation.md
+---
+## Submit a Timesheet (Classic).md
+
+- 30:## Global Search Special Characters
+- 55:## Submit a Timesheet
+- 76:### Open Your Timesheet to Submit Your Work Time
+- 91:### Configure Your Timesheet
+- 116:### Populate a Timesheet
+- 134:### Add Entries to a Timesheet Manually
+- 143:### (Optional) Specify Entry Input Type and Charge Codes
+- 158:### (Optional) Add a Timesheet Row Under an Indirect Category
+- 172:### Enter Your Work Time on Your Timesheet
+- 185:### Submit a Timesheet for Approval
+- 193:### Correct a Returned Timesheet
+
+---
+## Time Management Reports.md
+
+- 83:## Resource Time Review by Manager
+- 87:### Report Prerequisites
+- 102:### Report Properties
+- 113:### Report Parameter Options
+- 135:### Parameter Lookup Values
+- 142:### Parameter Explanations
+- 151:### Report Fields and Calculations
+- 157:### Report Security
+- 163:## Resource Time Summary and Detail
+- 167:### Report Prerequisites
+- 181:### Report Properties
+- 192:### Report Parameter Options
+- 211:### Parameter Lookup Values
+- 217:### Parameter Explanations
+- 227:### Report Fields and Calculations
+- 235:### Report Security
+- 241:## Timesheet Detail
+- 245:### Report Prerequisites
+- 259:### Report Properties
+- 270:### Report Parameter Options
+- 288:### Parameter Lookup Values
+- 293:### Parameter Explanations
+- 299:### Report Fields and Calculations
+- 305:### Report Security
+- 311:## Time Compliance
+- 317:### Report Prerequisites
+- 332:### Report Properties
+- 343:### Report Parameter Options
+- 360:### Parameter Lookup Values
+- 365:### Parameter Explanations
+- 376:### Report Fields and Calculations
+- 389:### Report Security
+- 395:## Time Compliance Detail
+- 399:### Report Prerequisites
+- 414:### Report Properties
+- 425:### Report Parameter Options
+- 440:### Parameter Lookup Values
+- 445:### Parameter Explanations
+- 456:### Report Fields and Calculations
+- 462:### Report Security
+- 468:## Missing Time
+- 476:### Report Prerequisites
+- 491:### Report Properties
+- 502:### Report Parameter Options
+- 527:### Parameter Lookup Values
+- 533:### Parameter Explanations
+
+---
+## Top-Down Planning with Roadmaps.md
+
+- 118:## Prerequisites
+- 127:## Overview of Layouts
+- 136:## Review a List of Existing Roadmaps
+- 148:## Create a Roadmap
+- 168:## Copy a Roadmap
+- 196:## Edit Roadmap Details
+- 208:## Add Roadmap Items
+- 216:## Import Roadmap Items From a CSV File
+- 258:## Import Projects, Custom Investments, and Ideas
+- 270:## Link Roadmaps Items to Projects, Custom Investments, and Ideas
+- 292:### Delete the Link Between Roadmaps Items and Investment Objects
+- 297:## Share Roadmaps with Other Users
+- 310:## Use Multi-Currency in Roadmaps
+- 335:## Synchronize Roadmap Items with Linked Project, Custom Investment, or Idea Attributes
+- 405:## Use Case: Managing Monthly Roadmaps with Auto-Sync
+- 424:### Matching Custom Attributes
+- 454:### Sync Column and Checkbox
+- 463:## Set Target Widgets for the Roadmap
+- 480:## Working with Widgets
+- 504:## Manage Roadmap Picklists
+- 506:### Configure a Default Global Picklist
+- 525:### Create a Custom Global Picklist (All Roadmaps)
+- 540:### Create a Local Picklist
+- 553:### Manage Local Picklists
+- 563:### Delete a Local Picklist Choice
+- 567:## Create Roadmap Planning Scenarios
+- 580:### Manage Scenarios for a Roadmap
+- 590:## Select an OBS Unit for a Roadmap
+- 597:## Create and Use Custom Attributes for Roadmaps
+- 603:## Using Process with Roadmaps
+- 621:## Enabling Field Level Security for Roadmaps and Roadmap Items
+- 628:## Working with Roadmap Groups
+- 641:### Create a Roadmap Group
+- 656:### Copy a Roadmap Group
+- 675:### Edit Roadmap Group Details
+- 681:## Create Portfolio Items in Rally from Roadmap Scenario
+- 707:## Introducing Vaia (Beta) - Leveraging AI
+- 737:## Roadmaps: Using the Timeline Layout
+- 756:### Visualize and Model Work Using the Timeline
+- 770:### Create Roadmap Items With No Start or No Finish Date
+- 776:### Arrange Items in the Timeline
+- 786:### Add Dependencies for Roadmap Items
+- 796:### Configure Roadmap Timeline View Options
+- 843:### Manage Roadmap Events
+- 856:### Manage Item Events
+- 863:### Other Actions Available on the Timeline Layout
+- 881:### Summarization for Roadmap Timeline by Vaia
+- 893:### Roadmap Color Legend
+- 899:### Compare Scenarios in the Timeline
+- 929:### Export the Roadmap Timeline to PDF
+- 952:### Troubleshooting the PDF Export Capability
+- 1018:### Tweak System Configurations to Enhance Performance
+- 1041:## Roadmaps: Using the Board Layout
+- 1048:### Managing Records By Using the Board Layout
+- 1075:### Setup View Options for the Board Layout
+- 1107:## Roadmaps: Using the Grid Layout
+- 1117:### Plan Roadmap Items In a Grid
+- 1122:### Managing Records By Using the Grid Layout
+- 1153:### Set View Options for the Grid Layout
+- 1210:### Drag and Drop Ordering
+- 1257:### Display Time-Phased Data by Fiscal Periods
+- 1287:### Spreading of TSV Metric Values Using Calendar Days or Work Days
+- 1300:## Conversations
+- 1370:## Audit Module for Roadmaps
+- 1525:## Configure Canvas to Manage the Roadmap Dashboard
+- 1687:## Creating and Managing Roadmap Checklists
+
+---
+## Track Tasks Across Investments.md
+
+- 37:## Multicurrency Transaction Example
+- 43:### Process
+- 52:### Benefits for Hedmoral Bank
+- 69:## Track Tasks Across Investments
+- 83:## Standard Features Across the Grid, Board, and Calendar Layouts
+- 92:### Collaborate with Stakeholders on Tasks
+- 104:### Create To-Do Items for Tasks
+- 124:### Add Staff Members to Tasks
+- 137:### Add Helpful Links to Tasks
+- 151:### Working with Widgets
+- 176:## Using the Board Layout on the Tasks Page
+- 204:### Setup View Options for the Board Layout
+- 220:## Using the Calendar Layout on the Tasks Page
+- 234:### Setup View Options for the Calendar Layout
+- 249:### Using the Task Workspace Calendar
+- 272:## Using the Associated Objects Grid on the Tasks Page
+- 284:## Managing Records Using the Grid Layout
+- 312:### Setup View Options
+- 337:## Managing Records Using the Timeline Layout
+- 359:## Editing Tasks
+
+---
+## Track and Edit To Dos.md
+
+- 43:## Accessing the New To Do's Page
+- 57:## Overview of the To Dos Workspace
+- 65:## Using the Associated Objects Grid on the To Dos Page
+- 75:## Managing Attachments for a To Do
+- 77:### Upload an Attachment
+- 93:### View an Attachment
+- 101:### Delete an Attachment
+- 109:## Setup View Options
+- 132:## Managing Records By Using the Grid Layout
+- 178:## Working with Widgets
+
+---
+## Upgrade Clarity.md
+
+- 56:## Start Here
+- 67:### Plan for All Required Components
+- 76:### Upgrade Large Data Sets
+- 97:### Legacy Business Objects Reports
+- 109:### Avoid Making Configuration Changes During the Upgrade
+- 121:### Run the Installation Checker
+- 144:### Checkinstall Script Workaround for Linux
+- 168:### Make Third-Party JAR Files Accessible to the Installer
+- 180:### Schedule a Production Data Refresh (Backup) (SaaS)
+- 191:### Schedule a Second Upgrade If Your UAT Window Exceeds 90 Days
+- 209:## Upgrade Clarity
+- 239:### Clear Your Browser Cache
+- 245:### How Long Does It Take to Upgrade?
+- 269:### Pre Upgrade Steps
+- 299:### (On-Premise and SaaS) Pre-Upgrade Steps
+- 310:### (On-Premise and SaaS) Pre-Upgrade: Custom Processes, Scripts, and Other Customizations
+- 335:### Upgrade Assessment Utility (On-Premise only)
+- 339:### (On-Premise only) Pre-Upgrade: Review the Requirements
+- 391:### (On-Premise only) Pre-Upgrade: Run Checkinstall
+- 408:### (On-Premise only) Pre-Upgrade: Installation and Upgrade Dependencies
+- 417:### (On-Premise only) Pre-Upgrade: Make Third-Party JAR Files Accessible to the Installer
+- 426:### (On-Premise only) Pre-Upgrade: Override Default Memory Settings (Large Data Sets)
+- 446:### (On-Premise only) Pre-Upgrade: Overview for a Typical Upgrade
+- 480:### (On-Premise only) Pre-Upgrade: MS SQL Server Database Compatibility Level
+- 503:### (On-Premise only) Pre-Upgrade: Oracle Database Only PRJ_BLB_SLICES Table
+- 549:### (On-Premise only) Pre-Upgrade: Custom Processes, Scripts, and Other Customizations
+- 572:### (On-Premise only) Pre-Upgrade: Preserve Your File Directory Customizations
+- 622:### (On-Premise only) Upgrade an Apache Tomcat Single Server
+- 706:### (On-Premise only) Upgrade an Apache Tomcat Clustered Server
+- 767:### (On-Premise only) Recover and Restore from a Backup
+- 780:### (On-Premise only) Troubleshoot Upgrade Problems
+- 822:## (On-Premise and SaaS) Complete the Post-Upgrade Steps
+- 824:### Additional Configuration for Oracle Deployments
+- 860:### Post-Upgrade: Optimize Oracle 19c Performance
+- 889:### (On-Premise and SaaS) Post-Upgrade: Trending Data Backups
+- 893:### (On-Premise only) Post-Upgrade: Final Steps to Complete Your Upgrade
+- 945:### (On-Premise and SaaS) Post-Upgrade: Verify NSQL Queries
+
+---
+## Upgrade Jaspersoft.md
+
+- 50:## Jaspersoft Support Matrix
+- 66:## Deploying the Jaspersoft Patch
+- 73:### Pre-Requisites for Deploying the Patch
+- 82:### Deploying the Patch
+- 98:### Post Deployment Steps
+- 107:### Update JVM Arguments for Jaspersoft 9.0 Patch 2
+- 119:### Update Catalina Options
+- 129:## Upgrade to Jaspersoft 9.0 and Migrate Advanced Reporting Content
+- 159:### Jaspersoft and UI Themes
+- 170:## Upgrade the Jaspersoft Server: New Database Option
+- 227:## Upgrade the Jaspersoft Server: Same Database Option
+- 251:## Verify the JasperReports Server Installation
+- 267:## Post Installation Configuration
+- 275:### Generate the Key Store File
+- 287:### Update Profile Attributes
+- 299:### Memory Leak Errors in Tomcat Logs
+- 307:## Upgrade Advanced Reporting Content
+- 319:### Restore Domains Job
+- 329:### Apply the JasperReports Server Cumulative Patch
+- 339:### Restore Domains after Upgrading Advanced Reporting Content
+- 351:## UI Customizations During Upgrade (OP/SaaS)
+- 360:## Post-Upgrade Folder Level and User Level Security (OP/SaaS)
+
+---
+## Using Clarity - Custom Investments.md
+---
+## Using Clarity Mobile App.md
+
+- 81:## Introducing the Redesigned Clarity Mobile App 3.3.1
+- 85:### Key Updates
+- 109:## Getting Started with Mobile App
+- 111:### Requirements
+- 126:### Required Access Rights and Settings
+- 130:### Download and Configure the App
+- 140:## Sign-In/Log-In
+- 142:### Sign In and Get Started
+- 155:### First-Time Users: Choose One of Two Login Methods
+- 175:## My Timesheet
+- 177:### Prerequisite
+- 186:### Enter Your Time and Submit Your Timesheet
+- 217:### Timesheet Rules Flow
+- 229:### Enter One Total That Spreads Evenly Across Multiple Days
+- 235:### Search and Select Tasks
+- 250:### Manage Frictionless or Virtual Time Entries from Rally
+- 267:### Add Task from Previous Timesheet
+- 279:### Add Task from Assignments
+- 286:### Add Task from Assignments (with ETC)
+- 303:### Manage Timesheet Notes in My Timesheet
+- 315:### Manage Task Notes in My Timesheet
+- 327:### View Future and Past Timesheets
+- 339:## Review & Approve
+- 341:### Introduction
+- 388:### Tap the Main Menu to Get Basic Info
+- 397:### Manage Timesheet Notes in Review and Approve
+- 412:### Components on the Review & Approve Timesheets Page
+- 438:### Return Your Timesheets
+- 444:## Conversations
+- 446:### Prerequisites
+- 450:### View Conversations
+- 459:### Post a Comment in the Conversation
+- 466:### Upload an Attachment to a Comment
+- 479:### Edit/Delete a Comment or Entire Conversation
+- 497:## Action Items
+- 499:### Prerequisites
+- 510:### View the Action Items Dashboard
+- 529:### View the Action Item Cards
+- 533:### Filtering and Sorting Action Items
+- 545:### View Action Item History
+- 553:### Page Refresh
+- 557:### Act on Action Items
+- 576:## To Dos
+- 578:### Prerequisites
+- 586:### View the Checklists Page
+- 608:### Create a New Checklist
+- 621:### Managing Checklists
+- 704:### Manage Sections
+- 747:### View the Smartlist
+- 777:## Settings
+- 787:## Technical Details for Administrators
+- 789:### Supported Authentication Methods
+- 796:### Default Administrative Timesheet Options
+- 819:### Mobile Specific URL
+- 856:## Frequently Asked Questions and Troubleshooting
+- 858:### Error Message: Your time tracking settings are not correct...
+- 864:### What Access Rights Are Required?
+- 874:### I Cannot Enter My Time for a Task
+- 878:### I Cannot Copy or Delete a Task
+- 882:### I Cannot Submit My Timesheet
+- 886:### The App Shows "No Internet Connection"
+- 896:### The App Shows "Timesheet Not Submitted"
+- 900:### What Kind of Performance Can I Expect?
+- 904:### Match Your Application Locale Setting With Your Mobile App Locale
+- 908:### How Do I Get Updates for the Clarity Mobile App?
+
+---
+## Using Clarity Vaia (AI).md
+
+- 63:## Overview
+- 76:## Introducing Vaia
+- 84:## Data Flow while Using AI Capabilities
+- 103:## Key Steps to Set Up Vaia
+- 105:### 1. Activate the AI Service
+- 114:### 2. Grant Access Rights
+- 118:### 3. Define AI Integrations
+- 124:### 4. Configure and Validate AI Models
+- 136:### 5. Configure AI Agents
+- 156:### 6. Monitor Consumption
+- 162:## Set up Vaia in Clarity
+- 179:## Configure AI Models
+- 190:### Create an Integration Object in Classic PPM
+- 205:### Configure AI Models
+- 254:### Validate Your AI Model
+- 261:### Generate Private Key for Google Vertex AI
+- 267:### Get the Gemini AI API URL
+- 276:### Generate API Key for OpenAI
+- 284:### Set Up Microsoft Azure with Clarity
+- 306:## Configure AI Agents in Vaia
+- 310:### Prerequisite
+- 314:### Create an AI Agent
+- 329:### Manage Records Using the Grid Layout
+- 333:### Configure a "Workspace" AI Agent
+- 352:### Configure an "Object" AI Agent
+- 365:### Define Follow-Up Prompts
+- 380:### End-User Experience: Interacting with Agent Files
+- 387:### Execute Multiple AI Agents
+- 395:### Use Charts and TSV in Prompt
+- 417:## Brand Your AI
+- 433:## Status Report Summarization
+- 447:### Prerequisites
+- 453:### Customizing Status Report Summarization
+- 464:### Running the Agent
+- 471:### Monitoring AI Token Consumption
+- 496:## Roadmap Summarization
+- 504:### Configuring Roadmap Summarization
+- 516:## Data Generation and Revision
+- 525:### AI Agents for Data Generation
+- 542:### AI Agents for Data Revision
+- 554:## Data Review
+- 571:### Conversational Review and Follow-Up
+- 578:### Reviewing Multiple Data Sources
+- 585:## Natural Language Help Assistant
+
+---
+## Using Classic PPM.md
+
+- 94:## Personalize Classic PPM: Change Password, Account Settings, Notifications, Export to Excel
+- 101:### Personalize Your Account Settings
+- 105:### Manage Your Location and Language Settings
+- 116:### Change Your Password
+- 129:### Designate Proxies
+- 142:### Set Up Notifications
+- 163:### Download Client Software
+- 183:### Set a Default Partition
+- 194:### Set a Home Page
+- 206:### Personalize Important Information
+- 215:### Create an Action Item
+- 236:### Open an Action Item from Notifications
+- 244:### Manage Processes
+- 281:### Update Tasks
+- 304:### Personalize Your Avatar Image
+- 329:## Personalize a Page
+- 346:### Add a Page Filter
+- 359:### Personalize Page Layouts
+- 369:### Add a New Tab to a Page
+- 380:### Edit a Tab
+- 397:### Present a Page as a Pop-up
+- 410:## Personalize a List
+- 418:### List Options Toolbar
+- 427:### Filter a List
+- 443:### Build a Power Filter
+- 470:### Sort a List
+- 488:### Edit a List
+- 503:### Export a List to Excel or CSV
+- 560:### Add Your Favorite Links
+- 615:## Personalize a Dashboard
+- 619:### Dashboard and Portlet Differences
+- 628:### Dashboard Examples
+- 636:### Dashboard Prerequisites
+- 649:### Create a Dashboard
+- 658:### Configure the Dashboard Layout
+- 698:### Share a Dashboard
+- 710:### Personalize a Shared Dashboard
+- 720:### Publish a Dashboard
+- 729:### Export a Dashboard
+- 741:### Export a Portlet
+- 753:### Remove a Portlet from the Dashboard
+- 764:## Personalize a Portlet
+- 768:### Set List Column Layout
+- 784:### Set List Options
+- 799:### Add a Gantt Chart to a List Portlet
+- 827:### Configure the Gantt Chart Display Settings
+- 835:### Modify Time Period Settings for a Gantt Chart
+- 845:### Add an Image to a List Portlet
+- 857:### Add a Progress Bar to a List Portlet
+- 871:### Add a Time Scaled Value to a List Portlet
+- 897:### Add an Aggregation Row for a Number Field to a List Portlet
+- 912:### Display an Aggregation Field as a Bar or Column Graph
+- 930:### Configure a Chart Portlet
+- 938:### Configure for Consistent Chart Colors
+- 952:### Apply or Remove Consistent Chart Colors
+- 959:### Configure a Filter Portlet
+- 965:### Arrange Fields on a Filter Portlet
+- 978:## Run or Schedule a Job
+- 982:### View the Job Run Time and Run Status
+- 993:### Run or Schedule Jobs
+- 1010:### Edit Scheduled Job Run Properties
+- 1022:### Manage a Scheduled Job Run
+- 1031:### View or Delete the Job Log
+- 1045:## Run, Schedule, and Share Reports
+- 1049:### Report Access Rights
+- 1061:### Activate Reports
+- 1074:### Add Reports to the My Reports Portlet
+- 1090:### Run or Schedule a Report
+- 1114:### Edit Scheduled Report Properties
+- 1129:### View the Generated Report Output
+- 1138:### Delete Generated Reports
+- 1144:### Jobs Affecting Report Information
+- 1155:### Scheduling Reports with Date-Based Filters
+- 1168:## Share and Search Documents
+- 1177:### Knowledge Store Access Rights
+- 1185:### Knowledge Store and Document Manager Permissions
+- 1193:### Create a Folder
+- 1211:### Manage a Folder
+- 1255:### Manage Documents
+- 1301:### Search for Specific Documents and Forms
+- 1308:### Refine a Search with Additional Search Criteria
+- 1313:### Search Tips
+
+---
+## Viewing Custom Objects and Subobjects.md
+
+- 90:## Create a New Custom Object
+- 109:## Creating Custom Attributes Associated with the Custom Object
+- 113:## Creating a SubObject for the Custom Object
+- 133:## Copy Records for Custom Objects and Custom Sub Objects
+- 154:## Rank and Order Custom Master Objects and Sub-Objects
+- 171:## API Enable Custom and Stock Virtual Attributes Using XOG
+- 178:## Access Rights Associated with Custom Master Objects and Custom-Sub Objects
+- 184:### Access Rights Details
+- 194:## Configuring Custom Objects
+- 202:## Working with Custom Objects
+- 204:### Create a New Custom Object Item
+- 215:### Setup View Options
+- 231:### Setup Hierarchical Nested Grids
+- 254:### Sub-Grid Capabilities
+- 268:### Managing Records By Using the Grid Layout
+- 296:### Managing Records By Using the Board Layout
+- 322:### Working with Widgets
+- 347:## Securing Custom Objects
+- 363:### Execute Processes from Clarity
+- 390:## Access Rights Name Updated When You Rename Custom Objects
+- 401:## Introducing Vaia (Beta) - Leveraging AI
+- 432:## CSV Import for Custom Master Objects (Beta)
+- 481:### Introducing Support for Lookups and OBS
+- 494:### Importing TSVs by Using CSV Files
+- 517:### Introducing Asynchronous Synchronization
+- 531:### Enhancing CSV Import to Support Business Rules
+- 548:## Reordering Investment Tiles
+- 560:### Access Rights
+- 577:### Tile Group and Tile Viewing
+- 585:### Create a Tile Grouping
+- 594:### Edit Tile Grouping
+- 602:### Tile Group Reordering
+- 611:### Tile Reordering
+- 620:## Custom Objects: Conversations
+- 632:### Conversations About Custom Objects
+- 645:### Mention a User Using the @Sign
+- 658:### Conversations and Replies
+- 676:### Attach Files in Conversations
+- 694:### Conversation Notifications
+- 713:### Access Rights for Conversation-specific Actions In Notifications
+- 723:## Custom Objects: Action Items
+- 729:### View Action Items
+- 759:## Audit Module for Custom Objects
+- 770:### Audit Column Name Mapping
+- 787:### Verify Prerequisites
+- 798:### Setup View Options
+- 871:### View Audit Details
+
+---
+## Working with Objectives.md
+
+- 90:## Compare Objectives Workspace to Custom Objectives
+- 107:## Access Rights
+- 113:## View OKRs
+- 131:### Actual Value
+- 135:### Target Value
+- 141:## Managing Records By Using the Board Layout
+- 162:### Setup View Options for the Board Layout
+- 180:## Managing Records By Using the Grid Layout
+- 202:### Setup View Options
+- 218:### Right-click Context Menu
+- 231:## Create Objectives Using Quick Create or Create from Template
+- 237:### Create an Objective Using Quick Create
+- 249:### Create an Objective Using a Template
+- 292:### Copy an Objective
+- 305:## Setup Hierarchical Nested Grids
+- 328:### Sub-Grid Capabilities
+- 342:## Associate Investments with Objectives
+- 376:## Managing Business Agreements from Objectives
+- 388:## Introducing Vaia (Beta) - Leveraging AI
+- 421:## Working with Widgets
+- 457:### Interactive Filtering on Widgets
+- 461:### Persistent Filter Panel State
+- 465:### Add Multiple Instances of the Same Attribute in Filters
+- 471:## Audit Module for Objectives
+- 479:### Clarity vs Classic Audit Column Names
+- 501:### Verify Prerequisites
+- 512:### Setup View Options
+- 588:### View Audit Details
+- 632:## Configure Canvas to Manage the Objectives Dashboard
+- 661:### Pre-requisite
+- 667:### Setup Canvas to Create a Dashboard
+- 675:### Setup View Options
+- 718:### Add or Remove Chart Widget in the Canvas
+- 784:### Edit the Chart Widget in the Canvas
+- 801:### Add a Table Widget to Canvas
+- 816:### Configure the Columns in the Table Widget
+- 839:### Search in Table Widget
+- 848:### Arrange Widgets in the Canvas View
+- 861:### Search in Canvas
+- 865:### Setup Layout in the Canvas
+- 889:### Export to PDF
+- 905:### Expand the Widget
+- 922:### Widget Governance
+
+---
+## Working with Pages.md
+
+- 48:## Access Rights to Work with Pages
+- 61:## Accessing Pages
+- 81:## Setup View Options
+- 104:## Configure Canvas to add Table Widgets
+- 141:## Configure Widgets in Canvas
+- 168:## Setup Layout in the Canvas
+- 195:## Working with Action Item Widget
+- 203:### Action Item Tabs
+- 210:### Available Actions
+- 233:## Pages Overview for Administrators
+- 244:### To Dos Widget
+- 248:## Audit Module for Pages
+- 257:### Audit Grid Column Names
+- 281:### Verify Prerequisites
+- 292:### Setup View Options (Audit)
+- 368:### View Audit Details
+
+---
+## Working with Plans (Beta).md
+
+- 60:## Executing Processes from Properties
+- 81:### Supporting Email-Based Actions
+- 96:## Working with Plans (Beta)
+- 104:### Topics in This Section
+- 114:## Overview of Plans
+- 128:## Setup View Options
+- 142:## Implementing OBS Security on the Plans Object
+- 146:## Configure the Expandable Tree in Plans
+- 178:## Right-click Context Menu
+- 190:## Introducing Vaia (Beta) - Leveraging AI
+- 223:## Plans Blueprint and Business Rules
+- 233:### Versioning
+- 247:## Create and Synchronize Investment OBS-Driven Plans
+- 264:### Topics in This Section
+- 278:### Create an Investment OBS-Driven Plan
+- 305:### Configure an Investment OBS-Driven Plan
+- 338:### Set Financial Year Targets for Parent Plan Owners
+- 363:### View Existing Staff and Investments Associated with the Plans
+- 367:### Update Investment Tables
+- 381:### Create Versions of Your Plan
+- 416:### Synchronize Investment OBS Plans
+- 439:### Synchronize OBS Unit Changes in Plans
+- 473:### Publishing Plans
+- 508:### Commit a Plan
+- 525:### Start a New Round to Generate a Plan Hierarchy
+- 554:### View Investments and Staff from Child Plans in Parent Plans
+- 575:## Setting Up A Resource Driven Actuals Plan
+- 579:### Topics in This Section
+- 592:### Overview of Resource Tables
+- 600:### Overview of Investment Tables
+- 608:### Create a Plan
+- 629:### Configure the Plan
+- 655:### Add Resources to the Plan
+- 674:### Setting Up the Plan
+- 695:### Update the Resource Management and Investment Breakdown Tables
+- 708:### Create Versions of Your Plan
+- 739:### Synchronize Plans
+- 753:### Publishing Plans
+- 785:### Working with the Plan Hierarchy
+
+---
+## Working with Reporting.md
+
+- 85:## Audit Grid Limitations (Clarity 16.1.1)
+- 96:## Working with Reporting
+- 108:### Key Components of the Reporting Workspace
+- 141:### Prerequisites for the Reporting Workspace
+- 202:### Recent Enhancements to the Reporting Workspace
+- 211:## Working with Data Providers
+- 225:### Out-of-the-Box (OOTB) Data Providers
+- 229:### Data Provider Creation Process
+- 273:### Pre-Requisites
+- 288:### Use Case: Creating a Customized Data Provider for Investments
+- 373:### Viewing the Data Providers
+- 426:### Creating a Data Provider
+- 531:### Add Calculated Attributes
+- 600:### Managing Data Providers
+- 706:### Key Points to Remember
+- 746:### Exporting Data Providers
+- 767:### Support for a Read-Only Database User
+- 781:### Exporting Reports and Data Providers (Beta)
+- 818:## Working with Report Designer
+- 832:### Pre-Requisites
+- 851:### Overview of the Reporting Process
+- 891:### Introducing System Reports
+- 906:### Viewing Reports
+- 943:### Per-Period Metric Settings Across Report, Tab, and Widget Levels
+- 995:### Copy System Reports and Remap Data Providers
+- 1012:### Chart Type Switcher
+- 1018:### Conditional Formatting
+- 1024:### Additional Enhancements in 16.4.0
+- 1032:### New Global Security Rights for Queries in Data Providers
+- 1043:## Report Designer: Creating Your First Report
+- 1059:### Creating a Report
+- 1084:### Select a Data Provider
+- 1098:### Tab Settings in Report
+- 1109:### Configure the Report Canvas
+- 1169:### Configuring Filters
+- 1180:### Add Additional Data Providers (if needed)
+- 1188:### Preview and Publish Reports
+- 1200:## Creating and Managing Widgets
+- 1208:### Types of Widgets in Report Designer
+- 1228:### Configuring the Setup Tab for Widgets
+- 1256:### Configuring the Format Tab for Widgets
+- 1287:### Configuring the Style Tab for Widgets
+- 1298:### Configuring the Filter Tab for Widgets
+- 1322:### Working with the Number Tile and Progress Ring Widgets
+- 1342:### Working with Charts in the Report Designer
+- 1368:### Working with the Tables Widget in the Report Designer
+- 1417:### Conditional Formatting for Tables
+- 1445:### Configure Attribute Groups
+- 1485:### Conditional Formatting for Per-Period Metrics
+- 1502:## Working with Filters
+- 1509:### Report-Level Filters
+- 1526:### Tab-Level Filters
+- 1540:### Widget-Level Filters
+- 1556:### Filter Precedence Example
+- 1574:### Interactive Filtering in Report Designer
+- 1626:## Working with Drill Down Reports
+- 1657:## Managing, Editing, and Publishing Reports
+- 1665:### Managing Reports
+- 1669:### Using Layouts
+- 1696:### Editing a Report
+- 1728:### Working with Preview Mode
+- 1761:### Associating Report to Menu Icon
+- 1798:## Working with Reports
+- 1836:### Pre-Requisites
+- 1877:### Accessing the Reports Tile
+- 1881:### Viewing the Reports Grid
+- 1893:### Viewing Report Details
+- 1905:### Filtering Reports
+- 1915:### Exporting Reports List from the Grid
+- 1925:### Marking Reports as Favorites
+- 1934:### Accessing Published Reports
+- 1943:### Navigating Between Reports
+- 1949:### Schedule a Report
+- 2037:### Viewing and Editing Report Schedules
+- 2064:### Exporting a Report
+- 2109:### Working with the Reports Library
+- 2157:### Export Enhancements (Clarity 16.4.0)
+
+---
+## Working with Team Investments.md
+---
+## XML Open Gateway (XOG) Development.md
+
+- 28:## XOG Client
+- 33:## XOG Web Services
+- 40:## Web Services Descriptive Language (WSDL)
+- 44:## Assign XOG Access Rights
+

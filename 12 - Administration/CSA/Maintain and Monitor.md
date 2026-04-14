@@ -7,6 +7,10 @@ tags:
 aliases:
   - Maintain Classic PPM
   - Monitor Classic PPM
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # CSA: Maintain and Monitor Classic PPM (On-Premise Only)

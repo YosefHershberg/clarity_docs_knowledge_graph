@@ -5,6 +5,9 @@ tags:
   - concept
 aliases:
   - Program Cookbook
+canonical: true
+audience: pm
+domain: projects
 ---
 # Clarity Cookbook: Program Management Made Easy
 

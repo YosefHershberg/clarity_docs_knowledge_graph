@@ -1,4 +1,4 @@
----
+﻿---
 title: Classic PPM
 tags:
   - MOC
@@ -21,7 +21,10 @@ The Classic PPM interface provides the legacy web application for Clarity. While
 - [[IT Service Management]] — IT service management
 - [[Portfolio Management]] — Portfolio analysis and optimization
 - [[Resource Management Classic]] — Classic resource management (create resources/roles, calendars, find/book/allocate, fill requisitions, capacity planning)
-- [[MSP Integration]] — Microsoft Project integration
+- [[MSP Integration]] — Microsoft Project integration (hub)
+  - [[MSP Integration Setup]] — Benefits, drivers, installation and configuration
+  - [[MSP Synchronization]] — Syncing projects, resources, and tasks
+  - [[MSP Field Mappings]] — Default field mappings and data exchange
 - [[Open Workbench]] — Open Workbench scheduling
 - [[Requirements Planning]] — Requirements and release planning
 
@@ -56,3 +59,17 @@ The Classic PPM interface provides the legacy web application for Clarity. While
 ## Related
 - [[Classic PPM Getting Started]]
 - [[_MOC Projects]]
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Demand Management]]
+- [[23 - Source Documentation/Enter Hours and Submit a Timesheet]]
+- [[23 - Source Documentation/Getting Started with Clarity]]
+- [[23 - Source Documentation/IT Service Management]]
+- [[23 - Source Documentation/Portfolio Management]]
+- [[23 - Source Documentation/Project Management]]
+- [[23 - Source Documentation/Resource Management]]
+- [[23 - Source Documentation/Submit a Timesheet (Classic)]]
+- [[23 - Source Documentation/Using Classic PPM]]
+<!-- SOURCE_COVERAGE_END -->

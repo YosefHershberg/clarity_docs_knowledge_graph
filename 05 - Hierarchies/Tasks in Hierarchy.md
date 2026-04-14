@@ -7,6 +7,9 @@ aliases:
   - Hierarchy Tasks
   - View Tasks Hierarchy
   - Cross-Investment Tasks
+canonical: true
+audience: pm, leadership
+domain: hierarchies
 ---
 
 # Tasks in Hierarchy

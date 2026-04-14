@@ -5,6 +5,9 @@ tags:
 aliases:
   - Audit
   - Investment Audit
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Audit Module for Investments

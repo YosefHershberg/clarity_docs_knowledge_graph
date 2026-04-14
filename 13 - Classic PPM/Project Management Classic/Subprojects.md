@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2280-2293
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Define Subprojects (Classic PPM)
 
@@ -54,7 +57,8 @@ Subprojects let you group related projects under one master project for scheduli
    - **Convert resources to roles** — Replace named resources with primary/team roles
 6. Save changes
 
-> **Warning:** Verify that task and assignment start dates are on or after the project start date; otherwise, the project start date is automatically redefined.
+> [!WARNING]
+> Verify that task and assignment start dates are on or after the project start date; otherwise, the project start date is automatically redefined.
 
 ## Create Subprojects from Project WBS
 

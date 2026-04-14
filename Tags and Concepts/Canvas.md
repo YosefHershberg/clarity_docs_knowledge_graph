@@ -5,6 +5,9 @@ tags:
 aliases:
   - Status Canvas
   - Dashboard Canvas
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Canvas
 

@@ -7,6 +7,9 @@ tags:
 aliases:
   - Resource Management Classic
 source_pages: 2570-2617
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Resource Management (Classic PPM)
 
@@ -36,7 +39,8 @@ As a resource manager or administrator, create roles first as placeholders, then
 6. (Optional) Click **Properties > Contact Information** to add contact details
 7. As administrator: Activate the resource and create an initial login password
 
-> **Note:** Labor resources (users) cannot be deleted — the system preserves history for referential integrity. To deactivate a user who has left, lock their account; create a new resource record if they return.
+> [!NOTE]
+> Labor resources (users) cannot be deleted — the system preserves history for referential integrity. To deactivate a user who has left, lock their account; create a new resource record if they return.
 
 ### Create a Nonlabor Resource or Role
 
@@ -78,6 +82,33 @@ As a resource manager or administrator, create roles first as placeholders, then
 3. Repeat for each OBS unit/booking manager combination
 4. Use **Copy from Role** / **Copy to Role** to replicate mappings
 
+### Configure Teams
+
+Release 15.5 introduced the concept of a **team resource** — a defined team that can stand alone as a new type of resource, but also be populated by roles and named labor resources. Teams are created in Clarity and edited in Classic PPM with the following access rights:
+
+| Access Right | Scope | Purpose |
+|---|---|---|
+| Resource - Navigate | Global | Access the Resource List in Classic PPM |
+| Resource - Edit | Global / Instance / OBS | Edit team resource general properties |
+| Resource - Edit Financial | Global / Instance / OBS | Edit team financial properties |
+
+**Navigate:** In the main menu, click **Administration** > **Teams**.
+
+**Open a Team:** Click **NEW TEAM** to create, or click a team name to open an existing one.
+
+**Staff a Team:** After creating a team, add resources and roles. Required access rights for allocation:
+- **Resource - Soft Book** / **Resource - Hard Book** — to allocate a team to an investment
+- **Resource - View** — to add a team as a task owner
+
+**Team Time Tracking:** Enable time tracking for an entire team. Required access rights:
+- **Resource - Time Entry** — enter timesheets for a team
+- **Resource - Approve Time** — approve timesheets for a team
+
+**Team Financial Properties:** A team resource can be financially enabled with its own cost rate in the rate matrix. Team actuals posted in the financial module appear in financial plans and in the Posted Transaction Review.
+
+> [!NOTE]
+> The team resource has a reduced set of properties compared to a human labor resource. Team data can be populated into a cost plan using the population action from Project Allocations or Assignments.
+
 ## Configure Base Calendars, Shifts, and Work Days
 
 Base calendars determine FTE and availability calculations for resources.
@@ -91,7 +122,8 @@ Base calendars determine FTE and availability calculations for resources.
    - **Standard** — Mark as the standard calendar (Default: Cleared)
 3. Save
 
-> **Note:** You cannot delete the standard calendar or a calendar that is the parent (base) for another calendar.
+> [!NOTE]
+> You cannot delete the standard calendar or a calendar that is the parent (base) for another calendar.
 
 ### Define Work Shifts
 
@@ -207,9 +239,45 @@ Replacing a resource transfers remaining ETC but not actuals, pending actuals, o
 3. Select the replacement resource/role
 4. Confirm the replacement
 
+### Deactivate a Resource or Role Profile
+
+When a resource or role is no longer needed, you can deactivate it. Other users cannot assign deactivated resources or roles to tasks. The inactive resource or role continues to appear in the resource list unless you filter it out.
+
+> [!WARNING]
+> Labor resources (users) cannot be deleted — the system preserves history for referential integrity. To deactivate a user who has left, lock their account. If the user returns, create a new resource record.
+
+Follow these steps:
+
+1. Open **Home > Resource Management > Resources**
+2. Open the resource or role
+3. Clear the **Active** check box and click **Save**
+
 ## Fill Resource Requisitions
 
 As a resource manager, fill project staffing requests (requisitions) submitted by project managers.
+
+### Requisition Routing and Notification
+
+When a requisition is created, it is routed to the appropriate booking manager based on the following logic:
+- If a default booking manager is defined for the resource or role, the requisition is routed to that booking manager.
+- If no default booking manager is defined, the staffing requirement OBS is combined with the role to determine the booking manager.
+- If no mapping exists for the specific role and OBS, the application looks up the OBS role chain until a manager is found.
+- Both the project manager (requisition creator) and booking manager are notified of status changes.
+
+The following table shows who is notified when the requisition status changes:
+
+| Requisition Status Change | Requested By | Booking Manager |
+|---|---|---|
+| From New to Open | Notified | Notified |
+| From Open to Propose | Notified | Notified |
+| From Proposed to Booked | Notified | — |
+| From Open to Book (no approval required) | Notified | — |
+| Booking Manager changes | — | New and old BMs notified |
+| Closed | Notified | — |
+| Deleted | Notified | — |
+
+> [!NOTE]
+> Configure your notification format, message layout, and delivery method from **Account Settings > Notifications**.
 
 ### Find Resources to Fill Role Requests
 
@@ -242,6 +310,44 @@ As a resource manager, fill project staffing requests (requisitions) submitted b
    - Red = over-allocation
 5. If requisition approval is not required, a **Book** button appears instead of **Propose**
 
+### Reduce Resource Allocations
+
+After opening a requisition, if a resource is over-allocated, you can reduce their allocation.
+
+Follow these steps:
+
+1. Open **Home > Resource Management > Resource Requisitions**
+2. Edit the allocation fields on the page
+3. Reduce the allocation amount to eliminate over-booking (red shading disappears; yellow = new booking amount, green = other project bookings)
+4. Save the new allocation amount
+
+Alternatively, from an open resource:
+
+1. Click the **Properties** icon to the left of the resource name
+2. Edit existing allocation segments and add any new ones
+3. Click **Save and Return**
+
+### Participate in Requisition Discussions
+
+Exchange messages about a requisition with other stakeholders.
+- A discussion thread begins with the first reply under the original message.
+- Subsequent messages appear in descending order by date and time.
+- Only users with access to the requisition can participate.
+
+Follow these steps:
+
+1. Open **Home > Resource Management > Resource Requisitions**
+2. Open a requisition and click **Discussions**
+3. Click the message icon or **Expand**:
+   - To start a discussion: click **New**
+   - To reply: click the subject line of the message
+4. Complete:
+   - **Subject** — Subject of the message
+   - **Message Text** — Body of the message
+   - **Attachments** — Click Browse to attach a document
+   - **Notify Participants** — Send email notifications (Default: Selected)
+5. Click **Save and Return**
+
 ### Decline a Requisition
 
 1. Open the requisition
@@ -263,6 +369,59 @@ As a resource manager, fill project staffing requests (requisitions) submitted b
 | Booked | Project manager accepted; resource is hard-booked |
 | Closed | No further action; set by requestor or when booking manager declines |
 
+### Set a Default Booking Manager for Resources
+
+As a resource manager, you can define a default booking manager for each resource and role so that requisitions are routed automatically without intervention from the project manager.
+
+> [!NOTE]
+> Defining the booking manager is optional. If undefined, the project manager can set it at the requisition level or leave it blank. If left blank, the access rights of available resource managers determine allocation.
+
+Follow these steps:
+
+1. Open **Home > Resource Management > Resources**
+2. Click a resource name to open the resource properties
+3. Specify the **Booking Manager** for the resource in the **General** section
+4. Save your changes
+
+### Modify and Resubmit Proposals
+
+When you receive a notification that the project manager has rejected the proposed resources on a requisition, you can modify and resubmit it.
+
+Follow these steps:
+
+1. Open **Home > Resource Management > Resource Requisitions**
+2. Click the requisition link
+3. Click **Discussions** to see the reason behind the rejection
+4. Select and propose the resource that best matches the request; delete the other resources
+5. The Resource Requisitions page refreshes the requisition status to **Proposed**
+
+### Manage an Automated Requisition Process
+
+You can configure an automated notification process to identify different stages in a requisition lifecycle and avoid notification uncertainty when new requisitions remain in **New** status.
+
+> [!NOTE]
+> A process created within a requisition is available only for that requisition. An administrator can create a global requisition process available to all requisitions (global access rights required).
+
+Follow these steps:
+
+1. Open **Home > Resource Management > Resource Requisitions**
+2. Select a requisition and click the **Processes** tab
+3. To view running process instances, click **Initiated** (the default)
+4. To view local and global processes available to this requisition, click **Available**:
+   - To define a new process, click **New** and save
+5. To start a process manually, select the check box and click **Start**
+6. To set the object for the requisition process, click **Add Linked Object**
+
+### Audit Requisitions
+
+The Requisition Audit Trail page records when specific fields were changed, and by whom. Use it to track changes by resource and date.
+
+Follow these steps:
+
+1. Open **Home > Resource Management > Resource Requisitions**
+2. Click a requisition and click **Audit**
+3. Filter the list to view the audit fields for that requisition
+
 ## Manage Resource Capacity Planning Scenarios
 
 Use scenarios to influence resource capacity planning decisions based on workload, allocation, and investments.
@@ -277,6 +436,20 @@ Use scenarios to influence resource capacity planning decisions based on workloa
 4. Assign a primary role to all resources
 5. For open team roles: set the **Staff OBS Unit** on the Team Detail page
 6. Run the **Datamart Extraction** job
+
+### Include Resources To-Be-Hired in Capacity Planning Portlets
+
+Use the **To-Be-Hired** resource attribute to include future hires in current and future capacity views.
+
+1. Open **Home > Resource Management > Resources**
+2. Define one or more labor resources with a primary role and a hire date in the future
+3. Navigate to **Resource Planning** or **Capacity Overview**
+4. Select a value in the **Include To-Be-Hired Resources** filter field:
+   - **No** — View capacity and demand of current employees only
+   - **Yes** — Include future hires under consideration
+
+> [!NOTE]
+> These portlets only include resources with an assigned primary role. Resources with no primary role do not appear.
 
 ### View High-Level Capacity Planning Information
 

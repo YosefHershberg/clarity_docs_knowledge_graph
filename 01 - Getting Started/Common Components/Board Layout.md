@@ -7,13 +7,16 @@ aliases:
   - Kanban Board
   - Board View
   - Clarity Board
+canonical: true
+audience: everyone
+domain: ui
+parent: "[[_MOC Getting Started]]"
 ---
 
 # Board Layout
 
-The **Board Layout** in Clarity PPM 16.4.1 provides a Kanban-style visual view of records. Instead of rows in a table, records appear as **cards** organized in columns representing status stages or other categorical groupings. The Board Layout is available for projects, investments, tasks, and other supported object types.
-
-%%Source: p287-291%%
+The **Board Layout** in Clarity PPM 16.4.1 provides a Kanban-style visual view of records.
+Instead of rows in a table, records appear as **cards** organized in columns representing status stages or other categorical groupings. The Board Layout is available for projects, investments, tasks, and other supported object types.
 
 ---
 
@@ -21,10 +24,10 @@ The **Board Layout** in Clarity PPM 16.4.1 provides a Kanban-style visual view o
 
 | Use Case | Example |
 |----------|---------|
-| Tracking task status visually | To Do → In Progress → Complete |
-| Managing investment pipeline stages | Proposed → Approved → Active → Closed |
+| Tracking task status visually | To Do -> In Progress -> Complete |
+| Managing investment pipeline stages | Proposed -> Approved -> Active -> Closed |
 | Reviewing items by priority or owner | Low / Medium / High priority columns |
-| Sprint or iteration planning | Backlog → Sprint 1 → Sprint 2 → Done |
+| Sprint or iteration planning | Backlog -> Sprint 1 -> Sprint 2 -> Done |
 
 > [!tip]
 > The Board Layout is especially useful for **agile-style work management** where moving cards between status columns drives the workflow. It complements the [[Grids|Grid Layout]] which is better for detailed data entry and analysis.
@@ -34,7 +37,7 @@ The **Board Layout** in Clarity PPM 16.4.1 provides a Kanban-style visual view o
 ## Switching to Board Layout
 
 1. Navigate to a supported list (e.g., Projects, Tasks, Investments).
-2. In the toolbar, look for the **view switcher** — icons for Grid, Board, Timeline.
+2. In the toolbar, look for the **view switcher** icons for Grid, Board, Timeline.
 3. Click the **Board** icon (usually represented by vertical columns or cards icon).
 
 The view switches from a table to a card-based board.
@@ -43,23 +46,10 @@ The view switches from a table to a card-based board.
 
 ## Board Layout Anatomy
 
-```
-┌── Board Toolbar ──────────────────────────────────────────────────┐
-│  [+ New]  [Group by: Status ▼]  [Filter ▼]  [Columns ▼]  [⋮]   │
-├───────────────┬───────────────┬───────────────┬───────────────────┤
-│  PROPOSED     │  APPROVED     │  ACTIVE       │  CLOSED           │
-│  (4 cards)    │  (7 cards)    │  (12 cards)   │  (23 cards)       │
-├───────────────┼───────────────┼───────────────┼───────────────────┤
-│ ┌───────────┐ │ ┌───────────┐ │ ┌───────────┐ │                   │
-│ │ Project A │ │ │ Project C │ │ │ Project E │ │                   │
-│ │ J. Smith  │ │ │ M. Jones  │ │ │ A. Davis  │ │                   │
-│ │ $50k      │ │ │ $120k     │ │ │ $80k      │ │                   │
-│ └───────────┘ │ └───────────┘ │ └───────────┘ │                   │
-│ ┌───────────┐ │ ...           │ ...           │                   │
-│ │ Project B │ │               │               │                   │
-│ └───────────┘ │               │               │                   │
-└───────────────┴───────────────┴───────────────┴───────────────────┘
-```
+- Top toolbar with actions such as **+ New**, **Group by**, **Filter**, and **Columns**
+- Columns based on the selected grouping field (for example: Proposed, Approved, Active, Closed)
+- Card counts per column
+- Individual cards showing key fields such as name, owner, and financial summary
 
 ---
 
@@ -86,7 +76,7 @@ Board columns represent the distinct values of the **group-by field** (typically
 Each card on the board represents one record. Cards display a summary of key fields configured for the board view.
 
 ### Default Card Fields (typical configuration)
-- **Record Name** (clickable — opens the Details Panel or full record)
+- **Record Name** (clickable opens the Details Panel or full record)
 - **Manager / Owner**
 - **Dates** (start/finish)
 - **Financial summary** (budget, cost, etc.)
@@ -127,7 +117,7 @@ You can change a record's status/category by dragging its card to a different co
 
 ## Filtering the Board
 
-Filters applied in Board Layout work the same as in Grid Layout — they reduce which cards are shown.
+Filters applied in Board Layout work the same as in Grid Layout - they reduce which cards are shown.
 
 1. Click **Filter** in the board toolbar.
 2. Add filter conditions (see [[Common Components/Filters]]).
@@ -158,10 +148,12 @@ Filters applied in Board Layout work the same as in Grid Layout — they reduce 
 
 ---
 
-## Related Notes
+## Related
 
-- [[Common Components/Grids]] — The table-based alternative view
-- [[Common Components/Filters]] — Filtering cards on the board
-- [[Common Components/Saved Views]] — Saving board configurations
-- [[Common Components/Details Panel]] — Opening a full record from a board card
-- [[Common Components/Charts]] — Chart view for data visualization
+- [[Common Components/Grids]] - The table-based alternative view
+- [[Common Components/Filters]] - Filtering cards on the board
+- [[Common Components/Saved Views]] - Saving board configurations
+- [[Common Components/Details Panel]] - Opening a full record from a board card
+- [[Common Components/Charts]] - Chart view for data visualization
+
+%%Source: p287-291%%

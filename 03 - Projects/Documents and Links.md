@@ -7,6 +7,9 @@ aliases:
   - Project Links
   - Attachments
   - File Attachments
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Documents and Links

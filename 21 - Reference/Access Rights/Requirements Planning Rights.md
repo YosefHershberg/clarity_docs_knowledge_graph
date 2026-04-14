@@ -6,6 +6,9 @@ tags:
 aliases:
   - Requirements Rights
   - Release Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Requirements Planning Access Rights
 

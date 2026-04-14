@@ -1,4 +1,4 @@
----
+﻿---
 title: PMO Portfolio Management Reports
 tags:
   - reference
@@ -8,11 +8,13 @@ aliases:
 ---
 # PMO Portfolio Management Reports
 
+
 The Portfolio Management reports provide visibility into investment data within portfolios and portfolio plans. They support plan comparison, investment-level change tracking, and waterline analysis.
 
 > Source: Clarity 16.4.1 documentation, pp. 3560–3571
 
 ## Reports Included
+
 
 | Report Name | Resource ID | Data Source |
 |---|---|---|
@@ -24,7 +26,9 @@ The Portfolio Management reports provide visibility into investment data within 
 
 ## Portfolio Plan Comparison
 
-**Description:** Provides a comprehensive portfolio-level view comparing actual portfolio data to portfolio plans. Displays above-waterline investment totals, metrics, and counts. Supports comparison of the portfolio to up to three plans, with optional comparison to the plan of record. Includes distributed target amounts and investment-level detail.
+
+**Description:** Provides a comprehensive portfolio-level view comparing actual portfolio data to portfolio plans. Displays above-waterline investment totals, metrics, and counts.
+Supports comparison of the portfolio to up to three plans, with optional comparison to the plan of record. Includes distributed target amounts and investment-level detail.
 
 > **Warning:** This report runs numerous queries. Apply filters before running to avoid performance issues.
 
@@ -64,7 +68,10 @@ The Portfolio Management reports provide visibility into investment data within 
 
 ## Portfolio Plan Changes
 
-**Description:** Displays investments within a portfolio that have key attributes modified in portfolio plans. Highlights changes to budgeted/planned cost and benefit, role demand, and schedule dates across up to three plans. Comparisons use highlighting and arrow indicators to identify changes. Can be grouped by investment manager within each portfolio.
+
+**Description:** Displays investments within a portfolio that have key attributes modified in portfolio plans.
+Highlights changes to budgeted/planned cost and benefit, role demand, and schedule dates across up to three plans.
+Comparisons use highlighting and arrow indicators to identify changes. Can be grouped by investment manager within each portfolio.
 
 **Data Source:** Classic PPM Bean (transactional)
 
@@ -86,6 +93,7 @@ The Portfolio Management reports provide visibility into investment data within 
 
 ## Portfolio Plan Changes - Waterline and Rank
 
+
 **Description:** Displays the Above Waterline indicator and numerical Rank for investments in each portfolio across up to three portfolio plans. Highlights changes in waterline status and rank between portfolio and plans using color highlighting.
 
 **Data Source:** Classic PPM Bean (transactional)
@@ -103,6 +111,7 @@ The Portfolio Management reports provide visibility into investment data within 
 ---
 
 ## Common Portfolio Report Requirements
+
 
 ### Portfolio Synchronization
 The **Synchronize Portfolio Investments** job is required for all portfolio reports:

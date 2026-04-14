@@ -5,6 +5,9 @@ tags:
 aliases:
   - Status Reports
   - Status Reporting
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Investment Status Reports

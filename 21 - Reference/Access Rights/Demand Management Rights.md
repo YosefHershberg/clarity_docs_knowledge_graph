@@ -5,6 +5,9 @@ tags:
   - admin
 aliases:
   - Demand Management Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Demand Management Access Rights
 

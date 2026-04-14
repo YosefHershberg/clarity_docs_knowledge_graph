@@ -1,4 +1,4 @@
----
+﻿---
 title: Financial Management
 tags:
   - MOC
@@ -24,6 +24,8 @@ Financial management in Clarity provides tools for planning, tracking, and analy
 - [[Capital and Operating Costs]] — Track CapEx vs OpEx
 - [[Cost Rate Matrix]] — Configure cost and rate matrices
 - [[Financial Entity Setup]] — Set up financial entities
+- [[Financial Locations]] — Set up geographical financial locations
+- [[Financial Departments]] — Set up organizational financial departments
 - [[Currencies and FX Rates]] — Currency and exchange rate configuration
 - [[Financial Classes]] — Set up financial classes
 - [[Charge Codes and Vendors]] — Defaults, charge codes, vendors
@@ -44,7 +46,14 @@ Financial management in Clarity provides tools for planning, tracking, and analy
 ## Related
 - [[_MOC Investments]] — Investment financial plans
 - [[_MOC Projects]] — Project financial plans
-- [[Vouchers and Transactions]] — Transaction management
+- [[Transactions and WIP]] — Transaction management
 - [[_MOC Timesheets]] — Time tracking feeds financial actuals
 
 %%Source: p2121-2203%%
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Financial Management]]
+- [[23 - Source Documentation/Manage Vouchers and Transactions]]
+<!-- SOURCE_COVERAGE_END -->

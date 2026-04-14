@@ -1,4 +1,4 @@
----
+﻿---
 title: Investments Overview
 tags:
   - MOC
@@ -46,6 +46,8 @@ Investments in Clarity represent the various types of work and initiatives that 
 - [[Status Reports]] — Idea status reporting
 - [[Canvas Dashboard]] — Idea dashboard configuration
 - [[Checklists]] — Idea checklists
+- [[Conversations]] — Idea conversations and @mentions
+- [[Audit]] — Idea audit trail and change history
 
 ## Team Investments
 - [[Getting Started]] — Team investments overview and setup
@@ -76,3 +78,11 @@ Investments in Clarity represent the various types of work and initiatives that 
 - [[_MOC Financials]] — Financial management
 
 %%Source: p330-332%%
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Capture Develop and Approve New Ideas]]
+- [[23 - Source Documentation/Using Clarity - Custom Investments]]
+- [[23 - Source Documentation/Viewing Custom Objects and Subobjects]]
+<!-- SOURCE_COVERAGE_END -->

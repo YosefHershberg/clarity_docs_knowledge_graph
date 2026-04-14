@@ -7,20 +7,23 @@ aliases:
   - Global Search Beta
   - Clarity Search
   - Find Records
+canonical: true
+audience: everyone
+domain: ui
+parent: "[[_MOC Getting Started]]"
 ---
 
 # Global Search (Beta)
 
-The **Global Search** feature in Clarity PPM 16.4.1 provides a unified search experience across all record types in the system. It is currently labeled as **Beta**, meaning it is actively being developed and improved. Global Search allows you to quickly find projects, investments, resources, tasks, and other records without navigating to their specific sections.
-
-%%Source: p308-309%%
+The **Global Search** feature in Clarity PPM 16.4.1 provides a unified search experience across all record types in the system.
+It is currently labeled as **Beta**, meaning it is actively being developed and improved. Global Search allows you to quickly find projects, investments, resources, tasks, and other records without navigating to their specific sections.
 
 ---
 
 ## Accessing Global Search
 
 - Click the **magnifying glass icon** in the top navigation bar (top-right area).
-- Or use the keyboard shortcut: **Ctrl+K** (Windows/Linux) / **Cmd+K** (Mac) — where available.
+- Or use the keyboard shortcut: **Ctrl+K** (Windows/Linux) / **Cmd+K** (Mac) - where available.
 - The global search bar expands or a search modal opens.
 
 > [!note] Beta Feature
@@ -58,21 +61,17 @@ The **Global Search** feature in Clarity PPM 16.4.1 provides a unified search ex
 
 Search results are grouped by **record type** for clarity:
 
-```
-Search results for "alpha"
+Example grouped results:
 
-PROJECTS (3)
-  ▸ Project Alpha        — Active | J. Smith
-  ▸ Alpha Roadmap Init   — Planned | M. Jones
-  ▸ Alpha Platform v2    — Active | A. Davis
-
-RESOURCES (1)
-  ▸ Alpha, James         — Resource | Engineering
-
-IDEAS (2)
-  ▸ Alpha Commerce Portal — Proposed
-  ▸ Project Alpha Redux   — Evaluated
-```
+- **Projects**
+  - Project Alpha - Active | J. Smith
+  - Alpha Roadmap Init - Planned | M. Jones
+  - Alpha Platform v2 - Active | A. Davis
+- **Resources**
+  - Alpha, James - Resource | Engineering
+- **Ideas**
+  - Alpha Commerce Portal - Proposed
+  - Project Alpha Redux - Evaluated
 
 - Each result shows the **record name**, **type badge**, and key identifiers (status, manager/owner).
 - Click any result to open it.
@@ -82,22 +81,22 @@ IDEAS (2)
 ## Search Tips
 
 > [!tip] Use Partial Names
-> You do not need to type the full name — partial matches work. Typing "alph" will return all records with "alph" in their name.
+> You do not need to type the full name - partial matches work. Typing "alph" will return all records with "alph" in their name.
 
 > [!tip] Search by ID
 > If you know the Clarity record ID (e.g., a project ID like "PRJ-1042"), you can type it directly to navigate to that specific record.
 
 > [!tip] Case Insensitive
-> Global Search is case-insensitive — "Alpha", "alpha", and "ALPHA" return the same results.
+> Global Search is case-insensitive - "Alpha", "alpha", and "ALPHA" return the same results.
 
 ---
 
 ## Limitations (Beta)
 
-- **No advanced filtering** — You cannot add field-level filter conditions within Global Search. For filtered lists, use the grid with [[Common Components/Filters|Filters]].
-- **No full-text content search** — Searches match record names and identifiers, not free-text field content (e.g., description text).
-- **Performance at scale** — Very large datasets may experience slight delays in results loading.
-- **Limited to accessible records** — Results respect your access rights. You will not see records you do not have permission to view.
+- **No advanced filtering** - You cannot add field-level filter conditions within Global Search. For filtered lists, use the grid with [[Common Components/Filters|Filters]].
+- **No full-text content search** - Searches match record names and identifiers, not free-text field content (e.g., description text).
+- **Performance at scale** - Very large datasets may experience slight delays in results loading.
+- **Limited to accessible records** - Results respect your access rights. You will not see records you do not have permission to view.
 
 ---
 
@@ -113,8 +112,10 @@ IDEAS (2)
 
 ---
 
-## Related Notes
+## Related
 
-- [[Common Components/Filters]] — Applying detailed filters within a grid
-- [[Common Components/Grids]] — Browsing records with full filtering and sorting
-- [[First Time Login]] — Navigation overview including the search bar
+- [[Common Components/Filters]] - Applying detailed filters within a grid
+- [[Common Components/Grids]] - Browsing records with full filtering and sorting
+- [[First Time Login]] - Navigation overview including the search bar
+
+%%Source: p308-309%%

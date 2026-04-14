@@ -3,6 +3,9 @@ title: GEL Integration Processes
 tags:
   - dev
   - howto
+canonical: true
+audience: dev
+domain: development
 ---
 # GEL Integration Processes
 

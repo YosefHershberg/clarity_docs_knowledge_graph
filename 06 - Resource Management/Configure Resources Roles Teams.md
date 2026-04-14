@@ -5,6 +5,9 @@ tags:
   - howto
 aliases:
   - Resource Configuration
+canonical: true
+audience: rm, pm
+domain: resources
 ---
 
 # Configure Resources, Roles, and Team Resources

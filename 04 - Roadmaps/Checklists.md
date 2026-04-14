@@ -7,6 +7,9 @@ aliases:
   - Roadmap Gates
   - Roadmap Governance
   - Roadmap Quality Checks
+canonical: true
+audience: pm, leadership
+domain: roadmaps
 ---
 
 # Roadmap Checklists

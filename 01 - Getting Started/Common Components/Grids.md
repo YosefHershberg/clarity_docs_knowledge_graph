@@ -8,30 +8,25 @@ aliases:
   - Grid View
   - Grid Layout
   - Conditional Formatting
+canonical: true
+audience: everyone
+domain: ui
+parent: "[[_MOC Getting Started]]"
 ---
 
 # Working with Clarity Grids
 
-The **Grid** is the primary data display and editing interface throughout Clarity PPM's New UX. Almost every list of records — projects, tasks, investments, resources, timesheets — is presented as a grid. Grids are highly configurable and support inline editing, filtering, sorting, grouping, and conditional formatting.
-
-%%Source: p276-285%%
+The **Grid** is the primary data display and editing interface throughout Clarity PPM's New UX.
+Almost every list of records - projects, tasks, investments, resources, and timesheets - is presented as a grid. Grids are highly configurable and support inline editing, filtering, sorting, grouping, and conditional formatting.
 
 ---
 
 ## Grid Anatomy
 
-```
-┌─ Toolbar ──────────────────────────────────────────────────────────────┐
-│  [+ New]  [View: Default ▼]  [Filter ▼]  [Group ▼]  [Columns ▼]  [⋮] │
-├─ Column Headers ───────────────────────────────────────────────────────┤
-│  ☐  │  Name          │  Status    │  Manager    │  Finish     │  ...   │
-├─────────────────────────────────────────────────────────────────────────┤
-│  ☐  │  Project Alpha │  Active    │  J. Smith   │  2024-06-30 │  ...   │
-│  ☐  │  Project Beta  │  On Hold   │  M. Jones   │  2024-09-15 │  ...   │
-│  ☐  │  Project Gamma │  Planned   │  A. Davis   │  2025-01-01 │  ...   │
-└────────────────────────────────────────────────────────────────────────┘
-[  Pagination: Rows 1-25 of 142  ]  [ ← ]  [ 1 ]  [ 2 ]  [ → ]
-```
+- Top toolbar with actions such as **+ New**, **View**, **Filter**, **Group**, and **Columns**
+- Header row with sortable column names
+- Data rows for each record
+- Bottom pagination area with row count and page navigation
 
 ---
 
@@ -45,7 +40,7 @@ The **Grid** is the primary data display and editing interface throughout Clarit
 | **Group** | Group rows by a field value |
 | **Columns** | Add, remove, or reorder columns |
 | **Export** | Export grid data to CSV or Excel |
-| **Overflow (⋮)** | Additional actions: bulk update, delete, share view |
+| **Overflow menu (...)** | Additional actions: bulk update, delete, share view |
 
 ---
 
@@ -93,7 +88,7 @@ Most fields in a grid row can be edited directly without opening a detail panel.
 > If a required field is left empty or an invalid value is entered, the cell will display an error indicator. The row cannot be saved until the validation error is resolved.
 
 > [!tip] Bulk Editing
-> Select multiple rows using the checkboxes, then use **Actions → Bulk Update** to change a field value across all selected rows simultaneously.
+> Select multiple rows using the checkboxes, then use **Actions -> Bulk Update** to change a field value across all selected rows simultaneously.
 
 ---
 
@@ -108,7 +103,7 @@ Grouping organizes rows by a shared field value, collapsing rows into expandable
 5. To remove grouping, click **Group** again and deselect the field.
 
 > [!note]
-> Grouped grids support aggregation in the group header row — sums, averages, and counts for numeric columns.
+> Grouped grids support aggregation in the group header row - sums, averages, and counts for numeric columns.
 
 ---
 
@@ -118,14 +113,14 @@ Conditional formatting applies visual styling (background color, text color, ico
 
 ### Setting Up Conditional Formatting
 
-1. Click the **overflow menu (⋮)** in the grid toolbar.
+1. Click the **overflow menu (...)** in the grid toolbar.
 2. Select **Conditional Formatting** (or find it in the column header right-click menu).
 3. Click **+ Add Rule**.
 4. Configure:
-   - **Field** — The field to evaluate (e.g., Status, % Complete, Finish Date)
-   - **Condition** — The comparison (equals, greater than, less than, contains, is empty, etc.)
-   - **Value** — The threshold or target value
-   - **Formatting** — Choose background color, text color, or icon
+   - **Field**: The field to evaluate (e.g., Status, % Complete, Finish Date)
+   - **Condition**: The comparison (equals, greater than, less than, contains, is empty, etc.)
+   - **Value**: The threshold or target value
+   - **Formatting**: Choose background color, text color, or icon
 5. Click **Save**.
 
 ### Example Conditional Formatting Rules
@@ -138,7 +133,7 @@ Conditional formatting applies visual styling (background color, text color, ico
 | Budget Variance | Greater than | 10% | Orange background |
 
 > [!tip]
-> Multiple rules can be applied to the same column. Rules are evaluated in order — the first matching rule wins. Drag rules to reorder their priority.
+> Multiple rules can be applied to the same column. Rules are evaluated in order - the first matching rule wins. Drag rules to reorder their priority.
 
 > [!note]
 > Conditional formatting rules can be saved as part of a [[Saved Views|Saved View]] so your team sees consistent visual indicators.
@@ -151,7 +146,7 @@ Conditional formatting applies visual styling (background color, text color, ico
 - Click the **header checkbox** to select all rows on the current page.
 - With rows selected, the toolbar shows bulk action options:
   - **Delete** selected records
-  - **Bulk Update** — change a field value on all selected records
+  - **Bulk Update** - change a field value on all selected records
   - **Export** selected records
   - **Move** records (where applicable)
 
@@ -160,7 +155,7 @@ Conditional formatting applies visual styling (background color, text color, ico
 ## Pagination and Row Limits
 
 - By default, grids show **25 rows per page**. This can be changed via the rows-per-page selector at the bottom.
-- Use **← →** navigation arrows or click a page number to move between pages.
+- Use navigation arrows or click a page number to move between pages.
 - The total record count is shown in the pagination bar.
 
 > [!note]
@@ -170,10 +165,10 @@ Conditional formatting applies visual styling (background color, text color, ico
 
 ## Grid Hierarchy (Tree Grid)
 
-Some grids support a **hierarchical (tree) view** — for example, the task grid within a project shows tasks and their subtasks in a collapsible tree.
+Some grids support a **hierarchical (tree) view** - for example, the task grid within a project shows tasks and their subtasks in a collapsible tree.
 
-- Click the **expand arrow** (▶) next to a parent row to expand it.
-- Click **▼** to collapse.
+- Click the **expand arrow** next to a parent row to expand it.
+- Click the collapse control to collapse it.
 - Drag rows to reorder or re-parent them (where the grid supports drag-and-drop).
 
 ---
@@ -193,11 +188,13 @@ See [[Board Layout]], [[Charts]] for details on those views.
 
 ---
 
-## Related Notes
+## Related
 
-- [[Common Components/Filters]] — Applying filters to grid data
-- [[Common Components/Saved Views]] — Saving and sharing grid configurations
-- [[Common Components/Board Layout]] — Kanban board alternative view
-- [[Common Components/Charts]] — Chart view in grids
-- [[Common Components/Details Panel]] — Opening the full record from a grid row
-- [[Common Components/Conditional Formatting|Grids#Conditional Formatting]] — Visual formatting rules
+- [[Common Components/Filters]] - Applying filters to grid data
+- [[Common Components/Saved Views]] - Saving and sharing grid configurations
+- [[Common Components/Board Layout]] - Kanban board alternative view
+- [[Common Components/Charts]] - Chart view in grids
+- [[Common Components/Details Panel]] - Opening the full record from a grid row
+- [[Common Components/Conditional Formatting|Grids#Conditional Formatting]] - Visual formatting rules
+
+%%Source: p276-285%%

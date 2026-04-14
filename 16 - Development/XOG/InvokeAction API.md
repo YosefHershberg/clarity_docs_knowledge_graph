@@ -3,6 +3,9 @@ title: XOG Services - InvokeAction API
 tags:
   - dev
   - reference
+canonical: true
+audience: dev
+domain: development
 ---
 # XOG Services: InvokeAction API
 

@@ -6,6 +6,9 @@ tags:
 aliases:
   - EVM Rights
   - Earned Value Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Earned Value Manager (EVM) Add-In Access Rights
 

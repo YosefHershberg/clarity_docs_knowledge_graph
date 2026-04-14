@@ -8,6 +8,9 @@ aliases:
   - Team Members
   - Add Resources
   - Project Team
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Staffing a Project

@@ -6,6 +6,10 @@ aliases:
   - Chart View
   - Clarity Charts
   - Grid Charts
+canonical: true
+audience: everyone
+domain: ui
+parent: "[[_MOC Getting Started]]"
 ---
 
 # Charts in the Grid

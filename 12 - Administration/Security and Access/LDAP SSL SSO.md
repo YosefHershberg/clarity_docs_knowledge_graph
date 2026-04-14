@@ -7,13 +7,18 @@ aliases:
   - LDAP
   - SSL
   - SSO Configuration
+canonical: true
+audience: admin
+domain: administration
 ---
-# Security: LDAP, SSL, SSO, and FIPS Configuration
 
-On-premise security configuration including LDAP directory integration, SSL certificates, SSO setup, and FIPS compliance.
+# Security: LDAP, SSL, and SSO
 
-## Related
-- [[Authentication Methods]]
-- [[_MOC Administration]]
+> [!info] This topic has been split into focused notes for easier navigation.
 
-%%Source: p2956-2980%%
+- [[SSL Configuration]] — File scanning, database passwords, SSL/HTTPS setup
+- [[LDAP Configuration]] — LDAP integration, synchronization, and troubleshooting
+- [[SSO Configuration]] — Single Sign-On for Classic PPM and Clarity
+
+---
+**Parent:** [[_MOC Administration|Administration]]

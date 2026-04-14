@@ -6,6 +6,9 @@ tags:
 aliases:
   - NPD Rights
   - NPD Accelerator Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # New Product Development (NPD) Accelerator Access Rights
 

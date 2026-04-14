@@ -1,4 +1,4 @@
----
+﻿---
 title: Advanced Reporting Roles and Permissions
 tags:
   - reference
@@ -9,11 +9,13 @@ aliases:
 ---
 # Advanced Reporting Roles and Permissions
 
+
 Advanced Reporting access is controlled through Jaspersoft roles that grant both **create permissions** and **repository item permissions** (No Access, Read Only, Read and Write, Execute Only). Permissions can be granted at the role or user level.
 
 > Source: Clarity 16.4.1 documentation, pp. 3305–3306
 
 ## Role Types
+
 
 ### Classic PPM Default Roles (ROLE_ prefix)
 These roles are included with Classic PPM and provide **create permissions** only (not repository item permissions):
@@ -29,7 +31,9 @@ These roles are included with Classic PPM and provide **create permissions** onl
 | ROLE_REPORT_DESIGNER | Create reports |
 
 ### PMO Accelerator Roles (CSK_ prefix)
-These roles are included with the PMO Accelerator add-in and set **permissions for repository items** (reports, domains, etc.). They also update repository item permissions for the default ROLE_ roles. These roles are designed to be used in a **matrix fashion** — a user can belong to multiple roles to accumulate permissions.
+These roles are included with the PMO Accelerator add-in and set **permissions for repository items** (reports, domains, etc.).
+They also update repository item permissions for the default ROLE_ roles.
+These roles are designed to be used in a **matrix fashion** — a user can belong to multiple roles to accumulate permissions.
 
 | Role | Permissions |
 |---|---|
@@ -47,12 +51,14 @@ These roles are included with the PMO Accelerator add-in and set **permissions f
 
 ## How Roles Are Assigned
 
+
 - Classic PPM **access rights** automatically assign users to Jaspersoft roles via the **Create and Update Jaspersoft Users** job
 - Users added to a role **automatically inherit** that role's permissions
 - Roles are **matrix-based**: users can be in multiple roles to accumulate permissions from each
 - Users can also be granted permissions individually at the user level
 
 ## Repository Item Permissions
+
 
 | Permission Level | Description |
 |---|---|
@@ -62,6 +68,7 @@ These roles are included with the PMO Accelerator add-in and set **permissions f
 | Execute Only | Can run reports but cannot view the repository item in the browser |
 
 ## Access Groups in Classic PPM
+
 
 CSK_ roles correspond to Classic PPM access groups under "PMO Advanced Reporting":
 - PMO Advanced Reporting Administration
@@ -77,6 +84,7 @@ CSK_ roles correspond to Classic PPM access groups under "PMO Advanced Reporting
 - PMO Advanced Reporting Time Management
 
 ## Report-Level Security
+
 
 Individual PMO Accelerator reports use their own security mechanisms independent of Jaspersoft roles:
 

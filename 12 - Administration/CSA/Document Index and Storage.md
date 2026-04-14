@@ -9,6 +9,10 @@ aliases:
   - File Scanning
   - Filestore
   - Search Index
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # CSA: Document Index, Search, Storage, and File Scanning (On-Premise Only)

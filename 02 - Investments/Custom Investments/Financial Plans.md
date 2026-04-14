@@ -5,6 +5,9 @@ tags:
   - concept
 aliases:
   - Investment Financials
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Custom Investment Financial Plans

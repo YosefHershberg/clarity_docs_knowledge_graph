@@ -7,6 +7,9 @@ aliases:
   - Project Checklist
   - Quality Checklist
   - Gate Checklist
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Project Checklists

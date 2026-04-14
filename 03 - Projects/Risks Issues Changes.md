@@ -9,13 +9,15 @@ aliases:
   - Risk Log
   - Issue Log
   - Change Log
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Risks, Issues, and Change Requests
 
-Clarity PPM provides dedicated modules for tracking **risks** (potential future problems), **issues** (current problems that need resolution), and **change requests** (formal requests to change project scope, schedule, or budget). Together these form the project's change control and risk management framework.
-
-%%Source: p1162-1171%%
+Clarity PPM provides dedicated modules for tracking **risks** (potential future problems), **issues** (current problems that need resolution), and **change requests** (formal requests to change project scope, schedule, or budget).
+Together these form the project's change control and risk management framework.
 
 ---
 
@@ -52,7 +54,7 @@ A risk is an **uncertain event or condition** that, if it occurs, would have a p
 | **Status** | Yes | Open / Closed / Mitigated |
 | **Impact** | Yes | High / Medium / Low (effect if risk occurs) |
 | **Probability** | Yes | High / Medium / Low (likelihood of occurrence) |
-| **Risk Score** | Auto | Calculated from Impact × Probability |
+| **Risk Score** | Auto | Calculated from Impact x Probability |
 | **Mitigation Plan** | No | Steps to reduce probability or impact |
 | **Contingency Plan** | No | Steps if the risk occurs despite mitigation |
 | **Owner** | No | Resource responsible for monitoring this risk |
@@ -75,7 +77,7 @@ A risk is an **uncertain event or condition** that, if it occurs, would have a p
 If a risk materializes (the threatening event occurs), it should be escalated to an **Issue**:
 
 1. Open the risk record.
-2. Click **Convert to Issue** (or **Actions → Escalate to Issue**).
+2. Click **Convert to Issue** (or **Actions -> Escalate to Issue**).
 3. A new Issue record is pre-populated from the risk details.
 4. Update the Issue with the actual impact and assign it for resolution.
 
@@ -84,7 +86,7 @@ If a risk materializes (the threatening event occurs), it should be escalated to
 ## Issues
 
 ### What Is an Issue?
-An issue is a **current problem** that is actively impacting the project — unlike a risk, an issue has already occurred and requires immediate action.
+An issue is a **current problem** that is actively impacting the project - unlike a risk, an issue has already occurred and requires immediate action.
 
 ### Creating an Issue
 
@@ -114,14 +116,14 @@ An issue is a **current problem** that is actively impacting the project — unl
 4. Set the **Closed Date**.
 5. Click **Save**.
 
-> [!tip] Always document the resolution — even for simple issues. This creates an audit trail and helps with lessons learned.
+> [!tip] Always document the resolution - even for simple issues. This creates an audit trail and helps with lessons learned.
 
 ---
 
 ## Change Requests
 
 ### What Is a Change Request?
-A **change request** is a formal proposal to alter the project's approved baseline — scope, schedule, budget, or resources. Change requests go through an approval workflow before the project is updated.
+A **change request** is a formal proposal to alter the project's approved baseline - scope, schedule, budget, or resources. Change requests go through an approval workflow before the project is updated.
 
 ### Creating a Change Request
 
@@ -148,12 +150,11 @@ A **change request** is a formal proposal to alter the project's approved baseli
 
 A typical change request lifecycle:
 
-```
-Draft → Submitted → Under Review → Approved (or Rejected)
-                                        ↓
-                                 Project Updated
-                                 New Baseline Created
-```
+1. Draft
+2. Submitted
+3. Under Review
+4. Approved (or Rejected)
+5. If approved: Project Updated -> New Baseline Created
 
 > [!warning] Do not update the project plan (dates, budget, scope) based on an unsubmitted or unapproved change request. Wait for formal approval to maintain baseline integrity.
 
@@ -210,8 +211,10 @@ Use the **Filter** panel to narrow records by:
 
 ---
 
-## Related Notes
-- [[Baselines]] — Create a new baseline after approving a change request
-- [[Status Reports]] — Summarize open risks and issues in status reports
-- [[Checklists]] — Use checklists for risk response tracking
+## Related
+- [[Baselines]] - Create a new baseline after approving a change request
+- [[Status Reports]] - Summarize open risks and issues in status reports
+- [[Checklists]] - Use checklists for risk response tracking
 - [[_MOC Projects]]
+
+%%Source: p1162-1171%%

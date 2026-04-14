@@ -9,6 +9,9 @@ The vault uses **numbered folders** (`01` - `22`) sorted by learning priority. E
 
 ### Folder Map
 
+
+
+
 | Folder | Domain | Audience |
 |--------|--------|----------|
 | `01 - Getting Started/` | First login, UI components, personas | Everyone |
@@ -33,6 +36,7 @@ The vault uses **numbered folders** (`01` - `22`) sorted by learning priority. E
 | `20 - Cookbooks/` | Step-by-step recipes: roadmaps, OKRs, programs | PM |
 | `21 - Reference/` | Access rights, jobs, portlets, glossary | Everyone |
 | `22 - Release Info/` | Release notes, compatibility, accessibility | Admin |
+| `23 - Source Documentation/` | Raw PDF extraction (NOT for retrieval — development reference only) | Internal |
 | `Tags and Concepts/` | Cross-cutting concept notes (Canvas, OBS, etc.) | Everyone |
 
 ## How to Navigate
@@ -70,6 +74,17 @@ Notes use these tag prefixes:
 - `#onprem` — On-premise-specific content
 
 ## For AI Agents
+
+### Retrieval Scope
+- **ONLY retrieve from folders `01` through `22` and `Tags and Concepts/`** — these are curated, canonical notes.
+- **NEVER retrieve from `23 - Source Documentation/`** — this folder contains raw PDF extractions used only for building the knowledge graph. It is not optimized for retrieval and will waste tokens.
+- Notes with `canonical: true` in frontmatter are the authoritative source. If a curated note and a source doc cover the same topic, always prefer the curated note.
+
+### Frontmatter Filtering
+Each curated note includes structured frontmatter for filtering:
+- `audience` — target roles: `everyone`, `pm`, `rm`, `finance`, `admin`, `dev`, `leadership`
+- `domain` — feature area: `ui`, `investments`, `projects`, `roadmaps`, `hierarchies`, `resources`, `financials`, `timesheets`, `collaboration`, `reporting`, `administration`, `classic`, `ai`, `mobile`, `development`, `installation`, `integrations`, `reference`
+- `canonical: true` — marks this as the authoritative note for its topic
 
 ### Answering User Questions
 1. Start at `[[00 - Home]]` to identify the relevant section

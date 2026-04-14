@@ -6,6 +6,9 @@ tags:
 aliases:
   - People Planning
   - Workforce Planning
+canonical: true
+audience: rm, pm
+domain: resources
 ---
 
 # People-Centric Planning

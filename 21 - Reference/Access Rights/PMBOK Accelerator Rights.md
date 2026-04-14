@@ -6,6 +6,9 @@ tags:
 aliases:
   - PMBOK Rights
   - PMBOK Accelerator Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # PMBOK Guide Accelerator Access Rights
 
@@ -106,7 +109,8 @@ Includes Edit All and View All rights for: Lessons Learned, Product Description,
 
 ### PMBOK Guide Accelerator-Specific Rights (all Global)
 
-Includes Create, Edit All, View All, and XOG Access for: Lessons Learned, Product Description, Project Charter, Project Closure, Project Report, Project Scope Statement, Quality Management Plan, Risk Identification - SWOT Analysis, Scope Management Plan. Also includes all corresponding secured subpage rights (Edit All, View All, and some instance View rights on specific project templates).
+Includes Create, Edit All, View All, and XOG Access for: Lessons Learned, Product Description, Project Charter, Project Closure, Project Report, Project Scope Statement, Quality Management Plan, Risk Identification - SWOT Analysis, Scope Management Plan.
+Also includes all corresponding secured subpage rights (Edit All, View All, and some instance View rights on specific project templates).
 
 ### Classic PPM Rights for Project Manager Group
 

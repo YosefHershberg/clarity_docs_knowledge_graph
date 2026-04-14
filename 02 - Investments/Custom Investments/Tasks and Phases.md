@@ -5,6 +5,9 @@ tags:
 aliases:
   - Investment Tasks
   - Phases and Milestones
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Investment Phases, Milestones, Tasks, and To-Do Items

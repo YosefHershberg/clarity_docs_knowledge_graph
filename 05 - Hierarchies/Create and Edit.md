@@ -8,6 +8,9 @@ aliases:
   - Edit Hierarchy
   - New Hierarchy
   - Investment Hierarchy Setup
+canonical: true
+audience: pm, leadership
+domain: hierarchies
 ---
 
 # Create and Edit Hierarchies

@@ -5,6 +5,9 @@ tags:
 aliases:
   - Investment Staffing
   - Resource Allocation
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Staff a Custom Investment

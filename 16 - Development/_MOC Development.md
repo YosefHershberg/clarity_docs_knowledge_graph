@@ -1,4 +1,4 @@
----
+﻿---
 title: Development and Integration
 tags:
   - MOC
@@ -15,6 +15,7 @@ aliases:
 - [[Authentication]] — REST API authentication
 - [[Using REST APIs]] — Using Clarity REST APIs
 - [[Enhancements]] — REST API enhancements
+- [[Performance and Load Testing]] — Pagination, bulk operations, query optimization, load test results
 - [[CORS]] — Cross-Origin Resource Sharing
 
 ### Clarity Studio
@@ -39,12 +40,10 @@ aliases:
 - [[InvokeAction API]] — XOG InvokeAction API (process invocation)
 - [[Query API]] — XOG Query API (NSQL-based queries)
 - [[Governor Node Limit]] — XOG Governor Node Limit (pagination, memory limits)
-- [[GEL Scripting]] — GEL scripting overview
-- [[GEL Basics]] — GEL script structure, variables, conditionals, SSL
-- [[GEL Database Operations]] — GEL JDBC database operations
-- [[GEL File Operations]] — GEL file and FTP operations
-- [[GEL Integration Processes]] — GEL integration process automation
-- [[GEL Tag Library]] — XOG GEL tag library reference (all tags)
+- [[Advanced Operations]] — Bulk imports, session management, error handling, performance tuning
+- [[GEL Scripting]] — GEL scripting overview (hub)
+  - [[GEL Scripting Basics]] — Setup, syntax, examples, database/file operations, integration processes
+  - [[GEL Tag Libraries]] — Complete tag library reference (Core, File, FTP, SOAP, SQL, Utility)
 - [[WSDL]] — XOG WSDL reference
 
 ### Custom Objects
@@ -54,3 +53,14 @@ aliases:
 ## Related
 - [[_MOC Administration]]
 - [[_MOC Reference]]
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Capture Develop and Approve New Ideas]]
+- [[23 - Source Documentation/Clarity Studio Development]]
+- [[23 - Source Documentation/REST API Reference]]
+- [[23 - Source Documentation/Using Clarity - Custom Investments]]
+- [[23 - Source Documentation/Viewing Custom Objects and Subobjects]]
+- [[23 - Source Documentation/XML Open Gateway (XOG) Development]]
+<!-- SOURCE_COVERAGE_END -->

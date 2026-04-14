@@ -6,6 +6,9 @@ tags:
 aliases:
   - ITSM Rights
   - Service Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # IT Service Management Access Rights
 

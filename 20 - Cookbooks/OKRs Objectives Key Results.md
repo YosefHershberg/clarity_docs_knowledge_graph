@@ -6,6 +6,9 @@ tags:
 aliases:
   - OKR Cookbook
   - OKRs
+canonical: true
+audience: pm
+domain: projects
 ---
 # Clarity Cookbook: Objectives and Key Results (OKRs)
 

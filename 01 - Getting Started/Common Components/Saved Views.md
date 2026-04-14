@@ -7,6 +7,10 @@ aliases:
   - Grid Views
   - Saved View
   - Custom Views
+canonical: true
+audience: everyone
+domain: ui
+parent: "[[_MOC Getting Started]]"
 ---
 
 # Working with Saved Views

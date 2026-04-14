@@ -6,6 +6,9 @@ aliases:
   - Project Baseline
   - Schedule Baseline
   - Baseline Snapshot
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Baselines

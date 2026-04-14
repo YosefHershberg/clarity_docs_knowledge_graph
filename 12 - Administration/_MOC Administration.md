@@ -1,4 +1,4 @@
----
+﻿---
 title: Clarity Administration
 tags:
   - MOC
@@ -46,14 +46,20 @@ aliases:
 - [[Views Configuration]] — View management
 - [[Vaia AI Configuration]] — Configure AI features
 - [[Impersonate User]] — User impersonation
-- [[Rally Integration]] — Clarity-Rally integration
+- [[Rally Integration]] — Clarity-Rally integration (hub)
+  - [[Rally Integration Setup]] — Overview, workflow, setup, and field mappings
+  - [[Rally Cost Accounting]] — Frictionless cost accounting and calculations
+  - [[Rally Synchronization]] — Sync investments, run sync jobs, map OKRs
 
 ### Security and Access
 - [[Authentication Methods]] — Authentication methods reference
 - [[User Accounts and Passwords]] — User account management
 - [[OBS Configuration]] — Organizational Breakdown Structure
 - [[GDPR and PII]] — Data protection and privacy
-- [[LDAP SSL SSO]] — LDAP, SSL, and SSO configuration
+- [[LDAP SSL SSO]] — LDAP, SSL, and SSO configuration (hub)
+  - [[SSL Configuration]] — SSL/HTTPS setup, database passwords
+  - [[LDAP Configuration]] — LDAP integration and synchronization
+  - [[SSO Configuration]] — Single Sign-On for Classic PPM and Clarity
 
 ### Data Warehouse
 - [[Configure DWH]] — Data warehouse configuration
@@ -97,3 +103,16 @@ aliases:
 - [[_MOC Install Upgrade]]
 - [[_MOC Development]]
 - [[_MOC Reference]]
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Administration]]
+- [[23 - Source Documentation/Analyze Resource Allocation and Staffing]]
+- [[23 - Source Documentation/Collaborative Workflow Management]]
+- [[23 - Source Documentation/Configure Resources Roles and Team Resources]]
+- [[23 - Source Documentation/Create Edit and Delete Menu Links]]
+- [[23 - Source Documentation/Creating and Managing Business Agreements]]
+- [[23 - Source Documentation/Getting Started with Clarity Administration]]
+- [[23 - Source Documentation/People-Centric Planning]]
+<!-- SOURCE_COVERAGE_END -->

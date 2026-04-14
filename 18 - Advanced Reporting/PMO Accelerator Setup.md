@@ -6,6 +6,9 @@ tags:
 aliases:
   - PMO Setup
   - Advanced Reporting Setup
+canonical: true
+audience: admin
+domain: reporting
 ---
 # PMO Accelerator Advanced Reporting Setup
 

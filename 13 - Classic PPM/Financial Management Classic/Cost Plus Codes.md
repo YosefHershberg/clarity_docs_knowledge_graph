@@ -5,6 +5,9 @@ tags:
   - howto
   - admin
 source_pages: 2154-2155
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Enable Cost Plus Codes (Classic PPM)
 
@@ -20,7 +23,8 @@ The cost plus mechanism is used to apply mark-ups to actual or standard costs. A
      - *Standard* — The blended or burdened rate
 4. Save changes
 
-> **Note:** If a cost plus code has been used in a transaction, you cannot delete it.
+> [!NOTE]
+> If a cost plus code has been used in a transaction, you cannot delete it.
 
 ## Create Cost Plus Rules and Add to Cost Plus Codes
 

@@ -5,6 +5,9 @@ tags:
   - admin
 aliases:
   - Advanced Reporting Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Advanced Reporting Access Rights
 

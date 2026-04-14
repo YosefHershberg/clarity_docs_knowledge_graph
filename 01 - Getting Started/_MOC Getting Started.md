@@ -1,4 +1,4 @@
----
+﻿---
 title: Getting Started with Clarity
 tags:
   - MOC
@@ -49,6 +49,9 @@ Clarity is Broadcom's digital product and portfolio management platform. It tran
 - [[Classic PPM Getting Started]] — Getting started with Classic PPM
 - [[Mobile App Getting Started]] — Getting started with the Clarity Mobile App
 
+### Help and Support
+- [[Information Centre]] — Clarity Information Centre (ICE) overview, feature toggles, and custom help configuration
+
 ---
 
 ## Key Concepts in Clarity
@@ -75,3 +78,10 @@ Clarity organizes investments the way your business operates. Instead of running
 - **[[_MOC Reporting\|Reporting]]** — Build and publish reports and dashboards
 
 %%Source: p237-245%%
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Getting Started with Clarity]]
+- [[23 - Source Documentation/Using Classic PPM]]
+<!-- SOURCE_COVERAGE_END -->

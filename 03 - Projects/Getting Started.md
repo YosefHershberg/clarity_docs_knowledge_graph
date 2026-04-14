@@ -6,6 +6,9 @@ tags:
 aliases:
   - Projects Getting Started
   - Project Navigation
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Getting Started with Projects

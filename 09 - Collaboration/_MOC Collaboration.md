@@ -1,4 +1,4 @@
----
+﻿---
 title: Collaboration and Workflow
 tags:
   - MOC
@@ -20,3 +20,11 @@ aliases:
 ## Related
 - [[_MOC Projects]]
 - [[_MOC Investments]]
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Collaborative Workflow Management]]
+- [[23 - Source Documentation/Create Edit and Delete Menu Links]]
+- [[23 - Source Documentation/Creating and Managing Business Agreements]]
+<!-- SOURCE_COVERAGE_END -->

@@ -8,6 +8,10 @@ aliases:
   - PPMBroker
   - ppmbroker
   - Microservice Broker
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # Getting Started with the Microservice Broker

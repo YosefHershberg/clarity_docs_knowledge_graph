@@ -8,6 +8,9 @@ aliases:
   - Program Timeline
   - Hierarchy Gantt
   - Portfolio Timeline
+canonical: true
+audience: pm, leadership
+domain: hierarchies
 ---
 
 # Timeline Layout in Hierarchy

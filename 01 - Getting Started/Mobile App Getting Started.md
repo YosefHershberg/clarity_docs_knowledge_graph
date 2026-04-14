@@ -5,6 +5,9 @@ tags:
 aliases:
   - Mobile App
   - Mobile Getting Started
+canonical: true
+audience: everyone
+domain: ui
 ---
 
 # Getting Started with Clarity Mobile App

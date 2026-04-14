@@ -5,10 +5,18 @@ tags:
   - dev
 aliases:
   - Rally Integration
+canonical: true
+audience: admin
+domain: administration
 ---
-# Integrating Clarity and Rally
 
-## Related
-- [[_MOC Administration]]
+# Clarity-Rally Integration
 
-%%Source: p1987-2037%%
+> [!info] This topic has been split into focused notes for easier navigation.
+
+- [[Rally Integration Setup]] — Overview, workflow, setup, and field mappings
+- [[Rally Cost Accounting]] — Frictionless cost accounting and calculations
+- [[Rally Synchronization]] — Sync investments, run sync jobs, map OKRs
+
+---
+**Parent:** [[_MOC Administration|Administration]]

@@ -1,4 +1,4 @@
----
+﻿---
 title: Add-Ins and Integrations
 tags:
   - MOC
@@ -11,6 +11,7 @@ aliases:
 ## Notes in This Section
 - [[APM Add-In]] — CA Application Portfolio Management
 - [[Rally Integration]] — Integrate Clarity with Rally
+- [[Rally Integration Examples]] — Practical scenarios, configuration walkthroughs, troubleshooting
 - [[SSO Integration]] — Integrate with CA Single Sign-On
 - [[MSP and OWB Integration]] — Microsoft Project and Open Workbench
 
@@ -24,3 +25,11 @@ aliases:
 ## Related
 - [[_MOC Administration]]
 - [[_MOC Development]]
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Add-Ins and Integrations]]
+- [[23 - Source Documentation/Integrate Clarity with Rally]]
+- [[23 - Source Documentation/PMO Accelerator]]
+<!-- SOURCE_COVERAGE_END -->

@@ -6,6 +6,9 @@ tags:
 aliases:
   - Blueprints
   - Blueprint Configuration
+canonical: true
+audience: admin
+domain: administration
 ---
 # Common Capabilities in Blueprints
 

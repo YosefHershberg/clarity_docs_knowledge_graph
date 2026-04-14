@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2299-2314
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Manage Requisitions (Classic PPM)
 
@@ -59,7 +62,8 @@ You can edit requisition requests only when the status is **New**.
 3. Edit the requested allocation amount or other details
 4. Change the status to **Open** when ready for resource manager review
 
-> **Note:** After a requisition is submitted (Open), avoid changes while the resource manager is already proposing resources.
+> [!NOTE]
+> After a requisition is submitted (Open), avoid changes while the resource manager is already proposing resources.
 
 ## Review and Book Proposed Allocations
 

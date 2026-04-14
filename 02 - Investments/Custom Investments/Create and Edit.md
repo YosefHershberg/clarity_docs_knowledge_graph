@@ -5,6 +5,9 @@ tags:
 aliases:
   - Create Investment
   - Edit Investment
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Create and Edit Custom Investments

@@ -5,6 +5,9 @@ tags:
 aliases:
   - Checklists
   - Checklist Management
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Investment Checklists

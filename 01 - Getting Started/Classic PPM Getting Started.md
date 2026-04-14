@@ -6,6 +6,9 @@ tags:
 aliases:
   - Classic PPM Overview
   - Classic UI
+canonical: true
+audience: everyone
+domain: ui
 ---
 
 # Getting Started with Classic PPM

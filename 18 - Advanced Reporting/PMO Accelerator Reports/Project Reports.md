@@ -5,6 +5,9 @@ tags:
   - admin
 aliases:
   - Project Reports
+canonical: true
+audience: admin
+domain: reporting
 ---
 # PMO Project Management Reports
 

@@ -8,13 +8,15 @@ aliases:
   - Scheduling Engine
   - Auto-Schedule
   - Project Scheduling
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Autoschedule
 
-**Autoschedule** is Clarity's scheduling engine that automatically calculates task start and finish dates based on dependencies, resource calendars, task durations, and scheduling constraints. When Autoschedule is enabled, Clarity acts like a full-featured project scheduling tool — similar to MS Project's scheduling engine.
-
-%%Source: p1068-1075%%
+**Autoschedule** is Clarity's scheduling engine that automatically calculates task start and finish dates based on dependencies, resource calendars, task durations, and scheduling constraints.
+When Autoschedule is enabled, Clarity acts like a full-featured project scheduling tool similar to MS Project's scheduling engine.
 
 ---
 
@@ -27,7 +29,7 @@ When you run Autoschedule, Clarity:
 3. Considers **resource calendars** (working days, holidays, exceptions)
 4. Respects **scheduling constraints** on individual tasks
 5. Calculates new **start and finish dates** for all tasks
-6. Identifies the **critical path** — the longest chain of dependent tasks that determines the project end date
+6. Identifies the **critical path** - the longest chain of dependent tasks that determines the project end date
 
 > [!note] Autoschedule affects task dates only. It does not change resource allocations, % complete, or financial data.
 
@@ -85,9 +87,9 @@ Each task can have a **scheduling constraint** that limits how the engine places
 Even in Autoschedule mode, you can trigger a recalculation manually:
 
 1. Open the project Tasks view (Grid or Timeline).
-2. Click the **Schedule** button (or **Actions → Reschedule**).
+2. Click the **Schedule** button (or **Actions -> Reschedule**).
 3. Clarity recalculates all task dates.
-4. Review changes — modified dates are highlighted.
+4. Review changes - modified dates are highlighted.
 5. Click **Save** to confirm.
 
 ### Automatic Recalculation
@@ -102,7 +104,7 @@ If configured, Clarity can recalculate automatically whenever:
 
 ## Critical Path
 
-The **critical path** is the sequence of tasks with zero float — any delay in a critical path task delays the entire project.
+The **critical path** is the sequence of tasks with zero float - any delay in a critical path task delays the entire project.
 
 ### Viewing the Critical Path
 1. Open the **Timeline** layout.
@@ -121,7 +123,7 @@ Common techniques:
 
 Autoschedule uses **resource calendars** to skip non-working days:
 
-- **Base Calendar**: The default working schedule (e.g., Mon–Fri, 8 hours/day)
+- **Base Calendar**: The default working schedule (e.g., Mon-Fri, 8 hours/day)
 - **Resource Calendar**: Individual exceptions (vacation, part-time schedules)
 - **Project Calendar**: Project-level non-working days (holidays, shutdowns)
 
@@ -146,7 +148,7 @@ Tasks on the critical path have **zero total float**. Tasks with positive float 
 1. Add the task to the WBS.
 2. Link it to its predecessor and successor.
 3. Set duration.
-4. Run Autoschedule → dates recalculate.
+4. Run Autoschedule -> dates recalculate.
 
 ### Scenario 2: A Predecessor Task is Delayed
 1. Update the predecessor's finish date or duration.
@@ -173,8 +175,10 @@ Tasks on the critical path have **zero total float**. Tasks with positive float 
 
 ---
 
-## Related Notes
-- [[Tasks Phases Milestones]] — Build the WBS that Autoschedule works with
-- [[Staffing]] — Resource calendars affect scheduling
-- [[Baselines]] — Baseline the schedule before running Autoschedule
+## Related
+- [[Tasks Phases Milestones]] - Build the WBS that Autoschedule works with
+- [[Staffing]] - Resource calendars affect scheduling
+- [[Baselines]] - Baseline the schedule before running Autoschedule
 - [[_MOC Projects]]
+
+%%Source: p1068-1075%%

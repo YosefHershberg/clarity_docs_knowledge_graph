@@ -5,6 +5,9 @@ tags:
   - howto
   - admin
 source_pages: 2176-2179
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Set Up Financial Departments (Classic PPM)
 
@@ -62,7 +65,8 @@ A department can be deleted only when:
    - **Budget Benefit / Budget Benefit Start / Budget Benefit Finish** — Budgeted benefit and date range
 5. Save changes
 
-> **Note:** Financial metrics such as NPV, IRR, MIRR, Breakeven, and Payback Period are not available on department properties by default. Configure the Department Properties view in Studio to display them.
+> [!NOTE]
+> Financial metrics such as NPV, IRR, MIRR, Breakeven, and Payback Period are not available on department properties by default. Configure the Department Properties view in Studio to display them.
 
 ## Manage Department Locations
 

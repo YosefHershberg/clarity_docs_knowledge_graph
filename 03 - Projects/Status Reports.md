@@ -8,13 +8,15 @@ aliases:
   - Reports Grid
   - Progress Report
   - Project Health
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Status Reports
 
-The **Status Reports** module in Clarity PPM allows project managers to create and publish structured progress updates. Status reports capture overall health, key accomplishments, upcoming activities, risks, and issues at a point in time. They are visible to stakeholders and can be configured as a **canvas** (visual dashboard) or a **reports grid** (list-based).
-
-%%Source: p1172-1202%%
+The **Status Reports** module in Clarity PPM allows project managers to create and publish structured progress updates.
+Status reports capture overall health, key accomplishments, upcoming activities, risks, and issues at a point in time. They are visible to stakeholders and can be configured as a **canvas** (visual dashboard) or a **reports grid** (list-based).
 
 ---
 
@@ -33,7 +35,7 @@ Status reports serve as the primary communication mechanism between the project 
 
 ## Report Cadences
 
-Organizations typically define a **reporting cadence** — how often status reports are created:
+Organizations typically define a **reporting cadence** - how often status reports are created:
 
 | Cadence | Common Use Case |
 |---------|----------------|
@@ -62,7 +64,7 @@ Organizations typically define a **reporting cadence** — how often status repo
 
 | Field | Required | Description |
 |-------|:--------:|-------------|
-| **Name** | Yes | E.g., "Week 12 Status – 2024-03-22" |
+| **Name** | Yes | E.g., "Week 12 Status - 2024-03-22" |
 | **Report Date** | Yes | Date this report represents |
 | **Status Period** | No | Period the report covers |
 | **Overall Status** | Yes | Green / Yellow / Red (or configured values) |
@@ -75,7 +77,7 @@ Organizations typically define a **reporting cadence** — how often status repo
 
 | Section | Content |
 |---------|---------|
-| **Summary** | Executive-level 2–3 sentence summary |
+| **Summary** | Executive-level 2-3 sentence summary |
 | **Accomplishments** | What was completed in the reporting period |
 | **Upcoming Activities** | What is planned for the next period |
 | **Risks and Issues** | Key risks or issues affecting the project |
@@ -105,7 +107,7 @@ Organizations typically define a **reporting cadence** — how often status repo
 
 ## Status Canvas View
 
-The **Status Canvas** is a visual, configurable layout for the status report — think of it as a one-page dashboard view.
+The **Status Canvas** is a visual, configurable layout for the status report - think of it as a one-page dashboard view.
 
 ### What the Canvas Can Show
 - **Status indicator widgets** (colored RAG balls for schedule, budget, scope, resources)
@@ -122,7 +124,7 @@ The **Status Canvas** is a visual, configurable layout for the status report —
 4. Add, resize, and arrange widgets.
 5. Click **Save Layout**.
 
-> [!note] Canvas layout can be set as the **default view** for status reports by the project manager. Changes to layout do not affect the report data — only the visual presentation.
+> [!note] Canvas layout can be set as the **default view** for status reports by the project manager. Changes to layout do not affect the report data - only the visual presentation.
 
 ### Publishing the Canvas View
 - The canvas view is automatically shown when stakeholders open a published status report.
@@ -180,9 +182,7 @@ The status canvas can show:
 
 ## Report Lifecycle
 
-```
-Draft → (review) → Published → Archived
-```
+Draft -> (review) -> Published -> Archived
 
 | State | Description |
 |-------|-------------|
@@ -208,7 +208,7 @@ Draft → (review) → Published → Archived
 To save time, copy the previous period's report as a template for the new one:
 
 1. In the Reports Grid, find the report to copy.
-2. Click **More (...)** → **Copy**.
+2. Click **More (...) -> Copy**.
 3. Update the **Report Date** and narrative content.
 4. Click **Save**.
 
@@ -226,9 +226,11 @@ To save time, copy the previous period's report as a template for the new one:
 
 ---
 
-## Related Notes
-- [[Canvas Dashboard]] — Configure the project canvas (project-level dashboard, separate from status report canvas)
-- [[Risks Issues Changes]] — Surface open risks and issues in the report
-- [[Baselines]] — Report schedule variance against baseline
-- [[Financial Plans]] — Report financial health
+## Related
+- [[Canvas Dashboard]] - Configure the project canvas (project-level dashboard, separate from status report canvas)
+- [[Risks Issues Changes]] - Surface open risks and issues in the report
+- [[Baselines]] - Report schedule variance against baseline
+- [[Financial Plans]] - Report financial health
 - [[_MOC Projects]]
+
+%%Source: p1172-1202%%

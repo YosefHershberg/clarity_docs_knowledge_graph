@@ -1,4 +1,4 @@
----
+﻿---
 title: Clarity Cookbooks
 tags:
   - MOC
@@ -19,3 +19,8 @@ Step-by-step practical guides for implementing key Clarity features.
 - [[_MOC Roadmaps]]
 - [[Working with Objectives]]
 - [[_MOC Hierarchies]]
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+<!-- SOURCE_COVERAGE_END -->

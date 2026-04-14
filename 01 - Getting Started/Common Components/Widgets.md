@@ -7,6 +7,9 @@ aliases:
   - Dashboard Widgets
   - Home Widgets
   - Clarity Widgets
+canonical: true
+audience: everyone
+domain: ui
 ---
 
 # Working with Widgets

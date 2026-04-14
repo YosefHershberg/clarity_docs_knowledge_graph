@@ -6,6 +6,9 @@ tags:
 aliases:
   - OBS
   - Org Structure
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Organizational Breakdown Structure (OBS)
 

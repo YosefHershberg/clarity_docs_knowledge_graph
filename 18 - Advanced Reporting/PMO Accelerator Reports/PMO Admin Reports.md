@@ -1,4 +1,4 @@
----
+﻿---
 title: PMO Administration Reports
 tags:
   - reference
@@ -9,11 +9,13 @@ aliases:
 ---
 # PMO Administration Reports
 
+
 The Administration reports provide visibility into license distribution, user activity, access rights, database schemas, and customizations. They help administrators audit users, understand the database structure, and identify custom content.
 
 > Source: Clarity 16.4.1 documentation, pp. 3572–3596
 
 ## Reports Included
+
 
 | Report Name | Resource ID | Data Source |
 |---|---|---|
@@ -31,6 +33,7 @@ The Administration reports provide visibility into license distribution, user ac
 ---
 
 ## Data Warehouse Schema
+
 
 **Description:** Displays the columns of tables and views in the Data Warehouse (DWH) schema. Includes column data types, nulls constraints, and comments. Grouped by database table or view. Includes custom fields/objects marked as DWH-enabled.
 
@@ -51,6 +54,7 @@ The Administration reports provide visibility into license distribution, user ac
 
 ## Clarity Schema
 
+
 **Description:** Displays the columns of tables and views in the Classic PPM (transactional) schema. Includes column data types, nulls constraints, and comments. Grouped by database table or view.
 
 **Prerequisites:** None
@@ -65,7 +69,10 @@ The Administration reports provide visibility into license distribution, user ac
 
 ## User License and Activity
 
-**Description:** Displays the license type and usage frequency of each resource. Shows general resource information. Groupable by: No Grouping, Resource Manager, Primary Role, Employment Type, License Type, Usage Frequency, and OBS Level. Includes two pie charts: user count by license type and user count by last login date (usage frequency). Drills down to User License and Activity Detail.
+
+**Description:** Displays the license type and usage frequency of each resource. Shows general resource information. Groupable by:
+No Grouping, Resource Manager, Primary Role, Employment Type, License Type, Usage Frequency, and OBS Level. Includes two pie charts:
+user count by license type and user count by last login date (usage frequency). Drills down to User License and Activity Detail.
 
 **Prerequisites:**
 - User must have "Active" status to display (Inactive and Lock status users do not display, even if active flag is checked)
@@ -82,6 +89,7 @@ The Administration reports provide visibility into license distribution, user ac
 
 ## User License and Activity Detail
 
+
 **Description:** Detail-level companion to User License and Activity. Displays the access rights that contribute to each resource's license type. Useful for understanding why a resource has a particular license.
 
 **Prerequisites:** Same as User License and Activity (user must be Active)
@@ -95,6 +103,7 @@ The Administration reports provide visibility into license distribution, user ac
 ---
 
 ## User Access Rights
+
 
 **Description:** Provides a summary view of access rights assigned to users. Shows rights granted directly or through groups and OBS units. Grouped by user with configurable OBS level display.
 
@@ -113,6 +122,7 @@ The Administration reports provide visibility into license distribution, user ac
 
 ## User Access Rights Detail
 
+
 **Description:** Provides a detailed listing of access rights with investment-level or resource-level scope information. Complements User Access Rights by showing the specific objects to which rights apply.
 
 **Prerequisites:** Load Data Warehouse and Load Data Warehouse Access Rights jobs
@@ -122,6 +132,7 @@ The Administration reports provide visibility into license distribution, user ac
 ---
 
 ## Database Connection Check
+
 
 **Description:** Verifies the connection between the Jaspersoft server and the Clarity Data Warehouse Bean Data Source. Displays a green bulb gauge showing "Normal" when the connection is successful. Reports the data source name, DB vendor (Oracle or MS SQL Server), DB schema, and DB link.
 
@@ -143,7 +154,10 @@ The Administration reports provide visibility into license distribution, user ac
 
 ## Customizations Overview
 
-**Description:** Lists all content that is NOT included out-of-the-box with Clarity, allowing administrators to quickly identify custom content. Covers database objects (tables, views, functions, etc.) and Clarity content (Studio objects/attributes, NSQL queries, GEL scripts, reports, jobs). Grouped by "Database Objects" or "Clarity" and sub-grouped by content type.
+
+**Description:** Lists all content that is NOT included out-of-the-box with Clarity, allowing administrators to quickly identify custom content.
+Covers database objects (tables, views, functions, etc.) and Clarity content (Studio objects/attributes, NSQL queries, GEL scripts, reports, jobs).
+Grouped by "Database Objects" or "Clarity" and sub-grouped by content type.
 
 **Prerequisites:** None
 
@@ -172,7 +186,8 @@ The Administration reports provide visibility into license distribution, user ac
 | Trigger | Triggers in the Clarity schema |
 | View | Views in the Clarity schema |
 
-**Exclusions:** Items registered in CMN_DB_HISTORY_TABLE, NSQL queries from Agile Addin/APM/PMO Accelerator add-ins, Studio objects/attributes from those same add-ins, system attributes (not custom), non-GEL custom scripts, jobs that are not SQL Stored Procedure type, reports/jobs from APM and PMO Accelerator add-ins.
+**Exclusions:** Items registered in CMN_DB_HISTORY_TABLE, NSQL queries from Agile Addin/APM/PMO Accelerator add-ins, Studio objects/attributes from those same add-ins, system
+attributes (not custom), non-GEL custom scripts, jobs that are not SQL Stored Procedure type, reports/jobs from APM and PMO Accelerator add-ins.
 
 **Custom GEL Script Listing Includes:** Process name, process code, step name, and step code.
 

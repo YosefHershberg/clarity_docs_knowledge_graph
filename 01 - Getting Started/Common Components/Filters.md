@@ -7,6 +7,10 @@ aliases:
   - Filtering
   - Filter Panel
   - Clarity Filters
+canonical: true
+audience: everyone
+domain: ui
+parent: "[[_MOC Getting Started]]"
 ---
 
 # Working with Filters

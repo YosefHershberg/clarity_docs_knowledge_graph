@@ -6,6 +6,9 @@ tags:
 aliases:
   - PRINCE2 Rights
   - PRINCE2 Accelerator Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # PRINCE2 Accelerator Access Rights
 

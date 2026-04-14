@@ -5,6 +5,9 @@ tags:
   - howto
   - admin
 source_pages: 2179-2181
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Set Up Financial Locations (Classic PPM)
 
@@ -29,7 +32,8 @@ Financial locations represent the geographical locations where a company conduct
    - Other identifying information (name, address, phone, manager)
 4. Save changes
 
-> **Note:** After creating a location, you can edit some attributes. You **cannot delete** a location that is used or associated with: departments, supplemental customer information, entities, system defaults, unposted/adjustment transactions, resources, chargebacks, or GL allocations.
+> [!NOTE]
+> After creating a location, you can edit some attributes. You **cannot delete** a location that is used or associated with: departments, supplemental customer information, entities, system defaults, unposted/adjustment transactions, resources, chargebacks, or GL allocations.
 >
 > To view sub-locations of a parent location: Open the parent location > Properties menu > **Sub-locations**.
 

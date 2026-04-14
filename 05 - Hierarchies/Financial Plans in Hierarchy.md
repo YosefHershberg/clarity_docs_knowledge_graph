@@ -8,6 +8,9 @@ aliases:
   - Hierarchy Financial Plans
   - Program Financial Rollup
   - Portfolio Financials
+canonical: true
+audience: pm, leadership
+domain: hierarchies
 ---
 
 # Financial Plans in Hierarchy

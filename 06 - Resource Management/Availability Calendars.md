@@ -6,6 +6,9 @@ tags:
 aliases:
   - Calendars
   - Work Calendars
+canonical: true
+audience: rm, pm
+domain: resources
 ---
 
 # Manage Resource Availability Calendars

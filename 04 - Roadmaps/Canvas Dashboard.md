@@ -8,6 +8,9 @@ aliases:
   - Roadmap Canvas
   - Roadmap Dashboard
   - Roadmap Executive View
+canonical: true
+audience: pm, leadership
+domain: roadmaps
 ---
 
 # Canvas Dashboard for Roadmaps

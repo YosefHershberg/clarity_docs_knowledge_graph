@@ -1,4 +1,4 @@
----
+﻿---
 title: PMO Resource Management Reports
 tags:
   - reference
@@ -8,11 +8,15 @@ aliases:
 ---
 # PMO Resource Management Reports
 
-The Resource Management reports provide visibility into the capacity and demand of resources across the resource pool. They display capacity and demand by OBS, role, resource, and investment. Reports identify over/under-allocated resources, show resource availability, skills, and compare plan amounts to baselines.
+
+The Resource Management reports provide visibility into the capacity and demand of resources across the resource pool.
+They display capacity and demand by OBS, role, resource, and investment.
+Reports identify over/under-allocated resources, show resource availability, skills, and compare plan amounts to baselines.
 
 > Source: Clarity 16.4.1 documentation, pp. 3419–3475
 
 ## Reports Included
+
 
 | Report Name | Resource ID | Data Source |
 |---|---|---|
@@ -36,6 +40,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Resource Baseline vs. Plan by Employment Type
 
+
 **Description:** Displays baseline, actual, ETC, EAC, and variance amounts by resource across investments, grouped by employment type (e.g., Employee, Contractor). Chart shows baseline vs. EAC by month. Supports hours or FTE.
 
 **Prerequisites:**
@@ -44,7 +49,8 @@ The Resource Management reports provide visibility into the capacity and demand 
 - Resource must be assigned to at least one investment during the reporting period
 - Time slices: `MONTHLYRESOURCEBASECURVE` (baseline), `MONTHLYRESOURCEACTCURVE` (actual), `MONTHLYRESOURCEESTCURVE` (ETC)
 
-**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Booking Manager, Resource, Investment Type (default: All), Start Date (default: start of current quarter), End Date (default: end of next quarter), Unit Type (default: Hours), Completed Tasks Only, Include Inactive Resources/Investments, Show Graph
+**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Booking Manager, Resource, Investment Type (default: All), Start Date (default:
+start of current quarter), End Date (default: end of next quarter), Unit Type (default: Hours), Completed Tasks Only, Include Inactive Resources/Investments, Show Graph
 
 **Key Calculations:**
 - **EAC:** ETC + Actual
@@ -56,6 +62,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 ---
 
 ## Capacity vs. Allocation by OBS
+
 
 **Description:** Displays resource capacity and demand (allocation) across investments, groupable by any OBS level. Shows weekly or monthly amounts plus totals. Includes summary charts of capacity vs. allocation. Supports hours or FTE.
 
@@ -74,6 +81,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Capacity vs. Booking Status by OBS
 
+
 **Description:** Displays resource capacity broken down by booking status (Hard, Soft, Mixed) vs. demand, groupable by OBS level. Shows weekly or monthly amounts plus totals.
 
 **Prerequisites:**
@@ -90,6 +98,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Capacity vs. Demand by Role
 
+
 **Description:** Displays resource capacity and demand by role across time periods. Helps identify which roles are over- or under-staffed. Shows 12 weekly or monthly periods plus totals.
 
 **Prerequisites:**
@@ -105,6 +114,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Capacity vs. Demand by Resource
 
+
 **Description:** Displays capacity and demand amounts at the individual resource level across time periods. Provides drill-down into specific resource supply/demand situations.
 
 **Prerequisites:**
@@ -119,9 +129,11 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Over/Under Allocation by Role
 
+
 **Description:** Displays remaining capacity (capacity minus allocation) by role across time periods. Color-coded cells indicate over/under allocation based on configurable threshold percentages. Supports hours or FTE.
 
-**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Employment Type, Booking Status, Period Type (Week/Month), Unit Type, Start Date, Over/Under Allocated (Over and Under/Over Only/Under Only), Over Allocated Threshold % (red threshold), Under Allocated Threshold % (green threshold), Group By (No Grouping/Resource Manager/Booking Manager)
+**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Employment Type, Booking Status, Period Type (Week/Month), Unit Type, Start Date, Over/Under Allocated (Over and
+Under/Over Only/Under Only), Over Allocated Threshold % (red threshold), Under Allocated Threshold % (green threshold), Group By (No Grouping/Resource Manager/Booking Manager)
 
 **Key Behaviors:**
 - **Red background:** Resource over-allocated by more than the Over Allocated Threshold %
@@ -134,6 +146,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Over/Under Allocation by Resource
 
+
 **Description:** Displays remaining capacity by individual resource across 12 weekly or monthly periods. Color-coded with threshold-based stoplights similar to Over/Under Allocation by Role. Includes investment-level allocation detail.
 
 **Key Parameters:** Resource OBS Type/Unit, Resource Manager, Booking Manager, Resource, Investment Type, Investment Status, Employment Type, Booking Status, Period Type, Unit Type, Start Date, Over/Under Allocated filter, Over/Under Allocated Threshold %, Group By
@@ -144,6 +157,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Resource Skills
 
+
 **Description:** Displays the skills hierarchy with associated resources, showing proficiency rating and interest level for each resource/skill combination. Includes a stacked column chart of resources by parent skill and employment type.
 
 **Data Source:** Classic PPM Bean (transactional — does not use DWH)
@@ -152,7 +166,8 @@ The Resource Management reports provide visibility into the capacity and demand 
 - At least one skill must exist (Administration/Data Administration/Skills Hierarchy) associated to at least one labor resource
 - **Update Report Tables** job must be run with the "update resource skills index" option to populate the report skills tables (run whenever skills are created, deleted, renamed, or modified in the hierarchy)
 
-**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Booking Manager, Resource Role, Resource, Employment Type, Skill, Interest ≥ (1-Low to 10-High, default: 1-Low), Proficiency ≥ (1-Beginner to 10-Expert, default: 1-Beginner), Sort By (Resource/Proficiency), Include Inactive Resources, Show Graph
+**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Booking Manager, Resource Role, Resource, Employment Type, Skill, Interest ≥ (1-Low to 10-High, default:
+1-Low), Proficiency ≥ (1-Beginner to 10-Expert, default: 1-Beginner), Sort By (Resource/Proficiency), Include Inactive Resources, Show Graph
 
 **Key Fields:** Resource name, primary role, resource manager, booking manager, employment type, skill proficiency, skill interest
 
@@ -162,7 +177,10 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Resource Skills and Remaining Capacity
 
-**Description:** Combines resource skills search with remaining capacity display. Find resources with remaining capacity and specific skills. Shows weekly or monthly remaining capacity amounts, sortable by capacity or resource, groupable by resource/booking manager. Drills down to Resource Skills and Remaining Capacity Detail.
+
+**Description:** Combines resource skills search with remaining capacity display. Find resources with remaining capacity and specific skills.
+Shows weekly or monthly remaining capacity amounts, sortable by capacity or resource, groupable by resource/booking manager.
+Drills down to Resource Skills and Remaining Capacity Detail.
 
 **Prerequisites:**
 - Load DWH and Load DWH Access Rights jobs
@@ -172,13 +190,15 @@ The Resource Management reports provide visibility into the capacity and demand 
 - **Update Report Tables** job required for calendar FTE calculations
 - Skills must exist and be associated to labor resources
 
-**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Booking Manager, Resource, Employment Type, Skill, Interest ≥, Proficiency ≥, Period Type (Week/Month), Start Date, Unit Type, Sort By (Resource/Remaining Capacity), Group By (No Grouping/Resource Manager/Booking Manager), Include Inactive Resources
+**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Booking Manager, Resource, Employment Type, Skill, Interest ≥, Proficiency ≥, Period Type (Week/Month), Start Date,
+Unit Type, Sort By (Resource/Remaining Capacity), Group By (No Grouping/Resource Manager/Booking Manager), Include Inactive Resources
 
 **Security:** Resource view rights
 
 ---
 
 ## Resource Forecasted Utilization
+
 
 **Description:** Displays resource utilization by comparing actual hours, ETC hours, and available hours. Shows the utilization percentage by resource. Helps forecast resource utilization over time.
 
@@ -190,6 +210,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Resource Forecasted Utilization Detail
 
+
 **Description:** Drill-down detail version of Resource Forecasted Utilization showing investment-level breakdown for each resource.
 
 **Key Parameters:** Same as Resource Forecasted Utilization
@@ -200,7 +221,9 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Resource Allocations and Assignments
 
-**Description:** Displays team member allocation, task assignment, and variance amounts by resource across investments and time periods. Shows weekly or monthly amounts plus totals. Can display hours or FTE. Mirrors Investment Allocations and Assignments but organized by resource rather than investment.
+
+**Description:** Displays team member allocation, task assignment, and variance amounts by resource across investments and time periods.
+Shows weekly or monthly amounts plus totals. Can display hours or FTE. Mirrors Investment Allocations and Assignments but organized by resource rather than investment.
 
 **Prerequisites:**
 - Load DWH and Load DWH Access Rights jobs
@@ -216,6 +239,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 
 ## Resource Assignments by Task
 
+
 **Description:** Displays task assignment amounts (baseline, actual, ETC, EAC, variance) by resource grouped by investment, phase, and task. 12-month view from selected start date. Supports hours or FTE.
 
 **Prerequisites:**
@@ -228,6 +252,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 ---
 
 ## Resource Availability
+
 
 **Description:** Displays resource available capacity amounts by period and in total. Groupable by resource manager, primary role, or no grouping. Shows 12 weekly or monthly periods. Supports hours or FTE.
 
@@ -247,6 +272,7 @@ The Resource Management reports provide visibility into the capacity and demand 
 ---
 
 ## Common Prerequisites
+
 
 - **Load Data Warehouse** and **Load Data Warehouse Access Rights** jobs required
 - FTE conversion depends on the DWH calendar table (populated by Load DWH job)

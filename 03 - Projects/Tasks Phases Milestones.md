@@ -10,6 +10,9 @@ aliases:
   - To-Dos
   - Work Breakdown Structure
   - WBS
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Tasks, Phases, and Milestones
@@ -223,9 +226,84 @@ The project-level % complete rolls up from task values based on the method confi
 
 ---
 
+## Calendar Layout for Tasks
+
+The **Calendar** layout displays project tasks in a weekly or monthly view based on their Finish date. It is available inside a project's Tasks module.
+
+### Key Features
+
+- Tasks without a Finish date appear in the **Unscheduled** section.
+- Toggle between **Monthly** and **Weekly** display.
+- Use the **Show Weekend** toggle to show or hide weekends.
+- **Drag and drop** tasks from one date to another to update their Finish date.
+- You cannot drag a task from the calendar back to the Unscheduled state.
+- Right-click a task card to edit or delete it.
+- Infinite scrolling supports large record sets.
+
+### Weekly vs. Monthly Display
+
+| Display | Card Shows |
+|---------|------------|
+| **Weekly** | Resource avatars, Task Name, Investment Name, Task Status |
+| **Monthly** | Task Name and resource avatars; overflow shown as a counter |
+
+> [!warning] Some drag-and-drop and editing actions may be restricted by task rules — for example, you cannot set Task Status to Completed if ETC is not zero, or move dates if actuals have been posted.
+
+---
+
+## Export Timeline to PDF
+
+You can export the Timeline (Gantt) layout of a project's Tasks module to a PDF file for sharing.
+
+### Steps
+
+1. Open the project and navigate to the **Tasks** module.
+2. Switch to the **Timeline** layout.
+3. Configure the view as desired (zoom level, visible columns, date range).
+4. Click **Export** (or the export icon) and select **Export to PDF**.
+5. Select the PDF size and orientation.
+6. Click **Download**. The PDF is generated and available via the notification area.
+
+---
+
+## Copy Tasks From Investments
+
+You can copy tasks within an investment to duplicate work items and save setup time.
+
+### Steps
+
+1. Open the project and navigate to the **Tasks** module.
+2. In the **Grid** or **Timeline** layout, select the task(s) you want to copy.
+3. Right-click and select **Copy**, or use the Actions menu.
+4. Clarity duplicates the task(s). Update the name, dates, and assignments as needed.
+
+> [!note] This feature is also available in the cross-investment [[Tasks Workspace]].
+
+---
+
+## Display Parent Tasks While Filtering
+
+When you apply filters in the Tasks grid, Clarity can optionally display the parent phase or parent task of any matching child task — even if the parent itself does not match the filter criteria. This ensures you retain context for where each task sits in the WBS hierarchy.
+
+- Enable this option in **View Options** or the filter panel settings.
+- Parent rows are displayed in a read-only, dimmed state when shown only for context.
+
+---
+
+## Show Today Toggle
+
+The **Show Today** toggle is available in the **Timeline** layout of the Tasks module.
+
+- When enabled, Clarity displays a **star** and a **dotted vertical line** marking today's date across all tasks on the timeline.
+- This gives you an immediate visual reference for your current position relative to the overall plan.
+- The toggle is available in View Options or the Timeline toolbar.
+
+---
+
 ## Related Notes
 - [[Autoschedule]] — Let Clarity recalculate task dates automatically
 - [[Staffing]] — Manage the resources available to assign to tasks
 - [[Baselines]] — Snapshot the task plan for comparison
 - [[Financial Plans]] — Labor assignments drive cost plan calculations
+- [[Tasks Workspace]] — Global cross-investment view of all tasks
 - [[_MOC Projects]]

@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2273-2277
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Create Projects from Project Templates (Classic PPM)
 
@@ -35,7 +38,8 @@ Before designating a project as a template, verify:
    - **Convert resources to roles** — Replace named resources with their primary or team roles on the new project (Default: Cleared)
 5. Click **Copy**
 
-> **Tip:** When you copy from a template in Classic PPM, project links, project banner color, and task to-do items are also copied.
+> [!TIP]
+> When you copy from a template in Classic PPM, project links, project banner color, and task to-do items are also copied.
 
 ## Using Project Templates with Processes
 

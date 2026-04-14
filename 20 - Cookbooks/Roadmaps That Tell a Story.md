@@ -5,6 +5,9 @@ tags:
   - concept
 aliases:
   - Roadmap Cookbook
+canonical: true
+audience: pm
+domain: projects
 ---
 # Clarity Cookbook: Roadmaps that Tell a Story
 

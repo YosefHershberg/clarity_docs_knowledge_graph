@@ -3,6 +3,9 @@ title: GEL Basics
 tags:
   - dev
   - howto
+canonical: true
+audience: dev
+domain: development
 ---
 # GEL Basics
 

@@ -9,6 +9,10 @@ aliases:
   - admin command
   - Classic PPM CLI
   - command-line utilities
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # CSA: Service and Admin Command-Line Utilities (On-Premise Only)

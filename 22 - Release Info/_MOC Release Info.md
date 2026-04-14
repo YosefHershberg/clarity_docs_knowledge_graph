@@ -1,4 +1,4 @@
----
+﻿---
 title: Release Information
 tags:
   - MOC
@@ -19,3 +19,10 @@ aliases:
 
 ## Related
 - [[_MOC Administration]]
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Release Information]]
+- [[23 - Source Documentation/Review Archived Documentation]]
+<!-- SOURCE_COVERAGE_END -->

@@ -8,6 +8,10 @@ aliases:
   - JDBC Ping
   - JDBCPing
   - CMN_JGROUPS_PING
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # CSA: Configure JDBC Ping As An Alternative to Multicast (On-Premise Only)

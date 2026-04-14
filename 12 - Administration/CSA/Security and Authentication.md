@@ -10,6 +10,10 @@ aliases:
   - Classic PPM SSL
   - Classic PPM SSO
   - FIPS Clarity
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # CSA: Security, Passwords, LDAP, SSL, SSO, XSS, and FIPS (On-Premise Only)

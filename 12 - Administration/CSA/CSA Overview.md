@@ -7,6 +7,9 @@ tags:
 aliases:
   - CSA
   - Classic PPM System Administration
+canonical: true
+audience: admin
+domain: administration
 ---
 
 # CSA: Classic PPM System Administration (On-Premise Only)

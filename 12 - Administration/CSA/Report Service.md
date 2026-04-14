@@ -7,6 +7,10 @@ tags:
 aliases:
   - Report Service
   - Clarity Report Service
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # Getting Started with the Report Service

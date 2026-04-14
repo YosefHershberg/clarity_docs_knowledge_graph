@@ -3,6 +3,9 @@ title: XOG Services - Query API
 tags:
   - dev
   - reference
+canonical: true
+audience: dev
+domain: development
 ---
 # XOG Services: Query API
 

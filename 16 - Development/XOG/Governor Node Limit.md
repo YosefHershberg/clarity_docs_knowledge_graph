@@ -4,6 +4,9 @@ tags:
   - dev
   - admin
   - reference
+canonical: true
+audience: dev
+domain: development
 ---
 # XOG Governor Node Limit
 

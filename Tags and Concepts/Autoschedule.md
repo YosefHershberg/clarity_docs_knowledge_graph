@@ -5,6 +5,9 @@ tags:
 aliases:
   - Auto Schedule
   - Automatic Scheduling
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Autoschedule
 

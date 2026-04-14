@@ -6,6 +6,9 @@ tags:
 aliases:
   - Canvas Dashboard
   - Investment Dashboard
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Configure Canvas Dashboard

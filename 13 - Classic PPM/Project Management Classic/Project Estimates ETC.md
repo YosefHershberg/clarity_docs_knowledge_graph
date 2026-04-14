@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2277-2280
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Define Project Estimates (ETC) (Classic PPM)
 
@@ -27,7 +30,8 @@ Where:
 - **Assigned Work Days** — Number of working days the resource is assigned to the task
 - **Allocation** — Hours per day the resource is available (default: 8 hours, adjusted by project allocation %)
 
-> **Warning:** The default calculation is a shortcut only — not a substitute for real estimates from resources. Always adjust default ETC based on conversations with assigned resources.
+> [!WARNING]
+> The default calculation is a shortcut only — not a substitute for real estimates from resources. Always adjust default ETC based on conversations with assigned resources.
 
 ### Clipping of Task Time
 
@@ -54,7 +58,8 @@ Task start/finish times are initially set to 8:00 AM – 5:00 PM. When a task is
    3. Click **Apply**
 5. Define allocations by individual resource
 
-> **Note:** You can also define estimates at the task level — see Task ETC documentation.
+> [!NOTE]
+> You can also define estimates at the task level — see Task ETC documentation.
 
 ## Apply Top-Down Estimating
 
@@ -86,7 +91,8 @@ Set **Mode** to **Estimating Rules** in the Estimating properties page to apply 
 | Edit individual task ETC | Open task properties and edit ETC |
 | Enter time-varying ETC segments | Edit by time segments on resource assignment properties |
 
-> **Warning:** Assign staff to tasks before you can view and edit ETC.
+> [!WARNING]
+> Assign staff to tasks before you can view and edit ETC.
 
 ## Related Notes
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Hierarchies — Map of Content
 tags:
   - MOC
@@ -34,6 +34,13 @@ aliases:
 - [[Status Reports]] — View and create status reports across hierarchy levels (p687–690)
 - [[Timeline Layout]] — Review all hierarchy investments in a Gantt timeline view (p696–711)
 
+### Additional Modules
+- [[Canvas Dashboard]] — Configurable dashboard with chart and table widgets across sub-objects (p2244–2539)
+- [[Staffing]] — Manage resource allocations across all hierarchy investments; replace/remove staff; histograms (p1975–2159)
+- [[Custom Metrics]] — Create aggregation and calculation roll-up metrics for hierarchy cards and grids (p363–451)
+- [[Conversations]] — Collaborate, @mention users, attach files, and track notifications within a hierarchy (p1650–1763)
+- [[Audit]] — Track changes to hierarchy attributes; audit grid column names and prerequisites (p2162–2241)
+
 ---
 
 ## Related Sections
@@ -59,5 +66,18 @@ aliases:
 | **Cross-Object Grid** | A special grid that shows attributes from multiple investment types in one table |
 | **Objectives Hierarchy** | A hierarchy structure that maps investments to OKRs (Objectives and Key Results) |
 | **Hierarchy Blueprint** | Admin-configured template controlling which fields and modules appear in a hierarchy |
+| **Custom Metrics** | End-user-defined aggregation or calculation metrics that roll up or compute values on hierarchy cards |
+| **Canvas Dashboard** | Configurable widget dashboard showing chart and table data across hierarchy sub-objects |
+| **Resource Summary Mode** | Staffing grid mode that groups by resource and displays histograms for allocation/availability |
 
 %%Source: p627–727%%
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Create and Edit Hierarchies]]
+- [[23 - Source Documentation/Top-Down Planning with Roadmaps]]
+- [[23 - Source Documentation/Working with Objectives]]
+- [[23 - Source Documentation/Working with Pages]]
+- [[23 - Source Documentation/Working with Plans (Beta)]]
+<!-- SOURCE_COVERAGE_END -->

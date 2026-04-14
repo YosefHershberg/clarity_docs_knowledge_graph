@@ -4,6 +4,9 @@ tags:
   - howto
 aliases:
   - Allocations
+canonical: true
+audience: rm, pm
+domain: resources
 ---
 
 # Analyze Staffing by Allocations

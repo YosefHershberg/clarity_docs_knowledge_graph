@@ -7,6 +7,9 @@ aliases:
   - Home
   - Index
   - Clarity Docs
+canonical: true
+audience: everyone
+domain: ui
 ---
 
 # Clarity 16.4.1 Knowledge Graph
@@ -71,6 +74,12 @@ Welcome to the Broadcom Clarity PPM 16.4.1 documentation knowledge graph. This v
 - [[_MOC Cookbooks]] — Step-by-step recipes: roadmaps, OKRs, program management
 - [[_MOC Reference]] — Access rights, jobs, portlets, glossary, database schema
 - [[_MOC Release Info]] — Release notes, compatibility, accessibility, SaaS info
+
+---
+
+## Source Documentation
+
+- [[_MOC - Source Documentation]] — Full-text PDF extraction: 56 markdown files covering all 5057 pages of the official Clarity 16.4.1 documentation
 
 ---
 

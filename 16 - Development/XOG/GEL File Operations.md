@@ -3,6 +3,9 @@ title: GEL File Operations
 tags:
   - dev
   - howto
+canonical: true
+audience: dev
+domain: development
 ---
 # GEL File Operations
 

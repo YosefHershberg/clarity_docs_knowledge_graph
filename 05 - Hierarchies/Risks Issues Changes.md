@@ -8,6 +8,9 @@ aliases:
   - Hierarchy Issues
   - Hierarchy RIC
   - Program Risk Register
+canonical: true
+audience: pm, leadership
+domain: hierarchies
 ---
 
 # Risks, Issues, and Changes in Hierarchy

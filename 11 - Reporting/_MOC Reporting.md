@@ -1,4 +1,4 @@
----
+﻿---
 title: Reporting
 tags:
   - MOC
@@ -12,8 +12,8 @@ aliases:
 Clarity provides a built-in reporting framework with Data Providers, Report Designer, and export capabilities.
 
 ## Notes in This Section
-- [[Data Providers]] — Working with data providers
-- [[Working with Reports]] — Viewing and interacting with reports
+- [[Data Providers]] — Working with data providers (OOTB list, creation, calculated attributes, managing)
+- [[Working with Reports]] — Viewing, scheduling, exporting reports; System Reports; Copy System Reports and remap Data Providers
 
 ### Report Designer
 - [[Getting Started]] — Report Designer overview
@@ -31,3 +31,15 @@ Clarity provides a built-in reporting framework with Data Providers, Report Desi
 - [[_MOC Administration]] — Report configuration
 
 %%Source: p1680%%
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Advanced Reporting with Jaspersoft]]
+- [[23 - Source Documentation/Financial Management Reports]]
+- [[23 - Source Documentation/Portfolio Management Reports]]
+- [[23 - Source Documentation/Program Management Reports]]
+- [[23 - Source Documentation/Resource Management Reports]]
+- [[23 - Source Documentation/Time Management Reports]]
+- [[23 - Source Documentation/Working with Reporting]]
+<!-- SOURCE_COVERAGE_END -->

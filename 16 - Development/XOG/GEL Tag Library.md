@@ -3,12 +3,13 @@ title: XOG GEL Tag Library
 tags:
   - dev
   - reference
+aliases:
+  - GEL Tag Library
+canonical: true
+audience: dev
+domain: development
 ---
 # XOG GEL Tag Library
-
-Source: Clarity 16.4.1 PDF, p4495–4531
-
-Related: [[_MOC Development]] | [[GEL Basics]] | [[GEL Scripting]] | [[GEL Database Operations]] | [[GEL File Operations]]
 
 ## Overview
 
@@ -608,12 +609,14 @@ Contains the SOAP XML message (envelope, header, and body).
 | SQL Tag Library | `xmlns:sql="jelly:sql"` | Yes | Yes |
 | Utility Tag Library | `xmlns:util="jelly:util"` | Yes | Yes |
 
-## Related Notes
+## Related
+- [[_MOC Development]]
+- [[GEL Basics]]
+- [[GEL Scripting]]
+- [[GEL Database Operations]]
+- [[GEL File Operations]]
+- [[GEL Integration Processes]]
+- [[Query API]]
+- [[Object API]]
 
-- [[GEL Basics]] — GEL fundamentals and script structure
-- [[GEL Database Operations]] — SQL/JDBC operations
-- [[GEL File Operations]] — File and FTP operations
-- [[GEL Integration Processes]] — Process automation
-- [[GEL Scripting]] — Overview and getting started
-- [[Query API]] — XOG Query API (usable via soap:invoke)
-- [[Object API]] — XOG Object API (usable via soap:invoke)
+%%Source: p4495-4531%%

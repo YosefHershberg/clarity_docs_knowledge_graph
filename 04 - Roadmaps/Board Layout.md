@@ -7,6 +7,9 @@ aliases:
   - Roadmap Board
   - Roadmap Kanban
   - Board View Roadmaps
+canonical: true
+audience: pm, leadership
+domain: roadmaps
 ---
 
 # Roadmaps Board Layout

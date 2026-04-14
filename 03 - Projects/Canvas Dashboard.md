@@ -8,19 +8,21 @@ aliases:
   - Canvas
   - Project Dashboard
   - Canvas Configuration
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Canvas Dashboard
 
-The **Canvas** is Clarity PPM's fully configurable widget-based dashboard that lives inside each project. It serves as the **project overview page** — a single-screen summary combining key metrics, status indicators, lists, and charts. Each project can have its own canvas layout, and users can further personalize their view.
-
-%%Source: p1206-1217%%
+The **Canvas** is Clarity PPM's fully configurable widget-based dashboard that lives inside each project.
+It serves as the **project overview page** - a single-screen summary combining key metrics, status indicators, lists, and charts. Each project can have its own canvas layout, and users can further personalize their view.
 
 ---
 
 ## What Is the Canvas?
 
-The canvas is a drag-and-drop dashboard surface where you can place and arrange **widgets** — configurable panels that display specific project data. Unlike the status report canvas (which is a point-in-time report), the **project canvas** shows **live data** that updates as the project changes.
+The canvas is a drag-and-drop dashboard surface where you can place and arrange **widgets** - configurable panels that display specific project data. Unlike the status report canvas (which is a point-in-time report), the **project canvas** shows **live data** that updates as the project changes.
 
 **Common uses:**
 - Project overview/summary for stakeholders
@@ -44,7 +46,7 @@ The canvas is a drag-and-drop dashboard surface where you can place and arrange 
 
 | Mode | Description |
 |------|-------------|
-| **View Mode** | Normal mode — see the live data; no editing |
+| **View Mode** | Normal mode - see the live data; no editing |
 | **Edit Mode** | Arrange, add, and configure widgets |
 
 Switch between modes by clicking the **Edit Layout** button (pencil/grid icon in the top-right of the canvas).
@@ -97,10 +99,10 @@ Switch between modes by clicking the **Edit Layout** button (pencil/grid icon in
 
 ### Steps
 1. Click **Edit Layout** (pencil/grid icon).
-2. The canvas enters edit mode — a **widget palette** appears (sidebar or toolbar).
+2. The canvas enters edit mode - a **widget palette** appears (sidebar or toolbar).
 3. To add a widget:
-   - Click **+ Add Widget** or drag a widget type from the palette onto the canvas.
-   - The widget appears on the canvas with a default size.
+ - Click **+ Add Widget** or drag a widget type from the palette onto the canvas.
+ - The widget appears on the canvas with a default size.
 4. Position the widget by **dragging** its header.
 5. Resize by **dragging the resize handle** (bottom-right corner of the widget).
 6. Click the **Configure** (gear) icon on a widget to open its settings.
@@ -140,7 +142,7 @@ Each widget has its own configuration panel. Common configuration options:
 
 > [!tip] As a project manager, you can set up the canvas once and all stakeholders see the same organized layout when they open the project.
 
-> [!note] Some systems allow **per-user canvas personalization** — users can add their own widgets without affecting other users' views. Whether this is enabled depends on your Blueprint and system settings.
+> [!note] Some systems allow **per-user canvas personalization** - users can add their own widgets without affecting other users' views. Whether this is enabled depends on your Blueprint and system settings.
 
 ---
 
@@ -149,8 +151,8 @@ Each widget has its own configuration panel. Common configuration options:
 If a canvas becomes cluttered or you want to start fresh:
 
 1. Enter **Edit Mode**.
-2. Click **More → Reset to Default** (or **Actions → Reset Layout**).
-3. Confirm — the canvas reverts to the Blueprint's default widget layout.
+2. Click **More -> Reset to Default** (or **Actions -> Reset Layout**).
+3. Confirm - the canvas reverts to the Blueprint's default widget layout.
 
 > [!warning] Resetting removes all custom widget configurations. This action cannot be undone.
 
@@ -167,7 +169,7 @@ Administrators can configure:
 | **Lock canvas layout** (prevent user customization) | Blueprint settings |
 | **Embedded URL allowlist** | System settings (for iFrame widgets) |
 
-> [!note] Locking the canvas layout in the Blueprint ensures all projects using that blueprint have a consistent project overview page — useful for portfolio-level reporting consistency.
+> [!note] Locking the canvas layout in the Blueprint ensures all projects using that blueprint have a consistent project overview page - useful for portfolio-level reporting consistency.
 
 ---
 
@@ -183,11 +185,13 @@ Administrators can configure:
 
 ---
 
-## Related Notes
-- [[Getting Started]] — Overview of all project layouts
-- [[Status Reports]] — Point-in-time status canvas within reports
-- [[Tasks Phases Milestones]] — Task list and milestone widgets pull from here
-- [[Financial Plans]] — Financial widgets pull from cost/budget plans
-- [[Risks Issues Changes]] — Risk/issue summary widgets
-- [[_MOC Administration]] — Blueprint configuration for canvas
+## Related
+- [[Getting Started]] - Overview of all project layouts
+- [[Status Reports]] - Point-in-time status canvas within reports
+- [[Tasks Phases Milestones]] - Task list and milestone widgets pull from here
+- [[Financial Plans]] - Financial widgets pull from cost/budget plans
+- [[Risks Issues Changes]] - Risk/issue summary widgets
+- [[_MOC Administration]] - Blueprint configuration for canvas
 - [[_MOC Projects]]
+
+%%Source: p1206-1217%%

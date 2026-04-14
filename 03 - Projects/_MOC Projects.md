@@ -1,4 +1,4 @@
----
+﻿---
 title: Projects — Map of Content
 tags:
   - MOC
@@ -42,8 +42,13 @@ Projects are the primary investment type in Clarity PPM. This section covers the
 
 ### Reporting & Monitoring
 - [[Status Reports]] — Measuring progress, the status canvas, and the reports grid (p1172–1202)
+- [[Status Reports Workspace]] — Cross-investment status reports view: edit, bulk export to PDF, and context menu actions
 - [[Canvas Dashboard]] — Configuring the project canvas as a management dashboard (p1206–1217)
 - [[Audit]] — Viewing the project audit log for change history (p1218–1222)
+
+### Cross-Investment Workspaces
+- [[Tasks Workspace]] — Global top-level Tasks page: cross-investment tasks in board, calendar, grid, and timeline layouts
+- [[To Dos Workspace]] — Global top-level To Dos page: all to-do items across investments, tasks, and RICs
 
 ---
 
@@ -73,3 +78,13 @@ Projects are the primary investment type in Clarity PPM. This section covers the
 | **Canvas** | Fully configurable dashboard view within a project |
 
 %%Source: p982-1222%%
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Manage Status Reports]]
+- [[23 - Source Documentation/Managing Projects]]
+- [[23 - Source Documentation/Track and Edit To Dos]]
+- [[23 - Source Documentation/Track Tasks Across Investments]]
+- [[23 - Source Documentation/Working with Team Investments]]
+<!-- SOURCE_COVERAGE_END -->

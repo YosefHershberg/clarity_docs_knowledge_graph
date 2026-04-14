@@ -6,6 +6,9 @@ tags:
 aliases:
   - Access Rights
   - Permissions
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Clarity Access Rights Reference
 

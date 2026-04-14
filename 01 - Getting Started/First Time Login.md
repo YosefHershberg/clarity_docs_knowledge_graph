@@ -6,6 +6,9 @@ aliases:
   - Login
   - First Login
   - Sign In
+canonical: true
+audience: everyone
+domain: ui
 ---
 
 # First Time Login Experience

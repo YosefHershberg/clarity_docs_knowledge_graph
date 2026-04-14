@@ -3,6 +3,9 @@ title: GEL Database Operations
 tags:
   - dev
   - howto
+canonical: true
+audience: dev
+domain: development
 ---
 # GEL Database Operations
 

@@ -7,6 +7,9 @@ aliases:
   - Hierarchy Status Reports
   - Program Status Reports
   - Portfolio Status
+canonical: true
+audience: pm, leadership
+domain: hierarchies
 ---
 
 # Status Reports in Hierarchy

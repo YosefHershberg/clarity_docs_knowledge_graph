@@ -3,6 +3,9 @@ title: XOG Object Reference Details
 tags:
   - dev
   - reference
+canonical: true
+audience: dev
+domain: development
 ---
 # XOG Object Reference Details
 

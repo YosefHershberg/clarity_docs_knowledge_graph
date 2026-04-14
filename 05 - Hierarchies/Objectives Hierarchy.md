@@ -8,6 +8,9 @@ aliases:
   - OKR Hierarchy
   - Strategic Objectives Hierarchy
   - Investment Objectives
+canonical: true
+audience: pm, leadership
+domain: hierarchies
 ---
 
 # Objectives Hierarchy

@@ -9,6 +9,10 @@ aliases:
   - Classic PPM Load Balancer
   - Classic PPM Multicast
   - Scale Classic PPM
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # CSA: Application Servers, Clusters, Multicast Messaging, and Load Balancers (On-Premise Only)

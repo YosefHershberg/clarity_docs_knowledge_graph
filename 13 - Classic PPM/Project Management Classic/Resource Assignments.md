@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2314-2325
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Manage Resource Assignments (Classic PPM)
 
@@ -26,7 +29,8 @@ Resource assignments link specific resources to project tasks and define how muc
 
 ## Remove Resource Assignments from Tasks
 
-> **Note:** If the assignment is associated with posted transactions, it cannot be removed.
+> [!NOTE]
+> If the assignment is associated with posted transactions, it cannot be removed.
 
 1. Open the project > **Tasks** > **Assignments**
 2. Select the check box next to the resource

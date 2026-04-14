@@ -1,4 +1,4 @@
----
+﻿---
 title: PMO Financial Management Reports
 tags:
   - reference
@@ -8,11 +8,13 @@ aliases:
 ---
 # PMO Financial Management Reports
 
+
 The Financial Management reports provide visibility into financial plans and actual costs across investments. They include capital, expense, budget, and forecast analysis, as well as financial transaction inquiry by resource and day.
 
 > Source: Clarity 16.4.1 documentation, pp. 3497–3534
 
 ## Reports Included
+
 
 | Report Name | Resource ID | Data Source |
 |---|---|---|
@@ -28,7 +30,9 @@ The Financial Management reports provide visibility into financial plans and act
 
 ## Financial Capitalization by Investment
 
-**Description:** Displays capital and operating amounts for each investment including budget/planned, actual, remaining cost, and percent spent. Groupable by up to three options (Investment Manager, Business Owner, Investment Type, Project Type, OBS Level). Drills down to Financial Capitalization Detail report.
+
+**Description:** Displays capital and operating amounts for each investment including budget/planned, actual, remaining cost, and percent spent.
+Groupable by up to three options (Investment Manager, Business Owner, Investment Type, Project Type, OBS Level). Drills down to Financial Capitalization Detail report.
 
 **Prerequisites:**
 - Load DWH and Load DWH Access Rights jobs
@@ -40,7 +44,9 @@ The Financial Management reports provide visibility into financial plans and act
 - Annual fiscal time periods must exist covering the plan period (used for fiscal year conversion)
 - Monthly or 13-period fiscal time periods must exist (used for Financial Capitalization Detail month-by-month display)
 
-**Key Parameters:** Investment OBS Type/Unit, Investment Type (default: All), Investment Manager, Investment, Investment Status, Financial Plan Type (default: Planned), Fiscal Year, Report Currency, % Spent Threshold (default: 10), Group By 1/2/3 (No Grouping/Investment Manager/Business Owner/Investment Type/Project Type/OBS Level), Include Inactive Investments
+**Key Parameters:** Investment OBS Type/Unit, Investment Type (default: All), Investment Manager, Investment, Investment Status, Financial Plan Type (default:
+Planned), Fiscal Year, Report Currency, % Spent Threshold (default:
+10), Group By 1/2/3 (No Grouping/Investment Manager/Business Owner/Investment Type/Project Type/OBS Level), Include Inactive Investments
 
 **Key Calculations:**
 - **Remaining:** Planned or Budget Cost − Actual Cost
@@ -55,6 +61,7 @@ The Financial Management reports provide visibility into financial plans and act
 
 ## Financial Capitalization Detail
 
+
 **Description:** Drill-down companion to Financial Capitalization by Investment. Displays capital and operating amounts by fiscal month for a single investment. Supports the same grouping attributes as the parent report.
 
 **Prerequisites:** Same as Financial Capitalization by Investment. Monthly or 13-period fiscal time periods required.
@@ -67,6 +74,7 @@ The Financial Management reports provide visibility into financial plans and act
 
 ## Financial Forecast Review by Investment
 
+
 **Description:** Displays budget or planned cost, compared to forecast cost, with variances by investment. Provides a high-level view of how investments are tracking against financial targets. Drills down to Financial Forecast Review by Plan Grouping.
 
 **Prerequisites:**
@@ -75,7 +83,9 @@ The Financial Management reports provide visibility into financial plans and act
 - Department OBS and entity/fiscal time period setup required
 - Monthly or 13-period fiscal time periods required for as-of-date evaluation
 
-**Key Parameters:** Investment OBS Type/Unit, Investment Type, Investment Manager, Investment, Investment Status, Financial Plan Type (Budget/Planned), Fiscal Year, As Of Date, Report Currency, Group By 1/2 (financial plan grouping attributes: Charge Code, Cost Type, Department, Input Type Code, Location, Resource, Resource Class, Role, Transaction Class, User Value 1/2), Include Inactive Investments
+**Key Parameters:** Investment OBS Type/Unit, Investment Type, Investment Manager, Investment, Investment Status, Financial Plan Type (Budget/Planned), Fiscal Year, As Of Date,
+Report Currency, Group By 1/2 (financial plan grouping attributes:
+Charge Code, Cost Type, Department, Input Type Code, Location, Resource, Resource Class, Role, Transaction Class, User Value 1/2), Include Inactive Investments
 
 **Key Calculations:**
 - **Forecast (Calculated):** Actual to the as-of date + ETC from the as-of date forward
@@ -89,6 +99,7 @@ The Financial Management reports provide visibility into financial plans and act
 
 ## Financial Forecast Review by Plan Grouping
 
+
 **Description:** Displays budget/planned cost vs. forecast with variances, broken down by financial plan grouping attributes (e.g., cost type, charge code, role). Provides detail-level financial comparison across grouping dimensions.
 
 **Prerequisites:** Same as Financial Forecast Review by Investment.
@@ -101,6 +112,7 @@ The Financial Management reports provide visibility into financial plans and act
 
 ## Financial Budget vs. Forecast by Period
 
+
 **Description:** Displays budget or planned cost compared to forecast cost with variances, broken down by fiscal period. Groupable by up to two financial plan grouping attributes. Drills down to Financial Budget vs. Forecast by Period Detail.
 
 > **Warning:** This report runs numerous queries. Apply filters to avoid performance issues.
@@ -112,7 +124,9 @@ The Financial Management reports provide visibility into financial plans and act
 - Annual fiscal time periods required (for fiscal year grouping)
 - Monthly or 13-period fiscal time periods required (for as-of-date evaluation and period display)
 
-**Key Parameters:** Investment OBS Type/Unit, Investment Type (default: All), Investment Manager, Investment, Investment Status, Financial Plan Type (default: Planned), Fiscal Year, As Of Date, Report Currency, Group By 1/2 (Charge Code/Cost Type/Department/Input Type Code/Location/Resource/Resource Class/Role/Transaction Class/User Value 1/2), Include Inactive Investments
+**Key Parameters:** Investment OBS Type/Unit, Investment Type (default: All), Investment Manager, Investment, Investment Status, Financial Plan Type (default:
+Planned), Fiscal Year, As Of Date, Report Currency, Group By 1/2 (Charge Code/Cost Type/Department/Input Type Code/Location/Resource/Resource Class/Role/Transaction Class/User
+Value 1/2), Include Inactive Investments
 
 **Supported Financial Plan Grouping Attributes:** Charge Code, Cost Type, Department, Input Type Code, Location, Resource, Resource Class, Role, Transaction Class, User Value 1, User Value 2
 
@@ -124,6 +138,7 @@ The Financial Management reports provide visibility into financial plans and act
 
 ## Financial Budget vs. Forecast by Period Detail
 
+
 **Description:** Detail version of Financial Budget vs. Forecast by Period. Shows financial data at the individual investment and grouping attribute level across fiscal periods.
 
 **Prerequisites:** Same as Financial Budget vs. Forecast by Period.
@@ -133,6 +148,7 @@ The Financial Management reports provide visibility into financial plans and act
 ---
 
 ## Investment Transaction Inquiry
+
 
 **Description:** Displays financial transactions by resource and day across investments. Provides visibility into individual financial transaction records including transaction amounts, transaction class, charge codes, and posting details. Useful for financial reconciliation and audit.
 
@@ -152,6 +168,7 @@ The Financial Management reports provide visibility into financial plans and act
 ---
 
 ## Common Financial Report Requirements
+
 
 ### Setup Prerequisites
 1. **Department OBS** configured (Administration/Organization and Access/OBS)

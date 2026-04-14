@@ -1,4 +1,4 @@
----
+﻿---
 title: PMO Investment Management Reports
 tags:
   - reference
@@ -8,11 +8,13 @@ aliases:
 ---
 # PMO Investment Management Reports
 
+
 The Investment Management reports provide visibility into KPIs of status, schedule, alignment, and risk across all investment types (projects, applications, products, services, etc.). They offer insight into staffing, cost, effort, risks, issues, and plan-vs-baseline comparisons.
 
 > Source: Clarity 16.4.1 documentation, pp. 3386–3418
 
 ## Reports Included
+
 
 | Report Name | Resource ID | Data Source |
 |---|---|---|
@@ -31,7 +33,9 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 
 ## Investment Allocations and Assignments
 
-**Description:** Displays team member allocation, task assignment, and variance amounts by investment across time periods. Chart shows allocation vs. assignment by period. Can show allocations only, assignments only, or both. Displays weekly or monthly amounts plus totals; supports hours or FTE display.
+
+**Description:** Displays team member allocation, task assignment, and variance amounts by investment across time periods. Chart shows allocation vs. assignment by period.
+Can show allocations only, assignments only, or both. Displays weekly or monthly amounts plus totals; supports hours or FTE display.
 
 **Prerequisites:**
 - Load DWH and Load DWH Access Rights jobs
@@ -40,7 +44,9 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 - Allocation time slices: `MONTHLYRESOURCEALLOCCURVE` and `WEEKLYRESOURCEALLOCCURVE`
 - Assignment time slices: `MONTHLYRESOURCEACTCURVE`, `WEEKLYRESOURCEACTCURVE`, `MONTHLYRESOURCEESTCURVE`, `WEEKLYRESOURCEESTCURVE`
 
-**Key Parameters:** Investment OBS Type/Unit, Investment Type (default: All), Investment Manager, Investment, Investment Status, Resource Manager, Resource Role, Start Date, End Date, Period Type (Week/Month), Report Type (Allocation and Assignment/Allocation Only/Assignment Only), Unit Type (Hours/FTE), Include Inactive Resources/Investments
+**Key Parameters:** Investment OBS Type/Unit, Investment Type (default:
+All), Investment Manager, Investment, Investment Status, Resource Manager, Resource Role, Start Date, End Date, Period Type (Week/Month), Report Type (Allocation and
+Assignment/Allocation Only/Assignment Only), Unit Type (Hours/FTE), Include Inactive Resources/Investments
 
 **Key Calculations:**
 - **Variance:** Allocation − Assignment (or the reverse depending on report type)
@@ -51,6 +57,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 ---
 
 ## Investment Assignments by Task
+
 
 **Description:** Displays task assignment amounts by investment, grouped by phase and task. Shows baseline, actual, ETC, EAC, and variance amounts by month across a 12-month window. Supports hours or FTE.
 
@@ -74,6 +81,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 
 ## Investment Baseline vs. Plan by Task
 
+
 **Description:** Displays baseline, actual, ETC, EAC, and variance amounts for resource assignments grouped by investment, phase, and task. Shows a 12-month view from the selected start date. Supports hours or FTE.
 
 **Prerequisites:**
@@ -93,6 +101,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 ---
 
 ## Investment Time and Estimate Review
+
 
 **Description:** Displays actual and estimate amounts for resource assignments grouped by investment or resource. Shows plan actuals, plan ETC, pending actuals, and pending ETC, plus hours worked by date for selected time periods. Provides visibility into actuals and recommended ETC changes.
 
@@ -117,6 +126,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 
 ## Product or Application Roadmap
 
+
 **Description:** Lists milestones from projects allocated to products or applications with a Gantt schedule covering 12 months or 4 quarters. Groupable by application, product, or manager. Programs included, templates excluded.
 
 **Prerequisites:**
@@ -133,6 +143,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 ---
 
 ## Roadmap Timeline
+
 
 **Description:** Displays a graphical timeline report for a specific roadmap, showing roadmap items by month, quarter, or year. Items are grouped by a selected swimlane (Type, Status, In Plan, or custom). Up to 3 numeric metrics can be displayed per roadmap item.
 
@@ -159,7 +170,9 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 
 ## Investment Risk, Issue, and Change Summary
 
-**Description:** Two sets of pie charts showing risks/issues by target resolution date and change requests by expected close date, plus a second set by status. Detailed listing includes name, ID, priority, status, category, owner, created date, and target/expected close date. Groupable by investment.
+
+**Description:** Two sets of pie charts showing risks/issues by target resolution date and change requests by expected close date, plus a second set by status.
+Detailed listing includes name, ID, priority, status, category, owner, created date, and target/expected close date. Groupable by investment.
 
 **Prerequisites:**
 - Load DWH and Load DWH Access Rights jobs
@@ -171,6 +184,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 ---
 
 ## Investment Risk Register
+
 
 **Description:** Detailed listing of risks across investments including risk name, ID, category, priority, status, probability, impact, exposure score, owner, and key dates. Mirrors the Project Risk Register but applies to all investment types.
 
@@ -184,6 +198,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 
 ## Investment Issue Register
 
+
 **Description:** Detailed listing of issues across investments including issue name, ID, category, priority, status, owner, and key dates.
 
 **Data Source:** DWH Bean
@@ -196,6 +211,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 
 ## Investment Change Request Register
 
+
 **Description:** Detailed listing of change requests across investments including name, ID, priority, status, category, expected close, approved by/date, resources, and originating ID.
 
 **Data Source:** Classic PPM DWH Bean
@@ -207,6 +223,7 @@ The Investment Management reports provide visibility into KPIs of status, schedu
 ---
 
 ## Common Prerequisites
+
 
 - **Load Data Warehouse** and **Load Data Warehouse Access Rights** jobs must be run
 - Investment Type parameter defaults to **All** (includes: Application, Asset, Idea, Other Work, Product, Project, Service)

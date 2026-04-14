@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2277
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Financially Enable Projects (Classic PPM)
 
@@ -18,7 +21,8 @@ Before defining the financial properties, verify you have set up:
 - Financial departments associated with locations
 - A cost/rate matrix for determining cost and charge rates
 
-> **Warning:** Setting financial status to "Open" without completing the required financial setup causes error messages when processing actual transactions.
+> [!WARNING]
+> Setting financial status to "Open" without completing the required financial setup causes error messages when processing actual transactions.
 
 ## Define the Financial Properties of a Project
 

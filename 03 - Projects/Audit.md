@@ -8,6 +8,9 @@ aliases:
   - Project Audit
   - Audit Trail
   - Change History
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Audit Log

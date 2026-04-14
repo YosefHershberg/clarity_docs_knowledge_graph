@@ -6,6 +6,9 @@ tags:
 aliases:
   - Personas
   - User Roles
+canonical: true
+audience: everyone
+domain: ui
 ---
 
 # Roles and Personas

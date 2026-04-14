@@ -5,6 +5,9 @@ tags:
 aliases:
   - DPM
   - Digital Product Management
+canonical: true
+audience: everyone
+domain: ui
 ---
 
 # Getting Started with Digital Product Management

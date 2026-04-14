@@ -4,6 +4,9 @@ tags:
   - howto
 aliases:
   - Timesheet Grid
+canonical: true
+audience: everyone
+domain: timesheets
 ---
 
 # View and Manage Timesheets From Grid Layout

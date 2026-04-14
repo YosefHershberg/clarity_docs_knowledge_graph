@@ -1,4 +1,4 @@
----
+﻿---
 title: Reference
 tags:
   - MOC
@@ -37,6 +37,14 @@ aliases:
 - [[Glossary]] — Clarity glossary of terms
 - [[Database Schema Changes]] — Database schema changes
 - [[Connectivity Diagrams]] — Oracle and SQL connectivity diagrams
+- [[Authentication Methods]] — SSO, LDAP, SAML, Federated SSO, VIP AuthHub
+- [[Database Performance]] — Load testing benchmarks and use cases for Oracle, MSSQL, PostgreSQL
 
 ## Related
 - [[_MOC Administration]]
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Reference]]
+<!-- SOURCE_COVERAGE_END -->

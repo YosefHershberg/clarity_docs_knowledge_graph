@@ -5,6 +5,9 @@ tags:
   - concept
 aliases:
   - Cost Planning
+canonical: true
+audience: finance, pm
+domain: financials
 ---
 
 # Working with Cost Plans

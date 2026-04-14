@@ -6,6 +6,9 @@ tags:
 aliases:
   - Custom Investments Overview
   - Custom Investment Types
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Getting Started with Custom Investments

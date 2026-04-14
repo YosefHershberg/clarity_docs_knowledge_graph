@@ -6,6 +6,9 @@ aliases:
   - Glossary
   - Terms
   - Definitions
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Clarity Glossary
 

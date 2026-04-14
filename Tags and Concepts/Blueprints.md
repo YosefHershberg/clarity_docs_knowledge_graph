@@ -5,6 +5,9 @@ tags:
   - admin
 aliases:
   - Blueprint System
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Blueprints
 

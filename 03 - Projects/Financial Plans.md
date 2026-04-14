@@ -9,13 +9,15 @@ aliases:
   - Benefit Plans
   - Forecast Plans
   - Project Financials
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Financial Plans
 
-Clarity PPM provides a full financial planning framework within each project. Financial plans allow project managers and financial analysts to build detailed **cost plans**, set approved **budgets**, maintain rolling **forecasts**, and track expected **benefits**. Together, these form the financial backbone of a project.
-
-%%Source: p1122-1156%%
+Clarity PPM provides a full financial planning framework within each project.
+Financial plans allow project managers and financial analysts to build detailed **cost plans**, set approved **budgets**, maintain rolling **forecasts**, and track expected **benefits**. Together, these form the financial backbone of a project.
 
 ---
 
@@ -28,7 +30,7 @@ Clarity PPM provides a full financial planning framework within each project. Fi
 | **Forecast** | Rolling update of expected costs | PM / Financial Analyst |
 | **Benefit Plan** | Projected financial benefits (ROI) | PM / Business Analyst |
 
-> [!note] Not all plan types may be available on your project — availability depends on the **Blueprint** configuration. See [[_MOC Administration]].
+> [!note] Not all plan types may be available on your project - availability depends on the **Blueprint** configuration. See [[_MOC Administration]].
 
 ---
 
@@ -52,7 +54,7 @@ A **budget plan** represents the **approved financial baseline**. It is typicall
 A **forecast** is an updated projection of costs based on actuals to date plus the estimate to complete (ETC). Forecasts are typically updated monthly or quarterly.
 
 ### Benefit Plan
-A **benefit plan** captures the expected financial return from the project — cost savings, revenue generation, or other quantified value. It is used in ROI and NPV calculations.
+A **benefit plan** captures the expected financial return from the project - cost savings, revenue generation, or other quantified value. It is used in ROI and NPV calculations.
 
 ---
 
@@ -109,13 +111,13 @@ Each line in the cost plan represents a combination of dimensions:
 Clarity can auto-populate labor cost plan lines from the project team:
 
 1. Open an existing cost plan.
-2. Click **Actions → Populate from Team Allocations** (button name may vary by version).
+2. Click **Actions -> Populate from Team Allocations** (button name may vary by version).
 3. Configure the population parameters:
-   - **Rate Matrix**: Which rate matrix to use for labor costing
-   - **Period Range**: Which periods to populate
+ - **Rate Matrix**: Which rate matrix to use for labor costing
+ - **Period Range**: Which periods to populate
 4. Click **Populate**.
 
-Clarity creates or updates lines for each team member × fiscal period combination using their allocation and billing/cost rate.
+Clarity creates or updates lines for each team member x fiscal period combination using their allocation and billing/cost rate.
 
 > [!note] The rate matrix must be configured by an administrator for auto-population to work correctly. See [[_MOC Financials]].
 
@@ -139,8 +141,8 @@ The previous Plan of Record is automatically un-flagged.
 A budget plan is typically **promoted from a cost plan** after management approval:
 
 1. Open the approved cost plan.
-2. Click **Actions → Set as Budget** (or **Promote to Budget**).
-3. Confirm — the budget plan is created as a snapshot.
+2. Click **Actions -> Set as Budget** (or **Promote to Budget**).
+3. Confirm - the budget plan is created as a snapshot.
 
 Alternatively, create a budget plan manually:
 1. Click the **Budget Plan** tab.
@@ -173,7 +175,7 @@ Alternatively, create a budget plan manually:
 
 | Field | Description |
 |-------|-------------|
-| **Name** | E.g., "Cost Savings — Automation" |
+| **Name** | E.g., "Cost Savings - Automation" |
 | **Benefit Type** | Cost Reduction, Revenue, Avoided Cost, etc. |
 | **Period Range** | Fiscal periods the benefit spans |
 
@@ -198,9 +200,9 @@ The grid within a plan shows:
 
 | Metric | Calculation |
 |--------|-------------|
-| **ETC** | Estimate to Complete — remaining planned cost |
+| **ETC** | Estimate to Complete - remaining planned cost |
 | **EAC** | Estimate at Completion = Actuals + ETC |
-| **BAC** | Budget at Completion — approved budget total |
+| **BAC** | Budget at Completion - approved budget total |
 | **CV** | Cost Variance = EV - Actuals |
 | **SV** | Schedule Variance = EV - PV |
 | **CPI** | Cost Performance Index = EV / Actuals |
@@ -221,9 +223,11 @@ The grid within a plan shows:
 
 ---
 
-## Related Notes
-- [[Staffing]] — Resource allocations drive labor cost plan lines
-- [[Baselines]] — Snapshot project plan including financial data
-- [[_MOC Financials]] — Deep dive into rate matrices, chargebacks, GL accounts
-- [[Status Reports]] — Financial progress shown in status reports
+## Related
+- [[Staffing]] - Resource allocations drive labor cost plan lines
+- [[Baselines]] - Snapshot project plan including financial data
+- [[_MOC Financials]] - Deep dive into rate matrices, chargebacks, GL accounts
+- [[Status Reports]] - Financial progress shown in status reports
 - [[_MOC Projects]]
+
+%%Source: p1122-1156%%

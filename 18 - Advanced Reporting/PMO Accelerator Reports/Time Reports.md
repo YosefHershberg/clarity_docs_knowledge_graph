@@ -1,4 +1,4 @@
----
+﻿---
 title: PMO Time Management Reports
 tags:
   - reference
@@ -8,11 +8,13 @@ aliases:
 ---
 # PMO Time Management Reports
 
+
 The Time Management reports provide visibility into timesheets entered by resources across the organization. They also identify missing timesheets and support timesheet compliance monitoring.
 
 > Source: Clarity 16.4.1 documentation, pp. 3476–3496
 
 ## Reports Included
+
 
 | Report Name | Resource ID | Data Source |
 |---|---|---|
@@ -27,6 +29,7 @@ The Time Management reports provide visibility into timesheets entered by resour
 
 ## Resource Time Review by Manager
 
+
 **Description:** Displays timesheet entries for each resource grouped by investment manager or resource manager. Shows hours entered on the timesheet by day and in total for each investment/time entry/resource. Supports weekly time periods only.
 
 **Prerequisites:**
@@ -40,7 +43,9 @@ The Time Management reports provide visibility into timesheets entered by resour
 - Resource must be assigned to at least one investment task
 - Time slice: `DAILYRESOURCETIMECURVE`
 
-**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Resource, Employment Type, Investment Type (default: All), Investment Manager, Investment, Time Period (required), Timesheet Status (default: Open/Submitted/Returned/Approved/Posted), Group By (Investment Manager/Resource Manager, default: Resource Manager), Include Inactive Resources/Investments
+**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Resource, Employment Type, Investment Type (default:
+All), Investment Manager, Investment, Time Period (required), Timesheet Status (default:
+Open/Submitted/Returned/Approved/Posted), Group By (Investment Manager/Resource Manager, default: Resource Manager), Include Inactive Resources/Investments
 
 **Key Fields:** Timesheet period ending, timesheet status, time entry type, investment, task description, task status, input type code, hours by day (7 columns) and total
 
@@ -51,6 +56,7 @@ The Time Management reports provide visibility into timesheets entered by resour
 ---
 
 ## Resource Time Summary and Detail
+
 
 **Description:** Displays timesheet hours and notes for each resource and time period. Groupable by resource manager, time period, or any OBS level (1–10). Provides summary and detail rows of timesheet data.
 
@@ -67,6 +73,7 @@ The Time Management reports provide visibility into timesheets entered by resour
 
 ## Timesheet Detail
 
+
 **Description:** Provides a detailed view of individual timesheet entries including daily hours, investment details, task details, and timesheet notes. Useful for timesheet review and audit.
 
 **Prerequisites:**
@@ -80,6 +87,7 @@ The Time Management reports provide visibility into timesheets entered by resour
 ---
 
 ## Time Compliance
+
 
 **Description:** Displays timesheet compliance rates by OBS level. Shows the percentage of timesheets that are submitted/approved on time. The report rolls up compliance data across OBS hierarchy levels. Configurable yellow and red threshold percentages highlight compliance issues.
 
@@ -98,6 +106,7 @@ The Time Management reports provide visibility into timesheets entered by resour
 ---
 
 ## Time Compliance Detail
+
 
 **Description:** Detail-level companion to Time Compliance. Displays individual resource compliance information including resource name, email, time period ending, timesheet status, employment type, and resource manager. Grouped by OBS level.
 
@@ -118,7 +127,10 @@ The Time Management reports provide visibility into timesheets entered by resour
 
 ## Missing Time
 
-**Description:** Displays resource available hours, timesheet hours entered, and missing hours by resource and time period. Groupable by resource manager or OBS level 1–10. Includes two summary charts: Timesheet Count Summary (Completed/Partial/Missing) and Timesheet Hours Summary (Available/Entered/Missing/Overage). Supports two missing time calculation methods.
+
+**Description:** Displays resource available hours, timesheet hours entered, and missing hours by resource and time period. Groupable by resource manager or OBS level 1–10.
+Includes two summary charts: Timesheet Count Summary (Completed/Partial/Missing) and Timesheet Hours Summary (Available/Entered/Missing/Overage).
+Supports two missing time calculation methods.
 
 **Prerequisites:**
 - Load DWH and Load DWH Access Rights jobs
@@ -127,7 +139,9 @@ The Time Management reports provide visibility into timesheets entered by resour
 - Resource must be assigned to at least one investment task
 - **Special:** `DAILYRESOURCEAVAILCURVE` time slice (NOT a DWH request — must be configured separately to cover reporting dates)
 
-**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Resource Role, Resource, Employment Type, Time Period (required), Timesheet Status (default: Open/Submitted/Returned/Approved/Posted), Group By (Resource Manager/OBS Level 1–10), Calculate Missing Time Based on Timesheet Status (boolean), Include Inactive Resources, Show Timesheet Summary Graph
+**Key Parameters:** Resource OBS Type/Unit, Resource Manager, Resource Role, Resource, Employment Type, Time Period (required), Timesheet Status (default:
+Open/Submitted/Returned/Approved/Posted), Group By (Resource Manager/OBS Level 1–10), Calculate Missing Time Based on Timesheet Status (boolean), Include Inactive Resources, Show
+Timesheet Summary Graph
 
 **Calculate Missing Time Based on Timesheet Status:**
 - **Checked:** Timesheets with selected statuses are considered "missing" (e.g., selecting Open and Submitted means those are the missing ones)
@@ -146,6 +160,7 @@ The Time Management reports provide visibility into timesheets entered by resour
 ---
 
 ## Common Time Report Requirements
+
 
 - Weekly time reporting periods required for most reports (`DAILYRESOURCETIMECURVE` time slice)
 - The "Adjusted" timesheet status = timesheet that was posted then changed and re-posted; generally not selected

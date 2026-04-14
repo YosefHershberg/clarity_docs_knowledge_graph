@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2293-2297
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Close, Deactivate, and Delete Projects and Investments (Classic PPM)
 
@@ -59,7 +62,8 @@ A project must be **inactive** before it can be marked for deletion. Projects ma
 - `<Investment> - Delete - All` global access right
 - View access rights on the investment
 
-> **Tip (Release 15.5.1+):** You can delete investments with timesheet or financial transaction data. Enable the **Allow Marked Investments with Timesheet and Transaction Data to be Deleted** setting in Administration > Project Management > Settings.
+> [!TIP]
+> Starting with Release 15.5.1, you can delete investments with timesheet or financial transaction data. Enable the **Allow Marked Investments with Timesheet and Transaction Data to be Deleted** setting in Administration > Project Management > Settings.
 
 ## Cancel Project Deletion
 
@@ -109,7 +113,8 @@ When a project is deleted, the application also removes:
 - The investment-specific charge code from the `PRCHARGECODE` table
 - Any rate matrix rows using that investment-specific charge code
 
-> **Note:** Investment-specific charge codes are available for projects only, not for non-project investments or custom investment types.
+> [!NOTE]
+> Investment-specific charge codes are available for projects only, not for non-project investments or custom investment types.
 
 ## Mark Investments for Deletion in Clarity (Modern UI)
 

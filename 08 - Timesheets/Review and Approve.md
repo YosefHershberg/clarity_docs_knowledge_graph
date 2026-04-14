@@ -4,6 +4,9 @@ tags:
   - howto
 aliases:
   - Timesheet Approval
+canonical: true
+audience: everyone
+domain: timesheets
 ---
 
 # Review and Approve Timesheets

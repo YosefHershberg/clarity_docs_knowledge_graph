@@ -9,6 +9,9 @@ aliases:
   - Hierarchy Grid
   - Multi-Investment Grid
   - Portfolio Analysis Grid
+canonical: true
+audience: pm, leadership
+domain: hierarchies
 ---
 
 # Cross-Object Investment Grid

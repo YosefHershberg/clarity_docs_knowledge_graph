@@ -1,4 +1,4 @@
----
+﻿---
 title: PMO Program Management Reports
 tags:
   - reference
@@ -8,11 +8,13 @@ aliases:
 ---
 # PMO Program Management Reports
 
+
 The Program Management reports provide visibility into program status, financial performance, milestone tracking, and budget vs. forecast analysis. Reports aggregate data from programs and their constituent projects.
 
 > Source: Clarity 16.4.1 documentation, pp. 3535–3559
 
 ## Reports Included
+
 
 | Report Name | Resource ID | Data Source |
 |---|---|---|
@@ -25,7 +27,10 @@ The Program Management reports provide visibility into program status, financial
 
 ## Program Status Detail
 
-**Description:** Provides a comprehensive one-page status report for programs including status indicators (overall, schedule, scope, cost/effort), financial performance, key milestones, team data, and risk/issue/change request details. Configurable sections allow showing/hiding financials, milestones, team, risks, issues, and change requests. Status trending arrows compare current to prior status report.
+
+**Description:** Provides a comprehensive one-page status report for programs including status indicators (overall, schedule, scope, cost/effort), financial performance, key
+milestones, team data, and risk/issue/change request details.
+Configurable sections allow showing/hiding financials, milestones, team, risks, issues, and change requests. Status trending arrows compare current to prior status report.
 
 **Prerequisites:**
 - Load DWH and Load DWH Access Rights jobs
@@ -89,6 +94,7 @@ The Program Management reports provide visibility into program status, financial
 
 ## Program Budget vs. Forecast by Period
 
+
 **Description:** Displays budget or planned cost compared to forecast cost with variances by fiscal period for programs. Supports four program financial planning structures:
 1. Rolling up project financials to the program
 2. Program-level budgeting with program and project-level forecasts
@@ -108,7 +114,8 @@ Groupable by up to two financial plan grouping attributes. Drills down to Progra
 - Monthly or 13-period fiscal time periods required (for as-of-date evaluation)
 - Projects must have hierarchy allocation percentages > 0% for project amounts to display
 
-**Key Parameters:** Program OBS Type/Unit, Program Manager, Program, Program Status, Financial Plan Type (Budget/Planned), As Of Date, Fiscal Year, Report Currency, Group By 1/2 (Charge Code/Cost Type/Department/Input Type Code/Location/Resource/Resource Class/Role/Transaction Class/User Value 1/2), Include Inactive Programs/Projects/Resources
+**Key Parameters:** Program OBS Type/Unit, Program Manager, Program, Program Status, Financial Plan Type (Budget/Planned), As Of Date, Fiscal Year, Report Currency, Group By 1/2
+(Charge Code/Cost Type/Department/Input Type Code/Location/Resource/Resource Class/Role/Transaction Class/User Value 1/2), Include Inactive Programs/Projects/Resources
 
 **Key Calculations:**
 - **Forecast (Calculated):** Actual to as-of date + ETC from as-of date forward
@@ -123,6 +130,7 @@ Groupable by up to two financial plan grouping attributes. Drills down to Progra
 
 ## Program Budget vs. Forecast by Period Detail
 
+
 **Description:** Detail-level companion to Program Budget vs. Forecast by Period. Displays the financial data at the program and project level broken down by fiscal period and selected grouping attributes.
 
 **Prerequisites:** Same as Program Budget vs. Forecast by Period.
@@ -132,6 +140,7 @@ Groupable by up to two financial plan grouping attributes. Drills down to Progra
 ---
 
 ## Program Milestone Dependencies
+
 
 **Description:** Displays program milestone dependency relationships between programs and their constituent projects. Shows inter-project milestone dependencies as a diagram and a detailed list. Helps identify critical path and schedule risks across programs.
 
@@ -150,6 +159,7 @@ Groupable by up to two financial plan grouping attributes. Drills down to Progra
 ---
 
 ## Common Program Report Requirements
+
 
 ### Financial Setup
 - Department OBS associated to program/project

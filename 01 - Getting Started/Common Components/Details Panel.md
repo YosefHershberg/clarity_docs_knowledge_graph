@@ -7,45 +7,33 @@ aliases:
   - Slide-in Panel
   - Record Details
   - Quick Edit Panel
+canonical: true
+audience: everyone
+domain: ui
 ---
 
 # Details Panel
 
-The **Details Panel** is a slide-in panel in Clarity PPM 16.4.1 that opens on the right side of the screen when you click on a record row in a grid or a card on a board. It provides a quick way to view and edit a record's full field set without leaving the list or navigating to the record's full detail page.
-
-%%Source: p292-293%%
+The **Details Panel** is a slide-in panel in Clarity PPM 16.4.1 that opens on the right side of the screen when you click on a record row in a grid or a card on a board.
+It provides a quick way to view and edit a record's full field set without leaving the list or navigating to the record's full detail page.
 
 ---
 
 ## What is the Details Panel?
 
-The Details Panel is designed to improve productivity by reducing context-switching. Instead of clicking into a record, waiting for the page to load, making changes, and navigating back — you can edit key fields directly in the panel while keeping the list visible.
+The Details Panel is designed to improve productivity by reducing context-switching.
+Instead of clicking into a record, waiting for the page to load, making changes, and navigating back, you can edit key fields directly in the panel while keeping the list visible.
 
-```
-┌─ Grid ───────────────────────┬─ Details Panel ───────────────────┐
-│  Name      │ Status │ Mgr   │                          [X] [⤢]  │
-│ ─────────── │──────── │────── │  Project Alpha                    │
-│ Project A ◀─┤ Active │ Smith │  ──────────────────────────────── │
-│ Project B  │ Planned│ Jones │  Status:    [Active        ▼]     │
-│ Project C  │ On Hold│ Davis │  Manager:   Jane Smith             │
-│            │        │       │  Start:     2024-01-15             │
-│            │        │       │  Finish:    2024-09-30             │
-│            │        │       │  Budget:    $125,000               │
-│            │        │       │  Priority:  [High          ▼]     │
-│            │        │       │                                    │
-│            │        │       │  Description:                      │
-│            │        │       │  Platform modernization...         │
-│            │        │       │                                    │
-│            │        │       │  [Open Full Record →]              │
-└────────────────────────────────────────────────────────────────────┘
-```
+- Left side: grid or board list context remains visible
+- Right side: details panel with editable fields (status, manager, dates, budget, description)
+- Panel actions: close panel, navigate to previous/next record, and **Open Full Record**
 
 ---
 
 ## Opening the Details Panel
 
-- **Click on a record row** in a grid — the Details Panel slides in from the right.
-- **Click on a card** in Board Layout — the panel opens with that card's details.
+- **Click on a record row** in a grid - the Details Panel slides in from the right.
+- **Click on a card** in Board Layout - the panel opens with that card's details.
 - Alternatively, click the **expand arrow** or **details icon** on the record row.
 
 > [!tip]
@@ -56,10 +44,10 @@ The Details Panel is designed to improve productivity by reducing context-switch
 ## Navigating Between Records in the Panel
 
 Once the Details Panel is open:
-- Use the **up/down arrow buttons** (▲▼) in the panel header to move to the previous/next record in the list without closing the panel.
+- Use the **up/down arrow buttons** in the panel header to move to the previous/next record in the list without closing the panel.
 - The grid highlights the currently selected row as you navigate.
 
-This makes it efficient to review records one-by-one — for example, reviewing all at-risk projects to update their status.
+This makes it efficient to review records one-by-one - for example, reviewing all at-risk projects to update their status.
 
 ---
 
@@ -127,10 +115,12 @@ The Details Panel shows a **subset** of all available information. For the compl
 
 ---
 
-## Related Notes
+## Related
 
-- [[Common Components/Grids]] — The grid from which the Details Panel is opened
-- [[Common Components/Board Layout]] — Also supports the Details Panel
-- [[Common Components/Filters]] — Filter the grid to control which records you navigate through in the panel
-- [[_MOC Projects]] — Project detail pages (full record view)
-- [[_MOC Investments]] — Investment detail pages (full record view)
+- [[Common Components/Grids]] - The grid from which the Details Panel is opened
+- [[Common Components/Board Layout]] - Also supports the Details Panel
+- [[Common Components/Filters]] - Filter the grid to control which records you navigate through in the panel
+- [[_MOC Projects]] - Project detail pages (full record view)
+- [[_MOC Investments]] - Investment detail pages (full record view)
+
+%%Source: p292-293%%

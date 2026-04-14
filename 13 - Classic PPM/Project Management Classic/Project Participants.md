@@ -1,4 +1,4 @@
----
+﻿---
 title: Project Participants (Classic PPM)
 tags:
   - classic
@@ -7,14 +7,16 @@ source_pages: 2319-2322
 ---
 # Manage Project Participants (Classic PPM)
 
-Participants are additional users beyond the core project team staff — such as project stakeholders and senior management — who require access to project information and documentation without being assigned to tasks. You can add users as participants and organize them into participant groups to control access collectively.
+Participants are additional users beyond the core project team staff ג€” such as project stakeholders and senior management ג€” who require access to project information and documentation without being assigned to tasks.
+You can add users as participants and organize them into participant groups to control access collectively.
 
 ## Prerequisites
 
 - The project is set up
 - The users to be added as participants are set up as resources
 
-> **Note:** By default, the product adds project employee resources as project participants when they are added as team staff. Administrators can change the **Automatically Add Staff Members As Investment Participant** project management setting to modify this behavior.
+> [!NOTE]
+> By default, the product adds project employee resources as project participants when they are added as team staff. Administrators can change the **Automatically Add Staff Members As Investment Participant** project management setting to modify this behavior.
 
 ## Configure Project Staffing Settings for Participants
 
@@ -22,13 +24,17 @@ Administrators or senior project managers can configure settings that affect the
 
 1. In Classic PPM, click **Administration > Project Management > Settings**
 2. Configure **Require Resource - Hard Book right to add participants**:
-   - **Cleared (default)** — Show all participants visible to the user based on Resource - View access rights
-   - **Selected** — More restrictive: requires both Resource - View AND Resource - Hard Book access rights to see a participant
+- **Cleared (default)** ג€” Show all participants visible to the user based on Resource
+- View access rights
+- **Selected** ג€” More restrictive: requires both Resource
+- View AND Resource
+- Hard Book access rights to see a participant
 3. Configure **Hide System Groups option when adding participants**:
-   - **Cleared (default)** — System groups are shown on the Project Team Participants page
-   - **Selected** — System groups are hidden
+- **Cleared (default)** ג€” System groups are shown on the Project Team Participants page
+- **Selected** ג€” System groups are hidden
 
-> **Tip:** Even if Hidden, previously added system groups still appear when "All" is selected in the Show field. Remove them manually if no longer needed.
+> [!TIP]
+> Even if hidden, previously added system groups still appear when "All" is selected in the Show field. Remove them manually if no longer needed.
 
 ## Add Participants
 
@@ -36,12 +42,13 @@ Administrators or senior project managers can configure settings that affect the
 2. Click the **Team** tab menu > **Participants**
 3. In the **Show** field, select **Resources**
 4. Add participants using any of the following methods:
-   - **Add by Resource ID** — Enter resource ID and click Add (not available when Hard Book right is required)
-   - **Add** — Opens the Add Resources page; select users and click Add (filtered by Hard Book rights if that setting is enabled)
-   - **Add Staff** — Adds all existing team staff as participants
-5. (Optional) Select participants and click **Make Collaboration Manager** — grants additional rights on the Collaboration tab
+- **Add by Resource ID** ג€” Enter resource ID and click Add (not available when Hard Book right is required)
+- **Add** ג€” Opens the Add Resources page; select users and click Add (filtered by Hard Book rights if that setting is enabled)
+- **Add Staff** ג€” Adds all existing team staff as participants
+5. (Optional) Select participants and click **Make Collaboration Manager** ג€” grants additional rights on the Collaboration tab
 
-> **Tip:** The creator of the project is the default collaboration manager.
+> [!TIP]
+> The creator of the project is the default collaboration manager.
 
 ## Add Participants in System Groups
 
@@ -66,6 +73,7 @@ To manage participant groups, use the **Team** menu > **Participant Groups** opt
 
 ## Related Notes
 
-- [[Projects Teams Tasks]] — Manage core project team staff
-- [[Requisitions]] — Formal resource booking through requisitions
+- [[Projects Teams Tasks]] ג€” Manage core project team staff
+- [[Requisitions]] ג€” Formal resource booking through requisitions
 - [[_MOC Classic PPM]]
+

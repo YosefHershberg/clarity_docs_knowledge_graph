@@ -7,6 +7,9 @@ tags:
 aliases:
   - XOG Rights
   - XML Open Gateway Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # XML Open Gateway (XOG) Access Rights
 

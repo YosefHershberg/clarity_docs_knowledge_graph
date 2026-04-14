@@ -6,6 +6,9 @@ tags:
   - dev
 aliases:
   - Studio Rights
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Studio Access Rights
 

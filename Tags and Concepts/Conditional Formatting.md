@@ -5,6 +5,9 @@ tags:
 aliases:
   - Grid Formatting
   - Color Coding
+canonical: true
+audience: everyone
+domain: reference
 ---
 # Conditional Formatting
 

@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2357-2362
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Group Projects Under a Parent Program (Classic PPM)
 
@@ -45,9 +48,11 @@ Programs are a special type of top-level project that act as the parent or umbre
 4. In the **Organizational Breakdown Structures** section, enter the OBS node (Department and Location OBS)
 5. Save changes
 
-> **Note:** After creating a program, you can open it in CA Open Workbench in read-only mode via the **Open in Scheduler** menu.
+> [!NOTE]
+> After creating a program, you can open it in CA Open Workbench in read-only mode via the **Open in Scheduler** menu.
 
-> **Tip:** You cannot use programs as templates. To standardize programs, designate a project template with default settings, remove any tasks and actuals, create a project from the template, then convert that project into a program.
+> [!TIP]
+> You cannot use programs as templates. To standardize programs, designate a project template with default settings, remove any tasks and actuals, create a project from the template, then convert that project into a program.
 
 ## Convert a Project into a Program
 
@@ -57,7 +62,8 @@ Existing projects can be converted to programs from the project properties page.
 2. Open the **Actions** menu > **Convert to Program** (or use the project settings)
 3. Confirm the conversion
 
-> **Warning:** Converting removes tasks (programs can only have milestones), financial enablement, and staffing. Plan accordingly.
+> [!WARNING]
+> Converting removes tasks (programs can only have milestones), financial enablement, and staffing. Plan accordingly.
 
 ## Define Program Start and Finish Dates
 

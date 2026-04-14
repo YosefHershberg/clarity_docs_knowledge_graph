@@ -5,6 +5,9 @@ tags:
   - howto
   - admin
 source_pages: 2156-2176
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Enable Investments, Resources, and Roles for Financial Processing (Classic PPM)
 
@@ -45,7 +48,8 @@ Financially enabling investments ensures that actual costs from posted transacti
 
 Financially enabling resources ensures that actual costs from posted transactions appear on cost plans, reports, and portfolios.
 
-> **Note:** Not all properties described below appear for roles (vs. named resources).
+> [!NOTE]
+> Not all properties described below appear for roles (vs. named resources).
 
 ### Steps
 

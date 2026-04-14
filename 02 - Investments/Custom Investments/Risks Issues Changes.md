@@ -5,6 +5,9 @@ tags:
 aliases:
   - RIC
   - Risk Management
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Manage Risks, Issues, and Changes for Custom Investments

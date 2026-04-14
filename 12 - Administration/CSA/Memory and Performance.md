@@ -8,6 +8,10 @@ aliases:
   - Performance Tracking
   - Classic PPM Memory
   - JVM Memory Classic PPM
+canonical: true
+audience: admin
+domain: administration
+parent: "[[_MOC Administration]]"
 ---
 
 # CSA: Memory and Performance Tracking (On-Premise Only)

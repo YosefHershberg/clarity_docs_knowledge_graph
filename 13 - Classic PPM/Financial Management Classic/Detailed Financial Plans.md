@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2129-2155
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Create Detailed Financial Plans (Classic PPM)
 

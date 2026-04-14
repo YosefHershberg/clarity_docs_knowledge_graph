@@ -6,6 +6,9 @@ tags:
 aliases:
   - Ideas Overview
   - Idea Management
+canonical: true
+audience: pm
+domain: investments
 ---
 
 # Getting Started with Ideas

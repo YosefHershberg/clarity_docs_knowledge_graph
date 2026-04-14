@@ -6,6 +6,9 @@ tags:
 aliases:
   - PMO Accelerator Rights
   - PMO Access Groups
+canonical: true
+audience: everyone
+domain: reference
 ---
 # PMO Accelerator Access Groups
 

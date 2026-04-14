@@ -4,6 +4,9 @@ tags:
   - classic
   - howto
 source_pages: 2322-2325
+canonical: true
+audience: everyone
+domain: classic
 ---
 # Manage Time Recording for Team Members (Classic PPM)
 
@@ -75,13 +78,15 @@ Resources typically submit timesheets weekly. If a resource does not submit on t
 1. Open the timesheet for the resource
 2. Click **Notify** — an overdue timesheet notification is sent to the employee
 
-> **Note:** Notification text is based on the **Timesheet — Overdue** notification template in the Administration tool.
+> [!NOTE]
+> Notification text is based on the **Timesheet — Overdue** notification template in the Administration tool.
 
 ## Process Submitted Timesheets
 
 When a resource submits a timesheet, you receive a notification to review it.
 
-> **Note:** Project managers only receive submission notifications if the timesheet contains items associated with their projects. Notifications go to users with **Resource Timesheet - Approval** access rights at the instance level (not global, to avoid excess emails).
+> [!NOTE]
+> Project managers only receive submission notifications if the timesheet contains items associated with their projects. Notifications go to users with **Resource Timesheet - Approval** access rights at the instance level (not global, to avoid excess emails).
 
 ### Steps
 

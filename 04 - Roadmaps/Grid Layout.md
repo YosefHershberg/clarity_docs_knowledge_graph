@@ -7,6 +7,9 @@ aliases:
   - Roadmap Grid
   - Roadmap Table View
   - Grid View Roadmaps
+canonical: true
+audience: pm, leadership
+domain: roadmaps
 ---
 
 # Roadmaps Grid Layout

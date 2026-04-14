@@ -1,4 +1,4 @@
----
+﻿---
 title: Clarity Vaia AI
 tags:
   - MOC
@@ -16,7 +16,7 @@ Vaia is the AI-powered assistant built into Clarity, providing intelligent featu
 - [[AI Models]] — Configure AI models
 - [[AI Agents]] — Configure AI agents in Vaia
 - [[Status Report Summarization]] — AI-powered status summaries
-- [[Data Generation]] — AI data generation and revision
+- [[Data Generation]] — AI data generation, revision, and review (Chat Panel)
 - [[Natural Language Help]] — Natural language help assistant
 
 ## Related
@@ -24,3 +24,10 @@ Vaia is the AI-powered assistant built into Clarity, providing intelligent featu
 - [[_MOC Administration]]
 
 %%Source: p2618%%
+
+<!-- SOURCE_COVERAGE_START -->
+## Source Documentation Coverage
+These source files provide the canonical long-form context for this domain:
+- [[23 - Source Documentation/Using Clarity Mobile App]]
+- [[23 - Source Documentation/Using Clarity Vaia (AI)]]
+<!-- SOURCE_COVERAGE_END -->

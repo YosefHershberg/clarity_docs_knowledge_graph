@@ -7,6 +7,9 @@ aliases:
   - New Project
   - Copy Project
   - Import Projects CSV
+canonical: true
+audience: pm
+domain: projects
 ---
 
 # Create a Project
@@ -141,6 +144,95 @@ Once a project is created, proceed to:
 
 ### Blueprint-Controlled Fields
 Additional fields are added by the Blueprint assigned to the project. See [[_MOC Administration]] for blueprint configuration.
+
+---
+
+---
+
+## Deactivate a Project
+
+When a project is no longer needed, you can make it inactive so it no longer appears in active views but is retained for historical reporting.
+
+### Steps
+
+1. Open the project and click **DETAILS**.
+2. In the **SETTINGS** group, clear the **Active** checkbox.
+
+> [!tip] To change an active project to inactive, you require **edit access rights** for the project. The financial status of the project must also be **Closed** or **On Hold**.
+>
+> To edit the Financial Status field, you require one of the following access rights:
+> - **Project - Edit** (which includes edit financial access)
+> - **Project - Edit Financial** access combined with **Project - Edit Management** or **Project - Manager (Auto)** access.
+
+---
+
+## Mark a Project for Deletion
+
+You can mark a project (or any investment type) for deletion in Clarity using the **Mark for Deletion** action. This sets the **Purge Flag** field. Relevant stakeholders can then review all investments marked for deletion, and once satisfied, run the **Delete Investments and Time Reporting Period** job to permanently delete them.
+
+### Prerequisites Before Marking for Deletion
+
+Ensure the following conditions are met:
+
+- The **financial status** of the investment is set to **Closed** (to prevent new transactions).
+- The **investment status** is set to **Inactive**.
+- No **process instances** are currently running on the investment.
+
+### Required Access Rights
+
+- **\<investment\> - Delete - All** global access right
+- **Edit** access rights for the investment
+
+### Steps
+
+1. Log into Clarity.
+2. Navigate to the relevant investment page (e.g., Projects) and select the **Grid** layout.
+3. Select the relevant investments (use checkboxes).
+4. Click **Mark for Deletion**.
+
+### Reversing a Deletion Mark
+
+If you have marked an investment for deletion and want to revert the decision:
+
+1. Select the investment in the grid.
+2. Click **Clear Deletion**. This clears the Purge Flag field.
+
+> [!warning] The actual deletion of investments is performed by the **Delete Investments and Time Reporting Period** job, not immediately when you mark for deletion. Review all marked investments carefully before running the job.
+
+---
+
+## Managing Locked Projects
+
+Clarity displays a **lock icon** on a project when a user is editing tasks using a scheduler (Open Workbench or Microsoft Project). This lock prevents conflicting edits.
+
+### The Locked By Field
+
+- A **Locked By** field is available in both Clarity and Classic PPM, displaying the name of the user who has locked the project.
+- Hover over the **Lock icon** to see who has locked the project.
+- The Locked By field is available in the Attributes grid and can be secured if needed.
+
+> [!warning] If you secure the Locked By attribute, users will **not** see the lock icon in Clarity.
+
+### What You Can and Cannot Do While a Project is Locked
+
+| Action | Allowed While Locked? |
+|--------|-----------------------|
+| Edit Project Properties | No |
+| Create, edit, or delete staff | Yes (unless your admin has disabled allocation edits while locked) |
+| Edit financial plans | Yes |
+| Edit risks, issues, changes | Yes |
+| Edit documents, links, conversations | Yes |
+| View the lock icon on the Staffing page | Yes |
+
+> [!note] If your administrator has enabled the **Allow Edit of Allocations when Investment is Locked** setting, you can edit staff allocations even when the project is locked.
+
+### Unlocking a Project
+
+The following users can unlock a project by clicking the **Unlock** button in the top-right corner:
+
+- The **lock owner** (the user who created the lock)
+- The **Investment Manager**
+- An Administrator with the **Administration - Application Setup** access right
 
 ---
 
