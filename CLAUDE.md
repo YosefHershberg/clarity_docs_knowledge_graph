@@ -37,6 +37,7 @@ The vault uses **numbered folders** (`01` - `22`) sorted by learning priority. E
 | `21 - Reference/` | Access rights, jobs, portlets, glossary | Everyone |
 | `22 - Release Info/` | Release notes, compatibility, accessibility | Admin |
 | `23 - Source Documentation/` | Raw PDF extraction (NOT for retrieval — development reference only) | Internal |
+| `24 - Database Schema/` | Per-table notes, ERD subject-area MOCs, FK graph, SQL joining recipes | Developer (SQL) |
 | `Tags and Concepts/` | Cross-cutting concept notes (Canvas, OBS, etc.) | Everyone |
 
 ## How to Navigate
@@ -76,9 +77,26 @@ Notes use these tag prefixes:
 ## For AI Agents
 
 ### Retrieval Scope
-- **ONLY retrieve from folders `01` through `22` and `Tags and Concepts/`** — these are curated, canonical notes.
+- **ONLY retrieve from folders `01` through `22`, `24 - Database Schema/`, and `Tags and Concepts/`** — these are curated, canonical notes.
 - **NEVER retrieve from `23 - Source Documentation/`** — this folder contains raw PDF extractions used only for building the knowledge graph. It is not optimized for retrieval and will waste tokens.
 - Notes with `canonical: true` in frontmatter are the authoritative source. If a curated note and a source doc cover the same topic, always prefer the curated note.
+
+### When the user asks for SQL queries
+This is the primary use case for `24 - Database Schema/`. **The single source of truth is the curated knowledge base under `24 - Database Schema/Curated/`** — it carries the architectural narrative, naming conventions, gotchas, and idiomatic SQL. The auto-generated per-table notes carry the **column-level truth** for the 569 tables in the 16.4.1 dump. Use them in tandem.
+
+Workflow:
+
+1. Open `[[_MOC - Curated SQL Knowledge]]` and pick the matching domain (01–10) for the user's question.
+2. Read the relevant Domain note. It tells you: which tables are involved, the architectural model, the FK pattern, the canonical query, and the gotchas. Each table profile in a Domain note links to its per-table dump note via wikilink.
+3. Read `[[Universal Conventions]]` for naming/structural rules (`prID` vs `ID`, polymorphic FKs, soft-delete, time-phased BLOBs, custom attributes, NLS).
+4. **Verify columns and types from the per-table dump note** (e.g. `[[INV_INVESTMENTS]]`, `[[PRTASK]]`). Where the curated KB and the dump disagree, the **dump wins for column names** (the curated KB has been corrected against the 16.4.1 dump, but always cross-check). The dump notes have outbound FKs (with the join column made explicit), inbound FKs, and related tables in the same ERD subject area.
+5. Use `[[Common Joins Cheat-Sheet]]` for canonical SQL fragments (12 patterns covering project→tasks→assignments→resources, OBS traversal, time slices, financial plans, hierarchies, action items, lookup translations, etc.).
+6. Cross-check `[[Where Is The Truth]]` whenever two tables seem to hold the same fact — it tells you which is authoritative and which is denormalized. Especially important for time-phased data (raw vs sliced vs rolled-up aggregate).
+7. **Generate SQL using only columns and join paths verified from the table notes.** If a target table has a stub note (`type: db-table-stub`), warn the user that the column list was not in the 16.4.1 dump and recommend confirming via `information_schema.columns`.
+
+The 16.4.1 dump (569 tables) underpins column-level details; the 33 ERDs (built for 15.6 / ccppmod156) supply the relationship graph. The curated KB (`Curated/`) is the SoT for architecture, gotchas, and idiomatic queries. Most CMN_*, ODF_*, and BPM_* tables appear only as stub notes — they exist in production but column-level metadata is not in the dump. See `[[Version Notes]]` for the 16.1.1→16.4.1 delta (43 added, 12 removed) and the stale-rename map.
+
+Common name-drift between the curated KB and the actual 16.4.1 schema is documented in `[[Where Is The Truth]]` (e.g. `PRTEAMID` → `TEAM_ID`, `PROUTLINELEVEL` → `PRWBSLEVEL`, `PRJ_SLICE_REQUESTS` → [[PRJ_BLB_SLICEREQUESTS]], `INV_OTHER_WORK` → [[INV_OTHERS]], `FIN_TRANSACTIONS` → [[FIN_TXNS]], `SRM_ACTIONITEMS` → [[CAL_ACTION_ITEMS]]).
 
 ### Frontmatter Filtering
 Each curated note includes structured frontmatter for filtering:

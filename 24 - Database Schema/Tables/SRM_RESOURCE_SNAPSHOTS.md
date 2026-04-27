@@ -1,0 +1,53 @@
+---
+title: SRM_RESOURCE_SNAPSHOTS
+type: db-table
+table: SRM_RESOURCE_SNAPSHOTS
+columns: 33
+audience: dev
+domain: development
+canonical: true
+tags:
+  - dev
+  - schema
+  - table
+---
+
+# SRM_RESOURCE_SNAPSHOTS
+
+## Columns
+
+| Column | Type | Null | Comment |
+| --- | --- | --- | --- |
+| `ID` | NUMERIC | NOT NULL |  |
+| `LAST_NAME` | NVARCHAR | NULL |  |
+| `FIRST_NAME` | NVARCHAR | NULL |  |
+| `MIDDLE_NAME` | NVARCHAR | NULL |  |
+| `UNIQUE_NAME` | NVARCHAR | NULL |  |
+| `EMAIL` | NVARCHAR | NULL |  |
+| `SMS_EMAIL` | NVARCHAR | NULL |  |
+| `PERSON_TYPE` | NUMERIC | NOT NULL |  |
+| `USER_ID` | NUMERIC | NULL |  |
+| `DATE_OF_HIRE` | DATE | NULL |  |
+| `DATE_OF_TERMINATION` | DATE | NULL |  |
+| `MANAGER_ID` | NUMERIC | NULL |  |
+| `IS_ACTIVE` | NUMERIC | NOT NULL |  |
+| `CREATED_DATE` | DATE | NOT NULL |  |
+| `CREATED_BY` | NUMERIC | NOT NULL |  |
+| `LAST_UPDATED_DATE` | DATE | NOT NULL |  |
+| `LAST_UPDATED_BY` | NUMERIC | NOT NULL |  |
+| `FULL_NAME` | NVARCHAR | NULL |  |
+| `IS_EXTERNAL` | INTEGER | NOT NULL |  |
+| `EXTERNAL_SOURCE_ID` | NUMERIC | NULL |  |
+| `EXTERNAL_ID` | NVARCHAR | NULL |  |
+| `RESOURCE_TYPE` | NUMERIC | NOT NULL |  |
+| `USE_IN_FRC_BUDGET` | INTEGER | NOT NULL |  |
+| `SLICE_STATUS` | NUMERIC | NULL |  |
+| `INCLUDE_FLAG` | INTEGER | NOT NULL |  |
+| `BOOK_MANAGER_ID` | NUMERIC | NULL |  |
+| `ENTITY_CODE` | NVARCHAR | NULL |  |
+| `FORECAST_RATE` | NUMERIC | NULL |  |
+| `DEFINED_TEAM_ID` | NUMERIC | NULL |  |
+| `IS_HIDDEN` | NUMERIC | NOT NULL |  |
+| `ODF_BLUEPRINT_ID` | NUMERIC | NULL |  |
+| `RESOURCE_ID` | NUMERIC | NULL |  |
+| `VERSION_ID` | NUMERIC | NULL |  |

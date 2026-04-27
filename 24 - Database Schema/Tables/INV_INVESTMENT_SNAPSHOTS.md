@@ -1,0 +1,139 @@
+---
+title: INV_INVESTMENT_SNAPSHOTS
+type: db-table
+table: INV_INVESTMENT_SNAPSHOTS
+columns: 116
+audience: dev
+domain: development
+canonical: true
+tags:
+  - dev
+  - schema
+  - table
+---
+
+# INV_INVESTMENT_SNAPSHOTS
+
+> [!info] Description
+> This table stores the primary attributes for an investment.
+
+## Columns
+
+| Column | Type | Null | Comment |
+| --- | --- | --- | --- |
+| `ID` | NUMERIC | NOT NULL |  |
+| `ODF_OBJECT_CODE` | NVARCHAR | NOT NULL |  |
+| `NAME` | NVARCHAR | NOT NULL |  |
+| `CODE` | NVARCHAR | NOT NULL |  |
+| `DESCRIPTION` | NVARCHAR | NULL |  |
+| `IDEA_ID` | NUMERIC | NULL |  |
+| `PROCESS_CODE` | NVARCHAR | NULL |  |
+| `STAGE_CODE` | NVARCHAR | NULL |  |
+| `GOAL_CODE` | NVARCHAR | NULL |  |
+| `ALIGNMENT` | NUMERIC | NULL |  |
+| `RISK` | NUMERIC | NULL |  |
+| `STATUS_INDICATOR` | NUMERIC | NULL |  |
+| `STATUS_COMMENT` | NVARCHAR | NULL |  |
+| `PROGRESS` | NUMERIC | NOT NULL |  |
+| `STATUS` | NUMERIC | NOT NULL |  |
+| `MANAGER_ID` | NUMERIC | NULL |  |
+| `CURRENCY_CODE` | NVARCHAR | NULL |  |
+| `APPROVEDBY_ID` | NUMERIC | NULL |  |
+| `APPROVEDTIME` | DATE | NULL |  |
+| `IS_REQUIRED` | NUMERIC | NOT NULL |  |
+| `PRIORITY` | NUMERIC | NULL |  |
+| `IS_ACTIVE` | NUMERIC | NOT NULL |  |
+| `PURGE_FLAG` | NUMERIC | NULL |  |
+| `SLICE_STATUS` | NUMERIC | NULL |  |
+| `TRACK_MODE` | NUMERIC | NULL |  |
+| `CHARGECODEID` | NUMERIC | NULL |  |
+| `IS_OPEN_FOR_TE` | NUMERIC | NOT NULL |  |
+| `BASELINE_ID` | NUMERIC | NULL |  |
+| `RSF_OBS_UNIT` | NUMERIC | NULL |  |
+| `AGGR_BUDGET_COST` | FLOAT | NULL |  |
+| `AGGR_BUDGET_COST_TSV` | BINARY | NULL |  |
+| `AGGR_FORECAST_COST` | FLOAT | NULL |  |
+| `AGGR_FORECAST_COST_TSV` | BINARY | NULL |  |
+| `AGGR_ACTUAL_COST` | FLOAT | NULL |  |
+| `AGGR_ACTUAL_COST_TSV` | BINARY | NULL |  |
+| `AGGR_ETC` | FLOAT | NULL |  |
+| `AGGR_ETC_TSV` | BINARY | NULL |  |
+| `AGGR_EAC` | FLOAT | NULL |  |
+| `AGGR_EAC_TSV` | BINARY | NULL |  |
+| `AGGR_BASELINE_WORK` | FLOAT | NULL |  |
+| `AGGR_BASELINE_WORK_TSV` | BINARY | NULL |  |
+| `AGGR_ACTUAL_WORK` | FLOAT | NULL |  |
+| `AGGR_ACTUAL_WORK_TSV` | BINARY | NULL |  |
+| `AGGR_BDGT_BENEFIT` | FLOAT | NULL |  |
+| `AGGR_BDGT_BENEFIT_TSV` | BINARY | NULL |  |
+| `SLA_COMPLIANCE` | NUMERIC | NULL |  |
+| `LAST_AGGREGATED_DATE` | DATE | NULL |  |
+| `CBK_TYPE` | NVARCHAR | NULL |  |
+| `BILL_EXPENSE_TYPE` | NVARCHAR | NULL |  |
+| `CREATED_DATE` | DATE | NOT NULL |  |
+| `CREATED_BY` | NUMERIC | NOT NULL |  |
+| `LAST_UPDATED_DATE` | DATE | NOT NULL |  |
+| `LAST_UPDATED_BY` | NUMERIC | NOT NULL |  |
+| `SCHEDULE_START` | DATE | NULL |  |
+| `SCHEDULE_FINISH` | DATE | NULL |  |
+| `SYNC_INV_N_BDG_DATES` | NUMERIC | NOT NULL |  |
+| `LABOR_ETC_CURVE` | BINARY | NULL |  |
+| `LABOR_ETCSUM` | FLOAT | NULL |  |
+| `LABOR_ACT_CURVE` | BINARY | NULL |  |
+| `LABOR_ACTSUM` | FLOAT | NULL |  |
+| `LABOR_EAC_CURVE` | BINARY | NULL |  |
+| `LABOR_EACSUM` | FLOAT | NULL |  |
+| `LABOR_BASELINE_CURVE` | BINARY | NULL |  |
+| `LABOR_BASESUM` | FLOAT | NULL |  |
+| `LABOR_VARIANCE_CURVE` | BINARY | NULL |  |
+| `LABOR_VARIANCESUM` | FLOAT | NULL |  |
+| `ENTITY_CODE` | NVARCHAR | NULL |  |
+| `ODF_SS_LABOR_BASE` | NUMERIC | NULL |  |
+| `ODF_SS_LABOR_ACT` | NUMERIC | NULL |  |
+| `ODF_SS_LABOR_EAC` | NUMERIC | NULL |  |
+| `ODF_SS_LABOR_ETC` | NUMERIC | NULL |  |
+| `ODF_SS_LABOR_VARIANCE` | NUMERIC | NULL |  |
+| `TARGET_MANAGER_ID` | NUMERIC | NULL |  |
+| `ASSGN_POOL` | NUMERIC | NOT NULL |  |
+| `TRACK_ASSGN_ONLY` | NUMERIC | NOT NULL |  |
+| `ODF_TEMPLATE_ID` | NUMERIC | NULL |  |
+| `ODF_BLUEPRINT_ID` | NUMERIC | NULL |  |
+| `IS_CUSTOM` | NUMERIC | NOT NULL |  |
+| `CI_PROGRESS` | NUMERIC | NULL |  |
+| `CI_STAGE` | NVARCHAR | NULL |  |
+| `RCF_OBJECTIVES` | NUMERIC | NULL |  |
+| `RCF_SPONSORSHIP` | NUMERIC | NULL |  |
+| `RCF_FUNDING` | NUMERIC | NULL |  |
+| `RCF_RESOURCE_AVAIL` | NUMERIC | NULL |  |
+| `RCF_INTERDEPENDENCY` | NUMERIC | NULL |  |
+| `RCF_TECHNICAL` | NUMERIC | NULL |  |
+| `RCF_HUMAN_INTERFACE` | NUMERIC | NULL |  |
+| `RCF_ORG_CULTURE` | NUMERIC | NULL |  |
+| `RCF_SUPPORTABILITY` | NUMERIC | NULL |  |
+| `RCF_IMPLEMENTATION` | NUMERIC | NULL |  |
+| `RCF_FLEXIBILITY` | NUMERIC | NULL |  |
+| `PARENT_ID` | NUMERIC | NULL |  |
+| `ODF_TEMPLATE` | NUMERIC | NOT NULL |  |
+| `LABOR_ALLOC_CURVE` | BINARY | NULL |  |
+| `ODF_NK_LABOR_ALLOC_CURVE` | NVARCHARMAX | NULL |  |
+| `ODF_SS_LABOR_ALLOC` | INTEGER | NULL |  |
+| `LABOR_HARD_ALLOC_CURVE` | BINARY | NULL |  |
+| `ODF_NK_LABOR_HARD_ALLOC_CURVE` | NVARCHARMAX | NULL |  |
+| `ODF_SS_LABOR_HARD_ALLOC` | INTEGER | NULL |  |
+| `ODF_NK_LABOR_ETC_CURVE` | NVARCHARMAX | NULL |  |
+| `ODF_NK_LABOR_ACT_CURVE` | NVARCHARMAX | NULL |  |
+| `ODF_NK_LABOR_EAC_CURVE` | NVARCHARMAX | NULL |  |
+| `PLAN_INV_CATEGORY` | NVARCHAR | NULL |  |
+| `BANNER_COLOR` | NVARCHAR | NULL |  |
+| `INV_ID` | NUMERIC | NULL |  |
+| `VERSION_ID` | NUMERIC | NULL |  |
+| `ODF_FTE_LABOR_ALLOC_CURVE` | NUMERIC | NOT NULL | FTE conversion factor for curve for the investment |
+| `ODF_FTE_LABOR_HARD_ALLOC_CURVE` | NUMERIC | NOT NULL | FTE conversion factor for hard allocation curve for the investment |
+| `ODF_FTE_LABOR_ETC_CURVE` | NUMERIC | NOT NULL | FTE conversion factor for labor etc curve for the investment |
+| `ODF_FTE_LABOR_ACT_CURVE` | NUMERIC | NOT NULL | FTE conversion factor for labor act curve for the investment |
+| `ODF_FTE_LABOR_EAC_CURVE` | NUMERIC | NOT NULL | FTE conversion factor for labor eac curve for the investment |
+| `INV_PERCENT_COMPLETE` | NUMERIC | NULL | Percent Complete for the investment. |
+| `INV_PCNT_CALC_MODE` | NUMERIC | NULL | Method used to calculate the percent complete. |
+| `ALLOW_UNSTAFFED_TIME_ENTRY` | NUMERIC | NULL | Allow Time Entry for Unstaffed Resources. |
+| `INV_DESCRIPTION` | NVARCHARMAX | NULL | Rich text field for investment description. |
+| `ODF_SS_SQLCURVE` | NUMERIC | NULL |  |

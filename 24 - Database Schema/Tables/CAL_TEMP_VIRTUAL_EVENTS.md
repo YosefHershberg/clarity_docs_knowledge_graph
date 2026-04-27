@@ -1,0 +1,53 @@
+---
+title: CAL_TEMP_VIRTUAL_EVENTS
+type: db-table
+table: CAL_TEMP_VIRTUAL_EVENTS
+columns: 33
+audience: dev
+domain: development
+canonical: true
+tags:
+  - dev
+  - schema
+  - table
+---
+
+# CAL_TEMP_VIRTUAL_EVENTS
+
+## Columns
+
+| Column | Type | Null | Comment |
+| --- | --- | --- | --- |
+| `ID` | NUMERIC | NOT NULL |  |
+| `CAL_EVENT_ID` | NUMERIC | NOT NULL |  |
+| `EVENT_NAME` | NVARCHAR | NOT NULL |  |
+| `START_DATE` | DATE | NOT NULL |  |
+| `DURATION_MIN` | NUMERIC | NOT NULL |  |
+| `END_DATE` | DATE | NOT NULL |  |
+| `LOCATION` | NVARCHAR | NULL |  |
+| `DESCRIPTION` | NVARCHAR | NULL |  |
+| `REMINDER_INTERVAL` | NUMERIC | NULL |  |
+| `REMINDER_TYPE` | NUMERIC | NULL |  |
+| `REMINDER_NAME` | NVARCHAR | NULL |  |
+| `REMINDER_CODE` | NVARCHAR | NULL |  |
+| `LAST_REMINDER_DATE` | DATE | NULL |  |
+| `ACCESS_FLAG` | NUMERIC | NULL |  |
+| `PARENT_ID` | NUMERIC | NULL |  |
+| `OBJECT_ID` | NUMERIC | NULL |  |
+| `OBJECT_TYPE` | NUMERIC | NULL |  |
+| `OBJECT_NAME` | NVARCHAR | NULL |  |
+| `REPEAT_INTERVAL` | NUMERIC | NULL |  |
+| `REPEAT_TYPE` | NUMERIC | NULL |  |
+| `REPEAT_NAME` | NVARCHAR | NULL |  |
+| `REPEAT_CODE` | NVARCHAR | NULL |  |
+| `NOTIFY_PARTICIPANTS` | INTEGER | NULL |  |
+| `USER_ID` | NUMERIC | NOT NULL |  |
+| `IS_OWNER` | NUMERIC | NOT NULL |  |
+| `STATUS_ID` | NUMERIC | NOT NULL |  |
+| `INVITEE_START_DATE` | DATE | NOT NULL |  |
+| `INVITEE_END_DATE` | DATE | NOT NULL |  |
+| `UPCOMING_DATE` | DATE | NULL |  |
+| `LAST_OCCURRENCE_DATE` | DATE | NULL |  |
+| `CONFLICT` | INTEGER | NOT NULL |  |
+| `ALL_DAY` | INTEGER | NULL |  |
+| `IS_PUBLIC` | INTEGER | NULL |  |

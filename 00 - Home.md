@@ -77,6 +77,13 @@ Welcome to the Broadcom Clarity PPM 16.4.1 documentation knowledge graph. This v
 
 ---
 
+## Database Schema
+
+- [[_MOC - Curated SQL Knowledge]] — **single source of truth** for Clarity SQL: 10 domain notes, universal conventions, common joins, where-is-the-truth map. **Start here for AI-assisted SQL generation.**
+- [[_MOC - Database Schema]] — auto-generated column-level reference for all 569 tables (built from the 16.4.1 MSSQL Niku schema dump + 33 ERDs).
+
+---
+
 ## Source Documentation
 
 - [[_MOC - Source Documentation]] — Full-text PDF extraction: 56 markdown files covering all 5057 pages of the official Clarity 16.4.1 documentation
