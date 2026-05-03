@@ -440,16 +440,23 @@ A read-only attribute on a subobject that is linked to a specific attribute on t
 
 Custom attributes must be API enabled to appear in Clarity and be accessible via API calls.
 
+> [!IMPORTANT] Project convention: API Attribute ID = `p_<ATTRIBUTE_ID>`
+> Always set the API Attribute ID to the literal `p_` prefix followed by the attribute's lowercase ID. The mapping is mechanical — no transformation, no CamelCase rewrite.
+>
+> | Attribute ID | API Attribute ID |
+> |--------------|------------------|
+> | `car_id` | `p_car_id` |
+> | `hey007` | `p_hey007` |
+> | `resource_picker` | `p_resource_picker` |
+>
+> The `p_` prefix prevents collisions with stock attributes that may be added in future Clarity upgrades. Keeping the suffix identical to the Attribute ID makes it trivial to grep, refactor, and trace from the database column → attribute → API payload.
+
 **Follow these steps:**
 1. Log in to Classic PPM.
 2. Navigate to **Administration > Studio > Objects**.
 3. Open the object and navigate to the **Attributes** tab.
 4. Open the custom attribute.
-5. In the **API Attribute ID** field, enter a unique ID starting with a lowercase letter and underscore (e.g., `p_uploadImage`).
-
-> [!TIP]
-> Prefix all API Attribute IDs with a consistent short string to prevent conflicts during future upgrades. For example: `p_acmeCompliance`. Use CamelCase notation.
-
+5. In the **API Attribute ID** field, enter `p_<ATTRIBUTE_ID>` — the `p_` prefix followed by the exact Attribute ID.
 6. Save the changes.
 
 ---

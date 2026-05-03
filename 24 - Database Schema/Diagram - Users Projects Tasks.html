@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Clarity 16.4.1 — Users / Projects / Tasks schema</title>
+<style>
+  :root { color-scheme: light dark; }
+  html, body { margin: 0; padding: 0; background: #fafafa; color: #1f1f1f;
+               font-family: -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 18px 28px 8px; }
+  header h1 { margin: 0 0 4px; font-size: 18px; font-weight: 700; }
+  header p  { margin: 0; font-size: 13px; color: #555; }
+  .wrap { padding: 12px 20px 28px; }
+  svg   { width: 100%; height: auto; max-width: 1760px; display: block;
+          border: 1px solid #e2e2e2; border-radius: 10px; background: #fff; }
+  @media (prefers-color-scheme: dark) {
+    html, body { background: #161616; color: #e8e8e8; }
+    header p   { color: #aaa; }
+    svg        { border-color: #333; background: #1d1d1d; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Clarity 16.4.1 — Users, Projects, Tasks</h1>
+  <p>Verified foreign keys across <code>CMN_SEC_USERS</code> / <code>SRM_RESOURCES</code> / <code>INV_INVESTMENTS</code> / <code>INV_PROJECTS</code> / <code>PRTASK</code> / <code>PRTEAM</code> / <code>PRASSIGNMENT</code>.</p>
+</header>
+<div class="wrap">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 1080" font-family="-apple-system, Segoe UI, sans-serif" font-size="13">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a4a4a"/>
+    </marker>
+    <style>
+      .grp-label { font-size: 16px; font-weight: 700; letter-spacing: 1px; }
+      .tbl-name  { font-size: 15px; font-weight: 700; }
+      .tbl-pk    { font-size: 12px; font-weight: 700; fill: #b8001f; }
+      .tbl-col   { font-size: 12px; fill: #1f1f1f; }
+      .fk-label  { font-size: 11px; fill: #2a2a2a; }
+      .legend    { font-size: 12px; fill: #1f1f1f; }
+    </style>
+  </defs>
+
+  <rect x="20"   y="20" width="480" height="720" rx="14" fill="#e6f7fb" stroke="#2bb3c8" stroke-width="2"/>
+  <text x="40"   y="50" class="grp-label" fill="#0f6877">USERS</text>
+
+  <rect x="640"  y="20" width="480" height="940" rx="14" fill="#eaf6e6" stroke="#3aa835" stroke-width="2"/>
+  <text x="660"  y="50" class="grp-label" fill="#236e1f">PROJECTS  (Investments)</text>
+
+  <rect x="1260" y="20" width="480" height="940" rx="14" fill="#fdefdc" stroke="#e08e1c" stroke-width="2"/>
+  <text x="1280" y="50" class="grp-label" fill="#8a4d05">TASKS / TEAM / ASSIGNMENTS</text>
+
+  <g>
+    <rect x="50" y="80" width="420" height="180" rx="10" fill="#ffffff" stroke="#2bb3c8" stroke-width="2"/>
+    <rect x="50" y="80" width="420" height="32"  rx="10" fill="#2bb3c8"/>
+    <text x="64" y="102" class="tbl-name" fill="#fff">CMN_SEC_USERS</text>
+    <text x="64" y="130" class="tbl-pk">PK  ID</text>
+    <text x="64" y="150" class="tbl-col">USER_NAME  (login)</text>
+    <text x="64" y="168" class="tbl-col">FIRST_NAME, LAST_NAME</text>
+    <text x="64" y="186" class="tbl-col">EMAIL</text>
+    <text x="64" y="204" class="tbl-col">IS_ACTIVE</text>
+    <text x="64" y="222" class="tbl-col">LAST_LOGIN_DATE</text>
+    <text x="64" y="246" class="tbl-col" font-style="italic" fill="#555">author of every CREATED_BY / LAST_UPDATED_BY</text>
+  </g>
+
+  <g>
+    <rect x="50" y="320" width="420" height="220" rx="10" fill="#ffffff" stroke="#2bb3c8" stroke-width="2"/>
+    <rect x="50" y="320" width="420" height="32"  rx="10" fill="#2bb3c8"/>
+    <text x="64" y="342" class="tbl-name" fill="#fff">SRM_RESOURCES</text>
+    <text x="64" y="370" class="tbl-pk">PK  ID</text>
+    <text x="64" y="390" class="tbl-col">USER_ID  →  CMN_SEC_USERS.ID</text>
+    <text x="64" y="408" class="tbl-col">UNIQUE_NAME, FULL_NAME</text>
+    <text x="64" y="426" class="tbl-col">RESOURCE_TYPE  (1=labor, 2=role…)</text>
+    <text x="64" y="444" class="tbl-col">IS_ROLE        (1 = role row)</text>
+    <text x="64" y="462" class="tbl-col">IS_ACTIVE</text>
+    <text x="64" y="480" class="tbl-col">PRIMARY_ROLE_ID  →  SRM_RESOURCES.ID</text>
+    <text x="64" y="510" class="tbl-col" font-style="italic" fill="#555">the “person who does the work”</text>
+  </g>
+
+  <g>
+    <rect x="660" y="80" width="440" height="220" rx="10" fill="#ffffff" stroke="#3aa835" stroke-width="2"/>
+    <rect x="660" y="80" width="440" height="32"  rx="10" fill="#3aa835"/>
+    <text x="674" y="102" class="tbl-name" fill="#fff">INV_INVESTMENTS</text>
+    <text x="674" y="130" class="tbl-pk">PK  ID</text>
+    <text x="674" y="150" class="tbl-col">CODE  (unique handle)</text>
+    <text x="674" y="168" class="tbl-col">NAME, DESCRIPTION</text>
+    <text x="674" y="186" class="tbl-col">ODF_OBJECT_CODE  (project / idea / …)</text>
+    <text x="674" y="204" class="tbl-col">IS_ACTIVE, IS_TEMPLATE</text>
+    <text x="674" y="222" class="tbl-col">MANAGER_ID  →  SRM_RESOURCES.ID</text>
+    <text x="674" y="240" class="tbl-col">START, FINISH</text>
+    <text x="674" y="258" class="tbl-col">OBS_UNIT_ID</text>
+    <text x="674" y="284" class="tbl-col" font-style="italic" fill="#555">master row for every project / idea / inv.</text>
+  </g>
+
+  <g>
+    <rect x="660" y="380" width="440" height="220" rx="10" fill="#ffffff" stroke="#3aa835" stroke-width="2"/>
+    <rect x="660" y="380" width="440" height="32"  rx="10" fill="#3aa835"/>
+    <text x="674" y="402" class="tbl-name" fill="#fff">INV_PROJECTS</text>
+    <text x="674" y="430" class="tbl-pk">PK  PRID  →  INV_INVESTMENTS.ID  (1:1)</text>
+    <text x="674" y="450" class="tbl-col">PRNAME, PRDESCRIPTION</text>
+    <text x="674" y="468" class="tbl-col">PRSTATUS, PRPROGRESS</text>
+    <text x="674" y="486" class="tbl-col">PRSTART, PRFINISH</text>
+    <text x="674" y="504" class="tbl-col">SCHEDULE_START, SCHEDULE_FINISH</text>
+    <text x="674" y="522" class="tbl-col">PERCENT_COMPLETE</text>
+    <text x="674" y="540" class="tbl-col">MANAGER_ID  →  SRM_RESOURCES.ID</text>
+    <text x="674" y="558" class="tbl-col">IS_OPEN_FOR_TE</text>
+    <text x="674" y="582" class="tbl-col" font-style="italic" fill="#555">project-only fields (schedule, % complete)</text>
+  </g>
+
+  <g>
+    <rect x="660" y="680" width="440" height="180" rx="10" fill="#ffffff" stroke="#3aa835" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="660" y="680" width="440" height="32"  rx="10" fill="#7bbf72"/>
+    <text x="674" y="702" class="tbl-name" fill="#fff">SRM_PROJECTS    (view)</text>
+    <text x="674" y="730" class="tbl-col">ID  ( = INV_INVESTMENTS.ID )</text>
+    <text x="674" y="748" class="tbl-col">CODE, NAME</text>
+    <text x="674" y="766" class="tbl-col">MANAGER_ID</text>
+    <text x="674" y="784" class="tbl-col">START, FINISH</text>
+    <text x="674" y="802" class="tbl-col">… project columns flattened</text>
+    <text x="674" y="830" class="tbl-col" font-style="italic" fill="#555">FKs labelled “SRM_PROJECTS.ID” really hit INV_INVESTMENTS.ID</text>
+  </g>
+
+  <g>
+    <rect x="1280" y="80" width="440" height="260" rx="10" fill="#ffffff" stroke="#e08e1c" stroke-width="2"/>
+    <rect x="1280" y="80" width="440" height="32"  rx="10" fill="#e08e1c"/>
+    <text x="1294" y="102" class="tbl-name" fill="#fff">PRTASK</text>
+    <text x="1294" y="130" class="tbl-pk">PK  PRID</text>
+    <text x="1294" y="150" class="tbl-col">PRPROJECTID  →  INV_INVESTMENTS.ID</text>
+    <text x="1294" y="168" class="tbl-col">PRNAME, PREXTERNALID</text>
+    <text x="1294" y="186" class="tbl-col">PRSTART, PRFINISH</text>
+    <text x="1294" y="204" class="tbl-col">PRWBSLEVEL, PRWBSSEQUENCE   (hierarchy)</text>
+    <text x="1294" y="222" class="tbl-col">PRISTASK   (1=detail, 0=summary)</text>
+    <text x="1294" y="240" class="tbl-col">PRISMILESTONE, PRISCRITICAL</text>
+    <text x="1294" y="258" class="tbl-col">PRSTATUS, PRPCTCOMPLETE</text>
+    <text x="1294" y="276" class="tbl-col">TASK_OWNER  →  SRM_RESOURCES.ID</text>
+    <text x="1294" y="294" class="tbl-col">IS_OPEN_TE</text>
+    <text x="1294" y="320" class="tbl-col" font-style="italic" fill="#555">all WBS rows incl. summary &amp; auto-root</text>
+  </g>
+
+  <g>
+    <rect x="1280" y="420" width="440" height="220" rx="10" fill="#ffffff" stroke="#e08e1c" stroke-width="2"/>
+    <rect x="1280" y="420" width="440" height="32"  rx="10" fill="#e08e1c"/>
+    <text x="1294" y="442" class="tbl-name" fill="#fff">PRTEAM</text>
+    <text x="1294" y="470" class="tbl-pk">PK  PRID</text>
+    <text x="1294" y="490" class="tbl-col">PRPROJECTID   →  INV_INVESTMENTS.ID</text>
+    <text x="1294" y="508" class="tbl-col">PRRESOURCEID  →  SRM_RESOURCES.ID</text>
+    <text x="1294" y="526" class="tbl-col">PRROLEID      →  SRM_RESOURCES.ID</text>
+    <text x="1294" y="544" class="tbl-col">PRAVAILSTART, PRAVAILFINISH</text>
+    <text x="1294" y="562" class="tbl-col">PRBOOKING   (5=Soft, 15=Hard, 10=Mixed)</text>
+    <text x="1294" y="580" class="tbl-col">PRALLOCSUM  (seconds)</text>
+    <text x="1294" y="598" class="tbl-col">PRISOPEN, TEAM_UID</text>
+    <text x="1294" y="624" class="tbl-col" font-style="italic" fill="#555">project-level allocation (one per resource)</text>
+  </g>
+
+  <g>
+    <rect x="1280" y="720" width="440" height="200" rx="10" fill="#ffffff" stroke="#e08e1c" stroke-width="2"/>
+    <rect x="1280" y="720" width="440" height="32"  rx="10" fill="#e08e1c"/>
+    <text x="1294" y="742" class="tbl-name" fill="#fff">PRASSIGNMENT</text>
+    <text x="1294" y="770" class="tbl-pk">PK  PRID</text>
+    <text x="1294" y="790" class="tbl-col">PRTASKID      →  PRTASK.PRID</text>
+    <text x="1294" y="808" class="tbl-col">TEAM_ID       →  PRTEAM.PRID</text>
+    <text x="1294" y="826" class="tbl-col">PRRESOURCEID  →  SRM_RESOURCES.ID</text>
+    <text x="1294" y="844" class="tbl-col">ROLE_ID       →  SRM_RESOURCES.ID</text>
+    <text x="1294" y="862" class="tbl-col">PRSTART, PRFINISH</text>
+    <text x="1294" y="880" class="tbl-col">PRESTSUM, PRACTSUM, PRPENDACTSUM</text>
+    <text x="1294" y="898" class="tbl-col">PRSTATUS, IS_OPEN_TE</text>
+  </g>
+
+  <path d="M 260,320 V 280 V 260" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="270" y="295" class="fk-label">USER_ID</text>
+
+  <path d="M 880,380 V 320 V 300" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="890" y="350" class="fk-label">PRID = ID  (1:1)</text>
+
+  <path d="M 880,680 V 600" fill="none" stroke="#4a4a4a" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="890" y="650" class="fk-label">view of</text>
+
+  <path d="M 660,210 H 580 V 410 H 470" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="500" y="200" class="fk-label">MANAGER_ID</text>
+
+  <path d="M 1280,210 H 1180 V 190 H 1100" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1140" y="180" class="fk-label">PRPROJECTID</text>
+
+  <path d="M 1280,510 H 1200 V 250 H 1100" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1140" y="240" class="fk-label">PRPROJECTID</text>
+
+  <path d="M 1280,530 H 540 V 430 H 470" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="900" y="420" class="fk-label">PRRESOURCEID</text>
+
+  <path d="M 1500,720 V 660 V 340" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1510" y="690" class="fk-label">PRTASKID</text>
+
+  <path d="M 1620,720 V 680 V 640" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1630" y="690" class="fk-label">TEAM_ID</text>
+
+  <path d="M 1280,830 H 560 V 460 H 470" fill="none" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="900" y="850" class="fk-label">PRRESOURCEID</text>
+
+  <rect x="20" y="980" width="1720" height="80" rx="10" fill="#f5edff" stroke="#7a4dbf" stroke-width="1.5"/>
+  <text x="40" y="1005" class="legend" font-weight="700" fill="#4a2585">Legend</text>
+  <text x="40" y="1025" class="legend">— Solid arrow = real foreign key in the 16.4.1 schema.   Dashed = view relationship.</text>
+  <text x="40" y="1043" class="legend">— A “user” logs in (CMN_SEC_USERS); a “resource” is staffed onto work (SRM_RESOURCES). Most who-FKs on tasks/team/assignments target SRM_RESOURCES, not CMN_SEC_USERS.</text>
+  <text x="40" y="1058" class="legend" fill="#555">CREATED_BY / LAST_UPDATED_BY → CMN_SEC_USERS.ID exists on every table and is omitted to keep the diagram readable.</text>
+</svg>
+</div>
+</body>
+</html>

@@ -26,6 +26,7 @@ aliases:
 - [[Pages and Tabs]] — Studio pages and tabs
 - [[Menus and Links]] — Studio menus and links
 - [[NSQL Queries]] — NSQL query development
+- [[Dummy Lookups]] — Dynamic calculated values on object pages (NSQL-lookup hack)
 - [[UI Themes]] — Studio UI themes
 - [[Content Packages]] — Content package management
 - [[Stock Objects]] — Stock objects, actions, data providers

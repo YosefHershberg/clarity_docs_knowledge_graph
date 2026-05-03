@@ -107,6 +107,35 @@ HAVING @HAVING_FILTER@
 
 Use `ORDER BY` to specify sort requirements. Do not use it on dynamic queries used in lookups — the Browse Window already includes a **Default Sorting Column** field.
 
+#### Nested Sorting on Multiple Fields
+
+If a query needs nested sorting by more than one field, wrap the data in an inline view and use a window function to compute the sort key. The outer query then exposes that key via `@SELECT@`:
+
+```sql
+SELECT @select:odf_object_code:type@,
+       @select:name:inv_prefix@,
+       @select:num_inv:inv_count@,
+       @select:sort_string:sort_string@
+FROM (
+    SELECT ROW_NUMBER() OVER (ORDER BY inv_data_grouped.sort_string) row_num,
+           COUNT(*) OVER (PARTITION BY inv_data_grouped.total_invs) total_count,
+           inv_data_grouped.*
+    FROM (
+        SELECT i.odf_object_code,
+               SUBSTRING(i.NAME, 0, 4) name,
+               CONCAT(i.odf_object_code, SUBSTRING(i.NAME, 0, 4)) sort_string,
+               COUNT(*) num_inv,
+               'x' total_invs
+        FROM inv_investments i
+        WHERE 1 = 1
+        GROUP BY i.odf_object_code, SUBSTRING(i.NAME, 0, 4)
+        HAVING COUNT(*) > 1
+    ) inv_data_grouped
+) inv_results
+WHERE 1 = 1
+  AND @FILTER@
+```
+
 ---
 
 ## User-Defined NSQL Constructs
@@ -620,11 +649,44 @@ AND EXISTS (
 
 ---
 
-## NSQL Troubleshooting
+## NSQL Troubleshooting and Tips
+
+### Errors
 
 **Error: "This query produced duplicate dimensional data. The results shown here may be invalid or incomplete."**
 
 The unique key in the Dimension property contains duplicate values. Verify that the table joins are correct and the dimension key is truly unique.
+
+**Error: "Error when trying to execute the query."**
+
+Common causes:
+- A field in the `SELECT` or `WHERE` clause does not specify the table name. When a column name appears in multiple tables, the table (or alias) must precede the field name.
+- A trailing comma after the last `@SELECT@` statement. Remove it.
+- A trailing comma after the last table in the `FROM` clause. Remove it.
+- A table name is misspelled or doesn't exist in the source database.
+
+### Tips
+
+- NSQL is **read-only**. Only `SELECT` statements that fetch rows from one or more tables are permitted. Statements that don't start with `@SELECT` fail with an error. `UPDATE`, `INSERT`, and `DELETE` cannot be performed in NSQL.
+- Do not use NSQL for reporting or for stored procedures.
+- When creating queries for **pie charts** or **funnel charts**, ensure the metric does not contain negative values (filter for values greater than zero). Negative values break these chart types.
+
+### UNION Workaround
+
+NSQL appends SQL constructs (filter, having, ordering) to the end of the statement at runtime. This breaks a plain `UNION` because the appended fragments end up attached only to the last branch of the union.
+
+**Workaround:** wrap the `UNION` inside an inline view and put `@SELECT@` in the outer select. The runtime appendage then attaches to the outer query, where it applies correctly to the unioned result set.
+
+```sql
+SELECT @SELECT:DIM:USER_DEF:IMPLIED:DIMNAME:V.ID:KEY@,
+       @SELECT:DIM_PROP:USER_DEF:IMPLIED:DIMNAME:V.NAME:NAME@
+FROM (
+    SELECT id, name FROM table_a
+    UNION
+    SELECT id, name FROM table_b
+) V
+WHERE @FILTER@
+```
 
 ---
 
