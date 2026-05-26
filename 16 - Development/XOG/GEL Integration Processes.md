@@ -80,6 +80,11 @@ GEL snippets in custom action steps can use tag libraries to interact with:
 - External databases (via `sql:setDataSource` and `sql:query`)
 - External web services (via `soap:invoke`)
 - File system and FTP (via `file:readFile` / `ftp:open`)
+- **Clarity REST API** (via `java.net.URL` + `HttpURLConnection`)
+
+### Calling REST APIs from a GEL Custom Action
+
+GEL has no native REST tag — `soap:invoke` is SOAP-only. To call the Clarity REST API from a GEL custom action, drive a Java `HttpURLConnection` and authenticate by **minting a session inside the JVM** via `UserSessionControllerFactory` + `DefaultSecurityIdentifier`. **See [[Calling REST from GEL]] for the canonical pattern — that's the default for all on-prem GEL → REST work in this vault.** Do not embed Basic auth, do not call `/auth/login`, and do not store API keys in the script.
 
 ### Built-in Parameters Available in Process GEL Scripts
 
@@ -155,6 +160,7 @@ You can invoke the InvokeAction API to schedule or start processes:
 
 ## Related Notes
 
+- [[Calling REST from GEL]] — Default pattern for invoking Clarity REST API from a GEL custom action / process (on-prem)
 - [[InvokeAction API]] — XOG InvokeAction API (schedules/starts processes via XOG)
 - [[GEL Basics]] — GEL fundamentals, variables, and structure
 - [[GEL Database Operations]] — JDBC database operations

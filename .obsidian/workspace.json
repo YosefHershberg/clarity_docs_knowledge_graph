@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a87900e78e367157",
+        "id": "0404bb668467f03e",
         "type": "tabs",
         "children": [
           {
-            "id": "014c342917f7d08a",
+            "id": "c0be5bd1ab26bf2a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tags and Concepts/OBS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "OBS"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -180,13 +176,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "014c342917f7d08a",
+  "active": "c0be5bd1ab26bf2a",
   "lastOpenFiles": [
+    "CLAUDE.md",
+    "24 - Database Schema/Joining Recipes.md",
+    "24 - Database Schema/Exercises - SQL Practice (Resources, OBS, Tasks, Assignments).md",
+    "24 - Database Schema/Diagram - Users Projects Tasks.svg",
+    "24 - Database Schema/Diagram - Users Projects Tasks.canvas",
+    "Tags and Concepts/OBS.md",
+    "24 - Database Schema/Tables Index.md",
     "Tags and Concepts/Autoschedule.md",
     "Tags and Concepts/Blueprints.md",
     "Tags and Concepts/Canvas.md",
     "Untitled.canvas",
-    "24 - Database Schema/Diagram - Users Projects Tasks.canvas",
     "24 - Database Schema/Tables/PFM_PLANS.md",
     "24 - Database Schema/Tables/WORK_PLAN_RESOURCE_GROUPS.md",
     "24 - Database Schema/Tables/WORK_PLAN_OBS_UNITS.md",
@@ -205,13 +207,7 @@
     "24 - Database Schema/Tables/ESC_RUN_USERS.md",
     "24 - Database Schema/Tables/ESC_RUN_UNREG_OBJECTS.md",
     "24 - Database Schema/Tables/EVM_PERIODS.md",
-    "24 - Database Schema/Tables/BRM_RULE_ACTION_BUCKETS.md",
-    "24 - Database Schema/Tables/BPM_RUN_PROCESSES.md",
-    "24 - Database Schema/Tables/BRM_RULE_ACTIONS.md",
-    "24 - Database Schema/Tables/BLP_AVAILABLE_VISUALS.md",
-    "24 - Database Schema/Tables/BRM_OBJECT_RULE_ACTIONS.md",
     "24 - Database Schema/Diagram - Users Projects Tasks.html",
-    "24 - Database Schema/Diagram - Users Projects Tasks.svg",
     "24 - Database Schema/Diagram - Resources OBS Tasks Assignments.svg",
     "24 - Database Schema/Curated",
     "24 - Database Schema/Tables",

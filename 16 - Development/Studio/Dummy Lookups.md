@@ -15,6 +15,12 @@ domain: development
 ---
 # Dummy Lookups — Dynamic Calculated Values on Object Pages
 
+> [!info] Disambiguation: two patterns share the "dummy lookup" label
+> - **This note** — a lookup whose hidden key is fixed at `1` and whose **display attribute is computed** at page render. Used as a **read-only derived field** (audit dates, dynamic links, HTML aggregates).
+> - [[Trigger Lookups]] — a lookup whose value is *settable by the user* and triggers a process via auto-start. Used as a **clickable action** ("Send to SAP", "Generate Report", "Approve").
+>
+> If you want to *show* something, you're in the right note. If the user has to *click* something, see [[Trigger Lookups]].
+
 ## What this technique does
 
 Displays **any dynamically-derived value** on a Clarity object's edit/properties page — values that the stock attribute toolkit (calculated, formula, virtual) cannot produce.

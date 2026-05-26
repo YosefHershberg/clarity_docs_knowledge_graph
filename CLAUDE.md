@@ -12,33 +12,33 @@ The vault uses **numbered folders** (`01` - `22`) sorted by learning priority. E
 
 
 
-| Folder | Domain | Audience |
-|--------|--------|----------|
-| `01 - Getting Started/` | First login, UI components, personas | Everyone |
-| `02 - Investments/` | Custom Investments, Ideas, Team Investments | PM, PPM Admin |
-| `03 - Projects/` | Project lifecycle, tasks, staffing, financials | PM |
-| `04 - Roadmaps/` | Top-down planning, timeline/board/grid views | PM, Leadership |
-| `05 - Hierarchies/` | Investment hierarchies, objectives, cross-object analysis | PM, Leadership |
-| `06 - Resource Management/` | Staffing, allocations, scenarios, people planning | RM, PM |
-| `07 - Financial Management/` | Cost/budget/benefit plans, GL, chargebacks | Finance, PM |
-| `08 - Timesheets/` | Time entry, approval, grid management | Everyone |
-| `09 - Collaboration/` | Workflows, action items, conversations, agreements | Everyone |
-| `10 - Pages and Objectives/` | Custom pages, OKRs, plans (beta) | PM, Admin |
-| `11 - Reporting/` | Report Designer, data providers, exports | PM, Admin |
-| `12 - Administration/` | Blueprints, security, system settings, DWH, processes | Admin |
-| `13 - Classic PPM/` | Legacy UI: projects, portfolios, demand, ITSM | Legacy Users |
-| `14 - Vaia AI/` | AI assistants, summarization, data generation | Everyone |
-| `15 - Mobile App/` | Mobile timesheets, approvals, action items | Mobile Users |
-| `16 - Development/` | REST API, Studio, XOG, GEL, custom objects | Developer |
-| `17 - Installation and Upgrade/` | Install (Oracle/SQL/Postgres), upgrade, OData | Admin, DevOps |
-| `18 - Advanced Reporting/` | Jaspersoft, Ad Hoc views, PMO reports | Admin, Analyst |
-| `19 - Add-Ins and Integrations/` | APM, PMO Accelerator, Rally, SSO | Admin, Developer |
-| `20 - Cookbooks/` | Step-by-step recipes: roadmaps, OKRs, programs | PM |
-| `21 - Reference/` | Access rights, jobs, portlets, glossary | Everyone |
-| `22 - Release Info/` | Release notes, compatibility, accessibility | Admin |
-| `23 - Source Documentation/` | Raw PDF extraction (NOT for retrieval — development reference only) | Internal |
-| `24 - Database Schema/` | Per-table notes, ERD subject-area MOCs, FK graph, SQL joining recipes | Developer (SQL) |
-| `Tags and Concepts/` | Cross-cutting concept notes (Canvas, OBS, etc.) | Everyone |
+| Folder                           | Domain                                                                | Audience         |
+| -------------------------------- | --------------------------------------------------------------------- | ---------------- |
+| `01 - Getting Started/`          | First login, UI components, personas                                  | Everyone         |
+| `02 - Investments/`              | Custom Investments, Ideas, Team Investments                           | PM, PPM Admin    |
+| `03 - Projects/`                 | Project lifecycle, tasks, staffing, financials                        | PM               |
+| `04 - Roadmaps/`                 | Top-down planning, timeline/board/grid views                          | PM, Leadership   |
+| `05 - Hierarchies/`              | Investment hierarchies, objectives, cross-object analysis             | PM, Leadership   |
+| `06 - Resource Management/`      | Staffing, allocations, scenarios, people planning                     | RM, PM           |
+| `07 - Financial Management/`     | Cost/budget/benefit plans, GL, chargebacks                            | Finance, PM      |
+| `08 - Timesheets/`               | Time entry, approval, grid management                                 | Everyone         |
+| `09 - Collaboration/`            | Workflows, action items, conversations, agreements                    | Everyone         |
+| `10 - Pages and Objectives/`     | Custom pages, OKRs, plans (beta)                                      | PM, Admin        |
+| `11 - Reporting/`                | Report Designer, data providers, exports                              | PM, Admin        |
+| `12 - Administration/`           | Blueprints, security, system settings, DWH, processes                 | Admin            |
+| `13 - Classic PPM/`              | Legacy UI: projects, portfolios, demand, ITSM                         | Legacy Users     |
+| `14 - Vaia AI/`                  | AI assistants, summarization, data generation                         | Everyone         |
+| `15 - Mobile App/`               | Mobile timesheets, approvals, action items                            | Mobile Users     |
+| `16 - Development/`              | REST API, Studio, XOG, GEL, custom objects                            | Developer        |
+| `17 - Installation and Upgrade/` | Install (Oracle/SQL/Postgres), upgrade, OData                         | Admin, DevOps    |
+| `18 - Advanced Reporting/`       | Jaspersoft, Ad Hoc views, PMO reports                                 | Admin, Analyst   |
+| `19 - Add-Ins and Integrations/` | APM, PMO Accelerator, Rally, SSO                                      | Admin, Developer |
+| `20 - Cookbooks/`                | Step-by-step recipes: roadmaps, OKRs, programs                        | PM               |
+| `21 - Reference/`                | Access rights, jobs, portlets, glossary                               | Everyone         |
+| `22 - Release Info/`             | Release notes, compatibility, accessibility                           | Admin            |
+| `23 - Source Documentation/`     | Raw PDF extraction (NOT for retrieval — development reference only)   | Internal         |
+| `24 - Database Schema/`          | Per-table notes, ERD subject-area MOCs, FK graph, SQL joining recipes | Developer (SQL)  |
+| `Tags and Concepts/`             | Cross-cutting concept notes (Canvas, OBS, etc.)                       | Everyone         |
 
 ## How to Navigate
 
@@ -97,6 +97,18 @@ Workflow:
 The 16.4.1 dump (569 tables) underpins column-level details; the 33 ERDs (built for 15.6 / ccppmod156) supply the relationship graph. The curated KB (`Curated/`) is the SoT for architecture, gotchas, and idiomatic queries. Most CMN_*, ODF_*, and BPM_* tables appear only as stub notes — they exist in production but column-level metadata is not in the dump. See `[[Version Notes]]` for the 16.1.1→16.4.1 delta (43 added, 12 removed) and the stale-rename map.
 
 Common name-drift between the curated KB and the actual 16.4.1 schema is documented in `[[Where Is The Truth]]` (e.g. `PRTEAMID` → `TEAM_ID`, `PROUTLINELEVEL` → `PRWBSLEVEL`, `PRJ_SLICE_REQUESTS` → [[PRJ_BLB_SLICEREQUESTS]], `INV_OTHER_WORK` → [[INV_OTHERS]], `FIN_TRANSACTIONS` → [[FIN_TXNS]], `SRM_ACTIONITEMS` → [[CAL_ACTION_ITEMS]]).
+
+### When the user asks about calling the REST API from a GEL script (or process / custom action)
+
+This is a recurring pattern with a binding default. The single source of truth is `[[Calling REST from GEL]]` under `16 - Development/REST API/`. **Always recommend the internal-session-minting pattern** documented there — `UserSessionControllerFactory.getInstance().init('admin', secId)` returning a real session ID reusable as `Authorization: authToken <sid>`. Do **not** suggest Basic auth, `/auth/login`, or stored API keys for in-JVM GEL scripts — those are for *external* clients only (see `[[Authentication]]`).
+
+Trigger phrases that map to this note: "REST API in GEL", "REST API in a process / custom action", "GEL HTTP call", "authToken from GEL", "UserSessionControllerFactory", "DefaultSecurityIdentifier", "x-api-association-key".
+
+Workflow:
+1. Confirm the script is **on-prem** and runs inside a Clarity process or custom action — the pattern only works inside the Clarity JVM. For SaaS, redirect to `[[Authentication]]` (key auth via `/tokens/rest/v1`).
+2. Point the user at `[[Calling REST from GEL]]` for the complete template (DB probe → URL discovery from `properties.xml` → session minting → `HttpURLConnection` call → response parse).
+3. If they need to call as a specific user for audit attribution, use `init('<username>', secId)` instead of `'admin'`.
+4. For external integrations (Boomi, Python, Postman, browser apps), redirect to `[[Authentication]]` instead.
 
 ### Frontmatter Filtering
 Each curated note includes structured frontmatter for filtering:

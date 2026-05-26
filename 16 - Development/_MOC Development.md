@@ -12,7 +12,8 @@ aliases:
 
 ### REST API
 - [[Getting Started]] — Getting started with Clarity APIs
-- [[Authentication]] — REST API authentication
+- [[Authentication]] — REST API authentication (external clients)
+- [[Calling REST from GEL]] — Default pattern for invoking REST from a GEL custom action / process (on-prem)
 - [[Using REST APIs]] — Using Clarity REST APIs
 - [[Enhancements]] — REST API enhancements
 - [[Performance and Load Testing]] — Pagination, bulk operations, query optimization, load test results
@@ -26,7 +27,8 @@ aliases:
 - [[Pages and Tabs]] — Studio pages and tabs
 - [[Menus and Links]] — Studio menus and links
 - [[NSQL Queries]] — NSQL query development
-- [[Dummy Lookups]] — Dynamic calculated values on object pages (NSQL-lookup hack)
+- [[Dummy Lookups]] — Dynamic calculated values on object pages (NSQL-lookup hack, display-anything flavor)
+- [[Trigger Lookups]] — Clickable "buttons" on object pages that fire processes (NSQL-lookup hack, action flavor)
 - [[UI Themes]] — Studio UI themes
 - [[Content Packages]] — Content package management
 - [[Stock Objects]] — Stock objects, actions, data providers

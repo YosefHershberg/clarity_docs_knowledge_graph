@@ -13,6 +13,9 @@ domain: development
 
 ## Overview
 
+> [!IMPORTANT]
+> **Calling the REST API from a GEL script or Clarity process?** Do **not** use any of the three external auth methods below. Mint a session via Clarity's internal Java security classes instead — see [[Calling REST from GEL]]. That's the default for all on-prem GEL → REST work in this vault.
+
 Clarity REST APIs support three methods for authenticating user requests:
 
 - **Token-based authentication** — Obtain an authentication token for a session and pass it for subsequent API requests. The token remains active until the session ends.
@@ -228,6 +231,7 @@ If you have a Clarity On-Premise setup with SSO, review the SSO-specific setup d
 
 ## Related
 - [[Getting Started]]
+- [[Calling REST from GEL]] — default pattern when the caller is a GEL custom action / process (on-prem)
 - [[_MOC Development]]
 
 %%Source: p3949-3960%%
