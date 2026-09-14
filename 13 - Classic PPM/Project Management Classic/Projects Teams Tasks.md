@@ -1,4 +1,4 @@
-﻿---
+---
 title: Projects, Teams, and Tasks (Classic PPM)
 tags:
   - classic

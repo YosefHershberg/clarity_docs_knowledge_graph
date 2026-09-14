@@ -1,4 +1,4 @@
-﻿---
+---
 title: Clarity Administration
 tags:
   - MOC

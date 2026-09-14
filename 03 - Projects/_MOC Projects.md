@@ -1,4 +1,4 @@
-﻿---
+---
 title: Projects — Map of Content
 tags:
   - MOC

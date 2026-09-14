@@ -1,4 +1,4 @@
-﻿---
+---
 title: Earned Value, EAC, and ETC (Classic PPM)
 tags:
   - howto

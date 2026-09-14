@@ -32,20 +32,20 @@ tags:
 
 ## Columns
 
-| Column | Type | Null | Comment |
-| --- | --- | --- | --- |
-| `ID` | NUMERIC | NOT NULL | This column refers to a system-generated, unique identifier for a row in this table. |
-| `USER_ID` | NUMERIC | NOT NULL | This column refers to the user who owns this scenario. This refers to [[CMN_SEC_USERS]].ID. |
-| `NAME` | NVARCHAR | NOT NULL | This column refers to the name of the scenario. |
-| `DESCRIPTION` | NVARCHAR | NULL | This column refers to the user-entered, textual description of this scenario. |
-| `BDGT_CST_TOTAL` | NUMERIC | NULL | This column refers to the budgeted costs of this scenario. |
-| `BDGT_REV_TOTAL` | NUMERIC | NULL | This column refers to the targeted monetary benefits for this scenario. |
-| `IS_PUBLIC` | INTEGER | NOT NULL | This column indicates whether the scenario is available to other users. |
-| `CREATED_DATE` | DATE | NOT NULL | This column refers to the date and time this row was created. |
-| `CREATED_BY` | NUMERIC | NOT NULL | This column refers to the resource ([[CMN_SEC_USERS]].ID) that created this row. |
-| `LAST_UPDATED_DATE` | DATE | NOT NULL | This column refers to the date and time this row was last updated. |
-| `LAST_UPDATED_BY` | NUMERIC | NOT NULL |  |
-| `IS_BEING_PUBLISHED` | INTEGER | NOT NULL | This column indicates if the scenario is being published. |
+| Column               | Type     | Null     | Comment                                                                                     |
+| -------------------- | -------- | -------- | ------------------------------------------------------------------------------------------- |
+| `ID`                 | NUMERIC  | NOT NULL | This column refers to a system-generated, unique identifier for a row in this table.        |
+| `USER_ID`            | NUMERIC  | NOT NULL | This column refers to the user who owns this scenario. This refers to [[CMN_SEC_USERS]].ID. |
+| `NAME`               | NVARCHAR | NOT NULL | This column refers to the name of the scenario.                                             |
+| `DESCRIPTION`        | NVARCHAR | NULL     | This column refers to the user-entered, textual description of this scenario.               |
+| `BDGT_CST_TOTAL`     | NUMERIC  | NULL     | This column refers to the budgeted costs of this scenario.                                  |
+| `BDGT_REV_TOTAL`     | NUMERIC  | NULL     | This column refers to the targeted monetary benefits for this scenario.                     |
+| `IS_PUBLIC`          | INTEGER  | NOT NULL | This column indicates whether the scenario is available to other users.                     |
+| `CREATED_DATE`       | DATE     | NOT NULL | This column refers to the date and time this row was created.                               |
+| `CREATED_BY`         | NUMERIC  | NOT NULL | This column refers to the resource ([[CMN_SEC_USERS]].ID) that created this row.            |
+| `LAST_UPDATED_DATE`  | DATE     | NOT NULL | This column refers to the date and time this row was last updated.                          |
+| `LAST_UPDATED_BY`    | NUMERIC  | NOT NULL |                                                                                             |
+| `IS_BEING_PUBLISHED` | INTEGER  | NOT NULL | This column indicates if the scenario is being published.                                   |
 
 ## Foreign keys (outbound)
 
