@@ -84,6 +84,12 @@ Welcome to the Broadcom Clarity PPM 16.4.1 documentation knowledge graph. This v
 
 ---
 
+## Client Configurations
+
+- [[_MOC Camtek]] — **Camtek**: Feature Management on the Project object, On Going master projects with hammocks, Azure DevOps (TFS) mirroring, custom autoschedule. Client-specific; verified against the dev environment.
+
+---
+
 ## Source Documentation
 
 - [[_MOC - Source Documentation]] — Full-text PDF extraction: 56 markdown files covering all 5057 pages of the official Clarity 16.4.1 documentation

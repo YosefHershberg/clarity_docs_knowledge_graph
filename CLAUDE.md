@@ -38,6 +38,7 @@ The vault uses **numbered folders** (`01` - `22`) sorted by learning priority. E
 | `22 - Release Info/`             | Release notes, compatibility, accessibility                           | Admin            |
 | `23 - Source Documentation/`     | Raw PDF extraction (NOT for retrieval — development reference only)   | Internal         |
 | `24 - Database Schema/`          | Per-table notes, ERD subject-area MOCs, FK graph, SQL joining recipes | Developer (SQL)  |
+| `25 - Camtek/`                   | CLIENT config: Camtek feature management, On Going hammocks, TFS sync  | Consultant (Camtek) |
 | `Tags and Concepts/`             | Cross-cutting concept notes (Canvas, OBS, etc.)                       | Everyone         |
 
 ## How to Navigate
@@ -77,7 +78,8 @@ Notes use these tag prefixes:
 ## For AI Agents
 
 ### Retrieval Scope
-- **ONLY retrieve from folders `01` through `22`, `24 - Database Schema/`, and `Tags and Concepts/`** — these are curated, canonical notes.
+- **ONLY retrieve from folders `01` through `22`, `24 - Database Schema/`, `25 - Camtek/`, and `Tags and Concepts/`** — these are curated, canonical notes.
+- **`25 - Camtek/` is client-specific, not product documentation.** Retrieve from it only when the question is about Camtek (keywords: Camtek, קמטק, feature / פיצ'ר, On Going, hammock / ערסל, TFS / Azure DevOps / Falcon, `type_in`, `cmtk_feature_status`, `feat_int`, Move Gant to On Going). Start at `[[_MOC Camtek]]`; for anything on the On Going master projects read `[[On Going Feature Project]]`. Facts there are tagged **spec** (from the Hebrew design doc) or **dev** (verified in the dev environment); when they conflict, dev wins. Never write the Azure DevOps token that appears in the spec into any note.
 - **NEVER retrieve from `23 - Source Documentation/`** — this folder contains raw PDF extractions used only for building the knowledge graph. It is not optimized for retrieval and will waste tokens.
 - Notes with `canonical: true` in frontmatter are the authoritative source. If a curated note and a source doc cover the same topic, always prefer the curated note.
 

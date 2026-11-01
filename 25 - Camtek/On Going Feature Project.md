@@ -1,0 +1,96 @@
+---
+title: On Going Feature Project
+tags:
+  - camtek
+  - concept
+aliases:
+  - On Going
+  - On Going Feature
+  - On Going CMM
+  - Ongoing Feature
+  - ערסל
+  - Hammock
+canonical: true
+client: camtek
+audience: dev
+domain: client
+---
+
+# On Going Feature Project
+
+The **On Going** projects are ordinary Project-object instances that act as containers. Each active feature appears inside one of them as a **hammock** (Hebrew ערסל): a summary task (`Is Task = No`, not a milestone) named after the feature, with the feature's tasks as its children. This is where day-to-day feature work is scheduled, so most Camtek customization targets this object.
+
+| Master project | Code | `type_in` | Blueprint | Holds |
+|---|---|---|---|---|
+| **On Going Feature** | CL00001708 (id 5183026) | 3 | On Going (BP5541) | features whose Feature Type is *not* CMM Feature/CMM Bug |
+| **On Going CMM** | CL00001705 | 6 | On Going CMM (BP5547) | features with Feature Type = CMM Feature (1) or CMM Bug (4) |
+| On Going Bug | — | 5 | — | lookup value exists, no project seen in dev |
+
+Source: dev. The spec mentions "On Going" splitting further by **Commitment Date**: within the On Going Feature family the process looks up the custom object *Commitment Date* (6 instances named 1–6, each with a start–finish window and a `comm_date`) and copies the hammock to the On Going project whose commitment date matches. In dev only one On Going Feature project exists, so treat the commitment-date routing as spec-only until confirmed.
+
+## Anatomy of a hammock (dev sample "TEST 29/10/2026 10AM")
+| Level | Name | Task Phase | TFS Parent | TFS Number | Notes |
+|---|---|---|---|---|---|
+| hammock | TEST 29/10/2026 10AM | — | 130532 | **130532** | carries the *feature's* TFS id; `parent_link` → `/pm/#/project/5303311/details` |
+| task | Feature Requirements | In Progress | 130532 | — | no work item yet |
+| task | Provide Time Estimation and Allocation | In Progress | 130532 | — | |
+| task | SW Development | In Progress | 130532 | 130533 | |
+| task | SW Development on Tool | In Progress | 130532 | 130534 | |
+| task | SW Integration on tool | In Progress | 130532 | 130535 | |
+| task | QA Verification on Private Branch | Validation | 130532 | 130536 | |
+| task | SW Validation - Bugs Fixing | Validation | 130532 | — | |
+| task | SW Merge to 10.1 Release version | Validation | 130532 | 130537 | |
+| task | QA Validation on Rel Branch | Validation | 130532 | 130538 | |
+| milestone | SW MS Release | Validation | 130532 | — | `Milestone = Yes` |
+
+Every task under the hammock carries copies of the feature's attributes (Feature Status, Commitment Date, SW Version, Customer, Priority, Feature Initiator, Ready For Customer/Validation, Project Request, Parent) so users can filter the master Gantt without opening features. The default view *Proceed* filters `Feature Status = Backlog; Hold`.
+
+Grid columns in dev: Row, Name, Commitment Date, TFS Active/Non Active, ETC, Original ETC, TFS Parent, TFS Number, Start, Finish, Assigned Resources, Assigned Resource Filter, Customer, Feature Status, Created By, % Complete, Status, Assigned Resource for Feature, Fixed Duration, Duration, Task ID, Created Date, Start No Earlier Than, Task Phase, Predecessors, Successors, Milestone, Must Start On, Parent Link, Ready For Customer, Ready For Delivery, Ready For Validation, Reason for Delay, Current Phase, Start No Later Than, Is Task, Locked, Last Updated By, Last Updated Date, Must Finish On, Admin TFS monitoring, Last Update From TFS, Task Type.
+
+## How a hammock gets in — *Move Gant to On Going* (Project, Active, dev)
+Trigger (spec): feature project with `type_in = 2` changes `cmtk_feature_status` → **Active (2)**, and `move_yn = No`.
+1. Set `move_yn = Yes` on the feature.
+2. Create a summary task in the feature's Gantt named exactly like the feature; nest all existing tasks under it **except** tasks whose `phase_milestone` is not empty (the two locked phase-end milestones stay home — also on Reopen).
+3. On every task incl. the hammock, copy feature → task: `tfs_num→tfs_parent`, `orig_tfs→orig_tfstask`, `release_date_string`, `cmtk_feature_status→parent_feat_stat`, `commitment_date`, `sw_version`, `project_priority→feature_priority`, `valid_ready→valid_ready1`, `feat_init→feat_init1`, `cust_ready→cust_ready1`, `customer_camtek`, `odf_assoc_parent→assoc_parent`, `project_source`, feature internal id → `feat_int`; task `proj_term1` (Ready For Delivery) → `proj_term2` (Ready For Delivery Feature).
+4. On the hammock only: `linktotfs`, `tfs_num→tfs_tasknum`, `parent_link` = URL of the feature.
+5. Clear every task's **Code** (`prexternalid`) to avoid collisions with codes already in On Going (a process *Next code in task* later refills missing codes).
+6. Copy hammock + children to the target master (CMM if Feature Type ∈ {1,4}, else On Going Feature, matched on Commitment Date).
+7. Re-mark the Ready For Delivery task and refresh Ready For Delivery on feature and hammock.
+8. Delete all tasks from the original feature's Gantt.
+
+Companion jobs in dev: *Move Gant to On Going Status 2- JOB*, *Status 2 Delete- JOB*, *Status 3- JOB*, *Status 3 Delete- JOB* and their *CMM* variants — batch migrations for features already in status 2/3 (spec calls them "conversion-support processes"). *Move feature and task when change Feature Type* moves a hammock between masters when Feature Type changes.
+
+## What runs on the master project
+| Concern | Process (dev mode) | Cadence | Note |
+|---|---|---|---|
+| Task → TFS real time | *Update task - tfs project type On going new trigert v3* (Active), *create task - tfs project type On going* (Active), *TFS - delete task from project type On Going* (Active) | trigger | see [[TFS Integration]] |
+| TFS → Clarity status | *Change status from TFS to clatiry task of project On Going- JOB* (Active) | every 10 min (spec) | also clears `admin_tfs` on all tasks |
+| Feature → hammock attrs | *Update feature properties for task in On Going* (Active) | trigger on 9 feature attributes | only when `move_yn = Yes` |
+| Hammock → feature rollup | *Update project feature from task summery project On Going -JOB* (Active) | spec: 10:00, 13:00, 16:00; dev schedule 19:50 | copies Start/Finish/% Complete to `schedule_start/schedule_finish/inv_percent_complete`; sets In Progress; updates Dev/Validation Phase End milestones |
+| Ready for Validation | *Population of the Validation field in the Features object On Going* + *… - change No* (Active), *Population of the Validation - JOB* (Active, 17:30) | trigger / daily | all In-Progress tasks at 100 % → `valid_ready = Yes`, TFS state → Resolved, mail to dmitrid@camtek.com |
+| Status → In Progress | *Change feature status in project by prcompleate on going - JOB* (Active) | 01:00 | any task with `for_sta = No` and % > 0 → feature In Progress (3), else back to Active (2) |
+| Delivery fields | *update delivery finish date On Going* (On Hold in dev), *update delivery finish date - Job* (Active, 13:20) | trigger / daily | `proj_term2` task finish → `delivery_finish_date` + `release_date_string` |
+| Autoschedule | *Autoschedule on All in Going* (Active, 00:00), *Autoschedule on All in Going cmm* (Active, 02:00) | nightly | see [[Custom Autoschedule]] |
+| Close completed hammocks | *Update milestone on in Going and CMM* (Active, 02:30) | nightly | hammock at 100 % → complete last milestone, feature → Completed (4), trigger return |
+| Return home | *Move project feature to Non Active and create tasks - JOB* (Active, 03:00) | nightly | Completed / Hold (6) / `is_active = No` → copy tasks back, delete hammock |
+| Resource filter field | *Update Assigned Resources by Camtek Investment Type* (Active) | spec every 2 min except 04:00–07:00 | fills `ass_res_feature` on tasks and union on hammock |
+| Feature size | *Feature Size of project New- JOB* (Active, 05:40) | daily | sums ETC-derived field per hammock → `feature_size` |
+| Ready for QA | *Ready For QA - JOB* (Active, 17:42), *update qa in tasks in on going* | daily / trigger | tasks with `is_private_branch = 1` drive project `ready_for_qa` |
+
+## How a hammock gets out — *Move project feature to Non Active and create tasks* (JOB, 03:00)
+Trigger: feature with `move_yn = Yes` reaches Feature Status **Completed (4)** (set by the nightly milestone job), **Hold (6)**, or `is_active = No`.
+1. Find the hammock whose tasks have `feat_int` = feature id.
+2. Copy all tasks back into the feature; copy % complete; copy Start/Finish matched by task `prexternalid`. On *Completed*, tasks may instead be forced to 100 % (excluding phase-milestone tasks).
+3. Delete the whole hammock from On Going; in the feature delete only the summary task.
+4. Set `move_yn = No`. For Completed features, locate the Validation Phase End milestone (`phase_milestone = 2`).
+
+A repair process *Copying tasks from On Going to Feature Not transfer correctly - TIFULI* re-runs the copy for hammocks whose `parent_feat_stat` is Completed.
+
+## Gotchas
+- Trigger-based TFS processes are intentionally scoped by excluded attributes; **new Task attributes must be added to the exclusion list in the process code** or every edit fires a sync (spec).
+- Attributes used by the real-time triggers must stay in the **Audit Trail** (spec).
+- The hammock's `tfs_tasknum` equals the feature's `tfs_num`; children have `tfs_parent` = that id. Deleting `delete_task` (TFS Active/Non Active) on a task deletes the Azure DevOps work item.
+- Dev contains hammocks whose `parent_link` points at the **prod** host (data copied from prod).
+- Several same-named processes exist in different modes (e.g. three *Update feature properties for task in On Going*: one Active, two On Hold). Always check **Mode** before editing.
+
+Related: [[Feature Lifecycle]] · [[Camtek Data Model]] · [[Process and Job Catalog]] · [[Tasks Phases Milestones]]
