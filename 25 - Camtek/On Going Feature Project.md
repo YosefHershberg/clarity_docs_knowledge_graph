@@ -49,14 +49,25 @@ Grid columns in dev: Row, Name, Commitment Date, TFS Active/Non Active, ETC, Ori
 
 ## How a hammock gets in — *Move Gant to On Going* (Project, Active, dev)
 Trigger (spec): feature project with `type_in = 2` changes `cmtk_feature_status` → **Active (2)**, and `move_yn = No`.
-1. Set `move_yn = Yes` on the feature.
-2. Create a summary task in the feature's Gantt named exactly like the feature; nest all existing tasks under it **except** tasks whose `phase_milestone` is not empty (the two locked phase-end milestones stay home — also on Reopen).
-3. On every task incl. the hammock, copy feature → task: `tfs_num→tfs_parent`, `orig_tfs→orig_tfstask`, `release_date_string`, `cmtk_feature_status→parent_feat_stat`, `commitment_date`, `sw_version`, `project_priority→feature_priority`, `valid_ready→valid_ready1`, `feat_init→feat_init1`, `cust_ready→cust_ready1`, `customer_camtek`, `odf_assoc_parent→assoc_parent`, `project_source`, feature internal id → `feat_int`; task `proj_term1` (Ready For Delivery) → `proj_term2` (Ready For Delivery Feature).
-4. On the hammock only: `linktotfs`, `tfs_num→tfs_tasknum`, `parent_link` = URL of the feature.
-5. Clear every task's **Code** (`prexternalid`) to avoid collisions with codes already in On Going (a process *Next code in task* later refills missing codes).
-6. Copy hammock + children to the target master (CMM if Feature Type ∈ {1,4}, else On Going Feature, matched on Commitment Date).
-7. Re-mark the Ready For Delivery task and refresh Ready For Delivery on feature and hammock.
-8. Delete all tasks from the original feature's Gantt.
+
+The GEL body (dev, read 2026-11-04) runs these steps in order against the feature (`gel_objectInstanceId`). All writes go through the REST API with an admin session minted via `UserSessionControllerFactory` (see [[Calling REST from GEL]]); every call sends `x-api-force-patch: true`.
+
+1. **Pick the target master** by feature type: `feature_type ∈ {1,4}` → the investment with `type_in = 6` (On Going CMM), otherwise `type_in = 3` (On Going Feature). **dev:** the script takes the *first* row of `SELECT id FROM odf_ca_inv WHERE type_in = …` with no ORDER BY and no date filter — the spec's "matched on Commitment Date" is not implemented; with two masters of one type the pick is arbitrary.
+2. **Renumber colliding codes.** For each feature task whose Code (`prexternalid`) already exists on a task in the target master, call `CMN_AUTONUM_GET_NEXT_SP('task','prexternalid',…)`, read `next_value` from `CMN_AUTONUM_SCHEMES`, and PUT it as the task's new `code`. **dev:** codes are *not* cleared as the spec says — only colliding ones change, and the surviving codes are what step 8 matches on. (*Next code in task* still exists as a separate process for tasks with no code.)
+3. **Read the feature** from `odf_ca_project ⋈ inv_investments`: `tfs_num`, name (newlines/quotes stripped), `release_date_string`, `cmtk_feature_status`, `commitment_date`, `sw_version`, `project_priority`, `linktotfs`, `orig_tfs`, `customer_camtek`, `valid_ready`, `cust_ready`, `parent_id`, `project_source`, `feat_init`. `feat_init` is nulled unless that user is still `ACTIVE`/`LOCK` and not hidden (so an inactive initiator is never written to tasks). A second query builds a JSON array of the feature's `assigned_group` multi-values but the result is **never used**.
+4. **Set `move_yn = Yes`** on the feature (PUT `/projects`, `p_move_yn: true`).
+5. **Create the hammock** (POST `/projects/{id}/tasks`): `name` = feature name, `p_parent_link` = `/pm/#/project/{id}/details`, `p_feat_int` = feature id, `p_valid_ready1`, and every non-empty feature attribute copied: `feat_init→p_feat_init1`, `sw_version→p_SW_version`, `project_priority→p_Feature_priority`, `commitment_date→p_commitment_date`, `cmtk_feature_status→p_parent_Feat_stat`, `linktotfs→p_LinkToTFS`, `tfs_num→p_tfs_parent` **and** `p_tfs_tasknum`, `orig_tfs→p_orig_tfstask`, `customer_camtek→p_Customer_camtek`, `parent_id→p_parenTest_`, `project_source→p_project_source`. `linktotfs` and `tfs_tasknum` are written **only here**. **dev:** `cust_ready1` and `assoc_parent` are *not* written to the hammock.
+6. **Stamp the child tasks.** For every task in the feature that is not the hammock and has no `phase_milestone`: PUT the same attribute set as step 5 minus `linktotfs`/`tfs_tasknum`/`parent_link`, plus `p_cust_ready1` and `p_proj_term2 = (proj_term1 = 4039)` — i.e. the task marked Ready For Delivery becomes Ready For Delivery Feature.
+7. **Nest under the hammock.** Every top-level task (`wbs_parseq = -1`) that is not the hammock and has no `phase_milestone` gets `parentTask = <hammock id>`, in `prwbssequence` order. The two locked phase-end milestones stay home because every task query excludes `phase_milestone` (also on Reopen).
+8. **Copy to the master**: PUT `/ppm/rest/v1/private/copyTasksTo/{masterId}` with `srcProjectID` and `srcTaskIDList.d = [{_internalId}, …]` of all non-milestone tasks (the hammock is in the list, so it carries its children). This is the private endpoint behind the UI's *Copy Tasks To*.
+9. **Only if the copy returned 200**: for each original task, find its copy in the master by equal `prexternalid`, PUT the original's `startDate`, `finishDate` and `etc` (from `ODF_TASK_V2.prestsum`) onto the copy, sleep 2 s, then DELETE the original from the feature. The feature's Gantt ends up holding only the phase-end milestones.
+
+Spec items **not** in the dev script: the Commitment Date match (step 1), clearing all codes (step 2), `odf_assoc_parent→assoc_parent`, `cust_ready1` on the hammock, and spec step 7 "refresh Ready For Delivery on feature and hammock" (handled by the separate *update delivery finish date* processes).
+
+Known weaknesses in the script (dev):
+- Every task filter is written `… AND ot.phase_milestone IS NULL OR ot.phase_milestone = ''` without parentheses, so the `OR` binds last and a task in *any* project with an empty-string milestone would be swept in. Dormant on Postgres as long as the column holds NULL, but fix with parentheses if touched.
+- No error handling after login: a failed single-task PUT/DELETE is logged (`NOT success`) and the loop continues; only the copy step gates the deletes.
+- The `move_yn` PUT is logged as "Put delete task for Delete summery task" — misleading, it only sets the flag.
 
 Companion jobs in dev: *Move Gant to On Going Status 2- JOB*, *Status 2 Delete- JOB*, *Status 3- JOB*, *Status 3 Delete- JOB* and their *CMM* variants — batch migrations for features already in status 2/3 (spec calls them "conversion-support processes"). *Move feature and task when change Feature Type* moves a hammock between masters when Feature Type changes.
 

@@ -45,7 +45,7 @@ Feature project (type 2)                         On Going master project (type 3
 ```
 
 1. **Create** a feature from template → a process copies tasks from a matching template in the custom investment object **Features** (`features`, 64 templates) and creates the Feature + Task work items in Azure DevOps. See [[Feature Lifecycle]] stage A.
-2. **Activate** (Feature Status → Active) → *Move Gant to On Going* moves the whole Gantt into the matching master project as a **hammock** (ערסל, a summary task named after the feature) and deletes it from the feature. Which master: Feature Type ∈ {CMM Feature, CMM Bug} → On Going CMM, otherwise On Going Feature, then matched on Commitment Date. See [[On Going Feature Project]].
+2. **Activate** (Feature Status → Active) → *Move Gant to On Going* moves the whole Gantt into the matching master project as a **hammock** (ערסל, a summary task named after the feature) and deletes it from the feature. Which master: Feature Type ∈ {CMM Feature, CMM Bug} → On Going CMM, otherwise On Going Feature (spec: matched on Commitment Date; dev: the script takes the first master of that type, no date match). See [[On Going Feature Project]].
 3. **Work** happens on the hammock's tasks inside the master project. Task changes sync to Azure DevOps in real time; Azure DevOps status comes back every 10 minutes; feature-level attributes propagate down to tasks; dates and % complete roll back up to the feature. Custom autoschedule jobs run nightly.
 4. **Close / Hold / Deactivate** → the hammock is copied back to the original feature and deleted from the master project.
 
